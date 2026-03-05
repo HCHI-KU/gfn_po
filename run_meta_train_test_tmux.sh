@@ -36,7 +36,7 @@ launch_task() {
     cd "$SCRIPT_DIR"
     CUDA_VISIBLE_DEVICES="$gpu" \
       stdbuf -oL -eL \
-      python3 main_final.py \
+      python3 main.py \
         --task_name "$task" \
         --tensor_parallel_size 1 \
         --gpu_memory_utilization 0.90 \
