@@ -1,0 +1,419 @@
+{
+  "task_name": "hyperbaton",
+  "generated_at": "2026-03-04 20:34:14",
+  "generation_config": {
+    "model_path": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "conversation_template": "llama-3",
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "max_tokens": 96,
+    "num_examples": 3,
+    "requested_num_prompts": 100,
+    "actual_num_prompts": 100,
+    "generation_batch_size_cap": 128,
+    "generation_max_rounds": 6
+  },
+  "meta_prompt_request": "You are creating a single instruction prompt for a reasoning task named 'hyperbaton'.\nInfer the task behavior from the input/output examples below.\nWrite exactly one concise instruction that helps solve this task.\nOutput only the instruction text. Do not output numbering, quotes, or explanations.\n\nExamples:\nInput: Which sentence has the correct adjective order:\nOptions:\n(A) midsize old grey Brazilian sweater\n(B) midsize grey Brazilian old sweater.\nOutput: A\n\nInput: Which sentence has the correct adjective order:\nOptions:\n(A) rubber gray walking Mexican midsize cat\n(B) midsize gray Mexican rubber walking cat.\nOutput: B\n\nInput: Which sentence has the correct adjective order:\nOptions:\n(A) mysterious big Indian iron smoking motorcycle\n(B) big smoking mysterious Indian iron motorcycle.\nOutput: A\n\nInstruction:",
+  "prompts": [
+    {
+      "name": "Meta-01",
+      "prompt": "Identify the sentence with the adjective order that follows the typical English word order for describing an object."
+    },
+    {
+      "name": "Meta-02",
+      "prompt": "Modify the sentence to put the adjective closest to the noun in the correct order of modification."
+    },
+    {
+      "name": "Meta-03",
+      "prompt": "Identify the sentence with adjectives in the order of most general to most specific."
+    },
+    {
+      "name": "Meta-04",
+      "prompt": "Arrange the adjectives in the sentence in the order that a speaker would naturally use them in everyday conversation."
+    },
+    {
+      "name": "Meta-05",
+      "prompt": "Modify the sentence to ensure the adjective preceding a noun is closest to the noun in meaning."
+    },
+    {
+      "name": "Meta-06",
+      "prompt": "Determine the correct order of adjectives by applying the standard English rule: nouns, then adjectives in the order of their degree (farthest from the noun, closest to the noun)."
+    },
+    {
+      "name": "Meta-07",
+      "prompt": "Modify the adjective sequence to prioritize the order of proximity in describing the noun."
+    },
+    {
+      "name": "Meta-08",
+      "prompt": "Arrange the adjectives in each sentence in a logical and grammatically correct order."
+    },
+    {
+      "name": "Meta-09",
+      "prompt": "Identify the sentence with the adjective order that follows the typical English pattern of modifier-modified."
+    },
+    {
+      "name": "Meta-10",
+      "prompt": "Modify the sentence by rearranging the adjectives to maintain a logical and natural order."
+    },
+    {
+      "name": "Meta-11",
+      "prompt": "Arrange the adjectives in the sentence in the order of their original positions in the noun phrase to ensure grammatical correctness and proper word order."
+    },
+    {
+      "name": "Meta-12",
+      "prompt": "Arrange the adjectives in the sentence to follow the typical English word order of \"big - grey - [nationality] - [material] - [action]\"."
+    },
+    {
+      "name": "Meta-13",
+      "prompt": "Determine the correct order of adjectives in a sentence by placing them in the order of specificity, then intensity, and finally, general category."
+    },
+    {
+      "name": "Meta-14",
+      "prompt": "Modify the sentence to follow the standard adjective order in English, typically noun-modifier-modifier-noun."
+    },
+    {
+      "name": "Meta-15",
+      "prompt": "Identify the sentence with adjectives in their typical English order, usually modifying nouns in the order of specificity, size, shape, color, origin, and material."
+    },
+    {
+      "name": "Meta-16",
+      "prompt": "Determine the sentence with the adjective order that follows the typical English pattern of modifying nouns, from most specific to most general."
+    },
+    {
+      "name": "Meta-17",
+      "prompt": "Identify the sentence with the adjectives in the standard order of size, nationality, color, material, and action."
+    },
+    {
+      "name": "Meta-18",
+      "prompt": "Arrange the adjectives in the correct order of typical English word order."
+    },
+    {
+      "name": "Meta-19",
+      "prompt": "Arrange the adjectives in the sentence to follow the order: largest, most distant, and then closest to the noun."
+    },
+    {
+      "name": "Meta-20",
+      "prompt": "Arrange the adjectives in each sentence according to the typical order of modifying nouns in English, which is usually from general to specific."
+    },
+    {
+      "name": "Meta-21",
+      "prompt": "Identify the sentence with the adjective order following the typical English word order: noun, modifier (adjective), specifier (adjective), descriptor (adjective)."
+    },
+    {
+      "name": "Meta-22",
+      "prompt": "Identify the sentence with adjectives in the standard English order (usually subject-adjective, verb-adjective, or article-adjective) from the given options."
+    },
+    {
+      "name": "Meta-23",
+      "prompt": "Arrange the adjectives in each sentence in the order of their scope or modification, from most general to most specific."
+    },
+    {
+      "name": "Meta-24",
+      "prompt": "Modify the adjective to the noun it modifies in the order in which they are mentioned in the sentence."
+    },
+    {
+      "name": "Meta-25",
+      "prompt": "Identify the sentence with the adjective order that follows the typical English language pattern of modifying nouns in a specific order (e.g., size, shape, color, material, origin)."
+    },
+    {
+      "name": "Meta-26",
+      "prompt": "Arrange the adjectives in the sentence in the order of their semantic relationship to the noun they modify."
+    },
+    {
+      "name": "Meta-27",
+      "prompt": "Identify the sentence with the adjective order that follows the natural language ordering of adjectives in English."
+    },
+    {
+      "name": "Meta-28",
+      "prompt": "Determine the correct adjective order by placing adjectives in their natural order of importance and specificity, with more general adjectives (e.g. big) preceding more specific adjectives (e.g. midsize), and adjectives describing material or nationality preceding adjectives describing appearance or action."
+    },
+    {
+      "name": "Meta-29",
+      "prompt": "Identify the sentence with the adjective order that follows the typical English word order of \"article-adjective-noun\"."
+    },
+    {
+      "name": "Meta-30",
+      "prompt": "Determine the correct adjective order for the given sentence options by following the standard English adjective placement rules."
+    },
+    {
+      "name": "Meta-31",
+      "prompt": "Identify the sentence with the correct adjective order, where adjectives typically precede the noun they modify, and in English, the order is generally \"opportune, size, color, material, origin, nationality, and other modifying characteristics\"."
+    },
+    {
+      "name": "Meta-32",
+      "prompt": "Identify the sentence with the adjectives in the correct order, typically in the sequence of opinion, size, shape, age, color, nationality, and material."
+    },
+    {
+      "name": "Meta-33",
+      "prompt": "Arrange the adjectives in the sentence according to the typical English word order for adjectives in noun phrases."
+    },
+    {
+      "name": "Meta-34",
+      "prompt": "Arrange the adjectives in each option in the order that a native English speaker would typically use."
+    },
+    {
+      "name": "Meta-35",
+      "prompt": "Determine the correct adjective order by identifying the modifier and the modified noun, and placing the adjective closest to the modified noun."
+    },
+    {
+      "name": "Meta-36",
+      "prompt": "Identify the sentence with adjectives in the correct order of quantity, size, color, origin, material, and activity."
+    },
+    {
+      "name": "Meta-37",
+      "prompt": "Modify the sentence to follow the typical English adjective order: largest to smallest, most specific to most general."
+    },
+    {
+      "name": "Meta-38",
+      "prompt": "Identify the option with the adjectives in the order of specificity."
+    },
+    {
+      "name": "Meta-39",
+      "prompt": "Place the adjectives in the sentence in the order of their modification, with the most specific or descriptive adjectives closest to the noun."
+    },
+    {
+      "name": "Meta-40",
+      "prompt": "Identify the sentence with the adjective order that follows the typical English word order of modifying nouns in a logical and readable sequence."
+    },
+    {
+      "name": "Meta-41",
+      "prompt": "Determine the most natural word order by applying the English adjective-noun order rule: adjectives in the order of opinion-size-age-color-origin-material-type."
+    },
+    {
+      "name": "Meta-42",
+      "prompt": "Arrange the adjectives in the sentence to follow the typical English order: opinion, size, shape, age, color, origin, material, and action."
+    },
+    {
+      "name": "Meta-43",
+      "prompt": "Order the adjectives in each sentence according to their relative importance and natural flow."
+    },
+    {
+      "name": "Meta-44",
+      "prompt": "Identify the sentence with the adjectives in the correct order of importance and relevance."
+    },
+    {
+      "name": "Meta-45",
+      "prompt": "Identify the sentence with the adjective order that most closely follows the typical English adjective-noun word order."
+    },
+    {
+      "name": "Meta-46",
+      "prompt": "Arrange the adjectives in the sentence to follow the typical English word order of \"biggest, biggest, brightest,...\" where the order reflects the order of modifying the noun."
+    },
+    {
+      "name": "Meta-47",
+      "prompt": "Identify the sentence with the adjective order that follows the typical English word order: [article] [adjective] [noun] [adjective] [noun]."
+    },
+    {
+      "name": "Meta-48",
+      "prompt": "Arrange the adjectives in each sentence according to their inherent order of degree, with the most specific or distinctive descriptor coming first and the most general or common descriptor coming last."
+    },
+    {
+      "name": "Meta-49",
+      "prompt": "Identify the sentence with the adjectives in their typical order from most general to most specific."
+    },
+    {
+      "name": "Meta-50",
+      "prompt": "Identify the sentence with the adjectives in the correct order, typically following the sequence of opinion, size, shape, color, origin, material."
+    },
+    {
+      "name": "Meta-51",
+      "prompt": "Arrange the adjectives in the sentence to follow a consistent order of modification, typically from general to specific."
+    },
+    {
+      "name": "Meta-52",
+      "prompt": "Identify the sentence with adjectives in their typical English order: noun-qualifier1-qualifier2..."
+    },
+    {
+      "name": "Meta-53",
+      "prompt": "Determine the correct adjective order by identifying the typical default order for English adjectives and adjusting as necessary to ensure the sentence is clear and unambiguous."
+    },
+    {
+      "name": "Meta-54",
+      "prompt": "Identify the sentence with the adjectives in the correct order of increasing specificity."
+    },
+    {
+      "name": "Meta-55",
+      "prompt": "Determine the correct adjective order by applying the rule that adjectives modifying a noun are typically listed in order of specificity, with more general adjectives coming before more specific ones."
+    },
+    {
+      "name": "Meta-56",
+      "prompt": "Identify the sentence with the adjective modifiers in the most natural and typical order for the English language."
+    },
+    {
+      "name": "Meta-57",
+      "prompt": "Order the adjectives in each sentence to follow the typical English adjective order."
+    },
+    {
+      "name": "Meta-58",
+      "prompt": "Identify the sentence with adjectives in the correct order, typically following the pattern \"determiner-adjective-noun\"."
+    },
+    {
+      "name": "Meta-59",
+      "prompt": "Determine the correct adjective order by identifying the language's typical adjective modification pattern and applying it to the given options."
+    },
+    {
+      "name": "Meta-60",
+      "prompt": "Modify the sentence by moving adjectives closer to the noun they modify, while maintaining the original sentence's meaning."
+    },
+    {
+      "name": "Meta-61",
+      "prompt": "Determine the correct adjective order by rearranging the options to follow the typical English pattern of modifying nouns in the order of size, color, material, and then national origin."
+    },
+    {
+      "name": "Meta-62",
+      "prompt": "Arrange the adjectives in each option in the order of general specificity to specific detail."
+    },
+    {
+      "name": "Meta-63",
+      "prompt": "Identify the sentence with the most logical adjective order, assuming English sentence structure and word order conventions."
+    },
+    {
+      "name": "Meta-64",
+      "prompt": "Determine the correct order of adjectives in each sentence by placing them in the order of their significance, specificity, and proximity to the noun they modify."
+    },
+    {
+      "name": "Meta-65",
+      "prompt": "Arrange the adjectives in each sentence in the most logical and grammatically correct order."
+    },
+    {
+      "name": "Meta-66",
+      "prompt": "Determine the correct adjective order by placing the most specific adjectives closest to the noun they modify."
+    },
+    {
+      "name": "Meta-67",
+      "prompt": "Determine the sentence with the adjectives in the standard English order of largest to smallest scope."
+    },
+    {
+      "name": "Meta-68",
+      "prompt": "Modify the sentence to adhere to the typical adjective order in English, from most general to most specific."
+    },
+    {
+      "name": "Meta-69",
+      "prompt": "Arrange the adjectives in each sentence in the typical English order of opinion, size, shape, age, color, nationality, occupation, and material."
+    },
+    {
+      "name": "Meta-70",
+      "prompt": "Identify the sentence with the adjectives in the standard order: noun-adjective-adjective-adjective..."
+    },
+    {
+      "name": "Meta-71",
+      "prompt": "Order the adjectives in the sentence to follow the typical English word order: noun, adjective 1, adjective 2, adjective 3, ..."
+    },
+    {
+      "name": "Meta-72",
+      "prompt": "Identify the sentence with the adjective order following the typical English word order of \"adjective-noun\" or \"adjective-adjective-noun\"."
+    },
+    {
+      "name": "Meta-73",
+      "prompt": "Determine the correct adjective order in the given sentence options by prioritizing the order of the adjectives in English, with adjectives that describe size, color, and nationality typically appearing in that order."
+    },
+    {
+      "name": "Meta-74",
+      "prompt": "Order the adjectives in the sentence to follow the typical word order in English, with the most specific descriptor first and the most general last."
+    },
+    {
+      "name": "Meta-75",
+      "prompt": "Determine the correct adjective order by identifying the most specific or descriptive adjective and placing it closest to the noun it modifies."
+    },
+    {
+      "name": "Meta-76",
+      "prompt": "Determine the correct adjective order in the sentence by arranging the adjectives in the order of their semantic scope from broadest to most specific."
+    },
+    {
+      "name": "Meta-77",
+      "prompt": "Identify the sentence with the adjective order that follows the typical English word order of modifying nouns with descriptors in the order: type, size, color, origin, material."
+    },
+    {
+      "name": "Meta-78",
+      "prompt": "Order the adjectives in the sentence according to the typical word order in English, with attributive adjectives in the order: opinion, size, shape, color, material, origin, purpose."
+    },
+    {
+      "name": "Meta-79",
+      "prompt": "Determine the most logical order of adjectives in the sentence, typically following the pattern: size, shape, color, origin, material, etc."
+    },
+    {
+      "name": "Meta-80",
+      "prompt": "Identify the sentence with the most natural word order, where adjectives are placed in a logical sequence to modify the noun."
+    },
+    {
+      "name": "Meta-81",
+      "prompt": "Determine the sentence with the adjectives in the correct order, typically following the pattern: opinion-size-color-origin-material-purpose."
+    },
+    {
+      "name": "Meta-82",
+      "prompt": "Arrange the adjectives in each option in the order of their semantic scope or generality, from most general to most specific."
+    },
+    {
+      "name": "Meta-83",
+      "prompt": "Arrange the adjectives in each option in the order of their grammatical function, typically: opinion > physical > national > size > material > color > activity."
+    },
+    {
+      "name": "Meta-84",
+      "prompt": "Determine the correct adjective order by following the typical English word order: article-adjective-noun."
+    },
+    {
+      "name": "Meta-85",
+      "prompt": "Modify the sentence to maintain the order: Adjective-Noun-Adverb-Adjective."
+    },
+    {
+      "name": "Meta-86",
+      "prompt": "Identify the sentence with adjectives in the correct order, typically following the pattern \"noun-adjective-adjective...\" in English."
+    },
+    {
+      "name": "Meta-87",
+      "prompt": "Arrange the adjectives in the sentence according to the typical English word order of adjective types: descriptive, size, origin, material, and manner."
+    },
+    {
+      "name": "Meta-88",
+      "prompt": "Determine the sentence with the adjectives in the order of most general to most specific."
+    },
+    {
+      "name": "Meta-89",
+      "prompt": "Determine the correct adjective order by arranging adjectives in a consistent sequence, typically in the order of opinion, size, shape, color, origin, and material."
+    },
+    {
+      "name": "Meta-90",
+      "prompt": "Identify the sentence with the adjective order following the typical English pattern of largest to smallest or most general to most specific."
+    },
+    {
+      "name": "Meta-91",
+      "prompt": "Arrange the adjectives in each sentence to follow the typical English word order of adjective-noun, modifying the noun most closely in meaning with the most specific information first."
+    },
+    {
+      "name": "Meta-92",
+      "prompt": "Determine the correct order of adjectives in each sentence by placing the largest, most general descriptors first, followed by the smallest, most specific descriptors."
+    },
+    {
+      "name": "Meta-93",
+      "prompt": "Arrange the adjectives in the sentence to follow the typical order of quantity, color, origin, and other attributes."
+    },
+    {
+      "name": "Meta-94",
+      "prompt": "Determine the sentence with the adjective order that follows the typical English word order, where adjectives modifying the same noun appear in a consistent order."
+    },
+    {
+      "name": "Meta-95",
+      "prompt": "Identify the sentence with the adjectives in the most logical and natural order, typically in the order of: opinion > size > shape > color > origin > material > purpose > activity."
+    },
+    {
+      "name": "Meta-96",
+      "prompt": "Determine the correct adjective order by following the typical English word order: noun, adjective (in the order of general to specific)."
+    },
+    {
+      "name": "Meta-97",
+      "prompt": "Determine the sentence with the adjective order that follows the typical English word order of modifying nouns with adjectives in a specific sequence, typically \"opinion-size-age-shape-color-origin-material-purpose\"."
+    },
+    {
+      "name": "Meta-98",
+      "prompt": "Identify the sentence with the adjectives in the order: descriptive noun modifier, size/quantity modifier, nationality modifier, material modifier."
+    },
+    {
+      "name": "Meta-99",
+      "prompt": "Determine the correct adjective order by prioritizing adjectives modifying size, nationality, and color in that order."
+    },
+    {
+      "name": "Meta-100",
+      "prompt": "Determine the correct adjective order in each sentence by prioritizing modifiers in the order they appear in the sentence, but swap positions if the noun is modified by more than two adjectives."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "task_name": "tracking_shuffled_objects_five_objects",
+  "stats": {
+    "num_points": 10,
+    "pearson": 0.5108040725803091,
+    "spearman": 0.6142443429164636,
+    "train_mean": 0.472,
+    "test_mean": 0.41,
+    "train_std": 0.06462197768561405,
+    "test_std": 0.05513619500836089
+  },
+  "records": [
+    {
+      "method_name": "Meta-01",
+      "train_accuracy": 0.42,
+      "test_accuracy": 0.39,
+      "train_correct": 21,
+      "train_total": 50,
+      "test_correct": 39,
+      "test_total": 100,
+      "prompt": "Keep track of the partners each dancer has and the partner changes that occur, then determine who Alice is dancing with at the end of the dance."
+    },
+    {
+      "method_name": "Meta-02",
+      "train_accuracy": 0.44,
+      "test_accuracy": 0.36,
+      "train_correct": 22,
+      "train_total": 50,
+      "test_correct": 36,
+      "test_total": 100,
+      "prompt": "Determine the final partner of a specific dancer by tracing the sequence of partner switches throughout the song."
+    },
+    {
+      "method_name": "Meta-03",
+      "train_accuracy": 0.46,
+      "test_accuracy": 0.34,
+      "train_correct": 23,
+      "train_total": 50,
+      "test_correct": 34,
+      "test_total": 100,
+      "prompt": "Track the sequence of partner switches to determine the final partner of each dancer."
+    },
+    {
+      "method_name": "Meta-04",
+      "train_accuracy": 0.44,
+      "test_accuracy": 0.4,
+      "train_correct": 22,
+      "train_total": 50,
+      "test_correct": 40,
+      "test_total": 100,
+      "prompt": "Follow the sequence of partner switches to determine the final dance partner of each dancer."
+    },
+    {
+      "method_name": "Meta-05",
+      "train_accuracy": 0.4,
+      "test_accuracy": 0.35,
+      "train_correct": 20,
+      "train_total": 50,
+      "test_correct": 35,
+      "test_total": 100,
+      "prompt": "Determine the final dance partner of a given dancer by tracking the sequence of partner switches, starting from the initial partner."
+    },
+    {
+      "method_name": "Meta-06",
+      "train_accuracy": 0.44,
+      "test_accuracy": 0.44,
+      "train_correct": 22,
+      "train_total": 50,
+      "test_correct": 44,
+      "test_total": 100,
+      "prompt": "Keep track of the sequence of partner changes to determine the final partner of each dancer."
+    },
+    {
+      "method_name": "Meta-07",
+      "train_accuracy": 0.48,
+      "test_accuracy": 0.53,
+      "train_correct": 24,
+      "train_total": 50,
+      "test_correct": 53,
+      "test_total": 100,
+      "prompt": "Keep track of the partners each dancer has after each pair of dancers switches partners."
+    },
+    {
+      "method_name": "Meta-08",
+      "train_accuracy": 0.52,
+      "test_accuracy": 0.41,
+      "train_correct": 26,
+      "train_total": 50,
+      "test_correct": 41,
+      "test_total": 100,
+      "prompt": "Follow the sequence of partner swaps to determine the final partner of each dancer."
+    },
+    {
+      "method_name": "Meta-09",
+      "train_accuracy": 0.48,
+      "test_accuracy": 0.41,
+      "train_correct": 24,
+      "train_total": 50,
+      "test_correct": 41,
+      "test_total": 100,
+      "prompt": "Determine the final partner of a given dancer by tracking the sequence of partner swaps throughout the song."
+    },
+    {
+      "method_name": "Meta-10",
+      "train_accuracy": 0.64,
+      "test_accuracy": 0.47,
+      "train_correct": 32,
+      "train_total": 50,
+      "test_correct": 47,
+      "test_total": 100,
+      "prompt": "Follow the sequence of partner swaps to determine the final partner of the person who was initially dancing with a given person."
+    }
+  ]
+}

@@ -1,0 +1,2779 @@
+{
+  "task_name": "movie_recommendation",
+  "generated_at": "2026-03-05 00:31:20",
+  "generation_config": {
+    "model_path": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "conversation_template": "llama-3",
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "max_tokens": 96,
+    "num_examples": 3,
+    "requested_num_prompts": 1000,
+    "actual_num_prompts": 690,
+    "generation_batch_size_cap": 128,
+    "generation_max_rounds": 6
+  },
+  "meta_prompt_request": "You are creating a single instruction prompt for a reasoning task named 'movie_recommendation'.\nInfer the task behavior from the input/output examples below.\nWrite exactly one concise instruction that helps solve this task.\nOutput only the instruction text. Do not output numbering, quotes, or explanations.\n\nExamples:\nInput: Find a movie similar to Batman, The Mask, The Fugitive, Pretty Woman:\nOptions:\n(A) The Front Page\n(B) Maelstrom\n(C) The Lion King\n(D) Lamerica.\nOutput: C\n\nInput: Find a movie similar to The Sixth Sense, The Matrix, Forrest Gump, The Shawshank Redemption:\nOptions:\n(A) Street Fighter II The Animated Movie\n(B) The Sheltering Sky\n(C) The Boy Who Could Fly\n(D) Terminator 2 Judgment Day.\nOutput: D\n\nInput: Find a movie similar to Schindler's List, Braveheart, The Silence of the Lambs, Tombstone:\nOptions:\n(A) Orlando\n(B) Guilty of Romance\n(C) Forrest Gump\n(D) All the Real Girls.\nOutput: C\n\nInstruction:",
+  "prompts": [
+    {
+      "name": "Meta-01",
+      "prompt": "Identify the movie that is most closely related to the given set of movies."
+    },
+    {
+      "name": "Meta-02",
+      "prompt": "Identify the movie with the most common genre or theme among the input movies."
+    },
+    {
+      "name": "Meta-03",
+      "prompt": "Find the movie that is most likely to be recommended by a person who enjoys a group of movies, among the given options."
+    },
+    {
+      "name": "Meta-04",
+      "prompt": "Find the movie that is most likely to be recommended based on the given movie titles."
+    },
+    {
+      "name": "Meta-05",
+      "prompt": "Identify the movie that is most likely to be recommended based on the provided options, considering the similarity in themes, genres, or styles among the input movies."
+    },
+    {
+      "name": "Meta-06",
+      "prompt": "Choose the movie that is most likely to appeal to fans of the given movie titles."
+    },
+    {
+      "name": "Meta-07",
+      "prompt": "Find a movie that shares a common theme or genre with the listed movies."
+    },
+    {
+      "name": "Meta-08",
+      "prompt": "Find the movie that is most likely to be recommended based on the provided list of movies."
+    },
+    {
+      "name": "Meta-09",
+      "prompt": "Identify the movie that is most likely to be similar in genre or style to the listed movies."
+    },
+    {
+      "name": "Meta-10",
+      "prompt": "Identify the movie from the given list that is most commonly classified in the same genre or category as the provided movies."
+    },
+    {
+      "name": "Meta-11",
+      "prompt": "Find the movie option that is most likely to be a blockbuster or a critically acclaimed film."
+    },
+    {
+      "name": "Meta-12",
+      "prompt": "Identify the movie that shares similar themes or genres with the given movie list."
+    },
+    {
+      "name": "Meta-13",
+      "prompt": "Select the movie option that is most closely associated with one or more of the given movie titles."
+    },
+    {
+      "name": "Meta-14",
+      "prompt": "Identify the movie that is most similar in genre to the provided movie list."
+    },
+    {
+      "name": "Meta-15",
+      "prompt": "Identify the common themes or genres among the given movies and choose the option that best fits these characteristics."
+    },
+    {
+      "name": "Meta-16",
+      "prompt": "Find a movie that shares common genres or themes with the given movies."
+    },
+    {
+      "name": "Meta-17",
+      "prompt": "Identify the movie that shares similar themes or genres with the given list of movies."
+    },
+    {
+      "name": "Meta-18",
+      "prompt": "Find a movie that shares a common theme, genre, or tone with the given movies."
+    },
+    {
+      "name": "Meta-19",
+      "prompt": "Select the movie option that is most similar in genre or theme to the given movie titles."
+    },
+    {
+      "name": "Meta-20",
+      "prompt": "Find the movie option that is most likely to be recommended based on the shared genre or themes among the given movie titles."
+    },
+    {
+      "name": "Meta-21",
+      "prompt": "Find the movie that is most likely to be of interest to someone who likes the listed movies."
+    },
+    {
+      "name": "Meta-22",
+      "prompt": "Identify the movie that is most closely related to the given movies by analyzing their genres, themes, and directors."
+    },
+    {
+      "name": "Meta-23",
+      "prompt": "Identify the movie that is most similar in genre to the given movies."
+    },
+    {
+      "name": "Meta-24",
+      "prompt": "Identify the movie that is most closely associated with the given group of movies."
+    },
+    {
+      "name": "Meta-25",
+      "prompt": "Find the movie that is most likely to appeal to fans of the listed movies."
+    },
+    {
+      "name": "Meta-26",
+      "prompt": "Find a movie that is commonly associated with the same genres or themes as the input movies."
+    },
+    {
+      "name": "Meta-27",
+      "prompt": "Identify the most popular or critically acclaimed movie among the given options that is similar in genre, theme, or style to the listed movies."
+    },
+    {
+      "name": "Meta-28",
+      "prompt": "Identify the movie that is most likely to be recommended based on the given options, considering the genres, tones, and themes of the input movies."
+    },
+    {
+      "name": "Meta-29",
+      "prompt": "Identify the movie that is most similar in genre or tone to the listed movies."
+    },
+    {
+      "name": "Meta-30",
+      "prompt": "Identify the movie that is most commonly associated with the genres or themes of the input movies."
+    },
+    {
+      "name": "Meta-31",
+      "prompt": "Select the movie option that is most likely to be similar in genre or theme to the listed movies."
+    },
+    {
+      "name": "Meta-32",
+      "prompt": "Identify the movie that is most similar in genre and theme to the listed movies."
+    },
+    {
+      "name": "Meta-33",
+      "prompt": "Find the movie that is most closely associated with a genre or theme common to the given movies."
+    },
+    {
+      "name": "Meta-34",
+      "prompt": "Identify the movie that is most closely related to the given movies based on their genres, themes, or directorial styles."
+    },
+    {
+      "name": "Meta-35",
+      "prompt": "Identify the movie that is most likely to be similar in genre or tone to the given set of movies."
+    },
+    {
+      "name": "Meta-36",
+      "prompt": "Find the movie option that is most likely to be recommended based on a similarity in genre, tone, or style with the given movie titles."
+    },
+    {
+      "name": "Meta-37",
+      "prompt": "Find the movie that is most likely to be enjoyed by fans of the listed movies."
+    },
+    {
+      "name": "Meta-38",
+      "prompt": "Find the movie that is most likely to be similar in genre or style to the given movies."
+    },
+    {
+      "name": "Meta-39",
+      "prompt": "Find a movie from the options that is similar in genre or tone to the given list of movies."
+    },
+    {
+      "name": "Meta-40",
+      "prompt": "Find the movie option that is most likely to be similar in genre or theme to the given movies."
+    },
+    {
+      "name": "Meta-41",
+      "prompt": "Identify the movie that is most closely related to the given movie recommendations by finding the common theme or genre among the options."
+    },
+    {
+      "name": "Meta-42",
+      "prompt": "Identify the movie that has the most common themes or genres with the given movies."
+    },
+    {
+      "name": "Meta-43",
+      "prompt": "Select the movie from the options that is most likely to be similar in genre or theme to the given movies."
+    },
+    {
+      "name": "Meta-44",
+      "prompt": "Identify the most popular or critically acclaimed movie among the given options that shares a similar theme, genre, or tone with the provided list of movies."
+    },
+    {
+      "name": "Meta-45",
+      "prompt": "Identify the movie that best matches the genre and style of the given movie recommendations."
+    },
+    {
+      "name": "Meta-46",
+      "prompt": "Identify the movie that has the most common themes or genres among the listed options, based on the input movies."
+    },
+    {
+      "name": "Meta-47",
+      "prompt": "Identify the movie that is most closely related to the input movies in terms of genre or theme."
+    },
+    {
+      "name": "Meta-48",
+      "prompt": "Identify the movie that is most similar in theme, genre, or style to the given list of movies."
+    },
+    {
+      "name": "Meta-49",
+      "prompt": "Find the movie that is most likely to be recommended by a user who likes a selection of movies."
+    },
+    {
+      "name": "Meta-50",
+      "prompt": "Find the movie that is most commonly found in the same genre or has similar themes and elements as the listed movies."
+    },
+    {
+      "name": "Meta-51",
+      "prompt": "Find the movie from the given options that is most likely to be similar in genre or style to the listed movies."
+    },
+    {
+      "name": "Meta-52",
+      "prompt": "Choose the movie that is most likely to be enjoyed by someone who has enjoyed at least three of the listed movies."
+    },
+    {
+      "name": "Meta-53",
+      "prompt": "Identify the common genre or theme among the input movies and choose the option that best fits this characteristic."
+    },
+    {
+      "name": "Meta-54",
+      "prompt": "Identify the movie that is most likely to be similar in genre or tone to the given list of movies."
+    },
+    {
+      "name": "Meta-55",
+      "prompt": "Identify the movie that is most likely to be recommended based on the provided list of similar movies."
+    },
+    {
+      "name": "Meta-56",
+      "prompt": "Find a movie that shares a common theme or genre with the given movies."
+    },
+    {
+      "name": "Meta-57",
+      "prompt": "Find the movie that is most likely to be similar in genre or style to the listed movies."
+    },
+    {
+      "name": "Meta-58",
+      "prompt": "Identify the most popular or critically acclaimed movie among the options that matches the genre or theme of the given movies."
+    },
+    {
+      "name": "Meta-59",
+      "prompt": "Identify the movie that shares a common genre or theme with the given list of movies."
+    },
+    {
+      "name": "Meta-60",
+      "prompt": "Find a movie that shares common themes, genres, or elements with the given set of movies."
+    },
+    {
+      "name": "Meta-61",
+      "prompt": "Find the movie that is most likely to be recommended based on the common themes, genres, or styles of the input movies."
+    },
+    {
+      "name": "Meta-62",
+      "prompt": "Find the movie that is most commonly associated with a similar theme, genre, or tone as the input movie(s)."
+    },
+    {
+      "name": "Meta-63",
+      "prompt": "Find the movie that is most commonly associated with the same genres or styles as the listed movies."
+    },
+    {
+      "name": "Meta-64",
+      "prompt": "Find the movie among the options that is most likely to appeal to fans of the given movies."
+    },
+    {
+      "name": "Meta-65",
+      "prompt": "Find a movie from the options that is likely to appeal to the same type of audience as the given movies."
+    },
+    {
+      "name": "Meta-66",
+      "prompt": "Find the movie among the options that is most closely associated with the given movie titles."
+    },
+    {
+      "name": "Meta-67",
+      "prompt": "Identify the movie that is most likely to be chosen as a recommendation based on the common theme or genre among the input movies."
+    },
+    {
+      "name": "Meta-68",
+      "prompt": "Find the movie that is most closely associated with the group of movies provided as a similar theme or style."
+    },
+    {
+      "name": "Meta-69",
+      "prompt": "Identify the common theme or genre among the listed movies and select the option that best fits this theme."
+    },
+    {
+      "name": "Meta-70",
+      "prompt": "Find the movie that is most likely to be enjoyed by someone who has watched the given movie(s)."
+    },
+    {
+      "name": "Meta-71",
+      "prompt": "Identify the movie that is most likely to be similar in genre, style, or themes to the listed movies."
+    },
+    {
+      "name": "Meta-72",
+      "prompt": "Identify the movie that is most likely to share a similar theme, genre, or style among the given options."
+    },
+    {
+      "name": "Meta-73",
+      "prompt": "Select the movie option that is most similar to the given movie list in terms of genre or theme."
+    },
+    {
+      "name": "Meta-74",
+      "prompt": "Find a movie that is similar in genre or style to the given list of movies."
+    },
+    {
+      "name": "Meta-75",
+      "prompt": "Find the movie that is most likely to be recommended by a person who has liked the given list of movies."
+    },
+    {
+      "name": "Meta-76",
+      "prompt": "Identify the movie with the most genres or themes in common with the given list of movies."
+    },
+    {
+      "name": "Meta-77",
+      "prompt": "Choose the movie that is most likely to be enjoyed by fans of the listed movies."
+    },
+    {
+      "name": "Meta-78",
+      "prompt": "Select the movie that is most likely to be enjoyed by someone who likes the given movies."
+    },
+    {
+      "name": "Meta-79",
+      "prompt": "Find the movie that has been most frequently released as a film genre or franchise alongside the listed movies."
+    },
+    {
+      "name": "Meta-80",
+      "prompt": "Identify the movie that is most likely to be recommended based on the given list of similar movies."
+    },
+    {
+      "name": "Meta-81",
+      "prompt": "Choose the movie from the options that is most likely to appeal to fans of all the movies listed."
+    },
+    {
+      "name": "Meta-82",
+      "prompt": "Select the movie from the options that is most likely to be enjoyed by someone who likes at least two movies in the given list."
+    },
+    {
+      "name": "Meta-83",
+      "prompt": "Find the movie that is most closely associated with the given movie list."
+    },
+    {
+      "name": "Meta-84",
+      "prompt": "Identify the movie that best matches the genre and tone of the given list of movies."
+    },
+    {
+      "name": "Meta-85",
+      "prompt": "Identify the most common genre among the given movie options that matches the genre of the listed movies."
+    },
+    {
+      "name": "Meta-86",
+      "prompt": "Identify the movie that is most closely related to the provided list of movies in terms of genre or tone."
+    },
+    {
+      "name": "Meta-87",
+      "prompt": "Identify the movie that is most closely associated with the specified genre or themes."
+    },
+    {
+      "name": "Meta-88",
+      "prompt": "Find the movie from the given options that has the most thematic or stylistic similarities with the listed movies."
+    },
+    {
+      "name": "Meta-89",
+      "prompt": "Identify the movie with the most common genre or theme among the given options that best matches the genres or themes of the input movies."
+    },
+    {
+      "name": "Meta-90",
+      "prompt": "Identify the genre or theme common among the given movies and select the option that is most closely related."
+    },
+    {
+      "name": "Meta-91",
+      "prompt": "Find the movie from the options that is most likely to be similar in genre or tone to the provided list of movies."
+    },
+    {
+      "name": "Meta-92",
+      "prompt": "Choose the movie that is most likely to appeal to fans of the given movies."
+    },
+    {
+      "name": "Meta-93",
+      "prompt": "Identify the movie that best matches the themes and styles of the given movies."
+    },
+    {
+      "name": "Meta-94",
+      "prompt": "Identify the movie that is most likely to be recommended based on the given options."
+    },
+    {
+      "name": "Meta-95",
+      "prompt": "Identify the movie from the options that is most likely to be similar in genre or tone to the given movie list."
+    },
+    {
+      "name": "Meta-96",
+      "prompt": "Find a movie from the options that is most closely related in genre or theme to the given movies."
+    },
+    {
+      "name": "Meta-97",
+      "prompt": "Identify the movie that is most similar in genre or tone to the given movies."
+    },
+    {
+      "name": "Meta-98",
+      "prompt": "Find the movie from the given options that is most commonly associated with the genres, directors, or styles of the input movies."
+    },
+    {
+      "name": "Meta-99",
+      "prompt": "Choose the movie from the options that has the most in common with the given list of movies in terms of genre, style, or tone."
+    },
+    {
+      "name": "Meta-100",
+      "prompt": "Identify the movie that is most closely associated with the theme or genre of the given movies."
+    },
+    {
+      "name": "Meta-101",
+      "prompt": "Select the movie that is most closely related in genre and tone to the given movie recommendations."
+    },
+    {
+      "name": "Meta-102",
+      "prompt": "Find a movie with a similar tone or genre to the given list of movies."
+    },
+    {
+      "name": "Meta-103",
+      "prompt": "Find the movie that is most closely associated with the provided set of movies."
+    },
+    {
+      "name": "Meta-104",
+      "prompt": "Find a movie from the options that is most likely to be enjoyed by someone who likes at least two of the given movies."
+    },
+    {
+      "name": "Meta-105",
+      "prompt": "Find a movie from the options that is most closely associated with the given movies in terms of genre, style, or theme."
+    },
+    {
+      "name": "Meta-106",
+      "prompt": "Select the movie option that shares a common theme or genre with the given movies."
+    },
+    {
+      "name": "Meta-107",
+      "prompt": "Find the movie from the options that is most similar in genre or tone to the given movies."
+    },
+    {
+      "name": "Meta-108",
+      "prompt": "Find a movie that is similar to the given set of movies."
+    },
+    {
+      "name": "Meta-109",
+      "prompt": "Identify the movie that best fits the style or genre of the listed movies."
+    },
+    {
+      "name": "Meta-110",
+      "prompt": "Identify the movie that shares the most common genres or themes with the given list of movies."
+    },
+    {
+      "name": "Meta-111",
+      "prompt": "Identify the movie that is most closely associated with a theme or genre common to all the given movies."
+    },
+    {
+      "name": "Meta-112",
+      "prompt": "Identify the movie that is most likely to be chosen based on the similarity in genres or themes among the given options."
+    },
+    {
+      "name": "Meta-113",
+      "prompt": "Identify the most popular or critically acclaimed movie among the given options that shares a common theme or genre with the listed movies."
+    },
+    {
+      "name": "Meta-114",
+      "prompt": "Identify the genre or theme common to the given movie titles and select the option that best represents that genre or theme."
+    },
+    {
+      "name": "Meta-115",
+      "prompt": "Find the movie that is most likely to be enjoyed by someone who likes the given movie(s)."
+    },
+    {
+      "name": "Meta-116",
+      "prompt": "Choose the movie that is most similar in genre or tone to the given movie list."
+    },
+    {
+      "name": "Meta-117",
+      "prompt": "Find the movie among the options that is most similar in genre or style to the given movies."
+    },
+    {
+      "name": "Meta-118",
+      "prompt": "Identify the movie that is most similar in genre or theme to the given movies."
+    },
+    {
+      "name": "Meta-119",
+      "prompt": "Select the movie that is most commonly associated with the genre of the given movies."
+    },
+    {
+      "name": "Meta-120",
+      "prompt": "Select the movie that is most likely to be among the preferences of someone who also likes the given movie(s)."
+    },
+    {
+      "name": "Meta-121",
+      "prompt": "Identify the movie that is most commonly associated with the given set of films."
+    },
+    {
+      "name": "Meta-122",
+      "prompt": "Find the movie that is most similar in genre or theme to the given movies."
+    },
+    {
+      "name": "Meta-123",
+      "prompt": "Find the movie that is most commonly associated with the given list of movies."
+    },
+    {
+      "name": "Meta-124",
+      "prompt": "Select the movie that is most likely to be of a similar genre or theme to the given list of movies."
+    },
+    {
+      "name": "Meta-125",
+      "prompt": "Find the movie that is most likely to be similar to the given list of movies."
+    },
+    {
+      "name": "Meta-126",
+      "prompt": "Find a movie from the options that is most likely to appeal to fans of the listed movies."
+    },
+    {
+      "name": "Meta-127",
+      "prompt": "Select the movie option that is most likely to be a psychological thriller or an action film, based on the genre of the given movies."
+    },
+    {
+      "name": "Meta-128",
+      "prompt": "Find the movie among the options that is most commonly associated with the same genres or directors as the given movies."
+    },
+    {
+      "name": "Meta-129",
+      "prompt": "Identify the movie that shares the most common genre with the input movies."
+    },
+    {
+      "name": "Meta-130",
+      "prompt": "Identify the most popular or critically acclaimed movie from the given options that shares a similar genre, style, or theme with the provided list of movies."
+    },
+    {
+      "name": "Meta-131",
+      "prompt": "Identify the movie that is most likely to be recommended based on the input movies."
+    },
+    {
+      "name": "Meta-132",
+      "prompt": "Find the movie from the options that is most closely related to the movies listed in the input."
+    },
+    {
+      "name": "Meta-133",
+      "prompt": "Identify the movie that is most closely associated with the given set of movies based on their common themes, genres, or directors."
+    },
+    {
+      "name": "Meta-134",
+      "prompt": "Identify the movie from the list of options that is most similar in genre or theme to the given movies."
+    },
+    {
+      "name": "Meta-135",
+      "prompt": "Find the movie among the options that shares a similar theme or genre with the listed movies."
+    },
+    {
+      "name": "Meta-136",
+      "prompt": "Identify the movie that is most likely to be similar to the given set of movies based on their genres and tones."
+    },
+    {
+      "name": "Meta-137",
+      "prompt": "Identify the movie that is most closely associated with the theme, style, or genre of the given movie recommendations."
+    },
+    {
+      "name": "Meta-138",
+      "prompt": "Identify the movie that is most closely related to the provided list of movies."
+    },
+    {
+      "name": "Meta-139",
+      "prompt": "Find the movie among the options that is most closely related in genre or style to the given list of movies."
+    },
+    {
+      "name": "Meta-140",
+      "prompt": "Choose the movie that is most likely to appeal to fans of the input movies based on their genres, styles, and themes."
+    },
+    {
+      "name": "Meta-141",
+      "prompt": "Find the movie that is most likely to be recommended based on the given list of similar movies."
+    },
+    {
+      "name": "Meta-142",
+      "prompt": "Identify the movie that is most likely to be recommended based on the common characteristics and themes of the provided movie titles."
+    },
+    {
+      "name": "Meta-143",
+      "prompt": "Identify the movie that is most closely related to the listed movies in terms of genre or theme."
+    },
+    {
+      "name": "Meta-144",
+      "prompt": "Identify the movie that shares a common theme or genre with the given movies."
+    },
+    {
+      "name": "Meta-145",
+      "prompt": "Identify the movie that is most similar in theme or genre to the given movie(s)."
+    },
+    {
+      "name": "Meta-146",
+      "prompt": "Identify the movie that is most closely related to the listed movies in terms of genre, tone, or style."
+    },
+    {
+      "name": "Meta-147",
+      "prompt": "Identify the movie that is most likely to appeal to fans of the listed movies."
+    },
+    {
+      "name": "Meta-148",
+      "prompt": "Identify the movie that is most closely associated with the listed films based on their genres, themes, or styles."
+    },
+    {
+      "name": "Meta-149",
+      "prompt": "Find the movie that is most likely to be recommended based on the given set of movies."
+    },
+    {
+      "name": "Meta-150",
+      "prompt": "Identify the movie that is most likely to share a genre or theme with the given list of movies."
+    },
+    {
+      "name": "Meta-151",
+      "prompt": "Identify the most popular movie among the given options that is likely to appeal to viewers who enjoyed the listed movies."
+    },
+    {
+      "name": "Meta-152",
+      "prompt": "Choose the movie that is most likely to be appreciated by fans of the movies listed in the prompt."
+    },
+    {
+      "name": "Meta-153",
+      "prompt": "Select the movie that is most likely to be recommended to someone who likes at least two of the given movies."
+    },
+    {
+      "name": "Meta-154",
+      "prompt": "Select the movie that is most likely to be part of the same genre as the given movies."
+    },
+    {
+      "name": "Meta-155",
+      "prompt": "Choose the movie that is most likely to share similar themes, genres, or directors with the listed movies."
+    },
+    {
+      "name": "Meta-156",
+      "prompt": "Find the movie that is most likely to be recommended by a user who has liked the given set of movies."
+    },
+    {
+      "name": "Meta-157",
+      "prompt": "Identify the common movie genre or theme among the input movies and select the option that best fits this genre or theme."
+    },
+    {
+      "name": "Meta-158",
+      "prompt": "Find the movie that is most closely associated with the genre or theme of the given movies."
+    },
+    {
+      "name": "Meta-159",
+      "prompt": "Identify the movie from the given options that shares a common theme or genre with the listed movies."
+    },
+    {
+      "name": "Meta-160",
+      "prompt": "Identify the movie that is most likely to be recommended based on the given list of movies."
+    },
+    {
+      "name": "Meta-161",
+      "prompt": "Identify the common theme or genre among the given movies and select the option that is most closely related to that theme or genre."
+    },
+    {
+      "name": "Meta-162",
+      "prompt": "Identify the movie that shares the most genres or themes with the given movies."
+    },
+    {
+      "name": "Meta-163",
+      "prompt": "Find the movie that is most closely associated with a group of films with a similar genre, theme, or tone."
+    },
+    {
+      "name": "Meta-164",
+      "prompt": "Choose the movie that has the most similarities with the given movies in terms of genre, tone, or themes."
+    },
+    {
+      "name": "Meta-165",
+      "prompt": "Choose the movie that is most commonly associated with the same genre as the listed movies."
+    },
+    {
+      "name": "Meta-166",
+      "prompt": "Find the movie that is most closely associated with the genres, themes, or styles of the given movies."
+    },
+    {
+      "name": "Meta-167",
+      "prompt": "Choose the movie that is most likely to appeal to fans of the listed movies based on their genres, themes, and tone."
+    },
+    {
+      "name": "Meta-168",
+      "prompt": "Identify the genre or themes common among the input movies and select the option that best matches these characteristics."
+    },
+    {
+      "name": "Meta-169",
+      "prompt": "Find the movie among the options that is most likely to appeal to fans of the given movie(s)."
+    },
+    {
+      "name": "Meta-170",
+      "prompt": "Identify the movie that is most likely to share a common theme or genre with the given movies."
+    },
+    {
+      "name": "Meta-171",
+      "prompt": "Find the movie among the options that is most closely associated with the theme or genre of the listed movies."
+    },
+    {
+      "name": "Meta-172",
+      "prompt": "Identify the movie that shares a genre or theme with the given movies."
+    },
+    {
+      "name": "Meta-173",
+      "prompt": "Identify the movie from the list of options that is most similar in theme or genre to the given movies."
+    },
+    {
+      "name": "Meta-174",
+      "prompt": "Select the movie that has been most frequently mentioned as similar to the given movie(s) in popular film criticism and recommendations."
+    },
+    {
+      "name": "Meta-175",
+      "prompt": "Identify the movie that has the most in common with the given list of movies."
+    },
+    {
+      "name": "Meta-176",
+      "prompt": "Find the movie that is most similar in genre to the input movies."
+    },
+    {
+      "name": "Meta-177",
+      "prompt": "Identify the movie that best fits the genre and style of the listed films."
+    },
+    {
+      "name": "Meta-178",
+      "prompt": "Find the movie that is most likely to be enjoyed by someone who appreciates the movies listed as similar."
+    },
+    {
+      "name": "Meta-179",
+      "prompt": "Choose the movie option that is most likely to be in the same genre as the input movies."
+    },
+    {
+      "name": "Meta-180",
+      "prompt": "Identify the movie that is most commonly associated with the given movie suggestions."
+    },
+    {
+      "name": "Meta-181",
+      "prompt": "Choose the movie that is most likely to be similar in genre and theme to the given movie titles."
+    },
+    {
+      "name": "Meta-182",
+      "prompt": "Identify the movie that shares a similar theme or genre with the given movies."
+    },
+    {
+      "name": "Meta-183",
+      "prompt": "Identify the movie that is most likely to be similar in genre, tone, or style to the given list of movies."
+    },
+    {
+      "name": "Meta-184",
+      "prompt": "Identify the movie that has the most similarities in genre or theme with the given movie(s)."
+    },
+    {
+      "name": "Meta-185",
+      "prompt": "Find the movie option that is most similar in genre or style to the listed movies."
+    },
+    {
+      "name": "Meta-186",
+      "prompt": "Identify the movie that is most likely to be similar to the given movies based on their genres and themes."
+    },
+    {
+      "name": "Meta-187",
+      "prompt": "Identify the movie that is most likely to appeal to someone who enjoys the given set of movies."
+    },
+    {
+      "name": "Meta-188",
+      "prompt": "Find the movie that is most closely related to the given list of movies in terms of genre, theme, or style."
+    },
+    {
+      "name": "Meta-189",
+      "prompt": "Choose the movie that is most likely to be recommended based on the given list of movies."
+    },
+    {
+      "name": "Meta-190",
+      "prompt": "Identify the movie that shares a common theme or genre with the listed films."
+    },
+    {
+      "name": "Meta-191",
+      "prompt": "Find the movie that is most likely to be recommended based on the input list of similar movies."
+    },
+    {
+      "name": "Meta-192",
+      "prompt": "Find the movie that is most closely associated with the majority of the listed movies in terms of genre or theme."
+    },
+    {
+      "name": "Meta-193",
+      "prompt": "Find the movie that is most likely to be recommended based on the given movie options."
+    },
+    {
+      "name": "Meta-194",
+      "prompt": "Find the movie option that has the most in common with the given movies in terms of genre or tone."
+    },
+    {
+      "name": "Meta-195",
+      "prompt": "Identify the movie that is most likely to be similar in genre or theme to the given movie(s)."
+    },
+    {
+      "name": "Meta-196",
+      "prompt": "Find the movie that is most closely associated with the given set of movies, based on genre, tone, and style."
+    },
+    {
+      "name": "Meta-197",
+      "prompt": "Find the movie that is most likely to be recommended based on the given list of movies."
+    },
+    {
+      "name": "Meta-198",
+      "prompt": "Identify the movie that is most closely related to the given movie recommendations."
+    },
+    {
+      "name": "Meta-199",
+      "prompt": "Identify the movie that shares a common genre or theme among the given movies."
+    },
+    {
+      "name": "Meta-200",
+      "prompt": "Identify the movie that shares the most common genre with the given movies."
+    },
+    {
+      "name": "Meta-201",
+      "prompt": "Identify the common genre or theme among the given movies and select the option that best represents this shared characteristic."
+    },
+    {
+      "name": "Meta-202",
+      "prompt": "Select the movie from the options that is most closely associated with the given list of movies."
+    },
+    {
+      "name": "Meta-203",
+      "prompt": "Find the movie that is most likely to appeal to fans of the given movie(s)."
+    },
+    {
+      "name": "Meta-204",
+      "prompt": "Choose the movie that has the most genre and/or style overlap with the given movies."
+    },
+    {
+      "name": "Meta-205",
+      "prompt": "Identify the most popular movie from the given options that is often associated with the same genre or themes as the mentioned movies."
+    },
+    {
+      "name": "Meta-206",
+      "prompt": "Find a movie from the options that is likely to be enjoyed by someone who enjoys the movies listed in the input."
+    },
+    {
+      "name": "Meta-207",
+      "prompt": "Identify the movie that is most closely associated with the listed movies based on its genre and tone."
+    },
+    {
+      "name": "Meta-208",
+      "prompt": "Identify the most popular movie from the given options that shares similar genres or themes with the input movies."
+    },
+    {
+      "name": "Meta-209",
+      "prompt": "Find the movie that is most likely to be a common favorite among fans of the input movies, based on genre, theme, and/or tone."
+    },
+    {
+      "name": "Meta-210",
+      "prompt": "Identify the most popular movie genre or theme that best matches the given movies and select the option that is most closely associated with that genre or theme."
+    },
+    {
+      "name": "Meta-211",
+      "prompt": "Identify the movie that is most closely related in theme, genre, or style to the listed movies."
+    },
+    {
+      "name": "Meta-212",
+      "prompt": "Identify the movie from the given options that is most likely to be recommended to someone who has enjoyed the listed movies."
+    },
+    {
+      "name": "Meta-213",
+      "prompt": "Identify the most popular or iconic movie among the given options that shares a common genre or theme with the provided movies."
+    },
+    {
+      "name": "Meta-214",
+      "prompt": "Choose the movie that is most likely to be of the same genre as the movies listed."
+    },
+    {
+      "name": "Meta-215",
+      "prompt": "Find the movie among the options that is most commonly associated with the same genres or themes as the given movie list."
+    },
+    {
+      "name": "Meta-216",
+      "prompt": "Find the movie that is most closely associated with the common themes or genres found in the given set of movies."
+    },
+    {
+      "name": "Meta-217",
+      "prompt": "Find the movie that is most likely to be a recommendation based on the common genres or themes among the given movies."
+    },
+    {
+      "name": "Meta-218",
+      "prompt": "Identify the movie from the given options that is most likely to appeal to fans of the listed movies."
+    },
+    {
+      "name": "Meta-219",
+      "prompt": "Identify the most common genre or theme among the given movie titles and choose the option that best fits."
+    },
+    {
+      "name": "Meta-220",
+      "prompt": "Find a movie from the options that is similar in genre or theme to the given movies."
+    },
+    {
+      "name": "Meta-221",
+      "prompt": "Identify the movie that is most likely to share a common genre or theme with the given list of movies."
+    },
+    {
+      "name": "Meta-222",
+      "prompt": "Identify the movie that is most likely to be similar in genre or theme to the listed movies."
+    },
+    {
+      "name": "Meta-223",
+      "prompt": "Identify the movie that is most likely to be a popular or critically acclaimed film, based on the genre and tone of the provided movie list."
+    },
+    {
+      "name": "Meta-224",
+      "prompt": "Identify the movie that best matches the style and genre of the listed films."
+    },
+    {
+      "name": "Meta-225",
+      "prompt": "Identify the movie that is most likely to be a favorite of someone who also likes the given movie suggestions."
+    },
+    {
+      "name": "Meta-226",
+      "prompt": "Identify the movie that shares a common theme or genre with the given list of movies."
+    },
+    {
+      "name": "Meta-227",
+      "prompt": "Find a movie that shares similar themes, genres, or styles with the given movies."
+    },
+    {
+      "name": "Meta-228",
+      "prompt": "Find the movie that is most likely to be recommended to someone who has previously enjoyed the given movies."
+    },
+    {
+      "name": "Meta-229",
+      "prompt": "Find the movie option that is most closely associated with a genre or style shared by the given movies."
+    },
+    {
+      "name": "Meta-230",
+      "prompt": "Choose the movie that is most likely to be similar in genre or style to the given list of movies."
+    },
+    {
+      "name": "Meta-231",
+      "prompt": "Find the movie that is most likely to be on the same genre/style list as the input movies."
+    },
+    {
+      "name": "Meta-232",
+      "prompt": "Choose the movie that is most likely to appeal to fans of the given films, based on shared genres, themes, or styles."
+    },
+    {
+      "name": "Meta-233",
+      "prompt": "Identify the movie that is most closely related in style or genre to the given set of movies."
+    },
+    {
+      "name": "Meta-234",
+      "prompt": "Identify the movie that has the most common genres or themes among the input movies."
+    },
+    {
+      "name": "Meta-235",
+      "prompt": "Select the movie that is most likely to be on a list of popular films with similar themes or genres as the input movies."
+    },
+    {
+      "name": "Meta-236",
+      "prompt": "Identify the most popular or critically acclaimed movie from the given options that best matches the tone, genre, or themes of the listed movies."
+    },
+    {
+      "name": "Meta-237",
+      "prompt": "Choose the movie that is most commonly associated with a genre, theme, or style shared by the listed movies."
+    },
+    {
+      "name": "Meta-238",
+      "prompt": "Identify the movie that is most similar in genre and tone to the listed movies."
+    },
+    {
+      "name": "Meta-239",
+      "prompt": "Choose the movie that is most likely to appeal to fans of the listed films."
+    },
+    {
+      "name": "Meta-240",
+      "prompt": "Find the movie among the options that is most likely to appeal to fans of the listed movie(s)."
+    },
+    {
+      "name": "Meta-241",
+      "prompt": "Find the movie that is most likely to be a correct recommendation based on the given movie suggestions."
+    },
+    {
+      "name": "Meta-242",
+      "prompt": "Find the movie that is most likely to be recommended based on the common genres or themes of the input movies."
+    },
+    {
+      "name": "Meta-243",
+      "prompt": "Identify the movie that is most closely associated with the common theme or genre among the given movie titles."
+    },
+    {
+      "name": "Meta-244",
+      "prompt": "Find the movie that is most closely associated with the genre or themes of the input movies."
+    },
+    {
+      "name": "Meta-245",
+      "prompt": "Select the movie that is most closely associated with a theme or genre commonly found among the given movie titles."
+    },
+    {
+      "name": "Meta-246",
+      "prompt": "Identify the movie that is most closely related in genre or theme to the listed movies."
+    },
+    {
+      "name": "Meta-247",
+      "prompt": "Find the movie option that is most likely to be of the same genre as the listed movies."
+    },
+    {
+      "name": "Meta-248",
+      "prompt": "Select the movie that is most likely to be similar in theme, genre, or style to the given set of movies."
+    },
+    {
+      "name": "Meta-249",
+      "prompt": "Identify the common theme or genre among the given movies and select the option that best fits this theme."
+    },
+    {
+      "name": "Meta-250",
+      "prompt": "Identify the movie that has the most in common with the given movie recommendations based on the selected options."
+    },
+    {
+      "name": "Meta-251",
+      "prompt": "Identify the movie that has the most similarities to the listed movies."
+    },
+    {
+      "name": "Meta-252",
+      "prompt": "Choose the movie that is most likely to be enjoyed by fans of the given movies."
+    },
+    {
+      "name": "Meta-253",
+      "prompt": "Choose the movie that is most similar in genre to the listed movies."
+    },
+    {
+      "name": "Meta-254",
+      "prompt": "Identify the movie that shares a common genre or theme among the given options with the input movies."
+    },
+    {
+      "name": "Meta-255",
+      "prompt": "Identify the most popular or critically acclaimed movie among the options that is similar in genre or tone to the input movies."
+    },
+    {
+      "name": "Meta-256",
+      "prompt": "Identify the movie that shares the most common genre with the given list of movies."
+    },
+    {
+      "name": "Meta-257",
+      "prompt": "Identify the movie that is most likely to be recommended based on a set of input movies, considering their genres, themes, and styles."
+    },
+    {
+      "name": "Meta-258",
+      "prompt": "Choose the movie that is most likely to be enjoyed by someone who likes the given set of movies."
+    },
+    {
+      "name": "Meta-259",
+      "prompt": "Identify the movie that is most closely related to the given movie list in terms of genre, style, or theme."
+    },
+    {
+      "name": "Meta-260",
+      "prompt": "Find the movie that is most likely to appeal to someone who enjoyed the given movie(s)."
+    },
+    {
+      "name": "Meta-261",
+      "prompt": "Select the movie option that is most likely to be recommended based on the theme, genre, or tone of the given movie examples."
+    },
+    {
+      "name": "Meta-262",
+      "prompt": "Identify the movie that best matches the genre and style of the given list of movies."
+    },
+    {
+      "name": "Meta-263",
+      "prompt": "Choose the movie from the options that is most likely to appeal to fans of the movies mentioned in the input."
+    },
+    {
+      "name": "Meta-264",
+      "prompt": "Find a movie from the options that is most similar in genre or theme to the given movies."
+    },
+    {
+      "name": "Meta-265",
+      "prompt": "Find the movie that is most likely to appeal to fans of the given movies, based on their genres, themes, or directors."
+    },
+    {
+      "name": "Meta-266",
+      "prompt": "Identify the movie that is most likely to be recommended based on the provided movie options, considering similar themes, genres, and styles."
+    },
+    {
+      "name": "Meta-267",
+      "prompt": "Identify the movie that is most closely associated with the given list of movies in terms of genre, tone, or style."
+    },
+    {
+      "name": "Meta-268",
+      "prompt": "Identify the movie that is most commonly associated with the provided list of films."
+    },
+    {
+      "name": "Meta-269",
+      "prompt": "Find the movie that is most likely to be preferred by a person who has already liked the given movie(s)."
+    },
+    {
+      "name": "Meta-270",
+      "prompt": "Find a movie that shares a common characteristic or theme with the given movies."
+    },
+    {
+      "name": "Meta-271",
+      "prompt": "Identify the movie that has the most similarities with the given set of movies."
+    },
+    {
+      "name": "Meta-272",
+      "prompt": "Find a movie from the options that is also a blockbuster film or a critically acclaimed movie."
+    },
+    {
+      "name": "Meta-273",
+      "prompt": "Identify the movie that shares a genre with the input movies."
+    },
+    {
+      "name": "Meta-274",
+      "prompt": "Choose the movie that has the most similar themes or genres as the ones listed."
+    },
+    {
+      "name": "Meta-275",
+      "prompt": "Identify the movie that is most likely to be a genre-matching choice among the options provided, based on the given movie titles."
+    },
+    {
+      "name": "Meta-276",
+      "prompt": "Identify the most popular or critically acclaimed movie among the listed options that shares similar genres, themes, or elements with the given movies."
+    },
+    {
+      "name": "Meta-277",
+      "prompt": "Choose the movie that is most likely to be enjoyed by someone who likes a combination of movies listed."
+    },
+    {
+      "name": "Meta-278",
+      "prompt": "Identify the movie that is most similar in genre or theme to the listed movies."
+    },
+    {
+      "name": "Meta-279",
+      "prompt": "Identify the movie with the most similarities to the listed movies."
+    },
+    {
+      "name": "Meta-280",
+      "prompt": "Find a movie from the options that is most likely to appeal to fans of the given movies."
+    },
+    {
+      "name": "Meta-281",
+      "prompt": "Find a movie among the options that is most likely to appeal to fans of the listed movies."
+    },
+    {
+      "name": "Meta-282",
+      "prompt": "Identify the movie that shares the most common genres or themes with the given movies."
+    },
+    {
+      "name": "Meta-283",
+      "prompt": "Identify the genre or theme that connects the provided movie titles and select the option that best represents it."
+    },
+    {
+      "name": "Meta-284",
+      "prompt": "Identify the movie that best fits the genre and tone of the listed movies."
+    },
+    {
+      "name": "Meta-285",
+      "prompt": "Find the movie that shares similar genre or themes with the given movie(s)."
+    },
+    {
+      "name": "Meta-286",
+      "prompt": "Find a movie from the options that is likely to appeal to fans of the movies listed in the input."
+    },
+    {
+      "name": "Meta-287",
+      "prompt": "Select the movie that has been featured alongside the most films from the given list in the same genre."
+    },
+    {
+      "name": "Meta-288",
+      "prompt": "Identify the movie that is most closely related in genre or tone to the given list of movies."
+    },
+    {
+      "name": "Meta-289",
+      "prompt": "Identify the most popular or critically acclaimed movie from the given options that shares similarities with the mentioned movies."
+    },
+    {
+      "name": "Meta-290",
+      "prompt": "Find the movie option that is most likely to be appreciated by someone who enjoys the movies listed in the input."
+    },
+    {
+      "name": "Meta-291",
+      "prompt": "Find the movie option that is most likely to be enjoyed by someone who also enjoyed the given movies."
+    },
+    {
+      "name": "Meta-292",
+      "prompt": "Identify the movie that shares the most common genre or theme among the given options."
+    },
+    {
+      "name": "Meta-293",
+      "prompt": "Choose the movie that has the most directors or actors in common with the given set of movies."
+    },
+    {
+      "name": "Meta-294",
+      "prompt": "Find the movie option that is most closely associated with the listed movies in terms of genre, theme, or style."
+    },
+    {
+      "name": "Meta-295",
+      "prompt": "Identify the movie that is most commonly associated with a given set of movies."
+    },
+    {
+      "name": "Meta-296",
+      "prompt": "Identify the movie that is most commonly associated with the given list of movies."
+    },
+    {
+      "name": "Meta-297",
+      "prompt": "Find the movie that is most likely to appeal to fans of the given movies."
+    },
+    {
+      "name": "Meta-298",
+      "prompt": "Identify the movie that is most likely to share a common genre or theme with the listed movies."
+    },
+    {
+      "name": "Meta-299",
+      "prompt": "Find a movie that is most closely associated with a given set of movies."
+    },
+    {
+      "name": "Meta-300",
+      "prompt": "Find the movie that is most similar in genre or tone to the listed movies."
+    },
+    {
+      "name": "Meta-301",
+      "prompt": "Choose the movie that is most likely to be enjoyed by someone who likes the movies listed in the prompt."
+    },
+    {
+      "name": "Meta-302",
+      "prompt": "Find the movie that is most similar to the given list of films based on genre, theme, or style."
+    },
+    {
+      "name": "Meta-303",
+      "prompt": "Identify the movie that is most closely associated with the group of movies listed."
+    },
+    {
+      "name": "Meta-304",
+      "prompt": "Identify the movie that shares a common genre or theme with the given movies."
+    },
+    {
+      "name": "Meta-305",
+      "prompt": "Find the movie from the options that is most likely to be appreciated by someone who enjoyed the movies listed in the input."
+    },
+    {
+      "name": "Meta-306",
+      "prompt": "Identify the movie that is most closely associated with the given movies."
+    },
+    {
+      "name": "Meta-307",
+      "prompt": "Identify the movie with the most common genre among the given options that best fits the theme of the input movies."
+    },
+    {
+      "name": "Meta-308",
+      "prompt": "Choose the movie that is most likely to be similar to the movies listed as a combination of themes, genres, and tones."
+    },
+    {
+      "name": "Meta-309",
+      "prompt": "Find the movie option that is most likely to be a sequel, spin-off, or part of the same genre as the listed movies."
+    },
+    {
+      "name": "Meta-310",
+      "prompt": "Identify the movie that shares a common genre or theme with the listed movies."
+    },
+    {
+      "name": "Meta-311",
+      "prompt": "Find a movie that shares common characteristics with the given movies."
+    },
+    {
+      "name": "Meta-312",
+      "prompt": "Identify the most popular or critically acclaimed movie among the options that shares similar genres, themes, or awards with the input movies."
+    },
+    {
+      "name": "Meta-313",
+      "prompt": "Identify the movie that shares the most common themes or genres with the given movie recommendations."
+    },
+    {
+      "name": "Meta-314",
+      "prompt": "Identify the movie that best fits the genre and style of the input movies."
+    },
+    {
+      "name": "Meta-315",
+      "prompt": "Identify the movie that shares a common theme or genre among the given options."
+    },
+    {
+      "name": "Meta-316",
+      "prompt": "Find the movie among the options that is most closely related to the given movies in terms of genre, style, or theme."
+    },
+    {
+      "name": "Meta-317",
+      "prompt": "Identify the movie that is most similar in genre or style to the given movies."
+    },
+    {
+      "name": "Meta-318",
+      "prompt": "Find a movie among the options that is similar in genre or style to the given movies."
+    },
+    {
+      "name": "Meta-319",
+      "prompt": "Choose the movie option that is most likely to be recommended to someone who has enjoyed a combination of action, drama, and thriller movies."
+    },
+    {
+      "name": "Meta-320",
+      "prompt": "Identify the movie from the options that is most likely to be similar in theme or genre to the given list of movies."
+    },
+    {
+      "name": "Meta-321",
+      "prompt": "Find the movie option that is most commonly associated with the given list of movies."
+    },
+    {
+      "name": "Meta-322",
+      "prompt": "Find the movie that is most likely to be recommended based on the similarity of genres and themes among the input movies."
+    },
+    {
+      "name": "Meta-323",
+      "prompt": "Identify the most popular or critically acclaimed movie among the given options that is similar in genre or style to the listed movie recommendations."
+    },
+    {
+      "name": "Meta-324",
+      "prompt": "Identify the movie that is most closely associated with the given list of movies."
+    },
+    {
+      "name": "Meta-325",
+      "prompt": "Identify the movie that best matches the given movie list based on its genre, theme, or style."
+    },
+    {
+      "name": "Meta-326",
+      "prompt": "Identify the movie that is most likely to be a genre-matched and tone-similar recommendation based on the provided list of movies."
+    },
+    {
+      "name": "Meta-327",
+      "prompt": "Find the movie that is most likely to be recommended by the pattern of genres and themes in the given movies."
+    },
+    {
+      "name": "Meta-328",
+      "prompt": "Find the movie that is most likely to be of the same genre or style as the given movie list."
+    },
+    {
+      "name": "Meta-329",
+      "prompt": "Identify the genre or theme that connects the given movie titles and choose the option that best fits this characteristic."
+    },
+    {
+      "name": "Meta-330",
+      "prompt": "Identify the movie that is most closely associated with a common theme or genre shared by the given movies."
+    },
+    {
+      "name": "Meta-331",
+      "prompt": "Identify the genre of the given movies and recommend a similar movie from the same genre."
+    },
+    {
+      "name": "Meta-332",
+      "prompt": "Find the movie that is most likely to be a hit film or a critically acclaimed movie among the given options."
+    },
+    {
+      "name": "Meta-333",
+      "prompt": "Choose the movie from the options that has the most similar overall theme or genre as the given movies."
+    },
+    {
+      "name": "Meta-334",
+      "prompt": "Identify the most popular or critically acclaimed movie among the options that is similar in genre, tone, or style to the given movies."
+    },
+    {
+      "name": "Meta-335",
+      "prompt": "Identify the movie from the options that is most likely to be enjoyed by someone who likes the given movies."
+    },
+    {
+      "name": "Meta-336",
+      "prompt": "Identify the movie that is most likely to be recommended based on the common themes or genres among the given movies."
+    },
+    {
+      "name": "Meta-337",
+      "prompt": "Identify the movie that is most likely to be similar to the given set of movies based on general themes, genres, or styles."
+    },
+    {
+      "name": "Meta-338",
+      "prompt": "Find the movie among the options that is most commonly associated with the given movie titles in terms of genre, theme, or style."
+    },
+    {
+      "name": "Meta-339",
+      "prompt": "Identify the genre or themes common to the provided movie titles and choose the option that best matches."
+    },
+    {
+      "name": "Meta-340",
+      "prompt": "Find a movie from the options that is similar in genre or style to the given movies."
+    },
+    {
+      "name": "Meta-341",
+      "prompt": "Identify the most popular or critically acclaimed movie among the options that shares a similar theme, genre, or style with the input movies."
+    },
+    {
+      "name": "Meta-342",
+      "prompt": "Identify the movie from the options that is most closely associated with the given movie recommendations."
+    },
+    {
+      "name": "Meta-343",
+      "prompt": "Choose the movie that is most likely to be enjoyed by someone who likes the specified movies."
+    },
+    {
+      "name": "Meta-344",
+      "prompt": "Find the movie among the options that is most likely to appeal to the same audience as the given movies."
+    },
+    {
+      "name": "Meta-345",
+      "prompt": "Identify the movie that is most likely to be recommended based on the input film genres and styles."
+    },
+    {
+      "name": "Meta-346",
+      "prompt": "Find a movie that shares common themes or elements with the given movie(s) from the provided options."
+    },
+    {
+      "name": "Meta-347",
+      "prompt": "Identify the most popular or critically acclaimed movie from the given options that is likely to be similar in tone, genre, or theme to the listed movies."
+    },
+    {
+      "name": "Meta-348",
+      "prompt": "Identify the movie that shares similar genres or themes with the given movie(s)."
+    },
+    {
+      "name": "Meta-349",
+      "prompt": "Identify the movie with the most similar themes, directors, or genres from the given options."
+    },
+    {
+      "name": "Meta-350",
+      "prompt": "Choose the movie that is most likely to be enjoyed by someone who likes a combination of the movies listed."
+    },
+    {
+      "name": "Meta-351",
+      "prompt": "Identify the common genre or theme among the input movies and select the option that best matches it."
+    },
+    {
+      "name": "Meta-352",
+      "prompt": "Identify the most popular movie genre or theme among the given options that matches the common characteristics of the input movies."
+    },
+    {
+      "name": "Meta-353",
+      "prompt": "Identify the movie with the highest overlap in genre or style among the given options that matches the theme of the input movies."
+    },
+    {
+      "name": "Meta-354",
+      "prompt": "Find the movie that is most likely to be recommended based on a set of given movies."
+    },
+    {
+      "name": "Meta-355",
+      "prompt": "Identify the movie that shares the most genre(s) with the given list of movies."
+    },
+    {
+      "name": "Meta-356",
+      "prompt": "Identify the movie that is most closely associated with the group of movies listed as options."
+    },
+    {
+      "name": "Meta-357",
+      "prompt": "Identify the movie that is most closely related to the listed movies in terms of genre, tone, or themes."
+    },
+    {
+      "name": "Meta-358",
+      "prompt": "Find the movie that is most likely to be of a similar genre or style as the listed movies."
+    },
+    {
+      "name": "Meta-359",
+      "prompt": "Identify the genre or theme common to the listed movies and choose the option that best represents the same genre or theme."
+    },
+    {
+      "name": "Meta-360",
+      "prompt": "Select the movie that is most likely to be part of the same genre as all the given movies."
+    },
+    {
+      "name": "Meta-361",
+      "prompt": "Find the movie that is most likely to be liked by someone who enjoyed the listed movies."
+    },
+    {
+      "name": "Meta-362",
+      "prompt": "Find the movie option that is most closely associated with a theme, genre, or style shared by the input movies."
+    },
+    {
+      "name": "Meta-363",
+      "prompt": "Find the movie option that is most likely to be similar in genre or theme to the listed movies."
+    },
+    {
+      "name": "Meta-364",
+      "prompt": "Find the movie that is most likely to be enjoyed by someone who likes the specified movies."
+    },
+    {
+      "name": "Meta-365",
+      "prompt": "Identify the movie that is most closely associated with the provided list of movies."
+    },
+    {
+      "name": "Meta-366",
+      "prompt": "Identify the most popular or critically acclaimed movie among the given options that shares a genre or theme with the listed movies."
+    },
+    {
+      "name": "Meta-367",
+      "prompt": "Choose the movie that is most likely to appeal to fans of the listed movies."
+    },
+    {
+      "name": "Meta-368",
+      "prompt": "Find the movie from the given options that shares a common theme or genre with the input movies."
+    },
+    {
+      "name": "Meta-369",
+      "prompt": "Find the movie that is most commonly categorized alongside the given movie genres or themes."
+    },
+    {
+      "name": "Meta-370",
+      "prompt": "Select the movie that is most likely to be recommended based on the provided list of movie titles."
+    },
+    {
+      "name": "Meta-371",
+      "prompt": "Identify the movie with the most shared genre or theme among the given movie titles."
+    },
+    {
+      "name": "Meta-372",
+      "prompt": "Select the movie option that shares common themes or elements with the provided movie list."
+    },
+    {
+      "name": "Meta-373",
+      "prompt": "Find a movie from the options that is similar to the movies listed in the input."
+    },
+    {
+      "name": "Meta-374",
+      "prompt": "Identify the genre or themes common to the given movie titles and select the option that shares the most similar characteristics."
+    },
+    {
+      "name": "Meta-375",
+      "prompt": "Identify the movie from the given options that is most likely to be similar in genre or tone to the listed movies."
+    },
+    {
+      "name": "Meta-376",
+      "prompt": "Identify the movie that shares the most common genre with the input movie(s)."
+    },
+    {
+      "name": "Meta-377",
+      "prompt": "Identify the movie from the given options that is most likely to appeal to someone who enjoys the movies listed."
+    },
+    {
+      "name": "Meta-378",
+      "prompt": "Identify the movie that is most likely to be suggested as a similar film to the listed movies."
+    },
+    {
+      "name": "Meta-379",
+      "prompt": "Identify the movie with the most common genre or theme among the given movie titles and choose it as the recommended movie."
+    },
+    {
+      "name": "Meta-380",
+      "prompt": "Find the movie that is most likely to be enjoyed by someone who also enjoyed the given movies."
+    },
+    {
+      "name": "Meta-381",
+      "prompt": "Find the movie that is most closely associated with the dominant genre or style of the input movies."
+    },
+    {
+      "name": "Meta-382",
+      "prompt": "Identify the movie from the given options that is most likely to be similar in genre or theme to the listed movies."
+    },
+    {
+      "name": "Meta-383",
+      "prompt": "Identify the movie that is most closely associated with the given film recommendations."
+    },
+    {
+      "name": "Meta-384",
+      "prompt": "Identify the movie that is most similar to the given movies."
+    },
+    {
+      "name": "Meta-385",
+      "prompt": "Find the movie that is most commonly associated with a group of movies given."
+    },
+    {
+      "name": "Meta-386",
+      "prompt": "Find the movie that is most likely to be enjoyed by someone who appreciates the genres, directors, or styles of the listed movies."
+    },
+    {
+      "name": "Meta-387",
+      "prompt": "Choose the movie that has received a similar genre classification as the input movies."
+    },
+    {
+      "name": "Meta-388",
+      "prompt": "Find the movie that is most likely to be chosen by someone who has already enjoyed the movies listed in the question."
+    },
+    {
+      "name": "Meta-389",
+      "prompt": "Identify the genre or style of movies that are most commonly associated with the given titles and select the option that shares the same genre or style."
+    },
+    {
+      "name": "Meta-390",
+      "prompt": "Identify the movie that is most likely to be similar to the given list of movies based on their genres and themes."
+    },
+    {
+      "name": "Meta-391",
+      "prompt": "Find a movie that is similar in theme, genre, or tone to the given movies."
+    },
+    {
+      "name": "Meta-392",
+      "prompt": "Identify the movie that best matches the style, genre, or tone of the listed films."
+    },
+    {
+      "name": "Meta-393",
+      "prompt": "Identify the genre or theme shared among the given movies and select a movie with a similar genre or theme from the options."
+    },
+    {
+      "name": "Meta-394",
+      "prompt": "Find the movie option that is most likely to appeal to fans of the listed movies."
+    },
+    {
+      "name": "Meta-395",
+      "prompt": "Find the movie that is most closely associated with the group of movies listed as similar."
+    },
+    {
+      "name": "Meta-396",
+      "prompt": "Find the movie from the options that is most closely associated with a theme or genre common to the input movies."
+    },
+    {
+      "name": "Meta-397",
+      "prompt": "Find a movie from the options that is similar in genre or tone to the given movies."
+    },
+    {
+      "name": "Meta-398",
+      "prompt": "Find the movie from the given options that is most similar in genre or theme to the listed movies."
+    },
+    {
+      "name": "Meta-399",
+      "prompt": "Identify the most popular or critically acclaimed movie among the given options that shares similar genres or themes with the input movies."
+    },
+    {
+      "name": "Meta-400",
+      "prompt": "Identify the movie that is most closely related in genre or style to the listed movies."
+    },
+    {
+      "name": "Meta-401",
+      "prompt": "Find a movie from the given options that is most likely to be enjoyed by someone who likes the specified movies."
+    },
+    {
+      "name": "Meta-402",
+      "prompt": "Identify the movie that has the most genres or themes in common with the given movies."
+    },
+    {
+      "name": "Meta-403",
+      "prompt": "Find a movie from the options that shares a common theme, genre, or style with the given movies."
+    },
+    {
+      "name": "Meta-404",
+      "prompt": "Identify the movie that is most closely associated with the genres and styles of the input movies."
+    },
+    {
+      "name": "Meta-405",
+      "prompt": "Identify the movie that is most commonly associated with the given list of films, based on genre, tone, or critical acclaim."
+    },
+    {
+      "name": "Meta-406",
+      "prompt": "Identify the movie that is most closely associated with the common themes and genres of the given set of movies."
+    },
+    {
+      "name": "Meta-407",
+      "prompt": "Find a movie with a similar genre, tone, or style to the given movies."
+    },
+    {
+      "name": "Meta-408",
+      "prompt": "Choose the movie that has the most similarities in genre or theme among the options provided."
+    },
+    {
+      "name": "Meta-409",
+      "prompt": "Choose the movie from the options that is most similar in genre or style to the provided list of movies."
+    },
+    {
+      "name": "Meta-410",
+      "prompt": "Select the movie that is most likely to appeal to fans of the listed movies."
+    },
+    {
+      "name": "Meta-411",
+      "prompt": "Find the movie from the options that is most similar in genre and tone to the given movie(s)."
+    },
+    {
+      "name": "Meta-412",
+      "prompt": "Find the movie that is most likely to be a match based on the characteristics or themes of the given movies."
+    },
+    {
+      "name": "Meta-413",
+      "prompt": "Identify the genre or theme common to the input movies and choose the option that best matches it."
+    },
+    {
+      "name": "Meta-414",
+      "prompt": "Identify the movie that is most likely to be part of the same genre or style as the given movies."
+    },
+    {
+      "name": "Meta-415",
+      "prompt": "Find the movie from the options that is most similar in genre or theme to the given movies."
+    },
+    {
+      "name": "Meta-416",
+      "prompt": "Find the movie that has been mentioned in the most other movies listed among the options."
+    },
+    {
+      "name": "Meta-417",
+      "prompt": "Identify the movie that is most closely related in theme or genre to the listed movies."
+    },
+    {
+      "name": "Meta-418",
+      "prompt": "Find the movie that has the most connections in common with the listed movies."
+    },
+    {
+      "name": "Meta-419",
+      "prompt": "Find the movie that is most likely to be enjoyed by someone who also enjoys the specified movies."
+    },
+    {
+      "name": "Meta-420",
+      "prompt": "Select the movie that is most likely to share a genre or theme with the given set of movies."
+    },
+    {
+      "name": "Meta-421",
+      "prompt": "Find a movie that shares similar themes, genres, or awards with the given movies."
+    },
+    {
+      "name": "Meta-422",
+      "prompt": "Find the movie that is most likely to be enjoyed by someone who likes the movies listed as examples."
+    },
+    {
+      "name": "Meta-423",
+      "prompt": "Find the movie from the options that is most closely associated with the theme, tone, or genre of the given movies."
+    },
+    {
+      "name": "Meta-424",
+      "prompt": "Find a movie from the options that is most likely to be appreciated by someone who enjoyed the given movies."
+    },
+    {
+      "name": "Meta-425",
+      "prompt": "Find the movie that is most likely to be preferred by the same audience that enjoys the given set of movies."
+    },
+    {
+      "name": "Meta-426",
+      "prompt": "Choose the movie from the options that is most likely to share a common theme, genre, or tone with the listed movies."
+    },
+    {
+      "name": "Meta-427",
+      "prompt": "Find the movie that is most commonly associated with the given movies' genres, themes, or directors."
+    },
+    {
+      "name": "Meta-428",
+      "prompt": "Find the movie that is most commonly associated with a group of films known for similar genres, styles, or themes."
+    },
+    {
+      "name": "Meta-429",
+      "prompt": "Identify the movie that has the most similar genres or themes among the given options."
+    },
+    {
+      "name": "Meta-430",
+      "prompt": "Find the movie that is most likely to be recommended based on a set of input movies with similar genres, themes, or styles."
+    },
+    {
+      "name": "Meta-431",
+      "prompt": "Find the movie that is most likely to be enjoyed by fans of the given movies, based on similarities in genre, style, or theme."
+    },
+    {
+      "name": "Meta-432",
+      "prompt": "Find the movie that is most likely to be recommended based on the provided list of movie genres, styles, or themes."
+    },
+    {
+      "name": "Meta-433",
+      "prompt": "Identify the movie that shares the most common genre or tone with the listed movies."
+    },
+    {
+      "name": "Meta-434",
+      "prompt": "Find the movie option that is most likely to be a sequel, remake, or similar in genre or theme to the given movies."
+    },
+    {
+      "name": "Meta-435",
+      "prompt": "Find the movie among the options that is most likely to be recommended by fans of the given movies."
+    },
+    {
+      "name": "Meta-436",
+      "prompt": "Find the movie option that is most likely to appeal to a fan of the listed movies."
+    },
+    {
+      "name": "Meta-437",
+      "prompt": "Find the movie that is most likely to be of the same genre or style as the given movies."
+    },
+    {
+      "name": "Meta-438",
+      "prompt": "Select the movie from the options that is most likely to be enjoyed by someone who likes the specified movies."
+    },
+    {
+      "name": "Meta-439",
+      "prompt": "Find a movie from the options that is most likely to be enjoyed by someone who likes the given movies."
+    },
+    {
+      "name": "Meta-440",
+      "prompt": "Find the movie that is most closely associated with a majority of the given movies in terms of genre, tone, or style."
+    },
+    {
+      "name": "Meta-441",
+      "prompt": "Identify the movie that is most commonly associated with the provided list of movies."
+    },
+    {
+      "name": "Meta-442",
+      "prompt": "Identify the movie with the most similar themes and tone among the given options."
+    },
+    {
+      "name": "Meta-443",
+      "prompt": "Identify the most popular or critically acclaimed movie among the given options that is similar in genre or theme to the provided list of movies."
+    },
+    {
+      "name": "Meta-444",
+      "prompt": "Identify the most popular movie among the input films based on general audience reception and recommendations."
+    },
+    {
+      "name": "Meta-445",
+      "prompt": "Find the movie that is most closely related to the listed movies in terms of genre, tone, or style."
+    },
+    {
+      "name": "Meta-446",
+      "prompt": "Find the movie that is most closely associated with a theme or genre common to all the listed movies."
+    },
+    {
+      "name": "Meta-447",
+      "prompt": "Select the movie that is most likely to be enjoyed by someone who likes a combination of the provided movies."
+    },
+    {
+      "name": "Meta-448",
+      "prompt": "Identify the genre or theme common to the given movie list and choose the option that best represents it."
+    },
+    {
+      "name": "Meta-449",
+      "prompt": "Find the movie that has the most connections in common with the given set of movies."
+    },
+    {
+      "name": "Meta-450",
+      "prompt": "Identify the movie that is most closely associated with the genre, tone, or style of the given movies."
+    },
+    {
+      "name": "Meta-451",
+      "prompt": "Identify the movie that is most similar in genre or tone to the listed films."
+    },
+    {
+      "name": "Meta-452",
+      "prompt": "Choose the movie that is most likely to be enjoyed by someone who likes the given movie recommendations."
+    },
+    {
+      "name": "Meta-453",
+      "prompt": "Identify the movie that is most closely associated with the majority of the listed films in terms of genre, theme, or style."
+    },
+    {
+      "name": "Meta-454",
+      "prompt": "Find the movie from the options that is most closely related in theme or genre to the given movies."
+    },
+    {
+      "name": "Meta-455",
+      "prompt": "Find the movie option that is most likely to be a successful match for the given set of similar movies."
+    },
+    {
+      "name": "Meta-456",
+      "prompt": "Find the movie that is most closely associated with the genre or style of the given movies."
+    },
+    {
+      "name": "Meta-457",
+      "prompt": "Identify the movie that best fits the genre and tone of the given movies."
+    },
+    {
+      "name": "Meta-458",
+      "prompt": "Identify the movie that is most similar in genre or style to the given list of movies."
+    },
+    {
+      "name": "Meta-459",
+      "prompt": "Find the movie from the options that is most closely associated with the genres, themes, or styles of the given movies."
+    },
+    {
+      "name": "Meta-460",
+      "prompt": "Choose the movie from the options that has the most common genres or themes with the given movie list."
+    },
+    {
+      "name": "Meta-461",
+      "prompt": "Find the movie that is most likely to be recommended based on the similarity in themes, genres, or styles among the given movies."
+    },
+    {
+      "name": "Meta-462",
+      "prompt": "Identify the movie that is most commonly associated with the listed film genres and themes."
+    },
+    {
+      "name": "Meta-463",
+      "prompt": "Find a movie from the options that is similar to the given movies in terms of genre or style."
+    },
+    {
+      "name": "Meta-464",
+      "prompt": "Find the movie from the options that is most closely associated with the themes, genres, or styles of the given movies."
+    },
+    {
+      "name": "Meta-465",
+      "prompt": "Find the movie from the options that is most closely related in theme, genre, or tone to the given movies."
+    },
+    {
+      "name": "Meta-466",
+      "prompt": "Identify the movie with the most common genre among the given options."
+    },
+    {
+      "name": "Meta-467",
+      "prompt": "Identify the most popular or critically acclaimed movie among the given options that is similar in genre, tone, or style to the listed movies."
+    },
+    {
+      "name": "Meta-468",
+      "prompt": "Find the movie from the options that is most commonly associated with the given movie genres or themes."
+    },
+    {
+      "name": "Meta-469",
+      "prompt": "Find the movie from the options that is most closely associated with the given list of movies."
+    },
+    {
+      "name": "Meta-470",
+      "prompt": "Identify the genre or style most common among the given movies and choose an option that fits this category."
+    },
+    {
+      "name": "Meta-471",
+      "prompt": "Select the movie that has received the highest average critical acclaim among the given options, based on the input movies' genres and themes."
+    },
+    {
+      "name": "Meta-472",
+      "prompt": "Identify the most popular or critically acclaimed movie among the given options that shares similar themes, genres, or awards with the input movies."
+    },
+    {
+      "name": "Meta-473",
+      "prompt": "Identify the movie from the given options that is most closely related in theme or genre to the listed movies."
+    },
+    {
+      "name": "Meta-474",
+      "prompt": "Identify the most popular or critically acclaimed movie among the given options that shares a genre or theme with the provided list of movies."
+    },
+    {
+      "name": "Meta-475",
+      "prompt": "Find a movie that shares common themes or elements with the given movies."
+    },
+    {
+      "name": "Meta-476",
+      "prompt": "Identify the movie that has been most frequently associated with the given list of movies."
+    },
+    {
+      "name": "Meta-477",
+      "prompt": "Choose the movie that is most likely to be similar in genre or tone to the listed movies."
+    },
+    {
+      "name": "Meta-478",
+      "prompt": "Identify the movie that is most similar in genre or theme to the given set of movies."
+    },
+    {
+      "name": "Meta-479",
+      "prompt": "Identify the movie that is most closely associated with a common theme or genre among the given movies."
+    },
+    {
+      "name": "Meta-480",
+      "prompt": "Choose the movie that is most likely to be enjoyed by someone who likes the given movies."
+    },
+    {
+      "name": "Meta-481",
+      "prompt": "Identify the most popular movie among the options that is similar in genre or theme to the given movies."
+    },
+    {
+      "name": "Meta-482",
+      "prompt": "Identify the movie that is most similar to the provided list of movies."
+    },
+    {
+      "name": "Meta-483",
+      "prompt": "Identify the movie that shares a similar theme or style with the given movies."
+    },
+    {
+      "name": "Meta-484",
+      "prompt": "Choose the movie that is most likely to appeal to fans of the given movies, based on common themes, genres, or directors."
+    },
+    {
+      "name": "Meta-485",
+      "prompt": "Identify the movie that is most likely to be similar in genre or theme to the given movies."
+    },
+    {
+      "name": "Meta-486",
+      "prompt": "Choose the movie that is most likely to appeal to fans of the given film genres and styles."
+    },
+    {
+      "name": "Meta-487",
+      "prompt": "Identify the movie that best fits the theme or genre of the given movie recommendations."
+    },
+    {
+      "name": "Meta-488",
+      "prompt": "Find a movie that shares a similar genre or theme with the given movies."
+    },
+    {
+      "name": "Meta-489",
+      "prompt": "Identify the movie that is most commonly associated with the listed films."
+    },
+    {
+      "name": "Meta-490",
+      "prompt": "Find the movie that shares most genre characteristics with the given film recommendations."
+    },
+    {
+      "name": "Meta-491",
+      "prompt": "Identify the movie that is most likely to be enjoyed by someone who enjoys the movies listed."
+    },
+    {
+      "name": "Meta-492",
+      "prompt": "Select the movie option that is most likely to appeal to fans of the given movie(s)."
+    },
+    {
+      "name": "Meta-493",
+      "prompt": "Identify the movie with the most genre or theme overlap among the given options."
+    },
+    {
+      "name": "Meta-494",
+      "prompt": "Identify the movie that is most commonly associated with the listed films, regardless of genre or style."
+    },
+    {
+      "name": "Meta-495",
+      "prompt": "Find a movie from the options that is most likely to appeal to someone who enjoyed the listed movies."
+    },
+    {
+      "name": "Meta-496",
+      "prompt": "Find the movie option that is most likely to be similar in genre, tone, or style to the provided movie titles."
+    },
+    {
+      "name": "Meta-497",
+      "prompt": "Find a movie from the options that shares a genre or theme with the given movies."
+    },
+    {
+      "name": "Meta-498",
+      "prompt": "Select the movie from the options that is most likely to appeal to fans of the listed movies."
+    },
+    {
+      "name": "Meta-499",
+      "prompt": "Find the movie that is most commonly associated with the given movie list."
+    },
+    {
+      "name": "Meta-500",
+      "prompt": "Find a movie that is most likely to appeal to the same type of audience as the given movies."
+    },
+    {
+      "name": "Meta-501",
+      "prompt": "Find the movie that is most closely related to the given set of movies in terms of genre, theme, or style."
+    },
+    {
+      "name": "Meta-502",
+      "prompt": "Identify the movie from the options that is most likely to appeal to a fan of the given movies."
+    },
+    {
+      "name": "Meta-503",
+      "prompt": "Select the movie that is most likely to be similar in genre or theme to the given list of movies."
+    },
+    {
+      "name": "Meta-504",
+      "prompt": "Find the movie that is most likely to appeal to fans of the given movies based on their genres and styles."
+    },
+    {
+      "name": "Meta-505",
+      "prompt": "Find a movie that shares a common genre or theme with the given movies."
+    },
+    {
+      "name": "Meta-506",
+      "prompt": "Identify the movie that is most similar to the provided list of movies in terms of genre or tone."
+    },
+    {
+      "name": "Meta-507",
+      "prompt": "Identify the movie that is most likely to be recommended based on the given options, considering the similarities in themes, genres, or styles among the provided movie examples."
+    },
+    {
+      "name": "Meta-508",
+      "prompt": "Find the movie that is most likely to be recommended based on the genres and themes present in the listed movies."
+    },
+    {
+      "name": "Meta-509",
+      "prompt": "Identify the movie that is most likely to be similar in genre and tone to the provided list of movies."
+    },
+    {
+      "name": "Meta-510",
+      "prompt": "Identify the common genre or theme among the given movies and choose the option that best represents it."
+    },
+    {
+      "name": "Meta-511",
+      "prompt": "Identify the genre or theme common to the listed movies and select a new movie that shares similar characteristics."
+    },
+    {
+      "name": "Meta-512",
+      "prompt": "Identify the common genre or theme among the given movies and select the option that best fits this characteristic."
+    },
+    {
+      "name": "Meta-513",
+      "prompt": "Identify the movie that is most closely related to the given list of movies."
+    },
+    {
+      "name": "Meta-514",
+      "prompt": "Find a movie that is commonly associated with the same genres or themes as the given movies."
+    },
+    {
+      "name": "Meta-515",
+      "prompt": "Find the movie that is most closely associated with a genre or theme common to the provided movies."
+    },
+    {
+      "name": "Meta-516",
+      "prompt": "Find the movie from the options that is most closely associated with the themes or genres of the given movies."
+    },
+    {
+      "name": "Meta-517",
+      "prompt": "Find a movie that is most likely to be recommended based on the common themes, genres, or styles of the given movies."
+    },
+    {
+      "name": "Meta-518",
+      "prompt": "Identify the movie with the highest number of similarities to the given set of movies."
+    },
+    {
+      "name": "Meta-519",
+      "prompt": "Find the movie option that is most similar in genre or theme to the given list of movies."
+    },
+    {
+      "name": "Meta-520",
+      "prompt": "Identify the movie that best matches the given set of films based on their genre and style."
+    },
+    {
+      "name": "Meta-521",
+      "prompt": "Identify the movie that is most closely related in theme, genre, or tone to the provided list of movies."
+    },
+    {
+      "name": "Meta-522",
+      "prompt": "Identify the movie that is most likely to be a common recommendation among the given options, based on the genres and styles of the input movies."
+    },
+    {
+      "name": "Meta-523",
+      "prompt": "Identify the movie that is most likely to be similar in genre or style to the given movies."
+    },
+    {
+      "name": "Meta-524",
+      "prompt": "Find a movie that is most closely associated with the themes, genres, or styles of the given movies."
+    },
+    {
+      "name": "Meta-525",
+      "prompt": "Choose the movie that is most closely associated with the genre or style of the given films."
+    },
+    {
+      "name": "Meta-526",
+      "prompt": "Find a movie from the options that shares similar themes, genres, or tones with the given movies."
+    },
+    {
+      "name": "Meta-527",
+      "prompt": "Identify the most popular or critically acclaimed movie among the given options that shares similar themes, genres, or styles with the input movies."
+    },
+    {
+      "name": "Meta-528",
+      "prompt": "Identify the movie that shares a common theme or genre with the listed movies."
+    },
+    {
+      "name": "Meta-529",
+      "prompt": "Identify the most popular or critically acclaimed movie among the given options that is similar in genre, theme, or style to the provided list of movies."
+    },
+    {
+      "name": "Meta-530",
+      "prompt": "Identify the movie with the most common genre or theme among the given options that best matches the given list of movies."
+    },
+    {
+      "name": "Meta-531",
+      "prompt": "Identify the common theme or genre among the given movie titles and select the most likely similar movie from the options."
+    },
+    {
+      "name": "Meta-532",
+      "prompt": "Choose the movie option that is most likely to be enjoyed by someone who likes the movies listed."
+    },
+    {
+      "name": "Meta-533",
+      "prompt": "Identify the movie from the options that is most closely associated with the theme or genre of the input movies."
+    },
+    {
+      "name": "Meta-534",
+      "prompt": "Select the movie that has been associated with the most common themes or genres among the given movies."
+    },
+    {
+      "name": "Meta-535",
+      "prompt": "Find the movie that is most likely to be a common favorite among fans of the input movies."
+    },
+    {
+      "name": "Meta-536",
+      "prompt": "Select the movie that is most closely related to the input movies in terms of genre, tone, and theme."
+    },
+    {
+      "name": "Meta-537",
+      "prompt": "Identify the movie that is most closely associated with the given set of movies."
+    },
+    {
+      "name": "Meta-538",
+      "prompt": "Identify the most popular or critically acclaimed movie among the given options that shares similar themes, genres, or styles with the provided list of movies."
+    },
+    {
+      "name": "Meta-539",
+      "prompt": "Identify the most common movie genre among the listed movies and recommend a movie from the same genre."
+    },
+    {
+      "name": "Meta-540",
+      "prompt": "Select the movie that is most likely to appeal to fans of the given movies."
+    },
+    {
+      "name": "Meta-541",
+      "prompt": "Choose the movie that is most likely to appeal to fans of the movies listed in the question."
+    },
+    {
+      "name": "Meta-542",
+      "prompt": "Identify the movie that is most closely associated with the theme, tone, or genre of the listed movies."
+    },
+    {
+      "name": "Meta-543",
+      "prompt": "Select the movie that is most commonly associated with the same genre or theme as the given movies."
+    },
+    {
+      "name": "Meta-544",
+      "prompt": "Find the movie that is most likely to be similar in genre or theme to the given movie(s)."
+    },
+    {
+      "name": "Meta-545",
+      "prompt": "Choose the movie that is most likely to be of the same genre as the given movie titles."
+    },
+    {
+      "name": "Meta-546",
+      "prompt": "Find the movie option that is most closely related in genre or style to the given movies."
+    },
+    {
+      "name": "Meta-547",
+      "prompt": "Find the movie that is most likely to be of interest to someone who enjoys the given set of movies."
+    },
+    {
+      "name": "Meta-548",
+      "prompt": "Find the movie that is most likely to be recommended based on a set of given movie titles."
+    },
+    {
+      "name": "Meta-549",
+      "prompt": "Identify the movie that is most likely to be recommended based on the provided list of movies."
+    },
+    {
+      "name": "Meta-550",
+      "prompt": "Identify the movie that shares a common characteristic or genre with the given movies."
+    },
+    {
+      "name": "Meta-551",
+      "prompt": "Find the movie from the options that is most commonly associated with the genres, themes, or tones of the input movies."
+    },
+    {
+      "name": "Meta-552",
+      "prompt": "Identify the most popular movie genre or theme among the input movies and select the option that best represents the same genre or theme."
+    },
+    {
+      "name": "Meta-553",
+      "prompt": "Identify the movie that has the highest overlap in genre or themes with the given list of movies."
+    },
+    {
+      "name": "Meta-554",
+      "prompt": "Find the movie that has the most in common with the provided movies."
+    },
+    {
+      "name": "Meta-555",
+      "prompt": "Select the movie that is most likely to be of similar genre or theme to the given movies."
+    },
+    {
+      "name": "Meta-556",
+      "prompt": "Identify the movie that is most similar in genre or style to the given set of movies."
+    },
+    {
+      "name": "Meta-557",
+      "prompt": "Identify the common theme or genre among the listed movies and select the option that best fits this characteristic."
+    },
+    {
+      "name": "Meta-558",
+      "prompt": "Identify the movie that is most likely to be recommended based on the provided movie list, considering themes, genres, and overall tone."
+    },
+    {
+      "name": "Meta-559",
+      "prompt": "Identify the movie that shares common themes or genres with the given list of movies."
+    },
+    {
+      "name": "Meta-560",
+      "prompt": "Choose the movie that is most likely to be enjoyed by someone who appreciates the given set of movies."
+    },
+    {
+      "name": "Meta-561",
+      "prompt": "Identify the genre or theme common to the input movies and select the option that best represents this characteristic."
+    },
+    {
+      "name": "Meta-562",
+      "prompt": "Identify the genre or style common to the listed movies and select the option that best fits this characteristic."
+    },
+    {
+      "name": "Meta-563",
+      "prompt": "Choose the movie from the options that is most likely to appeal to fans of the listed movies."
+    },
+    {
+      "name": "Meta-564",
+      "prompt": "Identify the genre or theme common to the listed movies and choose the option that best fits that genre or theme."
+    },
+    {
+      "name": "Meta-565",
+      "prompt": "Identify the movie with the genre and tone that best matches the given movies."
+    },
+    {
+      "name": "Meta-566",
+      "prompt": "Identify the movie that shares the most common genre(s) with the given movies."
+    },
+    {
+      "name": "Meta-567",
+      "prompt": "Choose the movie from the options that has the most similar genre to the given movies."
+    },
+    {
+      "name": "Meta-568",
+      "prompt": "Identify the movie from the given options that is most likely to be enjoyed by someone who likes the movies listed."
+    },
+    {
+      "name": "Meta-569",
+      "prompt": "Find the movie among the options that is most closely related to the given set of movies."
+    },
+    {
+      "name": "Meta-570",
+      "prompt": "Find the movie that is most commonly associated with all the given movies."
+    },
+    {
+      "name": "Meta-571",
+      "prompt": "Identify the movie that is most likely to be similar to the input movies based on their genres and styles."
+    },
+    {
+      "name": "Meta-572",
+      "prompt": "Identify the movie that shares a common genre or theme with the given movie list."
+    },
+    {
+      "name": "Meta-573",
+      "prompt": "Choose the movie that is most likely to be enjoyed by someone who likes a combination of the given movies."
+    },
+    {
+      "name": "Meta-574",
+      "prompt": "Find the movie that is most likely to be favored by the same audience that enjoys the given movies."
+    },
+    {
+      "name": "Meta-575",
+      "prompt": "Identify the movie that is most similar in genre or theme to the provided list of movies."
+    },
+    {
+      "name": "Meta-576",
+      "prompt": "Find a movie from the options that shares a common theme, genre, or tone with the given movie(s)."
+    },
+    {
+      "name": "Meta-577",
+      "prompt": "Identify the movie that is most likely to be enjoyed by someone who likes the movies listed in the input."
+    },
+    {
+      "name": "Meta-578",
+      "prompt": "Identify the movie that is most similar in genre and tone to the given movie(s)."
+    },
+    {
+      "name": "Meta-579",
+      "prompt": "Identify the movie that shares a common genre or theme with the input movies."
+    },
+    {
+      "name": "Meta-580",
+      "prompt": "Find the movie that is most likely to be enjoyed by someone who likes the given movies."
+    },
+    {
+      "name": "Meta-581",
+      "prompt": "Select the movie from the options that is most similar in genre or style to the given movies."
+    },
+    {
+      "name": "Meta-582",
+      "prompt": "Identify the movie that is most commonly associated with the given set of movies."
+    },
+    {
+      "name": "Meta-583",
+      "prompt": "Identify the movie that has the most common genre or theme with the given set of movies."
+    },
+    {
+      "name": "Meta-584",
+      "prompt": "Identify the movie that is most likely to be similar in theme, genre, or style to the listed movies."
+    },
+    {
+      "name": "Meta-585",
+      "prompt": "Identify the movie that is most likely to be similar to the given movie recommendations based on their genres, themes, and styles."
+    },
+    {
+      "name": "Meta-586",
+      "prompt": "Find the movie option that is most commonly associated with the same genre or theme as the listed movies."
+    },
+    {
+      "name": "Meta-587",
+      "prompt": "Find the movie that is most likely to be enjoyed by a person who likes at least two movies from the given list."
+    },
+    {
+      "name": "Meta-588",
+      "prompt": "Find a movie from the options that is most likely to appeal to someone who enjoys the given set of movies."
+    },
+    {
+      "name": "Meta-589",
+      "prompt": "Find the movie that is most likely to be recommended by considering the genre, style, or theme of the input movies."
+    },
+    {
+      "name": "Meta-590",
+      "prompt": "Identify the movie that best fits the style or theme of the given movie list."
+    },
+    {
+      "name": "Meta-591",
+      "prompt": "Find the movie option that is most likely to share a common theme, genre, or director with the listed movies."
+    },
+    {
+      "name": "Meta-592",
+      "prompt": "Identify the movie that shares the most common genre or theme with the listed movies."
+    },
+    {
+      "name": "Meta-593",
+      "prompt": "Find the movie option that is most similar in genre or style to the listed movie titles."
+    },
+    {
+      "name": "Meta-594",
+      "prompt": "Identify the movie from the given options that is most likely to be recommended based on the provided list of similar movies."
+    },
+    {
+      "name": "Meta-595",
+      "prompt": "Identify the movie that is most closely related to the given set of films based on genre, theme, or style."
+    },
+    {
+      "name": "Meta-596",
+      "prompt": "Find the movie that is most closely associated with the given movie recommendations."
+    },
+    {
+      "name": "Meta-597",
+      "prompt": "Find the movie that is most likely to be similar to the given movies based on their genres, themes, and styles."
+    },
+    {
+      "name": "Meta-598",
+      "prompt": "Identify the movie from the given options that is most similar in genre or theme to the listed movies."
+    },
+    {
+      "name": "Meta-599",
+      "prompt": "Find the movie that shares common themes or genres with the listed movies."
+    },
+    {
+      "name": "Meta-600",
+      "prompt": "Find a movie from the options that shares a similar theme, genre, or tone with the given movie titles."
+    },
+    {
+      "name": "Meta-601",
+      "prompt": "Find the movie option that is most likely to be similar in genre or style to the given list of movies."
+    },
+    {
+      "name": "Meta-602",
+      "prompt": "Identify the movie that is most similar in genre to the given set of movies."
+    },
+    {
+      "name": "Meta-603",
+      "prompt": "Identify the movie that has the most similar themes, genres, or awards among the given options."
+    },
+    {
+      "name": "Meta-604",
+      "prompt": "Identify the movie that is most likely to be recommended based on the common themes or genres among the given movie list."
+    },
+    {
+      "name": "Meta-605",
+      "prompt": "Identify the common theme or genre among the listed movies and select the option that best fits this theme or genre."
+    },
+    {
+      "name": "Meta-606",
+      "prompt": "Select the movie that is most likely to be recommended based on the similarity in themes, genres, or tone among the given movie options."
+    },
+    {
+      "name": "Meta-607",
+      "prompt": "Identify the movie from the options that is most likely to be similar in genre or tone to the given movies."
+    },
+    {
+      "name": "Meta-608",
+      "prompt": "Identify the movie that is most closely associated with the given list of films."
+    },
+    {
+      "name": "Meta-609",
+      "prompt": "Find a movie from the options that is similar in genre, tone, or style to the given movies."
+    },
+    {
+      "name": "Meta-610",
+      "prompt": "Identify the most popular movie among the listed options that shares similar themes, genres, or directors with the given movies."
+    },
+    {
+      "name": "Meta-611",
+      "prompt": "Find a movie from the options that is also a blockbuster hit or has received widespread critical acclaim."
+    },
+    {
+      "name": "Meta-612",
+      "prompt": "Identify the movie that best fits the genre and style of the given movie list."
+    },
+    {
+      "name": "Meta-613",
+      "prompt": "Choose the movie that is most likely to be recommended based on the common themes, genres, or styles of the given movies."
+    },
+    {
+      "name": "Meta-614",
+      "prompt": "Find the movie that is most likely to be enjoyed by someone who likes at least two of the given movies."
+    },
+    {
+      "name": "Meta-615",
+      "prompt": "Choose the movie that is most likely to be enjoyed by someone who has liked all the given movies."
+    },
+    {
+      "name": "Meta-616",
+      "prompt": "Find the movie option that is most likely to be part of the same genre or have a similar theme to the given movie examples."
+    },
+    {
+      "name": "Meta-617",
+      "prompt": "Select the movie that is most likely to be similar in genre or style to the given movies."
+    },
+    {
+      "name": "Meta-618",
+      "prompt": "Find the movie from the options that is most closely associated with the input movies in terms of genre, style, or themes."
+    },
+    {
+      "name": "Meta-619",
+      "prompt": "Identify the most commonly cited genre or theme among the input movies and select the option that best fits this genre or theme."
+    },
+    {
+      "name": "Meta-620",
+      "prompt": "Identify the movie with the highest number of common genre(s) among the input movie(s)."
+    },
+    {
+      "name": "Meta-621",
+      "prompt": "Identify the movie that is most likely to be recommended based on the given options, considering their genre, theme, or style similarity to the provided movie references."
+    },
+    {
+      "name": "Meta-622",
+      "prompt": "Identify the movie that is most likely to appeal to someone who enjoyed the given movies."
+    },
+    {
+      "name": "Meta-623",
+      "prompt": "Identify the movie that shares similar genres or themes with the given movies."
+    },
+    {
+      "name": "Meta-624",
+      "prompt": "Identify the movie that is most likely to be a match among the given options based on a shared characteristic or theme among the provided list of movies."
+    },
+    {
+      "name": "Meta-625",
+      "prompt": "Find a movie from the options that is most likely to be enjoyed by someone who likes the movies mentioned in the input."
+    },
+    {
+      "name": "Meta-626",
+      "prompt": "Identify the most popular or critically acclaimed movie among the options that shares similar themes, genres, or directorial styles with the given movies."
+    },
+    {
+      "name": "Meta-627",
+      "prompt": "Select the movie that is most closely associated with drama and/or action."
+    },
+    {
+      "name": "Meta-628",
+      "prompt": "Find the movie that is most likely to appeal to fans of the input movies, based on its genre, tone, and style."
+    },
+    {
+      "name": "Meta-629",
+      "prompt": "Identify the genre and tone of the given movies and choose the option that best matches their combination."
+    },
+    {
+      "name": "Meta-630",
+      "prompt": "Find a movie among the options that shares a common theme or genre with the given movies."
+    },
+    {
+      "name": "Meta-631",
+      "prompt": "Find the movie that is most closely associated with the genre or themes of the given movies."
+    },
+    {
+      "name": "Meta-632",
+      "prompt": "Identify the movie from the given options that shares similar themes, genres, or elements with the listed movies."
+    },
+    {
+      "name": "Meta-633",
+      "prompt": "Identify the genre or theme common to the given movie titles and select the option that shares the same characteristic."
+    },
+    {
+      "name": "Meta-634",
+      "prompt": "Find a movie that is most likely to be of similar genre or style to the given movies."
+    },
+    {
+      "name": "Meta-635",
+      "prompt": "Find a movie from the given options that is similar in genre or style to the listed movies."
+    },
+    {
+      "name": "Meta-636",
+      "prompt": "Identify the movie that shares a common theme or genre with the given set of movies."
+    },
+    {
+      "name": "Meta-637",
+      "prompt": "Find the movie that is most likely to be recommended by considering the genre, style, or themes of the input movies."
+    },
+    {
+      "name": "Meta-638",
+      "prompt": "Find the movie that is most likely to be recommended to someone who enjoyed the movies listed."
+    },
+    {
+      "name": "Meta-639",
+      "prompt": "Find a movie from the options that is most similar in genre or tone to the movies listed."
+    },
+    {
+      "name": "Meta-640",
+      "prompt": "Identify the movie that is most likely to be recommended based on the given options, considering the themes, genres, and tone of the provided movies."
+    },
+    {
+      "name": "Meta-641",
+      "prompt": "Identify the movie that is most similar to the provided list of movies based on genre, theme, or style."
+    },
+    {
+      "name": "Meta-642",
+      "prompt": "Find the movie that is most closely associated with the given movie genres or themes."
+    },
+    {
+      "name": "Meta-643",
+      "prompt": "Identify the common theme or genre among the given movies and choose the option that best fits this theme or genre."
+    },
+    {
+      "name": "Meta-644",
+      "prompt": "Identify the movie that is most likely to be recommended based on the common characteristics and themes of the given movies."
+    },
+    {
+      "name": "Meta-645",
+      "prompt": "Find the movie from the options that is most closely associated with the given movies in terms of genre or theme."
+    },
+    {
+      "name": "Meta-646",
+      "prompt": "Choose the movie that has a genre or theme in common with the given movies."
+    },
+    {
+      "name": "Meta-647",
+      "prompt": "Find the movie from the options that is most likely to appeal to viewers who enjoy the listed movies."
+    },
+    {
+      "name": "Meta-648",
+      "prompt": "Identify the movie with the most common genre among the given options, which is similar to the listed movies."
+    },
+    {
+      "name": "Meta-649",
+      "prompt": "Identify the movie that is most similar to the given list of movies."
+    },
+    {
+      "name": "Meta-650",
+      "prompt": "Identify the genre or theme common to the given movies and choose the option that best matches this characteristic."
+    },
+    {
+      "name": "Meta-651",
+      "prompt": "Identify the movie that is most commonly associated with the theme or genre of the listed movies."
+    },
+    {
+      "name": "Meta-652",
+      "prompt": "Find a movie that is likely to be recommended based on the similarity in themes, genres, or styles among the given movies."
+    },
+    {
+      "name": "Meta-653",
+      "prompt": "Identify the movie that is most closely associated with the genre or tone of the provided movies."
+    },
+    {
+      "name": "Meta-654",
+      "prompt": "Find the movie that is most likely to be recommended to someone who enjoys the movies listed as examples."
+    },
+    {
+      "name": "Meta-655",
+      "prompt": "Find a movie from the options that is often categorized in the same genre(s) as the given movies."
+    },
+    {
+      "name": "Meta-656",
+      "prompt": "Identify the movie that best fits the theme or genre of the listed movies."
+    },
+    {
+      "name": "Meta-657",
+      "prompt": "Identify the movie with the most consistent genre and tone among the given options that best matches the genre and tone of the provided movie list."
+    },
+    {
+      "name": "Meta-658",
+      "prompt": "Find the movie that is most likely to be of similar genre or style to the listed movies."
+    },
+    {
+      "name": "Meta-659",
+      "prompt": "Choose the movie that is most likely to share a common theme or genre with the listed movies."
+    },
+    {
+      "name": "Meta-660",
+      "prompt": "Identify the common theme or genre among the listed movies and choose the option that best fits."
+    },
+    {
+      "name": "Meta-661",
+      "prompt": "Identify the movie that is most similar to the given set of films based on their genres, themes, or styles."
+    },
+    {
+      "name": "Meta-662",
+      "prompt": "Find the movie that is most likely to be enjoyed by someone who likes the given set of movies."
+    },
+    {
+      "name": "Meta-663",
+      "prompt": "Identify the common genre or theme among the listed movies and choose the option that best represents that genre or theme."
+    },
+    {
+      "name": "Meta-664",
+      "prompt": "Find the movie that has been most frequently mentioned in the same genres and themes as the given movies."
+    },
+    {
+      "name": "Meta-665",
+      "prompt": "Choose the movie that has the most genres or themes in common with the listed movies."
+    },
+    {
+      "name": "Meta-666",
+      "prompt": "Find the movie option that is most closely associated with the given list of movies."
+    },
+    {
+      "name": "Meta-667",
+      "prompt": "Identify the movie that shares the most common genre or theme with the given list of movies."
+    },
+    {
+      "name": "Meta-668",
+      "prompt": "Find a movie that shares similarities with the given film(s) in terms of genre, tone, or style."
+    },
+    {
+      "name": "Meta-669",
+      "prompt": "Identify the movie from the given options that is most likely to be similar in genre, style, or theme to the provided list of movies."
+    },
+    {
+      "name": "Meta-670",
+      "prompt": "Find the movie from the options that is most likely to share a common theme, genre, or stylistic element with the given movie titles."
+    },
+    {
+      "name": "Meta-671",
+      "prompt": "Identify the movie that shares the most common themes, genres, or styles among the given options with the input movie(s)."
+    },
+    {
+      "name": "Meta-672",
+      "prompt": "Find the movie that is most closely associated with the theme or genre of the input movies."
+    },
+    {
+      "name": "Meta-673",
+      "prompt": "Identify the movie that shares the most common genre or theme with the given set of movies."
+    },
+    {
+      "name": "Meta-674",
+      "prompt": "Identify the movie that best fits the theme or genre of the input movie(s)."
+    },
+    {
+      "name": "Meta-675",
+      "prompt": "Identify the movie that best matches the style or genre of the given film."
+    },
+    {
+      "name": "Meta-676",
+      "prompt": "Identify the movie that is most likely to be similar in genre or theme to the given set of movies."
+    },
+    {
+      "name": "Meta-677",
+      "prompt": "Find the movie from the given options that is most likely to be similar in genre, tone, or style to the listed movies."
+    },
+    {
+      "name": "Meta-678",
+      "prompt": "Identify the movie that is most likely to be similar to the given list of movies based on their genres and styles."
+    },
+    {
+      "name": "Meta-679",
+      "prompt": "Identify the movie that is most likely to be recommended based on the given list of movies, considering their genres, themes, and styles."
+    },
+    {
+      "name": "Meta-680",
+      "prompt": "Identify the movie that is most closely related in genre or tone to the provided list of movies."
+    },
+    {
+      "name": "Meta-681",
+      "prompt": "Identify the movie from the given options that is most likely to be similar in genre, style, or tone to the provided list of movies."
+    },
+    {
+      "name": "Meta-682",
+      "prompt": "Identify the movie that is most likely to be of interest to someone who enjoys the given movies."
+    },
+    {
+      "name": "Meta-683",
+      "prompt": "Choose the movie that is most commonly associated with all other given movies."
+    },
+    {
+      "name": "Meta-684",
+      "prompt": "Find the movie that has the most similarities in genre or style with the given movie titles."
+    },
+    {
+      "name": "Meta-685",
+      "prompt": "Find the movie that is most likely to be of a similar genre or theme as the given movies."
+    },
+    {
+      "name": "Meta-686",
+      "prompt": "Find the movie option that is most likely to be similar to the given set of movies."
+    },
+    {
+      "name": "Meta-687",
+      "prompt": "Identify the movie with the most genre or theme overlap among the input movies."
+    },
+    {
+      "name": "Meta-688",
+      "prompt": "Find the movie from the options that is most likely to appeal to viewers who enjoyed the given movie(s)."
+    },
+    {
+      "name": "Meta-689",
+      "prompt": "Find the movie that is most commonly associated with the given movies, considering their genres, themes, and overall tone."
+    },
+    {
+      "name": "Meta-690",
+      "prompt": "Identify the movie that is most likely to be enjoyed by someone who likes the movies listed as examples."
+    }
+  ]
+}

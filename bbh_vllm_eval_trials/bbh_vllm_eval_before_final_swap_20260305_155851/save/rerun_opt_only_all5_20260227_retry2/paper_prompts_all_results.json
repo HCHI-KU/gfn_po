@@ -1,0 +1,97 @@
+{
+  "tracking_shuffled_objects_five_objects": {
+    "paper_acc": 0.7,
+    "Opt": {
+      "prompt": "Use this process as an explanation stepwise for each step until you get to as given above Alice has got originaly the following as follows.",
+      "accuracy": 0.13,
+      "inference_time": 12.506600141525269,
+      "correct": 13,
+      "total": 100,
+      "parse_failures": 18,
+      "invalid_predictions": 0,
+      "parsed_rate": 0.82,
+      "valid_parsed_rate": 0.82,
+      "used_extractor": true,
+      "prompt_backend": "manual_llama3",
+      "test_acc": 0.13,
+      "test_parsed": 0.82,
+      "answer_max_tokens": 4
+    }
+  },
+  "object_counting": {
+    "paper_acc": 0.9,
+    "Opt": {
+      "prompt": "Use only addition. Add think step by step. Finally give the actual correct answer.",
+      "accuracy": 0.87,
+      "inference_time": 9.710090398788452,
+      "correct": 87,
+      "total": 100,
+      "parse_failures": 0,
+      "invalid_predictions": 0,
+      "parsed_rate": 1.0,
+      "valid_parsed_rate": 1.0,
+      "used_extractor": true,
+      "prompt_backend": "manual_llama3",
+      "test_acc": 0.87,
+      "test_parsed": 1.0,
+      "answer_max_tokens": 1
+    }
+  },
+  "causal_judgement": {
+    "paper_acc": 0.57,
+    "Opt": {
+      "prompt": "Use causal diagram. The correct option ask about whether there the variable C of about whether a specific cause is sufficient. The answer a causal relationship between C to D if the probability P that C occurs given E changes.",
+      "accuracy": 0.51,
+      "inference_time": 13.370960712432861,
+      "correct": 51,
+      "total": 100,
+      "parse_failures": 0,
+      "invalid_predictions": 0,
+      "parsed_rate": 1.0,
+      "valid_parsed_rate": 1.0,
+      "used_extractor": true,
+      "prompt_backend": "manual_llama3",
+      "test_acc": 0.51,
+      "test_parsed": 1.0,
+      "answer_max_tokens": 4
+    }
+  },
+  "movie_recommendation": {
+    "paper_acc": 0.57,
+    "Opt": {
+      "prompt": "Use movie ratings data available here above movies for reference. ThisHOFF has an interesting analysis based solely options to options based movies ratings expect from the other movies you are asked ones mentioned here you.",
+      "accuracy": 0.36,
+      "inference_time": 11.645384311676025,
+      "correct": 36,
+      "total": 100,
+      "parse_failures": 27,
+      "invalid_predictions": 0,
+      "parsed_rate": 0.73,
+      "valid_parsed_rate": 0.73,
+      "used_extractor": true,
+      "prompt_backend": "manual_llama3",
+      "test_acc": 0.36,
+      "test_parsed": 0.73,
+      "answer_max_tokens": 4
+    }
+  },
+  "hyperbaton": {
+    "paper_acc": 0.84,
+    "Opt": {
+      "prompt": "Use the reasoning and examples you would step. Finally give the actual correct answer.",
+      "accuracy": 0.81,
+      "inference_time": 10.439929962158203,
+      "correct": 81,
+      "total": 100,
+      "parse_failures": 0,
+      "invalid_predictions": 0,
+      "parsed_rate": 1.0,
+      "valid_parsed_rate": 1.0,
+      "used_extractor": true,
+      "prompt_backend": "manual_llama3",
+      "test_acc": 0.81,
+      "test_parsed": 1.0,
+      "answer_max_tokens": 4
+    }
+  }
+}

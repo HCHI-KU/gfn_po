@@ -1,0 +1,12 @@
+{
+  "task_name": "movie_recommendation",
+  "n_prompts": 100,
+  "pearson_r": 0.679170113497318,
+  "spearman_rho": 0.6929859577093774,
+  "train_mean": 0.0756,
+  "test_mean": 0.059699999999999996,
+  "train_std": 0.04788152044369518,
+  "test_std": 0.044055760122826165,
+  "plot_path": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/movie_recommendation/train_test_correlation.png",
+  "points_csv": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/movie_recommendation/train_test_points.csv"
+}

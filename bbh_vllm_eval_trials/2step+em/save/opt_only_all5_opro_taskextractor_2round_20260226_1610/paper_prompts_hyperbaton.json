@@ -1,0 +1,25 @@
+{
+  "paper_acc": 0.84,
+  "Opt": {
+    "prompt": "Use the reasoning and examples you would step. Finally give the actual correct answer.",
+    "accuracy": 0.73,
+    "test_acc": 0.73,
+    "inference_time": 10.563974618911743,
+    "correct": 73,
+    "total": 100,
+    "parse_failures": 1,
+    "invalid_predictions": 0,
+    "parsed_rate": 0.99,
+    "valid_parsed_rate": 0.99,
+    "test_parsed": 0.99,
+    "used_extractor": true,
+    "prompt_backend": "manual_llama3",
+    "answer_max_tokens": 4,
+    "evaluation_protocol": "opro_eval_adapter",
+    "extract_final_answer_by_prompting_again": true,
+    "second_round_prompt_style": "task_extractor",
+    "opro_second_round_extraction": true,
+    "opro_second_round_max_tokens": 8,
+    "second_round_extractor_text": "Therefore, the final answer is (output exactly one letter: A or B; no explanation) "
+  }
+}

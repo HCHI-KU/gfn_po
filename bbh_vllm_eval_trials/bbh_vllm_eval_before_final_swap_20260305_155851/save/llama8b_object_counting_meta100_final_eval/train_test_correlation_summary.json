@@ -1,0 +1,15 @@
+{
+  "source": "/home/work/jihun/bbh_vllm_eval_final/save/llama8b_object_counting_meta100_final_eval/paper_prompts_all_results.json",
+  "tasks": {
+    "object_counting": {
+      "n_prompts": 100,
+      "pearson_r": 0.8523332392084303,
+      "spearman_rho": 0.8301358376790102,
+      "plot_path": "/home/work/jihun/bbh_vllm_eval_final/save/llama8b_object_counting_meta100_final_eval/train_test_correlation_object_counting_rerun.png",
+      "train_mean": 0.4438,
+      "test_mean": 0.3841999999999999,
+      "train_std": 0.09502399696918667,
+      "test_std": 0.08094664909679708
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "task_name": "movie_recommendation",
+  "generated_at": "2026-03-04 19:34:22",
+  "generation_config": {
+    "model_path": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "conversation_template": "llama-3",
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "max_tokens": 96,
+    "num_examples": 3,
+    "requested_num_prompts": 10,
+    "actual_num_prompts": 10,
+    "generation_batch_size_cap": 128,
+    "generation_max_rounds": 6
+  },
+  "meta_prompt_request": "You are creating a single instruction prompt for a reasoning task named 'movie_recommendation'.\nInfer the task behavior from the input/output examples below.\nWrite exactly one concise instruction that helps solve this task.\nOutput only the instruction text. Do not output numbering, quotes, or explanations.\n\nExamples:\nInput: Find a movie similar to Batman, The Mask, The Fugitive, Pretty Woman:\nOptions:\n(A) The Front Page\n(B) Maelstrom\n(C) The Lion King\n(D) Lamerica.\nOutput: C\n\nInput: Find a movie similar to The Sixth Sense, The Matrix, Forrest Gump, The Shawshank Redemption:\nOptions:\n(A) Street Fighter II The Animated Movie\n(B) The Sheltering Sky\n(C) The Boy Who Could Fly\n(D) Terminator 2 Judgment Day.\nOutput: D\n\nInput: Find a movie similar to Schindler's List, Braveheart, The Silence of the Lambs, Tombstone:\nOptions:\n(A) Orlando\n(B) Guilty of Romance\n(C) Forrest Gump\n(D) All the Real Girls.\nOutput: C\n\nInstruction:",
+  "prompts": [
+    {
+      "name": "Meta-01",
+      "prompt": "Identify the genre or theme common to the input movie list and select the option that best represents that genre or theme."
+    },
+    {
+      "name": "Meta-02",
+      "prompt": "Identify the most popular or critically acclaimed movie among the options that is similar in genre or tone to the given movies."
+    },
+    {
+      "name": "Meta-03",
+      "prompt": "Find a movie from the options that is most likely to appeal to fans of the input movies."
+    },
+    {
+      "name": "Meta-04",
+      "prompt": "Find the movie from the options that is most closely associated with the characteristics of the input movies."
+    },
+    {
+      "name": "Meta-05",
+      "prompt": "Identify the movie that is most likely to share a common genre or theme with the provided movie list."
+    },
+    {
+      "name": "Meta-06",
+      "prompt": "Choose the movie that is most likely to be appreciated by fans of the given movies."
+    },
+    {
+      "name": "Meta-07",
+      "prompt": "Find a movie from the options that is most similar in genre or tone to the given list of movies."
+    },
+    {
+      "name": "Meta-08",
+      "prompt": "Find the movie from the given options that is most likely to be similar in theme, genre, or tone to the listed movie(s)."
+    },
+    {
+      "name": "Meta-09",
+      "prompt": "Identify the movie that is most closely associated with the given set of movies, based on their genres or styles."
+    },
+    {
+      "name": "Meta-10",
+      "prompt": "Identify the movie with the most common genre or theme among the given options."
+    }
+  ]
+}

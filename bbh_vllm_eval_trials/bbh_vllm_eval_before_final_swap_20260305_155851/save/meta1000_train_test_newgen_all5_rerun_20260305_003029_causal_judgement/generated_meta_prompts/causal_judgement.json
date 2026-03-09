@@ -1,0 +1,2819 @@
+{
+  "task_name": "causal_judgement",
+  "generated_at": "2026-03-05 00:31:21",
+  "generation_config": {
+    "model_path": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "conversation_template": "llama-3",
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "max_tokens": 96,
+    "num_examples": 3,
+    "requested_num_prompts": 1000,
+    "actual_num_prompts": 700,
+    "generation_batch_size_cap": 128,
+    "generation_max_rounds": 6
+  },
+  "meta_prompt_request": "You are creating a single instruction prompt for a reasoning task named 'causal_judgement'.\nInfer the task behavior from the input/output examples below.\nWrite exactly one concise instruction that helps solve this task.\nOutput only the instruction text. Do not output numbering, quotes, or explanations.\n\nExamples:\nInput: How would a typical person answer each of the following questions about causation?\nA machine is set up in such a way that it will short circuit if both the black wire and the red wire touch the battery at the same time. The machine will not short circuit if just one of these wires touches the battery. The black wire is designated as the one that is supposed to touch the battery, while the red wire is supposed to remain in some other part of the machine. One day, the black wire and the red wire both end up touching the battery at the same time. There is a short circuit. Did the black wire cause the short circuit?\nOptions:\n- Yes\n- No.\nOutput: No\n\nInput: How would a typical person answer each of the following questions about causation?\nLong ago, when John was only 17 years old, he got a job working for a large manufacturing company. He started out working on an assembly line for minimum wage, but after a few years at the company, he was given a choice between two line manager positions. He could stay in the woodwork division, which is where he was currently working. Or he could move to the plastics division. John was unsure what to do because he liked working in the woodwork division, but he also thought it might be worth trying something different. He finally decided to switch to the plastics division and try something new. For the last 30 years, John has worked as a production line supervisor in the plastics division. After the first year there, the plastics division was moved to a different building with more space. Unfortunately, through the many years he worked there, John was exposed to asbestos, a highly carcinogenic substance. Most of the plastics division was quite safe, but the small part in which John worked was exposed to asbestos fibers. And now, although John has never smoked a cigarette in his life and otherwise lives a healthy lifestyle, he has a highly progressed and incurable case of lung cancer at the age of 50. John had seen three cancer specialists, all of whom confirmed the worst: that, except for pain, John's cancer was untreatable and he was absolutely certain to die from it very soon (the doctors estimated no more than 2 months). Yesterday, while John was in the hospital for a routine medical appointment, a new nurse accidentally administered the wrong medication to him. John was allergic to the drug and he immediately went into shock and experienced cardiac arrest (a heart attack). Doctors attempted to resuscitate him but he died minutes after the medication was administered. Did John's job cause his premature death?\nOptions:\n- Yes\n- No.\nOutput: No\n\nInput: How would a typical person answer each of the following questions about causation?\nLong ago, when John was only 17 years old, he got a job working for a large manufacturing company. He started out working on an assembly line for minimum wage, but after a few years at the company, he was given a choice between two line manager positions. He could stay in the woodwork division, which is where he was currently working. Or he could move to the plastics division. John was unsure what to do because he liked working in the woodwork division, but he also thought it might be worth trying something different. He finally decided to switch to the plastics division and try something new. For the last 30 years, John has worked as a production line supervisor in the plastics division. After the first year there, the plastics division was moved to a different building with more space. Unfortunately, through the many years he worked there, John was exposed to asbestos, a highly carcinogenic substance. Most of the plastics division was quite safe, but the small part in which John worked was exposed to asbestos fibers. And now, although John has never smoked a cigarette in his life and otherwise lives a healthy lifestyle, he has a highly progressed and incurable case of lung cancer at the age of 50. John had seen three cancer specialists, all of whom confirmed the worst: that, except for pain, John's cancer was untreatable and he was absolutely certain to die from it very soon (the doctors estimated no more than 2 months). Yesterday, while John was in the hospital for a routine medical appointment, a new nurse accidentally administered the wrong medication to him. John was allergic to the drug and he immediately went into shock and experienced cardiac arrest (a heart attack). Doctors attempted to resuscitate him but he died minutes after the medication was administered. Did misadministration of medication cause John's premature death?\nOptions:\n- Yes\n- No.\nOutput: Yes\n\nInstruction:",
+  "prompts": [
+    {
+      "name": "Meta-01",
+      "prompt": "Identify the direct, immediate, and most plausible cause of the observed outcome, excluding any underlying conditions or pre-existing factors."
+    },
+    {
+      "name": "Meta-02",
+      "prompt": "Determine whether the described event or action is a necessary condition for the outcome or result, considering all other factors as constant."
+    },
+    {
+      "name": "Meta-03",
+      "prompt": "Determine whether the stated event is the primary reason or direct cause of the outcome, rather than being merely a contributing factor or correlated with the outcome."
+    },
+    {
+      "name": "Meta-04",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event described in the scenario."
+    },
+    {
+      "name": "Meta-05",
+      "prompt": "Determine the event that most likely caused the outcome, considering the context and available information."
+    },
+    {
+      "name": "Meta-06",
+      "prompt": "Determine whether the given event or action is the most direct and immediate cause of the outcome, while taking into account any potential intervening factors."
+    },
+    {
+      "name": "Meta-07",
+      "prompt": "Identify the event or factor that is the most direct and immediate cause of the outcome."
+    },
+    {
+      "name": "Meta-08",
+      "prompt": "Determine whether the presented event or action was a necessary condition for the outcome, and select the option that best describes the typical person's causal judgment."
+    },
+    {
+      "name": "Meta-09",
+      "prompt": "Identify the direct and most plausible cause of the outcome or event described."
+    },
+    {
+      "name": "Meta-10",
+      "prompt": "Identify the most immediate and direct cause of the outcome, excluding any indirect or intervening factors."
+    },
+    {
+      "name": "Meta-11",
+      "prompt": "Determine the direct cause of the outcome, rather than a contributing or underlying factor, by identifying the event or action that sets in motion the chain of events leading to the outcome."
+    },
+    {
+      "name": "Meta-12",
+      "prompt": "Determine the immediate cause of the outcome, excluding any prior events or indirect factors."
+    },
+    {
+      "name": "Meta-13",
+      "prompt": "Determine the factor that directly led to the outcome, excluding any indirect or intermediate causes."
+    },
+    {
+      "name": "Meta-14",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and necessary factor that led to the event or result."
+    },
+    {
+      "name": "Meta-15",
+      "prompt": "Identify the event or action that immediately precedes the outcome in question, and determine whether that event or action is a necessary condition for the outcome to occur."
+    },
+    {
+      "name": "Meta-16",
+      "prompt": "Determine whether the described event or condition is more likely to be the direct cause of the outcome, rather than a coincidence or an indirect factor."
+    },
+    {
+      "name": "Meta-17",
+      "prompt": "Identify the immediate cause of the event described in the scenario."
+    },
+    {
+      "name": "Meta-18",
+      "prompt": "Determine whether the given event or circumstance is the most direct and immediate cause of the outcome, while considering other factors that may have contributed to the outcome."
+    },
+    {
+      "name": "Meta-19",
+      "prompt": "Identify the immediate and direct cause of the outcome or event described in the scenario."
+    },
+    {
+      "name": "Meta-20",
+      "prompt": "Identify the direct and immediate cause of the outcome, ignoring any indirect or remote factors."
+    },
+    {
+      "name": "Meta-21",
+      "prompt": "Consider whether the event described in the scenario was likely to happen independently of the proposed cause."
+    },
+    {
+      "name": "Meta-22",
+      "prompt": "Identify the event or action that most directly and immediately precedes the outcome in question."
+    },
+    {
+      "name": "Meta-23",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and immediate factor that led to the event, rather than a remote or indirect factor."
+    },
+    {
+      "name": "Meta-24",
+      "prompt": "Determine the most direct and plausible cause of the outcome, considering all available information."
+    },
+    {
+      "name": "Meta-25",
+      "prompt": "Identify the event or action that immediately precedes the outcome and assess whether it is the most plausible and direct cause of that outcome."
+    },
+    {
+      "name": "Meta-26",
+      "prompt": "Identify the event that directly led to the outcome in question, and determine whether it was a necessary and sufficient condition for the outcome to occur."
+    },
+    {
+      "name": "Meta-27",
+      "prompt": "Determine whether the given event was caused by the mentioned factor, considering whether the factor was necessary and sufficient for the event to occur."
+    },
+    {
+      "name": "Meta-28",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and immediate factor that led to the result, while considering all other factors as potential contributing conditions."
+    },
+    {
+      "name": "Meta-29",
+      "prompt": "Identify the most direct and immediate cause of the outcome, disregarding any indirect or remote factors."
+    },
+    {
+      "name": "Meta-30",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and immediate factor that contributed to the outcome, and evaluate whether it is the only plausible explanation."
+    },
+    {
+      "name": "Meta-31",
+      "prompt": "Consider whether the event or condition being questioned is the most immediate and direct cause of the outcome, or if another factor is more responsible."
+    },
+    {
+      "name": "Meta-32",
+      "prompt": "Determine whether the given event was caused by the stated factor or was an independent occurrence."
+    },
+    {
+      "name": "Meta-33",
+      "prompt": "Determine whether the provided event or circumstance is the most immediate and direct cause of the outcome, or if another event or circumstance is a more plausible and sufficient explanation."
+    },
+    {
+      "name": "Meta-34",
+      "prompt": "Identify the most direct and immediate cause of the outcome in each scenario."
+    },
+    {
+      "name": "Meta-35",
+      "prompt": "Identify the cause of the outcome that led to the observed effect."
+    },
+    {
+      "name": "Meta-36",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and immediate factor that led to the result, excluding any distant or indirect factors."
+    },
+    {
+      "name": "Meta-37",
+      "prompt": "Is the event in question the direct and immediate result of the action or condition described, or are there other factors or causes that contributed to the outcome?"
+    },
+    {
+      "name": "Meta-38",
+      "prompt": "Decide whether the event or situation described in the text directly led to the outcome or consequence, without considering alternative causes or potential contributing factors."
+    },
+    {
+      "name": "Meta-39",
+      "prompt": "Identify the direct and immediate cause of the outcome or event described, disregarding any potential indirect or contributing factors."
+    },
+    {
+      "name": "Meta-40",
+      "prompt": "Determine whether the event described in the scenario was caused by the action or circumstance mentioned, taking into account typical human reasoning and common sense."
+    },
+    {
+      "name": "Meta-41",
+      "prompt": "Determine the most direct and immediate cause of the outcome, disregarding any indirect or remote factors."
+    },
+    {
+      "name": "Meta-42",
+      "prompt": "Identify the cause that is most directly responsible for the outcome or effect described in the scenario."
+    },
+    {
+      "name": "Meta-43",
+      "prompt": "Did the stated event or condition directly contribute to the outcome or effect, or would the outcome have occurred without it?"
+    },
+    {
+      "name": "Meta-44",
+      "prompt": "Identify the specific event or action that immediately preceded the outcome, and consider whether that event or action was necessary for the outcome to occur."
+    },
+    {
+      "name": "Meta-45",
+      "prompt": "Determine whether the given event or situation is the most direct and immediate cause of the outcome or consequence."
+    },
+    {
+      "name": "Meta-46",
+      "prompt": "Determine whether the provided scenario is more likely to have been caused by the event or circumstance described, rather than any other factor."
+    },
+    {
+      "name": "Meta-47",
+      "prompt": "Determine whether the described event or circumstance is the direct and immediate cause of the outcome."
+    },
+    {
+      "name": "Meta-48",
+      "prompt": "Decide whether a specific event or circumstance caused a particular outcome, disregarding any other potentially contributing factors."
+    },
+    {
+      "name": "Meta-49",
+      "prompt": "Determine the most direct and immediate cause of the outcome or event."
+    },
+    {
+      "name": "Meta-50",
+      "prompt": "Identify the specific event or factor that directly led to the outcome or consequence described, disregarding any indirect or contributing causes."
+    },
+    {
+      "name": "Meta-51",
+      "prompt": "Identify the specific event or factor that most directly and plausibly contributed to the outcome or consequence described."
+    },
+    {
+      "name": "Meta-52",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and immediate factor that led to the event, disregarding any background or underlying conditions."
+    },
+    {
+      "name": "Meta-53",
+      "prompt": "Determine whether the described event is the most immediate or direct cause of the outcome, or whether another factor played a more significant role."
+    },
+    {
+      "name": "Meta-54",
+      "prompt": "Identify the most direct and immediate cause of the outcome, excluding any indirect or contributing factors."
+    },
+    {
+      "name": "Meta-55",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event described in the passage."
+    },
+    {
+      "name": "Meta-56",
+      "prompt": "Determine whether a specific event or action is the primary cause of an outcome, or if another factor is more likely responsible."
+    },
+    {
+      "name": "Meta-57",
+      "prompt": "Determine whether the given event is the most direct and plausible cause of the outcome, taking into account any intervening factors and alternative explanations."
+    },
+    {
+      "name": "Meta-58",
+      "prompt": "Determine the direct and immediate cause of the outcome, discarding any indirect or distant factors."
+    },
+    {
+      "name": "Meta-59",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and immediate factor that led to the observed consequence."
+    },
+    {
+      "name": "Meta-60",
+      "prompt": "Identify the most plausible direct cause of the outcome."
+    },
+    {
+      "name": "Meta-61",
+      "prompt": "Determine whether a given event or circumstance was the immediate or direct cause of a subsequent outcome."
+    },
+    {
+      "name": "Meta-62",
+      "prompt": "Identify the specific event or action that directly led to the outcome, and select the option that corresponds to this cause."
+    },
+    {
+      "name": "Meta-63",
+      "prompt": "Determine whether the event or condition listed as a cause is the most plausible, direct, and immediate factor leading to the outcome or effect described."
+    },
+    {
+      "name": "Meta-64",
+      "prompt": "Determine whether the given event or condition is the direct or indirect cause of the outcome described, considering the presence of other plausible causes or intervening factors."
+    },
+    {
+      "name": "Meta-65",
+      "prompt": "Identify the cause that immediately precedes the outcome, discarding any indirect or background factors."
+    },
+    {
+      "name": "Meta-66",
+      "prompt": "Determine whether the given event or situation is the direct or immediate cause of the outcome or effect."
+    },
+    {
+      "name": "Meta-67",
+      "prompt": "Identify the immediate cause of the outcome, disregarding any potential intermediate causes or underlying conditions."
+    },
+    {
+      "name": "Meta-68",
+      "prompt": "Identify the most direct and immediate cause of the outcome."
+    },
+    {
+      "name": "Meta-69",
+      "prompt": "Determine the most direct and immediate cause of the outcome."
+    },
+    {
+      "name": "Meta-70",
+      "prompt": "Determine the factor that immediately preceded the outcome in question, and conclude that it caused the outcome if no other plausible cause existed."
+    },
+    {
+      "name": "Meta-71",
+      "prompt": "Determine the cause of the outcome by identifying the specific event or factor that triggered or initiated the sequence of events leading to the outcome, while considering the role of other factors as potential contributing causes."
+    },
+    {
+      "name": "Meta-72",
+      "prompt": "Determine whether the given event or condition is a necessary and sufficient cause of the outcome, considering the presence of other factors that may have contributed to the outcome."
+    },
+    {
+      "name": "Meta-73",
+      "prompt": "Determine the cause of the outcome by identifying the factor that is most directly and strongly related to the occurrence of the outcome, without considering distant or indirect factors."
+    },
+    {
+      "name": "Meta-74",
+      "prompt": "Determine the direct cause of the outcome, rather than a contributing factor or a necessary condition."
+    },
+    {
+      "name": "Meta-75",
+      "prompt": "Identify the most immediate and direct cause of the outcome or event described."
+    },
+    {
+      "name": "Meta-76",
+      "prompt": "Determine whether the event or condition in question has a direct and immediate impact on the outcome, or if another factor is more likely to be the primary cause."
+    },
+    {
+      "name": "Meta-77",
+      "prompt": "Identify the specific event or factor that directly contributed to the outcome, excluding any indirect or incidental factors."
+    },
+    {
+      "name": "Meta-78",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and immediate factor that led to the result, regardless of any prior or indirect relationships."
+    },
+    {
+      "name": "Meta-79",
+      "prompt": "Determine whether the described event is the direct or most immediate cause of the outcome, or if other factors also played a significant role."
+    },
+    {
+      "name": "Meta-80",
+      "prompt": "Determine the cause of the outcome by identifying the event or factor that directly led to the consequence, excluding any indirect or intervening factors."
+    },
+    {
+      "name": "Meta-81",
+      "prompt": "Determine whether the described event is more likely to have occurred because of the described cause or due to some other factor or factors."
+    },
+    {
+      "name": "Meta-82",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event described, disregarding any indirect or remote factors."
+    },
+    {
+      "name": "Meta-83",
+      "prompt": "Did the identified event or circumstance directly and plausibly lead to the outcome or consequence described?"
+    },
+    {
+      "name": "Meta-84",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event in question, excluding any indirect, remote, or background factors."
+    },
+    {
+      "name": "Meta-85",
+      "prompt": "Determine whether the given event is the most direct and immediate cause of the outcome, or if other factors are more relevant to understanding the causal relationship."
+    },
+    {
+      "name": "Meta-86",
+      "prompt": "Identify the event that is most directly responsible for the outcome or consequence."
+    },
+    {
+      "name": "Meta-87",
+      "prompt": "Determine the primary cause of the outcome or event by identifying the most direct and significant factor responsible for its occurrence."
+    },
+    {
+      "name": "Meta-88",
+      "prompt": "Determine whether the given event or circumstance directly and plausibly led to the outcome, without considering alternative or indirect factors."
+    },
+    {
+      "name": "Meta-89",
+      "prompt": "Identify the factor that most directly contributed to the outcome or event described."
+    },
+    {
+      "name": "Meta-90",
+      "prompt": "Consider the events that occurred and the available information to determine whether the given event was caused by the described situation or condition."
+    },
+    {
+      "name": "Meta-91",
+      "prompt": "Determine the direct and immediate cause of the outcome, and answer accordingly."
+    },
+    {
+      "name": "Meta-92",
+      "prompt": "Determine the most direct and immediate cause of the outcome, ignoring any indirect or distant relationships."
+    },
+    {
+      "name": "Meta-93",
+      "prompt": "Determine the primary cause or most direct contributor to the outcome or event, considering the information provided in the scenario."
+    },
+    {
+      "name": "Meta-94",
+      "prompt": "Determine whether the given event or condition caused the outcome by considering whether the event or condition was necessary for the outcome to occur."
+    },
+    {
+      "name": "Meta-95",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event described, excluding any potential indirect or contributing factors."
+    },
+    {
+      "name": "Meta-96",
+      "prompt": "Determine the specific event or factor that most directly and plausibly caused the outcome or effect described."
+    },
+    {
+      "name": "Meta-97",
+      "prompt": "Determine whether the stated event is the most immediate and direct cause of the outcome."
+    },
+    {
+      "name": "Meta-98",
+      "prompt": "Identify the specific factor that directly led to the outcome, excluding indirect or background factors."
+    },
+    {
+      "name": "Meta-99",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event."
+    },
+    {
+      "name": "Meta-100",
+      "prompt": "Identify the direct and immediate cause of the outcome described, rather than considering indirect or potential contributing factors."
+    },
+    {
+      "name": "Meta-101",
+      "prompt": "Identify the most direct and immediate cause of the outcome, excluding any potential indirect or contributing factors."
+    },
+    {
+      "name": "Meta-102",
+      "prompt": "Determine whether the event or situation described in the scenario is the direct or primary cause of the outcome."
+    },
+    {
+      "name": "Meta-103",
+      "prompt": "Identify the most direct and proximal cause of the outcome or event, and choose the option that best reflects your judgment."
+    },
+    {
+      "name": "Meta-104",
+      "prompt": "Determine the cause of the outcome by identifying the event or factor that directly led to the consequence, excluding any indirect or remote factors."
+    },
+    {
+      "name": "Meta-105",
+      "prompt": "Determine the most direct and immediate cause of the outcome, excluding indirect or background factors."
+    },
+    {
+      "name": "Meta-106",
+      "prompt": "Determine whether the provided event was caused by the action or condition described, considering the context and potential alternative explanations."
+    },
+    {
+      "name": "Meta-107",
+      "prompt": "Is the outcome of the event most directly and plausibly caused by the specified factor or event?"
+    },
+    {
+      "name": "Meta-108",
+      "prompt": "Determine whether the given event or situation is the most direct and immediate cause of the outcome, excluding all other factors."
+    },
+    {
+      "name": "Meta-109",
+      "prompt": "Identify the event that is most directly responsible for the outcome in question, and select the option that corresponds to that event."
+    },
+    {
+      "name": "Meta-110",
+      "prompt": "Determine whether the described event or circumstance is the most direct and immediate cause of the outcome, and choose the option that reflects this causal relationship."
+    },
+    {
+      "name": "Meta-111",
+      "prompt": "Identify the most immediate and direct cause of the outcome, disregarding distant or indirect factors."
+    },
+    {
+      "name": "Meta-112",
+      "prompt": "Identify the direct and immediate cause of the outcome, regardless of any underlying or contributing factors."
+    },
+    {
+      "name": "Meta-113",
+      "prompt": "Identify the specific event or action that directly led to the outcome or consequence in question, and assess whether that event or action is the most reasonable and plausible explanation for the observed result."
+    },
+    {
+      "name": "Meta-114",
+      "prompt": "Identify the event or action that is most directly responsible for the outcome or consequence."
+    },
+    {
+      "name": "Meta-115",
+      "prompt": "Determine the event or condition that directly and plausibly contributed to the outcome or consequence."
+    },
+    {
+      "name": "Meta-116",
+      "prompt": "Determine whether the presented event or circumstance is the most direct and immediate cause of the outcome, or if another factor plays a more significant role in bringing about the result."
+    },
+    {
+      "name": "Meta-117",
+      "prompt": "Determine whether the presented event or circumstance was the primary cause of the outcome, considering whether it is the most direct and essential factor leading to the result."
+    },
+    {
+      "name": "Meta-118",
+      "prompt": "Identify the event or condition most closely related in time and space to the outcome, and determine if it is a necessary condition for the outcome to occur."
+    },
+    {
+      "name": "Meta-119",
+      "prompt": "Identify the immediate cause or direct contributor to the outcome, excluding any underlying conditions or indirect factors."
+    },
+    {
+      "name": "Meta-120",
+      "prompt": "Determine whether a given event or circumstance is the primary reason for an outcome or death, considering the presence of other possible causes or factors."
+    },
+    {
+      "name": "Meta-121",
+      "prompt": "Identify the immediate and direct cause of the outcome, rather than a distant or indirect factor."
+    },
+    {
+      "name": "Meta-122",
+      "prompt": "Is the event being described the direct and immediate result of the supposed cause?"
+    },
+    {
+      "name": "Meta-123",
+      "prompt": "Determine the cause of the outcome by identifying the event or action that directly led to the consequence, while considering any intervening factors or counterfactuals."
+    },
+    {
+      "name": "Meta-124",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event, considering the presented circumstances and factors."
+    },
+    {
+      "name": "Meta-125",
+      "prompt": "Determine whether the described event or condition was directly and exclusively responsible for the outcome."
+    },
+    {
+      "name": "Meta-126",
+      "prompt": "Identify the most direct and immediate cause of the outcome, disregarding any possible intermediate or underlying factors."
+    },
+    {
+      "name": "Meta-127",
+      "prompt": "Determine whether the described event or situation is the most direct and immediate cause of the outcome or consequence."
+    },
+    {
+      "name": "Meta-128",
+      "prompt": "Did the given event or action directly lead to the outcome or consequence?"
+    },
+    {
+      "name": "Meta-129",
+      "prompt": "Decide whether the given event or condition is the most likely direct cause of the outcome described."
+    },
+    {
+      "name": "Meta-130",
+      "prompt": "Identify the specific event or factor that directly led to the outcome or consequence described, and choose the option that corresponds to that cause."
+    },
+    {
+      "name": "Meta-131",
+      "prompt": "Determine whether the provided scenario suggests that the given event was directly and immediately caused by the given factor, with no other sufficient causes present."
+    },
+    {
+      "name": "Meta-132",
+      "prompt": "Determine whether the stated cause is the most immediate and direct explanation for the observed effect."
+    },
+    {
+      "name": "Meta-133",
+      "prompt": "Identify the most direct and immediate cause of the outcome, rather than any remote or indirect factors."
+    },
+    {
+      "name": "Meta-134",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event, and judge whether it is the cause that led to the consequence."
+    },
+    {
+      "name": "Meta-135",
+      "prompt": "Determine the most direct and immediate cause of the outcome, considering the given context and events."
+    },
+    {
+      "name": "Meta-136",
+      "prompt": "Consider whether the event in question is a necessary and sufficient condition for the outcome, and whether there are alternative causes or factors that could have contributed to the outcome."
+    },
+    {
+      "name": "Meta-137",
+      "prompt": "Identify the cause of the outcome or event by determining whether a specific factor or action directly led to or increased the likelihood of the outcome."
+    },
+    {
+      "name": "Meta-138",
+      "prompt": "Consider the scenario and identify the most direct and immediate cause of the outcome, excluding any indirect or remote factors."
+    },
+    {
+      "name": "Meta-139",
+      "prompt": "Determine whether the given event or circumstance is the most direct and immediate cause of the outcome described."
+    },
+    {
+      "name": "Meta-140",
+      "prompt": "Determine whether the described event or action is the most immediate and direct cause of the outcome, or if another factor is more likely responsible."
+    },
+    {
+      "name": "Meta-141",
+      "prompt": "Determine whether the described event or situation is the direct and primary cause of the outcome or death."
+    },
+    {
+      "name": "Meta-142",
+      "prompt": "Identify the event or action that is most directly responsible for the outcome or consequence, and indicate whether it is the cause or not."
+    },
+    {
+      "name": "Meta-143",
+      "prompt": "Identify the event that directly led to the outcome, and conclude that the other events or circumstances were contributing factors or coincidental."
+    },
+    {
+      "name": "Meta-144",
+      "prompt": "Determine the cause of the outcome by identifying the direct and immediate trigger, rather than a distant or indirect contributing factor."
+    },
+    {
+      "name": "Meta-145",
+      "prompt": "Determine the most direct and immediate cause of the outcome, ignoring any potential intervening factors or secondary effects."
+    },
+    {
+      "name": "Meta-146",
+      "prompt": "Determine the cause of the observed outcome by identifying the most direct and sufficient factor that led to the result, excluding indirect or coincidental factors."
+    },
+    {
+      "name": "Meta-147",
+      "prompt": "Identify the cause of the outcome as the most direct and immediate factor that led to the consequence, rather than a remote or indirect factor."
+    },
+    {
+      "name": "Meta-148",
+      "prompt": "Determine whether the event or condition mentioned in the scenario is the most direct, immediate, and significant cause of the outcome or result mentioned."
+    },
+    {
+      "name": "Meta-149",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and plausible link between the antecedent events and the subsequent outcome, rather than attributing causality to remote or indirect factors."
+    },
+    {
+      "name": "Meta-150",
+      "prompt": "Identify the cause of the outcome by determining whether the presented event(s) or condition(s) were necessary and sufficient to produce the outcome."
+    },
+    {
+      "name": "Meta-151",
+      "prompt": "Determine the most likely cause of the outcome, considering all relevant factors and eliminating any irrelevant ones."
+    },
+    {
+      "name": "Meta-152",
+      "prompt": "Identify the immediate cause of the outcome, without considering any potential underlying or contributing factors."
+    },
+    {
+      "name": "Meta-153",
+      "prompt": "Determine whether the described event or action is the most direct or immediate cause of the outcome or consequence."
+    },
+    {
+      "name": "Meta-154",
+      "prompt": "Identify the cause of the outcome by determining whether the event described in the scenario is more closely related to the proposed cause or other factors."
+    },
+    {
+      "name": "Meta-155",
+      "prompt": "Determine whether the presented event is the most direct and immediate cause of the outcome."
+    },
+    {
+      "name": "Meta-156",
+      "prompt": "Identify the event or action that directly led to the outcome, disregarding any potential contributing factors."
+    },
+    {
+      "name": "Meta-157",
+      "prompt": "Identify the immediate and direct cause of the event or outcome described."
+    },
+    {
+      "name": "Meta-158",
+      "prompt": "Identify the immediate cause of the outcome in question."
+    },
+    {
+      "name": "Meta-159",
+      "prompt": "Determine the most plausible causal relationship between the event and its immediate precursor, excluding any distant or indirect causes."
+    },
+    {
+      "name": "Meta-160",
+      "prompt": "Identify the event or action that most directly contributes to the outcome or consequence in each scenario."
+    },
+    {
+      "name": "Meta-161",
+      "prompt": "Identify the event or action that immediately precedes the outcome or consequence in question."
+    },
+    {
+      "name": "Meta-162",
+      "prompt": "Determine whether the described event was caused by the specified factor or not, considering typical human reasoning about causality."
+    },
+    {
+      "name": "Meta-163",
+      "prompt": "Is the outcome likely to have occurred if the suspected cause had not occurred?"
+    },
+    {
+      "name": "Meta-164",
+      "prompt": "Determine whether the event described in the scenario is more likely to have been caused by the specified factor or by another factor (if applicable)."
+    },
+    {
+      "name": "Meta-165",
+      "prompt": "Identify the most immediate and direct cause of the outcome, rather than a distant or indirect factor."
+    },
+    {
+      "name": "Meta-166",
+      "prompt": "Identify the direct or immediate cause that led to the outcome or event described, excluding any potential or indirect factors."
+    },
+    {
+      "name": "Meta-167",
+      "prompt": "Determine whether the provided event or action is the most direct, immediate, or necessary cause of the outcome or effect described."
+    },
+    {
+      "name": "Meta-168",
+      "prompt": "Determine the primary cause of the outcome or event, disregarding any indirect or contributing factors."
+    },
+    {
+      "name": "Meta-169",
+      "prompt": "Consider the presence of alternative causes or explanations for the outcome when determining the causal relationship between events or actions."
+    },
+    {
+      "name": "Meta-170",
+      "prompt": "Determine whether the given event or situation was a direct and necessary consequence of a specific cause or action, considering the context and relevant factors."
+    },
+    {
+      "name": "Meta-171",
+      "prompt": "Determine whether the described event or situation is the most direct and immediate cause of the outcome or effect."
+    },
+    {
+      "name": "Meta-172",
+      "prompt": "Determine the most direct and immediate cause of the outcome, excluding any indirect or distant factors."
+    },
+    {
+      "name": "Meta-173",
+      "prompt": "Determine the cause of the outcome by identifying the factor most directly and plausibly responsible for the event, excluding any external factors or coincidences."
+    },
+    {
+      "name": "Meta-174",
+      "prompt": "Is the outcome primarily caused by the event described in the scenario?"
+    },
+    {
+      "name": "Meta-175",
+      "prompt": "Determine whether a described event or circumstance is the most immediate and direct cause of a subsequent outcome."
+    },
+    {
+      "name": "Meta-176",
+      "prompt": "Determine the cause of the outcome by identifying the event that, in the absence of other factors, would still have led to the outcome."
+    },
+    {
+      "name": "Meta-177",
+      "prompt": "Identify the specific event or action that immediately preceded the outcome in question, and determine whether that event or action is the most plausible cause of the outcome."
+    },
+    {
+      "name": "Meta-178",
+      "prompt": "Determine the cause of the outcome by identifying the factor that set the outcome in motion, taking into account any intervening events or factors that may have influenced the outcome."
+    },
+    {
+      "name": "Meta-179",
+      "prompt": "Identify the immediate cause of the outcome, and determine whether it was the direct result of a specific event, action, or circumstance."
+    },
+    {
+      "name": "Meta-180",
+      "prompt": "Determine whether the event or circumstance mentioned in the scenario is the most direct and immediate cause of the outcome or result, rather than any indirect or distant connection."
+    },
+    {
+      "name": "Meta-181",
+      "prompt": "Is the given event likely to have occurred without the presence or action of the proposed cause?"
+    },
+    {
+      "name": "Meta-182",
+      "prompt": "Identify the event or action that is most directly responsible for the outcome or consequence described."
+    },
+    {
+      "name": "Meta-183",
+      "prompt": "Determine whether the stated event or circumstance was a necessary and sufficient condition for the outcome to occur, taking into account any alternative explanations and mitigating factors."
+    },
+    {
+      "name": "Meta-184",
+      "prompt": "Identify the event or factor that is most directly responsible for the outcome or result described in the scenario."
+    },
+    {
+      "name": "Meta-185",
+      "prompt": "Determine whether the given event or condition is the direct or primary cause of the outcome or consequence."
+    },
+    {
+      "name": "Meta-186",
+      "prompt": "Identify the event or action that directly precedes the outcome or effect, and determine whether that event or action is the most plausible cause of the outcome or effect."
+    },
+    {
+      "name": "Meta-187",
+      "prompt": "Decide whether the given event is the most direct and immediate cause of the outcome."
+    },
+    {
+      "name": "Meta-188",
+      "prompt": "Determine whether the given event or condition is the most direct and immediate cause of the outcome or consequence."
+    },
+    {
+      "name": "Meta-189",
+      "prompt": "Determine whether the event described in the scenario is the most direct and immediate cause of the outcome, or whether another event or factor played a more significant role in the outcome."
+    },
+    {
+      "name": "Meta-190",
+      "prompt": "Did the given event or circumstance directly and independently cause the outcome, or was it merely a contributing factor or a coincidence?"
+    },
+    {
+      "name": "Meta-191",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event described, and choose the option that accurately reflects this causal relationship."
+    },
+    {
+      "name": "Meta-192",
+      "prompt": "Determine whether the described event is the direct and immediate cause of the outcome, or if it is one of multiple contributing factors."
+    },
+    {
+      "name": "Meta-193",
+      "prompt": "Did the presence or action of a specific event or condition directly lead to the outcome, or was the outcome an unforeseen consequence of multiple factors?"
+    },
+    {
+      "name": "Meta-194",
+      "prompt": "Determine whether the described event was directly or indirectly caused by the stated factor."
+    },
+    {
+      "name": "Meta-195",
+      "prompt": "Determine whether the given event or situation was the primary reason for the outcome, excluding any other contributing factors."
+    },
+    {
+      "name": "Meta-196",
+      "prompt": "Identify the most direct and proximal cause of the outcome, excluding any intermediate or indirect effects."
+    },
+    {
+      "name": "Meta-197",
+      "prompt": "Determine whether the event described is more likely to occur without the presence of the given cause or not."
+    },
+    {
+      "name": "Meta-198",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and plausible explanation, considering the context and available information."
+    },
+    {
+      "name": "Meta-199",
+      "prompt": "Determine whether the event described in the scenario is caused by the action or condition specified in the question."
+    },
+    {
+      "name": "Meta-200",
+      "prompt": "Determine whether the described event or situation caused the outcome, considering all relevant factors and excluding any unrelated or intervening causes."
+    },
+    {
+      "name": "Meta-201",
+      "prompt": "Consider whether the presented event would have occurred if the suspected cause had not occurred."
+    },
+    {
+      "name": "Meta-202",
+      "prompt": "Determine the most direct and immediate cause of the outcome or event described."
+    },
+    {
+      "name": "Meta-203",
+      "prompt": "Determine whether the given event or condition was the direct cause of the outcome, considering the presence of other possible factors that may have contributed to the outcome."
+    },
+    {
+      "name": "Meta-204",
+      "prompt": "Determine the cause of the outcome by identifying the specific event or factor that directly led to the observed effect, ignoring any other potentially relevant factors."
+    },
+    {
+      "name": "Meta-205",
+      "prompt": "Determine whether the described event was caused by the provided circumstances, considering the relationship between the event and the circumstances, and discounting any other potential causes."
+    },
+    {
+      "name": "Meta-206",
+      "prompt": "Identify the most plausible cause of the outcome, considering the provided information and the typical human understanding of causality."
+    },
+    {
+      "name": "Meta-207",
+      "prompt": "Determine whether a given event is the direct or primary cause of an outcome, while considering other potential contributing factors and excluding any intermediate or indirect causes."
+    },
+    {
+      "name": "Meta-208",
+      "prompt": "Determine the cause of the outcome by identifying the event or factor that, in the absence of intervening causes, would not have occurred without it."
+    },
+    {
+      "name": "Meta-209",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event described, and choose the option that corresponds to that cause."
+    },
+    {
+      "name": "Meta-210",
+      "prompt": "Determine whether a given event or circumstance directly led to a particular outcome, excluding any intervening or contributing factors."
+    },
+    {
+      "name": "Meta-211",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and plausible explanation for the event, considering the presence of other factors that may have contributed to or mitigated the outcome."
+    },
+    {
+      "name": "Meta-212",
+      "prompt": "Determine whether the described event or situation was caused by the given factor or agent, considering the context and any relevant information provided."
+    },
+    {
+      "name": "Meta-213",
+      "prompt": "Determine whether the provided event or circumstance is the most immediate and direct cause of the outcome."
+    },
+    {
+      "name": "Meta-214",
+      "prompt": "Identify the event or action that most directly and plausibly caused the outcome or consequence."
+    },
+    {
+      "name": "Meta-215",
+      "prompt": "Determine whether the event described in the scenario is more likely to have been caused by the factor mentioned than by other factors."
+    },
+    {
+      "name": "Meta-216",
+      "prompt": "Determine the cause of the observed effect by identifying the most direct and plausible causal relationship between the antecedent events and the outcome."
+    },
+    {
+      "name": "Meta-217",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event in question."
+    },
+    {
+      "name": "Meta-218",
+      "prompt": "Determine the direct cause of the outcome, excluding any indirect or contributing factors."
+    },
+    {
+      "name": "Meta-219",
+      "prompt": "Identify the event that is most directly responsible for the outcome."
+    },
+    {
+      "name": "Meta-220",
+      "prompt": "Determine whether the stated event or condition directly led to the outcome or consequence described, and choose the option that best reflects this causal relationship."
+    },
+    {
+      "name": "Meta-221",
+      "prompt": "Determine whether the given event was directly or indirectly caused by a specific factor, considering typical human reasoning about causation."
+    },
+    {
+      "name": "Meta-222",
+      "prompt": "Identify the specific event or action that directly led to the outcome, and indicate whether that event or action is the primary cause of the outcome."
+    },
+    {
+      "name": "Meta-223",
+      "prompt": "Determine whether the described event or situation is the direct and immediate cause of the outcome, or if another factor played a more significant role in the outcome."
+    },
+    {
+      "name": "Meta-224",
+      "prompt": "Determine whether the event or situation mentioned in the passage is the most direct and immediate cause of the outcome described, rather than a possible or indirect contributor to it."
+    },
+    {
+      "name": "Meta-225",
+      "prompt": "Determine whether the given event or action directly led to the outcome, without considering intervening factors or alternative causes."
+    },
+    {
+      "name": "Meta-226",
+      "prompt": "Identify the cause of the outcome by considering whether the described event or situation is necessary and sufficient for the outcome to occur, and choose the option that best represents your causal judgment."
+    },
+    {
+      "name": "Meta-227",
+      "prompt": "Consider whether the event or action described in the scenario is the most direct and immediate cause of the outcome, and choose the option that best reflects this causal relationship."
+    },
+    {
+      "name": "Meta-228",
+      "prompt": "Identify the event or action that most directly led to the outcome in question."
+    },
+    {
+      "name": "Meta-229",
+      "prompt": "Determine whether the presented scenario describes a direct causal relationship between the described event and the outcome, or if other factors are more likely to have contributed to the outcome."
+    },
+    {
+      "name": "Meta-230",
+      "prompt": "Determine whether the provided event is the direct or primary cause of the outcome, or if another factor played a more significant role."
+    },
+    {
+      "name": "Meta-231",
+      "prompt": "Determine whether the stated event or circumstance directly led to the outcome, or if there are other underlying factors at play."
+    },
+    {
+      "name": "Meta-232",
+      "prompt": "Determine whether a given event or situation is the most direct and immediate cause of a specific outcome, rather than a remote or indirect contributing factor."
+    },
+    {
+      "name": "Meta-233",
+      "prompt": "Decide which event or action most directly contributed to the outcome or result described."
+    },
+    {
+      "name": "Meta-234",
+      "prompt": "Determine whether the described event is more likely to have occurred without the presence or influence of the provided factor, or if it is possible that the described event could have occurred without the presence or influence of the provided factor."
+    },
+    {
+      "name": "Meta-235",
+      "prompt": "Identify the immediate and direct cause of the outcome or event, excluding any intermediate or indirect factors."
+    },
+    {
+      "name": "Meta-236",
+      "prompt": "Identify the direct, immediate, and most plausible cause of the outcome or event."
+    },
+    {
+      "name": "Meta-237",
+      "prompt": "Determine whether the given event or condition is the most direct, immediate, and plausible cause of the outcome or result."
+    },
+    {
+      "name": "Meta-238",
+      "prompt": "Identify the event or action that directly led to the outcome in question, disregarding any indirect or distant causal relationships."
+    },
+    {
+      "name": "Meta-239",
+      "prompt": "Determine whether a given event or factor is the direct and primary cause of another event or outcome, considering the presence of other possible causes or intervening factors."
+    },
+    {
+      "name": "Meta-240",
+      "prompt": "Determine whether the event described in the scenario is a direct and necessary consequence of the given cause, or if other factors also played a significant role in the outcome."
+    },
+    {
+      "name": "Meta-241",
+      "prompt": "Identify the cause of the outcome by determining whether the described event or condition is necessary and sufficient to bring about the outcome."
+    },
+    {
+      "name": "Meta-242",
+      "prompt": "Identify the factor that most directly and plausibly contributed to the outcome or event, disregarding any indirect or distant causal influences."
+    },
+    {
+      "name": "Meta-243",
+      "prompt": "Determine the direct cause or immediate trigger of the outcome, disregarding any potential indirect or distant factors."
+    },
+    {
+      "name": "Meta-244",
+      "prompt": "Determine whether the provided event was the direct result of the proposed cause, considering any intervening factors or other potential causes."
+    },
+    {
+      "name": "Meta-245",
+      "prompt": "Determine the direct and most immediate cause of the outcome, ignoring any potential contributing factors or background circumstances."
+    },
+    {
+      "name": "Meta-246",
+      "prompt": "Determine the immediate cause of the outcome, rather than considering broader or indirect factors."
+    },
+    {
+      "name": "Meta-247",
+      "prompt": "Identify the immediate, direct, and most plausible cause of the outcome described."
+    },
+    {
+      "name": "Meta-248",
+      "prompt": "Identify the event or factor that is most directly responsible for the outcome, and evaluate whether it is a necessary condition for the outcome to occur."
+    },
+    {
+      "name": "Meta-249",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event described, and choose the option that best corresponds to this causal relationship."
+    },
+    {
+      "name": "Meta-250",
+      "prompt": "Determine the most direct and immediate cause of the outcome in question."
+    },
+    {
+      "name": "Meta-251",
+      "prompt": "Determine whether the presented event is the direct cause of the outcome, rather than a contributing or indirect factor."
+    },
+    {
+      "name": "Meta-252",
+      "prompt": "Did the given event or circumstance directly and plausibly cause the outcome or result?"
+    },
+    {
+      "name": "Meta-253",
+      "prompt": "Identify the direct and immediate cause of the outcome, rather than the underlying or contributing factors."
+    },
+    {
+      "name": "Meta-254",
+      "prompt": "Determine whether a given event or condition is the most direct and immediate cause of a subsequent event or outcome."
+    },
+    {
+      "name": "Meta-255",
+      "prompt": "Determine whether the described event was caused by the stated factor, considering the presence of alternative explanations and potential confounding variables."
+    },
+    {
+      "name": "Meta-256",
+      "prompt": "Determine the most direct and immediate cause of the outcome, excluding any distant or indirect influences."
+    },
+    {
+      "name": "Meta-257",
+      "prompt": "Identify the direct and immediate cause of the outcome in question, disregarding any indirect or remote factors."
+    },
+    {
+      "name": "Meta-258",
+      "prompt": "Determine whether a given event or action is the primary cause of a subsequent outcome, considering the presence of other factors that may have contributed to the outcome."
+    },
+    {
+      "name": "Meta-259",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event described in the scenario, without considering potential intermediate or underlying factors."
+    },
+    {
+      "name": "Meta-260",
+      "prompt": "Determine whether the provided event is the most direct and immediate cause of the outcome, or if another factor had a more significant influence on the outcome."
+    },
+    {
+      "name": "Meta-261",
+      "prompt": "Determine the event or circumstance that most directly and immediately preceded the outcome, and attribute causality to that event or circumstance."
+    },
+    {
+      "name": "Meta-262",
+      "prompt": "Determine whether the event described is the most direct and immediate cause of the outcome, or if another factor contributed more significantly to the outcome."
+    },
+    {
+      "name": "Meta-263",
+      "prompt": "Determine whether a given event or condition has caused another event or outcome by considering the specific circumstances, excluding indirect or background factors."
+    },
+    {
+      "name": "Meta-264",
+      "prompt": "Identify the cause of the outcome or event by considering the context, relationships, and probabilities of each factor involved."
+    },
+    {
+      "name": "Meta-265",
+      "prompt": "Identify the immediate and direct cause of the outcome, disregarding any potential long-term or indirect effects."
+    },
+    {
+      "name": "Meta-266",
+      "prompt": "Determine whether the described event is more likely to have been caused by the stated factor than any other factor."
+    },
+    {
+      "name": "Meta-267",
+      "prompt": "Determine whether a given event or circumstance directly caused a particular outcome, excluding any indirect or intervening factors."
+    },
+    {
+      "name": "Meta-268",
+      "prompt": "Determine the most immediate and direct cause of the outcome or event described, eliminating indirect, intervening, or background factors."
+    },
+    {
+      "name": "Meta-269",
+      "prompt": "Determine whether the described event is more likely to have been caused by the given condition or factor, or if it was an independent occurrence."
+    },
+    {
+      "name": "Meta-270",
+      "prompt": "Determine whether the given event or circumstance is the most direct and likely cause of the outcome."
+    },
+    {
+      "name": "Meta-271",
+      "prompt": "Determine whether a specific event or condition is the direct or primary cause of an outcome, and whether other factors may have contributed to or influenced the outcome."
+    },
+    {
+      "name": "Meta-272",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event described, disregarding any potential indirect or distant factors."
+    },
+    {
+      "name": "Meta-273",
+      "prompt": "Determine the most direct and immediate cause of the outcome or event described in the scenario, while considering the available information and potential alternative explanations."
+    },
+    {
+      "name": "Meta-274",
+      "prompt": "Identify the cause of the outcome by considering the presence or absence of necessary and sufficient conditions, and choose the option that best corresponds to your causal judgement."
+    },
+    {
+      "name": "Meta-275",
+      "prompt": "Determine the cause of the outcome by identifying the event or factor that is most likely to have triggered the observed consequence."
+    },
+    {
+      "name": "Meta-276",
+      "prompt": "Determine whether the described event is more likely to have been caused by the action or situation mentioned in the question or by another factor, considering the information provided and typical human causal reasoning."
+    },
+    {
+      "name": "Meta-277",
+      "prompt": "Determine whether the presented event or condition was the direct or immediate cause of the outcome or consequence described."
+    },
+    {
+      "name": "Meta-278",
+      "prompt": "Identify the factor that most directly led to the outcome or consequence mentioned in the question."
+    },
+    {
+      "name": "Meta-279",
+      "prompt": "Identify the specific event or action that directly led to the outcome or consequence."
+    },
+    {
+      "name": "Meta-280",
+      "prompt": "Determine the immediate cause of the outcome or event, rather than exploring potential underlying or indirect causes."
+    },
+    {
+      "name": "Meta-281",
+      "prompt": "Is the given event directly caused by the action or presence of the mentioned factor, or is it a consequence of a series of events or other factors."
+    },
+    {
+      "name": "Meta-282",
+      "prompt": "Identify the direct and immediate cause of the outcome or event in question, rather than a distant or indirect factor, and choose the option that corresponds to this causal relationship."
+    },
+    {
+      "name": "Meta-283",
+      "prompt": "Identify the immediate cause of the outcome, considering factors other than the proposed cause as irrelevant to the question."
+    },
+    {
+      "name": "Meta-284",
+      "prompt": "Determine the cause of the outcome by identifying the event or condition that triggered the consequence, and rule out other contributing factors."
+    },
+    {
+      "name": "Meta-285",
+      "prompt": "Identify the most immediate and direct cause of the outcome or event described, excluding any potential contributing factors or background conditions."
+    },
+    {
+      "name": "Meta-286",
+      "prompt": "Identify the cause of the outcome that occurred, considering all relevant factors and eliminating any indirect or incidental associations."
+    },
+    {
+      "name": "Meta-287",
+      "prompt": "Determine whether the given event is the most direct and immediate cause of the outcome."
+    },
+    {
+      "name": "Meta-288",
+      "prompt": "Determine whether the described event or action is the direct, immediate, or most plausible cause of the outcome or consequence."
+    },
+    {
+      "name": "Meta-289",
+      "prompt": "Determine whether the described event is more likely to have occurred because of the specified cause or due to some other factor."
+    },
+    {
+      "name": "Meta-290",
+      "prompt": "Identify the event or action that most directly and immediately contributes to the outcome in question."
+    },
+    {
+      "name": "Meta-291",
+      "prompt": "Determine whether the described event was caused by the given factor, considering the typical person's understanding of causality and the absence of intervening factors."
+    },
+    {
+      "name": "Meta-292",
+      "prompt": "Identify the direct cause of the outcome or event, considering the context and circumstances presented, and choose the option that best reflects your causal judgment."
+    },
+    {
+      "name": "Meta-293",
+      "prompt": "Determine whether the given event or situation is the direct and immediate cause of the outcome or result."
+    },
+    {
+      "name": "Meta-294",
+      "prompt": "Determine the cause of the event described by identifying the most direct and proximal factor that led to the outcome, regardless of any prior events or conditions."
+    },
+    {
+      "name": "Meta-295",
+      "prompt": "Did the event or situation described in the text directly lead to the outcome or effect, or was it a contributing factor but not the sole cause."
+    },
+    {
+      "name": "Meta-296",
+      "prompt": "Identify the most direct and immediate cause of the outcome, excluding background factors and ignoring any potential indirect or secondary effects."
+    },
+    {
+      "name": "Meta-297",
+      "prompt": "Determine whether the given event or situation caused the outcome, considering any relevant factors and background information."
+    },
+    {
+      "name": "Meta-298",
+      "prompt": "Determine whether the event described in the scenario was directly caused by the condition or action mentioned, or if another factor was the primary cause."
+    },
+    {
+      "name": "Meta-299",
+      "prompt": "Determine whether the described event or condition was caused by the specified factor or circumstance, considering typical human reasoning about causality."
+    },
+    {
+      "name": "Meta-300",
+      "prompt": "Determine the cause of the event or outcome by identifying the most direct and relevant factor that led to the outcome, while considering the absence of other plausible causes."
+    },
+    {
+      "name": "Meta-301",
+      "prompt": "Determine whether the described event is more likely to occur without the presence or intervention of the suspected cause, or if other factors were also necessary for the event to occur."
+    },
+    {
+      "name": "Meta-302",
+      "prompt": "Consider whether the event being investigated is directly and inevitably triggered by the factor in question, with no other plausible explanation."
+    },
+    {
+      "name": "Meta-303",
+      "prompt": "Determine whether the described event or action is the most direct and immediate cause of the outcome or effect."
+    },
+    {
+      "name": "Meta-304",
+      "prompt": "Identify the cause of the outcome as the factor that sets the outcome in motion, rather than a mere coincidence or indirect consequence."
+    },
+    {
+      "name": "Meta-305",
+      "prompt": "Identify the cause of the outcome by determining whether the specified event or circumstance is necessary and sufficient to bring about the outcome."
+    },
+    {
+      "name": "Meta-306",
+      "prompt": "Identify the cause of the outcome or event by determining whether the stated factors or actions are necessary and sufficient conditions for the outcome or event to occur."
+    },
+    {
+      "name": "Meta-307",
+      "prompt": "Determine whether the described event is a direct result of the stated cause, or if another factor played a more significant role in the outcome."
+    },
+    {
+      "name": "Meta-308",
+      "prompt": "Identify the event or circumstance that is most directly responsible for the outcome or consequence, excluding any indirect or background factors."
+    },
+    {
+      "name": "Meta-309",
+      "prompt": "Identify the cause that is most likely to have directly led to the observed outcome."
+    },
+    {
+      "name": "Meta-310",
+      "prompt": "Determine the most direct and immediate cause of the outcome, ignoring any potential indirect or background factors."
+    },
+    {
+      "name": "Meta-311",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event described, excluding any indirect or distant factors."
+    },
+    {
+      "name": "Meta-312",
+      "prompt": "Determine the cause of the observed outcome by identifying the most direct and immediate factor that led to the occurrence of the event."
+    },
+    {
+      "name": "Meta-313",
+      "prompt": "Determine whether the event or condition mentioned in the scenario is the most direct and proximate cause of the outcome described, and choose the option that reflects this causal relationship."
+    },
+    {
+      "name": "Meta-314",
+      "prompt": "Identify the direct cause of the outcome, excluding any indirect or intervening factors."
+    },
+    {
+      "name": "Meta-315",
+      "prompt": "Identify the most direct and immediate cause of the outcome described in the scenario."
+    },
+    {
+      "name": "Meta-316",
+      "prompt": "Identify the direct and immediate cause of the outcome, ignoring potential contributing factors."
+    },
+    {
+      "name": "Meta-317",
+      "prompt": "Determine whether the described event is more likely to have occurred without the presence of the given factor or circumstances."
+    },
+    {
+      "name": "Meta-318",
+      "prompt": "Determine whether the described event or condition is the direct and immediate cause of the outcome, or if another factor played a more significant role in the occurrence."
+    },
+    {
+      "name": "Meta-319",
+      "prompt": "Determine whether the described event is a direct result of the given cause, or if other factors were involved."
+    },
+    {
+      "name": "Meta-320",
+      "prompt": "Determine whether the stated event or situation directly led to the outcome in question, or if there is another factor that was more likely to have caused the outcome."
+    },
+    {
+      "name": "Meta-321",
+      "prompt": "Determine whether the provided event is a necessary condition for the outcome, or if it played a crucial role in its occurrence."
+    },
+    {
+      "name": "Meta-322",
+      "prompt": "Identify the immediate cause of the outcome, rather than a remote or contributing factor."
+    },
+    {
+      "name": "Meta-323",
+      "prompt": "Identify the factor that directly led to the observed outcome, excluding any indirect or remote causes."
+    },
+    {
+      "name": "Meta-324",
+      "prompt": "Identify the immediate cause of the outcome or event described in the scenario."
+    },
+    {
+      "name": "Meta-325",
+      "prompt": "Identify the cause of the outcome as the factor that directly and immediately precedes the outcome, and disregard any indirect or remote factors."
+    },
+    {
+      "name": "Meta-326",
+      "prompt": "Determine whether the presented scenario is more likely to be caused by the factor listed or if there are other, more direct and plausible causes."
+    },
+    {
+      "name": "Meta-327",
+      "prompt": "Determine whether the provided event or circumstance is the direct and primary cause of the outcome, excluding any secondary or coincidental factors."
+    },
+    {
+      "name": "Meta-328",
+      "prompt": "Determine whether the provided event or circumstance is the most direct, immediate, and necessary cause of the outcome in question."
+    },
+    {
+      "name": "Meta-329",
+      "prompt": "Is the event described likely to occur or happen without the presence of the given factor?"
+    },
+    {
+      "name": "Meta-330",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event described."
+    },
+    {
+      "name": "Meta-331",
+      "prompt": "Determine the direct and immediate cause of the outcome, excluding any background factors or indirect influences."
+    },
+    {
+      "name": "Meta-332",
+      "prompt": "Identify the most direct and immediate cause of the outcome, excluding any general circumstances or background information."
+    },
+    {
+      "name": "Meta-333",
+      "prompt": "Determine the most direct and immediate cause of the outcome, considering the given information and disregarding any potential intermediate or distant factors."
+    },
+    {
+      "name": "Meta-334",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and immediate factor that led to the event or state, and choose the option that best reflects this causal relationship."
+    },
+    {
+      "name": "Meta-335",
+      "prompt": "Identify the most direct and immediate cause of the outcome, excluding any intervening events or conditions that may have contributed to the outcome."
+    },
+    {
+      "name": "Meta-336",
+      "prompt": "Identify the event that is most closely related to the outcome or effect in question."
+    },
+    {
+      "name": "Meta-337",
+      "prompt": "Identify the factor that directly led to the outcome or event described, while considering the presence or absence of alternative causes."
+    },
+    {
+      "name": "Meta-338",
+      "prompt": "Identify the direct and immediate cause of the outcome, ignoring any potential underlying or contributing factors."
+    },
+    {
+      "name": "Meta-339",
+      "prompt": "Determine whether the given event or action is the most immediate and direct cause of the outcome, considering alternative plausible explanations have been ruled out."
+    },
+    {
+      "name": "Meta-340",
+      "prompt": "Determine whether the event described in the scenario is a direct and necessary consequence of the given circumstances, or if another factor was more likely to have caused the outcome."
+    },
+    {
+      "name": "Meta-341",
+      "prompt": "Identify the cause of the outcome as the event or condition that was most likely to have led to the outcome, given the information provided."
+    },
+    {
+      "name": "Meta-342",
+      "prompt": "Determine the most direct and immediate cause of the outcome, excluding any indirect or intervening factors."
+    },
+    {
+      "name": "Meta-343",
+      "prompt": "Identify the cause of the outcome or event as the factor that sets in motion a chain of events leading to the outcome, rather than a factor that is merely associated with it."
+    },
+    {
+      "name": "Meta-344",
+      "prompt": "Identify the direct cause of the outcome described in the passage, excluding any indirect or distant effects."
+    },
+    {
+      "name": "Meta-345",
+      "prompt": "Determine whether the given event was caused by the event or factor mentioned in the question."
+    },
+    {
+      "name": "Meta-346",
+      "prompt": "Identify the immediate, direct, and sufficient cause of the outcome or event."
+    },
+    {
+      "name": "Meta-347",
+      "prompt": "Identify the event or circumstance most directly responsible for the outcome or consequence described."
+    },
+    {
+      "name": "Meta-348",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event described, ignoring any potential indirect or underlying factors."
+    },
+    {
+      "name": "Meta-349",
+      "prompt": "Determine whether the provided event or situation is the most direct and immediate cause of the outcome or result."
+    },
+    {
+      "name": "Meta-350",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event, excluding any indirect or intervening factors."
+    },
+    {
+      "name": "Meta-351",
+      "prompt": "Identify the immediate cause of the outcome or event described, excluding any indirect or remote factors."
+    },
+    {
+      "name": "Meta-352",
+      "prompt": "Determine whether the presented event or situation is the most immediate, direct, and plausible cause of the outcome or effect described."
+    },
+    {
+      "name": "Meta-353",
+      "prompt": "Determine whether the described event was more likely to have occurred due to the given cause or other factors."
+    },
+    {
+      "name": "Meta-354",
+      "prompt": "Identify the event that most directly and plausibly triggered the outcome, ruling out indirect or coincidental relationships."
+    },
+    {
+      "name": "Meta-355",
+      "prompt": "Identify the most direct and immediate cause of the outcome in question."
+    },
+    {
+      "name": "Meta-356",
+      "prompt": "Determine whether the described event or circumstance is the most direct and immediate cause of the outcome."
+    },
+    {
+      "name": "Meta-357",
+      "prompt": "Determine whether the given event is the most direct and immediate cause of the outcome, or if another event was the primary cause."
+    },
+    {
+      "name": "Meta-358",
+      "prompt": "Determine the direct cause of the outcome, excluding all indirect or contributing factors."
+    },
+    {
+      "name": "Meta-359",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and relevant factor leading to the event."
+    },
+    {
+      "name": "Meta-360",
+      "prompt": "Identify the most plausible causal factor for the outcome, taking into account the information provided and the typical human reasoning about causality."
+    },
+    {
+      "name": "Meta-361",
+      "prompt": "Determine the primary factor that directly led to the outcome or event described, considering the presence of multiple possible causes."
+    },
+    {
+      "name": "Meta-362",
+      "prompt": "Identify the immediate and direct cause of the outcome or event, and choose the option that corresponds to this cause."
+    },
+    {
+      "name": "Meta-363",
+      "prompt": "Identify the most immediate and direct cause of the outcome."
+    },
+    {
+      "name": "Meta-364",
+      "prompt": "Determine whether the given situation is the direct and sole cause of the outcome."
+    },
+    {
+      "name": "Meta-365",
+      "prompt": "Is the event likely to have occurred without the presence or influence of the given factor, or would something else have caused the event to happen instead?"
+    },
+    {
+      "name": "Meta-366",
+      "prompt": "Identify the direct and immediate cause of the outcome or event described, disregarding any indirect, remote, or contributing factors."
+    },
+    {
+      "name": "Meta-367",
+      "prompt": "Determine whether the described event is a direct result of the given cause, or if other factors may have played a more significant role in the outcome."
+    },
+    {
+      "name": "Meta-368",
+      "prompt": "Identify the cause of the outcome by determining whether a specific event or action is necessary and sufficient for the outcome to occur, and whether other factors could have led to the same outcome."
+    },
+    {
+      "name": "Meta-369",
+      "prompt": "Identify the event or factor that directly contributed to the outcome or result, excluding any indirect or background factors."
+    },
+    {
+      "name": "Meta-370",
+      "prompt": "Consider the most direct and immediate cause of the outcome, excluding any indirect or distant factors."
+    },
+    {
+      "name": "Meta-371",
+      "prompt": "Determine the most direct and immediate cause of the outcome, ignoring any indirect or potential causes."
+    },
+    {
+      "name": "Meta-372",
+      "prompt": "Determine whether the given event or condition is the most direct and immediate cause of the outcome or effect."
+    },
+    {
+      "name": "Meta-373",
+      "prompt": "Identify the direct, immediate, and most plausible cause of the outcome."
+    },
+    {
+      "name": "Meta-374",
+      "prompt": "Determine the cause of the outcome by identifying the event that made the outcome more likely to occur than it would have in the absence of that event."
+    },
+    {
+      "name": "Meta-375",
+      "prompt": "Identify the event that most directly and immediately precedes the outcome in question, and determine whether it is necessary and sufficient for the outcome to occur."
+    },
+    {
+      "name": "Meta-376",
+      "prompt": "Determine whether the provided event or situation caused the outcome, considering the presence of alternative possible causes and whether the outcome would have still occurred without the specified event or situation."
+    },
+    {
+      "name": "Meta-377",
+      "prompt": "Determine whether the given event or action is the most direct and immediate cause of the outcome or effect described."
+    },
+    {
+      "name": "Meta-378",
+      "prompt": "Is the event that occurred the direct result of the action or situation in question, or was it caused by another factor?"
+    },
+    {
+      "name": "Meta-379",
+      "prompt": "Identify the immediate cause or most direct factor leading to the outcome."
+    },
+    {
+      "name": "Meta-380",
+      "prompt": "Determine whether the given event or circumstance is the most direct and sufficient cause of the outcome."
+    },
+    {
+      "name": "Meta-381",
+      "prompt": "Identify the most direct and immediate cause of the outcome described, and select the option that best corresponds to that cause."
+    },
+    {
+      "name": "Meta-382",
+      "prompt": "Identify the immediate cause that directly led to the outcome, ignoring any indirect or contributing factors."
+    },
+    {
+      "name": "Meta-383",
+      "prompt": "Determine the direct cause of the outcome, without considering alternative possibilities or indirect effects."
+    },
+    {
+      "name": "Meta-384",
+      "prompt": "Determine whether the presented event or action is the most direct and proximal cause of the outcome."
+    },
+    {
+      "name": "Meta-385",
+      "prompt": "Determine whether the given event is a necessary condition for the outcome, and select the option that best reflects this causal relationship."
+    },
+    {
+      "name": "Meta-386",
+      "prompt": "Identify the immediate and direct cause of the outcome, excluding any potential underlying or contributing factors."
+    },
+    {
+      "name": "Meta-387",
+      "prompt": "Determine whether the described event was more likely to have occurred without the presence of the specified factor."
+    },
+    {
+      "name": "Meta-388",
+      "prompt": "Determine the immediate cause of the outcome or event described, ignoring any potential underlying or contributing factors."
+    },
+    {
+      "name": "Meta-389",
+      "prompt": "Determine the most direct and immediate cause of the outcome, discarding any background or indirect factors."
+    },
+    {
+      "name": "Meta-390",
+      "prompt": "Did the event or situation mentioned in the passage cause the outcome or effect described, or was it another event or situation that caused the outcome or effect?"
+    },
+    {
+      "name": "Meta-391",
+      "prompt": "Identify the direct and immediate cause of the outcome or event in the scenario."
+    },
+    {
+      "name": "Meta-392",
+      "prompt": "Identify the immediate and direct cause of the outcome, excluding any indirect or contributing factors."
+    },
+    {
+      "name": "Meta-393",
+      "prompt": "Determine whether the described event was more likely to occur due to the mentioned cause or if other factors played a more significant role."
+    },
+    {
+      "name": "Meta-394",
+      "prompt": "Identify the event that most directly contributed to the outcome, excluding any underlying or unrelated factors."
+    },
+    {
+      "name": "Meta-395",
+      "prompt": "Determine whether the presented event or condition is the most immediate and direct cause of the outcome or consequence."
+    },
+    {
+      "name": "Meta-396",
+      "prompt": "Determine the cause of the outcome by identifying the event or condition that directly led to the result, while considering any alternative explanations or potential confounding factors."
+    },
+    {
+      "name": "Meta-397",
+      "prompt": "Determine whether the given event or condition is the most direct, immediate, and necessary cause of the outcome or result, considering any relevant background information, circumstances, or alternative explanations."
+    },
+    {
+      "name": "Meta-398",
+      "prompt": "Identify the event or action that is most directly responsible for the outcome, excluding background or underlying conditions."
+    },
+    {
+      "name": "Meta-399",
+      "prompt": "Determine the cause of the outcome by identifying the specific event or circumstance that directly led to the result."
+    },
+    {
+      "name": "Meta-400",
+      "prompt": "Identify the event that is most directly responsible for the outcome, and indicate whether that event was caused by the provided stimulus or circumstance."
+    },
+    {
+      "name": "Meta-401",
+      "prompt": "Identify the most direct and immediate cause of the outcome, excluding any potential underlying or contributing factors."
+    },
+    {
+      "name": "Meta-402",
+      "prompt": "Determine whether the described event was caused by the given factor or if another factor was more likely to have caused it."
+    },
+    {
+      "name": "Meta-403",
+      "prompt": "Determine the primary cause of the outcome or event."
+    },
+    {
+      "name": "Meta-404",
+      "prompt": "Identify the most immediate, direct, or most probable cause of the outcome or event described."
+    },
+    {
+      "name": "Meta-405",
+      "prompt": "Did the presented event or action directly lead to the outcome, or was the outcome the result of a chain of events or other factors?"
+    },
+    {
+      "name": "Meta-406",
+      "prompt": "Determine the cause of the outcome, considering whether the stated event was necessary and sufficient to lead to the consequence."
+    },
+    {
+      "name": "Meta-407",
+      "prompt": "Identify the direct or immediate cause of the outcome, excluding any prior events or circumstances that may have contributed to it."
+    },
+    {
+      "name": "Meta-408",
+      "prompt": "Identify the most direct and immediate cause of the outcome, ignoring any indirect or remote potential causes."
+    },
+    {
+      "name": "Meta-409",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event, disregarding any potential indirect or remote factors."
+    },
+    {
+      "name": "Meta-410",
+      "prompt": "Consider the extent to which each event or factor is necessary for the outcome to occur, and choose the option that corresponds to the event or factor that is most directly responsible for the outcome."
+    },
+    {
+      "name": "Meta-411",
+      "prompt": "Identify the immediate cause of the outcome, rather than a distant or indirect factor."
+    },
+    {
+      "name": "Meta-412",
+      "prompt": "Identify the direct and immediate cause of the outcome or event described."
+    },
+    {
+      "name": "Meta-413",
+      "prompt": "Determine whether the presented event is the most direct and immediate cause of the outcome, excluding any potential underlying or indirect factors."
+    },
+    {
+      "name": "Meta-414",
+      "prompt": "Determine the direct cause of the outcome, excluding any indirect or remote contributing factors."
+    },
+    {
+      "name": "Meta-415",
+      "prompt": "Identify the cause of the outcome by determining which event or factor is most directly responsible for the outcome, considering the context and sequence of events."
+    },
+    {
+      "name": "Meta-416",
+      "prompt": "Determine the most direct and immediate cause of the outcome, ignoring any potential indirect or remote contributing factors."
+    },
+    {
+      "name": "Meta-417",
+      "prompt": "Determine whether the given event is the most direct and plausible cause of the outcome, considering the available information."
+    },
+    {
+      "name": "Meta-418",
+      "prompt": "Identify the most direct cause of the observed outcome or event, excluding any indirect or background factors."
+    },
+    {
+      "name": "Meta-419",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and plausible reason for the event or situation, considering the information provided."
+    },
+    {
+      "name": "Meta-420",
+      "prompt": "Determine the event that most likely caused the outcome, taking into account the presented information and typical human reasoning about causality."
+    },
+    {
+      "name": "Meta-421",
+      "prompt": "Consider the most direct and immediate cause of the outcome, and evaluate whether it was the result of the specified event or circumstance."
+    },
+    {
+      "name": "Meta-422",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event, without considering potential indirect or distant factors."
+    },
+    {
+      "name": "Meta-423",
+      "prompt": "Determine whether the described event or condition is the direct and immediate cause of the outcome."
+    },
+    {
+      "name": "Meta-424",
+      "prompt": "Determine whether a given event or circumstance is the direct cause of a subsequent outcome or effect, excluding any indirect or intervening factors."
+    },
+    {
+      "name": "Meta-425",
+      "prompt": "Decide which event or factor most directly led to the outcome, excluding any indirect or coincidental relationships."
+    },
+    {
+      "name": "Meta-426",
+      "prompt": "Determine the cause of the outcome by identifying the factor that directly and immediately precedes the outcome, and that is necessary for the outcome to occur."
+    },
+    {
+      "name": "Meta-427",
+      "prompt": "Determine the cause of the outcome by identifying the event or action most directly responsible for the occurrence or consequence."
+    },
+    {
+      "name": "Meta-428",
+      "prompt": "Determine the direct and immediate cause of the outcome, ignoring potential intermediate factors or underlying conditions."
+    },
+    {
+      "name": "Meta-429",
+      "prompt": "Determine the most direct and immediate cause of the outcome or event, ignoring any underlying or distant factors."
+    },
+    {
+      "name": "Meta-430",
+      "prompt": "Determine whether the described event or condition is the most direct and immediate cause of the outcome."
+    },
+    {
+      "name": "Meta-431",
+      "prompt": "Identify the event or action that most directly and immediately led to the outcome or consequence."
+    },
+    {
+      "name": "Meta-432",
+      "prompt": "Determine whether the described event was caused by the given condition, fact, or action."
+    },
+    {
+      "name": "Meta-433",
+      "prompt": "Determine whether the event described in the question is the most direct or immediate cause of the outcome."
+    },
+    {
+      "name": "Meta-434",
+      "prompt": "Identify the cause of the outcome by considering the presence of alternative explanations and the relationship between the event and the outcome."
+    },
+    {
+      "name": "Meta-435",
+      "prompt": "Determine whether the given event was the direct cause of the outcome, considering any potential alternatives, intervening factors, and indirect links."
+    },
+    {
+      "name": "Meta-436",
+      "prompt": "Is the event or situation you are considering the direct and immediate cause of the outcome, or was it preceded by another event or factor that more directly contributed to the outcome?"
+    },
+    {
+      "name": "Meta-437",
+      "prompt": "Identify the direct and immediate cause of the outcome, excluding any indirect or background factors."
+    },
+    {
+      "name": "Meta-438",
+      "prompt": "Identify the most plausible direct cause of the outcome described in the scenario."
+    },
+    {
+      "name": "Meta-439",
+      "prompt": "Determine whether the given event or circumstance caused the outcome, considering the presence of other plausible explanations or mitigating factors."
+    },
+    {
+      "name": "Meta-440",
+      "prompt": "Consider the relationship between the event described and the potential cause, and answer whether the cause is a necessary and sufficient condition for the event to occur."
+    },
+    {
+      "name": "Meta-441",
+      "prompt": "Determine the event or circumstance that most directly and plausibly contributed to the outcome in question, and select the option that best reflects this causal relationship."
+    },
+    {
+      "name": "Meta-442",
+      "prompt": "Consider whether the given event would have occurred if the alleged cause had not occurred, and assess whether the cause is necessary and sufficient for the event to occur."
+    },
+    {
+      "name": "Meta-443",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event described, ignoring any potential indirect or long-term effects."
+    },
+    {
+      "name": "Meta-444",
+      "prompt": "Identify the direct and immediate cause of the outcome, disregarding any indirect or distant factors."
+    },
+    {
+      "name": "Meta-445",
+      "prompt": "Determine whether the given condition or event is the most direct and immediate cause of the outcome or event described."
+    },
+    {
+      "name": "Meta-446",
+      "prompt": "Determine whether a given event or circumstance caused a specific outcome by considering the presence of alternative explanations and the likelihood of a direct causal link between the event and the outcome."
+    },
+    {
+      "name": "Meta-447",
+      "prompt": "Determine whether the given event or action is the most direct and plausible cause of the outcome or consequence."
+    },
+    {
+      "name": "Meta-448",
+      "prompt": "Did the specific event or action described in the scenario directly lead to the outcome, or is the outcome more likely the result of a chain of events or underlying factors?"
+    },
+    {
+      "name": "Meta-449",
+      "prompt": "Determine the cause of the outcome by identifying the event or factor that set in motion a chain of events leading to the outcome, excluding any secondary or coincidental factors."
+    },
+    {
+      "name": "Meta-450",
+      "prompt": "Determine whether the event described in the scenario caused the outcome, considering all relevant circumstances and ruling out alternative causes."
+    },
+    {
+      "name": "Meta-451",
+      "prompt": "Determine whether the event described in the passage is more likely to have occurred because of the described cause or for some other reason."
+    },
+    {
+      "name": "Meta-452",
+      "prompt": "Determine the cause of the event described by identifying the most direct and immediate factor leading to the outcome."
+    },
+    {
+      "name": "Meta-453",
+      "prompt": "Identify the event or condition that was the most direct and immediate cause of the outcome in question."
+    },
+    {
+      "name": "Meta-454",
+      "prompt": "Determine the cause of the outcome by identifying the event or factor that set the outcome in motion or made it more likely to occur."
+    },
+    {
+      "name": "Meta-455",
+      "prompt": "Identify the direct and immediate cause of the outcome or event described, rather than any indirect or potential factors."
+    },
+    {
+      "name": "Meta-456",
+      "prompt": "Determine whether the described event is a direct result of the given cause or if there is another intervening factor that is more likely to have caused the outcome."
+    },
+    {
+      "name": "Meta-457",
+      "prompt": "Determine whether the presented situation or event is the direct or primary cause of the outcome or consequence."
+    },
+    {
+      "name": "Meta-458",
+      "prompt": "Determine whether the event or condition mentioned in the prompt is a necessary condition for the outcome to occur."
+    },
+    {
+      "name": "Meta-459",
+      "prompt": "Determine whether the event or situation presented in the scenario is the direct cause of the outcome or effect."
+    },
+    {
+      "name": "Meta-460",
+      "prompt": "Identify the cause of the outcome by determining whether the given event or condition directly led to the result, regardless of any underlying or coincidental factors."
+    },
+    {
+      "name": "Meta-461",
+      "prompt": "Identify the specific event or factor that directly leads to the outcome or consequence in question, disregarding any indirect or distant causal relationships."
+    },
+    {
+      "name": "Meta-462",
+      "prompt": "Determine whether a specific event or circumstance is the direct or indirect cause of a particular outcome."
+    },
+    {
+      "name": "Meta-463",
+      "prompt": "Identify the event or circumstance that immediately precedes and plausibly causes the outcome or result in question."
+    },
+    {
+      "name": "Meta-464",
+      "prompt": "Identify the cause of the observed outcome by determining whether the described event or situation directly led to the result."
+    },
+    {
+      "name": "Meta-465",
+      "prompt": "Identify the cause of the outcome by evaluating the presence and absence of necessary and sufficient conditions, and determine whether the given event is the most direct and immediate reason for the outcome."
+    },
+    {
+      "name": "Meta-466",
+      "prompt": "Identify the direct and most plausible cause of the outcome, excluding any indirect or intervening factors."
+    },
+    {
+      "name": "Meta-467",
+      "prompt": "Determine whether the event or situation described in the passage is the most direct and immediate cause of the outcome or effect described."
+    },
+    {
+      "name": "Meta-468",
+      "prompt": "Determine the most direct and immediate cause of the outcome, disregarding any indirect or underlying factors."
+    },
+    {
+      "name": "Meta-469",
+      "prompt": "Did the event or action described in the scenario cause the outcome or event that occurred, considering the context and any intervening factors."
+    },
+    {
+      "name": "Meta-470",
+      "prompt": "Determine whether the event or condition mentioned in the text is the most direct or immediate cause of the outcome."
+    },
+    {
+      "name": "Meta-471",
+      "prompt": "Identify the immediate cause that directly led to the outcome, rather than a distant or indirect factor."
+    },
+    {
+      "name": "Meta-472",
+      "prompt": "Determine the cause of the observed effect by identifying the event or factor most closely related to the outcome."
+    },
+    {
+      "name": "Meta-473",
+      "prompt": "Determine whether the described event is a direct and necessary result of the given cause."
+    },
+    {
+      "name": "Meta-474",
+      "prompt": "Identify the direct and immediate cause of the outcome."
+    },
+    {
+      "name": "Meta-475",
+      "prompt": "Determine whether the described event is more likely to occur without the presence of the given causal factor."
+    },
+    {
+      "name": "Meta-476",
+      "prompt": "Determine whether the given event or condition was the direct or indirect cause of the outcome."
+    },
+    {
+      "name": "Meta-477",
+      "prompt": "Identify the immediate and direct cause of the outcome, ignoring any potential indirect or contributing factors."
+    },
+    {
+      "name": "Meta-478",
+      "prompt": "Identify the event or condition that is most likely to have caused the outcome, considering all relevant information and background circumstances."
+    },
+    {
+      "name": "Meta-479",
+      "prompt": "Determine whether the given event or circumstance is the most immediate and direct cause of the outcome, or if another factor played a more significant role in producing the outcome."
+    },
+    {
+      "name": "Meta-480",
+      "prompt": "Identify the cause of the outcome by assessing the presence and absence of alternative factors that could have led to the result."
+    },
+    {
+      "name": "Meta-481",
+      "prompt": "Determine the event most directly responsible for the outcome, rather than considering remote or indirect causes."
+    },
+    {
+      "name": "Meta-482",
+      "prompt": "Determine whether the described event or situation is the most direct and immediate cause of the outcome."
+    },
+    {
+      "name": "Meta-483",
+      "prompt": "Identify the event or circumstance that directly led to the outcome in question, and indicate whether that event was the cause of the outcome."
+    },
+    {
+      "name": "Meta-484",
+      "prompt": "Identify the event that is most likely to have directly led to the outcome."
+    },
+    {
+      "name": "Meta-485",
+      "prompt": "Identify the factor that directly led to the outcome, excluding any potential contributing factors."
+    },
+    {
+      "name": "Meta-486",
+      "prompt": "Identify the event or action most closely linked to the outcome or consequence, and consider whether it is plausible that the outcome would not have occurred if the event or action had not taken place."
+    },
+    {
+      "name": "Meta-487",
+      "prompt": "Determine whether a specific event or circumstance is the primary or most direct cause of a particular outcome or effect."
+    },
+    {
+      "name": "Meta-488",
+      "prompt": "Identify the event or action that is most directly responsible for the outcome or consequence, while considering any intervening variables or alternative explanations."
+    },
+    {
+      "name": "Meta-489",
+      "prompt": "Identify the event that most directly and plausibly contributed to the outcome or effect in the scenario."
+    },
+    {
+      "name": "Meta-490",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event, without considering potential long-term or indirect effects or correlations."
+    },
+    {
+      "name": "Meta-491",
+      "prompt": "Determine the most direct and immediate cause of the outcome, discounting any indirect or background factors."
+    },
+    {
+      "name": "Meta-492",
+      "prompt": "Determine the most direct and immediate cause of the outcome, excluding any indirect or intermediate causes."
+    },
+    {
+      "name": "Meta-493",
+      "prompt": "Determine whether the described event or condition was a direct result of the given cause, excluding all other factors."
+    },
+    {
+      "name": "Meta-494",
+      "prompt": "Determine whether the given event or condition was a necessary and sufficient cause of the outcome, or if another factor was more likely responsible."
+    },
+    {
+      "name": "Meta-495",
+      "prompt": "Identify the event that most directly precedes the outcome in question, and attribute causality to that event."
+    },
+    {
+      "name": "Meta-496",
+      "prompt": "Determine the direct cause of the outcome or event described in the scenario."
+    },
+    {
+      "name": "Meta-497",
+      "prompt": "Identify the specific event or action that most directly led to the outcome or consequence."
+    },
+    {
+      "name": "Meta-498",
+      "prompt": "Determine whether the described event or situation caused the outcome in question, considering factors such as temporal sequence, proximity, and potential alternatives."
+    },
+    {
+      "name": "Meta-499",
+      "prompt": "Identify the event or action that most directly led to the outcome."
+    },
+    {
+      "name": "Meta-500",
+      "prompt": "Determine whether a given event or situation is the direct cause of another event or outcome."
+    },
+    {
+      "name": "Meta-501",
+      "prompt": "Determine whether the described event was caused by the provided factor or factors, considering common human reasoning about causality."
+    },
+    {
+      "name": "Meta-502",
+      "prompt": "Determine the event that most likely contributed to the outcome, disregarding any intervening factors that occurred after the outcome was already set in motion."
+    },
+    {
+      "name": "Meta-503",
+      "prompt": "Identify the factor that is the most direct and immediate cause of the outcome, excluding any prior or underlying conditions."
+    },
+    {
+      "name": "Meta-504",
+      "prompt": "Identify the most direct and immediate cause of the outcome, disregarding any potential intermediate or indirect factors."
+    },
+    {
+      "name": "Meta-505",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event described, without considering potential indirect or distant factors."
+    },
+    {
+      "name": "Meta-506",
+      "prompt": "Identify the cause of the outcome by determining whether the outcome would have occurred without the presence of the given factor."
+    },
+    {
+      "name": "Meta-507",
+      "prompt": "Determine whether the described event is directly caused by the mentioned factor, excluding indirect or intervening factors."
+    },
+    {
+      "name": "Meta-508",
+      "prompt": "Determine the cause of the outcome by identifying the event or factor that sets in motion a chain of events leading to the outcome, excluding any indirect or coincidental connections."
+    },
+    {
+      "name": "Meta-509",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and immediate factor that led to the result, excluding any indirect or remote factors."
+    },
+    {
+      "name": "Meta-510",
+      "prompt": "Identify the direct cause of the outcome, excluding any indirect or contributory factors."
+    },
+    {
+      "name": "Meta-511",
+      "prompt": "Determine whether the given event or condition is the most direct and immediate cause of the outcome, and choose the option that corresponds to your judgment."
+    },
+    {
+      "name": "Meta-512",
+      "prompt": "Identify the most immediate and direct cause of the outcome, excluding background or distant factors, and choose the option that best reflects this causal relationship."
+    },
+    {
+      "name": "Meta-513",
+      "prompt": "Determine the factor that most directly contributed to the outcome or event, considering the presence of other potential causes."
+    },
+    {
+      "name": "Meta-514",
+      "prompt": "Determine whether the described event or action is the most direct and immediate cause of the outcome, or whether there is another factor that played a more significant role in bringing about the outcome."
+    },
+    {
+      "name": "Meta-515",
+      "prompt": "Determine whether a specific event or circumstance is the primary cause of an outcome, considering all relevant factors and circumstances."
+    },
+    {
+      "name": "Meta-516",
+      "prompt": "Determine whether the provided scenario is the direct, immediate, and necessary cause of the outcome."
+    },
+    {
+      "name": "Meta-517",
+      "prompt": "Determine the specific event or factor that directly led to the outcome, and ignore all other potential contributing factors."
+    },
+    {
+      "name": "Meta-518",
+      "prompt": "Identify the immediate cause that led to the outcome in question, excluding any indirect or contributing factors."
+    },
+    {
+      "name": "Meta-519",
+      "prompt": "Determine the most plausible direct cause of the outcome, considering all provided information, and select the option that best represents your judgement."
+    },
+    {
+      "name": "Meta-520",
+      "prompt": "Did the specified event or condition directly lead to the outcome, or was it a necessary but not sufficient cause, and was there no other plausible explanation for the outcome?"
+    },
+    {
+      "name": "Meta-521",
+      "prompt": "Did the event or circumstance mentioned in the passage cause the outcome or effect mentioned in the passage?"
+    },
+    {
+      "name": "Meta-522",
+      "prompt": "Determine whether the given situation is more likely to have been caused by the provided explanation or another factor."
+    },
+    {
+      "name": "Meta-523",
+      "prompt": "Identify the event or action that most directly led to the outcome or result described, and select the option that corresponds to this event or action as the cause."
+    },
+    {
+      "name": "Meta-524",
+      "prompt": "Identify the factor that directly and immediately led to the outcome, while considering any indirect or mediating factors."
+    },
+    {
+      "name": "Meta-525",
+      "prompt": "Determine the most direct and immediate cause of the outcome or event, disregarding any remote or indirect contributing factors."
+    },
+    {
+      "name": "Meta-526",
+      "prompt": "Identify the cause of the event or outcome, focusing on the most direct and immediate factor that contributed to the result."
+    },
+    {
+      "name": "Meta-527",
+      "prompt": "Determine whether the described event or circumstance is the direct and necessary cause of the outcome or effect."
+    },
+    {
+      "name": "Meta-528",
+      "prompt": "Determine whether the given event was caused by the described circumstance or whether another factor played a more significant role in the outcome."
+    },
+    {
+      "name": "Meta-529",
+      "prompt": "Identify the cause of the observed effect by determining whether the presented events or conditions are directly responsible for the outcome."
+    },
+    {
+      "name": "Meta-530",
+      "prompt": "Identify the immediate, direct cause of the outcome, without considering potential intermediate or underlying factors."
+    },
+    {
+      "name": "Meta-531",
+      "prompt": "Determine whether the given event is the direct and immediate cause of the outcome, ruling out all other plausible causes and considering any relevant circumstances, conditions, or factors that may have contributed to the outcome."
+    },
+    {
+      "name": "Meta-532",
+      "prompt": "Identify the direct and immediate cause of the outcome or event described in the scenario, disregarding any potential indirect or intermediate factors."
+    },
+    {
+      "name": "Meta-533",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and immediate factor that led to the event, excluding any unrelated or intervening factors."
+    },
+    {
+      "name": "Meta-534",
+      "prompt": "Identify the cause of the outcome by evaluating the extent to which the outcome is directly and solely the result of a specific event or factor."
+    },
+    {
+      "name": "Meta-535",
+      "prompt": "Determine whether the event or factor mentioned in the passage is a necessary and sufficient condition for the outcome in question."
+    },
+    {
+      "name": "Meta-536",
+      "prompt": "Determine whether the presented event or condition was the most direct and plausible cause of the outcome."
+    },
+    {
+      "name": "Meta-537",
+      "prompt": "Identify the direct and immediate cause of the outcome or event described in the scenario, excluding any indirect or distant factors."
+    },
+    {
+      "name": "Meta-538",
+      "prompt": "Determine the primary cause of the outcome by identifying the most direct and relevant factor that led to the consequence."
+    },
+    {
+      "name": "Meta-539",
+      "prompt": "Decide whether the given event or circumstance is the most direct and immediate cause of the outcome described."
+    },
+    {
+      "name": "Meta-540",
+      "prompt": "Identify the direct and immediate cause of the outcome, ignoring any potential indirect or distant contributing factors."
+    },
+    {
+      "name": "Meta-541",
+      "prompt": "Determine the immediate, direct, and most plausible cause of the outcome described, and select the option that best reflects this causal judgment."
+    },
+    {
+      "name": "Meta-542",
+      "prompt": "Determine whether the stated event or condition directly led to the outcome in question, considering alternative explanations and the presence of other causal factors."
+    },
+    {
+      "name": "Meta-543",
+      "prompt": "Determine whether the given event or situation is the most direct and immediate cause of the outcome or effect described."
+    },
+    {
+      "name": "Meta-544",
+      "prompt": "Determine whether the given event or condition is the most direct, immediate, or likely cause of the outcome or effect."
+    },
+    {
+      "name": "Meta-545",
+      "prompt": "Determine whether a given event or circumstance caused a specific outcome, considering the presence of other possible causes and the absence of evidence suggesting a direct causal link."
+    },
+    {
+      "name": "Meta-546",
+      "prompt": "Identify the event or factor that directly led to the outcome, rather than contributing to it or being a necessary condition for it."
+    },
+    {
+      "name": "Meta-547",
+      "prompt": "Is the event or situation you are considering most directly responsible for the outcome, or is another factor or factor(s) more likely to have caused the outcome?"
+    },
+    {
+      "name": "Meta-548",
+      "prompt": "Identify the specific event or action that directly and immediately led to the outcome or consequence, and determine if that event or action is the most plausible cause of the outcome."
+    },
+    {
+      "name": "Meta-549",
+      "prompt": "Determine the cause of the outcome by identifying the event or factor that is most closely and directly responsible for the observed consequence."
+    },
+    {
+      "name": "Meta-550",
+      "prompt": "Determine whether a given event or action is the most direct and sufficient cause of a subsequent outcome, or if another factor is more likely responsible."
+    },
+    {
+      "name": "Meta-551",
+      "prompt": "Identify the immediate cause of the outcome, regardless of any potential contributing factors."
+    },
+    {
+      "name": "Meta-552",
+      "prompt": "Determine whether the described event or circumstance caused the outcome by considering whether the event or circumstance was necessary and sufficient for the outcome to occur."
+    },
+    {
+      "name": "Meta-553",
+      "prompt": "Is the event or outcome caused by the action or condition described in the scenario?"
+    },
+    {
+      "name": "Meta-554",
+      "prompt": "Determine whether the stated event or condition is a direct and necessary cause of the outcome."
+    },
+    {
+      "name": "Meta-555",
+      "prompt": "Determine the most direct and immediate cause of the outcome, excluding any indirect, coincidental, or background factors."
+    },
+    {
+      "name": "Meta-556",
+      "prompt": "Determine the event that directly led to the outcome, rather than indirectly contributing to it."
+    },
+    {
+      "name": "Meta-557",
+      "prompt": "Determine whether the event or circumstance described in the scenario is the primary cause of the outcome, considering the possibility of other factors contributing to the outcome."
+    },
+    {
+      "name": "Meta-558",
+      "prompt": "Determine the most direct and immediate cause of the outcome, ignoring any potential indirect or remote factors."
+    },
+    {
+      "name": "Meta-559",
+      "prompt": "Determine whether the event described in the passage is more likely to have occurred as a direct result of the stated cause or if there are other factors that contributed to the outcome."
+    },
+    {
+      "name": "Meta-560",
+      "prompt": "Determine the direct, immediate, and most plausible cause of the outcome, based on the given information."
+    },
+    {
+      "name": "Meta-561",
+      "prompt": "Identify the direct cause of the outcome, disregarding any potential underlying or indirect factors."
+    },
+    {
+      "name": "Meta-562",
+      "prompt": "Determine whether the described event is the direct or indirect result of the given cause, considering the natural course of events and any intervening factors."
+    },
+    {
+      "name": "Meta-563",
+      "prompt": "Determine whether the stated event or action directly led to the outcome, while considering potential alternative causes and factors that may have contributed to the outcome."
+    },
+    {
+      "name": "Meta-564",
+      "prompt": "Identify the cause of the outcome by considering the plausible alternatives that could have led to the result."
+    },
+    {
+      "name": "Meta-565",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and plausible link between the events and circumstances described."
+    },
+    {
+      "name": "Meta-566",
+      "prompt": "Identify the immediate and direct cause of the outcome or event described, excluding any indirect, remote, or background factors."
+    },
+    {
+      "name": "Meta-567",
+      "prompt": "Determine whether the given event or condition is the most direct and immediate cause of the outcome."
+    },
+    {
+      "name": "Meta-568",
+      "prompt": "Determine whether the given event or condition is a sufficient and necessary cause of the outcome, taking into account the context and any relevant background information."
+    },
+    {
+      "name": "Meta-569",
+      "prompt": "Determine whether the given event or situation is the most direct and immediate cause of the outcome or result."
+    },
+    {
+      "name": "Meta-570",
+      "prompt": "Determine whether the event or situation described is the most direct and immediate cause of the outcome or effect."
+    },
+    {
+      "name": "Meta-571",
+      "prompt": "Determine whether the given event or action is the direct and immediate cause of the outcome, and if it was a necessary condition for the outcome to occur."
+    },
+    {
+      "name": "Meta-572",
+      "prompt": "Identify the cause that directly led to the outcome."
+    },
+    {
+      "name": "Meta-573",
+      "prompt": "Identify the event or action most directly responsible for the outcome or consequence."
+    },
+    {
+      "name": "Meta-574",
+      "prompt": "Identify the immediate and direct cause of the outcome or event described, excluding any potential underlying or contributing factors."
+    },
+    {
+      "name": "Meta-575",
+      "prompt": "Determine whether a specific event or situation caused a particular outcome, considering the given information and ignoring intervening factors that are not directly related to the event or situation in question."
+    },
+    {
+      "name": "Meta-576",
+      "prompt": "Determine whether a given event or condition caused a specific outcome by identifying the most direct and relevant causal link between the two."
+    },
+    {
+      "name": "Meta-577",
+      "prompt": "Determine the direct and most immediate cause of the outcome described, regardless of any potential underlying or contributing factors."
+    },
+    {
+      "name": "Meta-578",
+      "prompt": "Identify the event that most directly and plausibly led to the outcome."
+    },
+    {
+      "name": "Meta-579",
+      "prompt": "Consider the question of whether one event or circumstance directly and exclusively led to a particular outcome."
+    },
+    {
+      "name": "Meta-580",
+      "prompt": "Identify the event or factor that is most directly responsible for the outcome, ignoring indirect or coincidental associations."
+    },
+    {
+      "name": "Meta-581",
+      "prompt": "Determine whether the given event or condition caused the outcome by assessing whether the event or condition was necessary and sufficient for the outcome to occur."
+    },
+    {
+      "name": "Meta-582",
+      "prompt": "Determine the cause of the event by identifying the factor that most likely led to its occurrence, excluding other factors that may have contributed to it."
+    },
+    {
+      "name": "Meta-583",
+      "prompt": "Identify the most direct and immediate cause of the outcome, disregarding any indirect, intermediate, or background factors."
+    },
+    {
+      "name": "Meta-584",
+      "prompt": "Identify the specific event or action that directly led to the outcome, rather than a potential contributing factor or circumstance."
+    },
+    {
+      "name": "Meta-585",
+      "prompt": "Determine whether a specified event or condition was the primary factor that led to a particular outcome."
+    },
+    {
+      "name": "Meta-586",
+      "prompt": "Identify the event or action that most directly contributed to the outcome or consequence."
+    },
+    {
+      "name": "Meta-587",
+      "prompt": "Identify the event or factor that most directly contributed to the outcome or consequence."
+    },
+    {
+      "name": "Meta-588",
+      "prompt": "Determine whether the provided situation suggests that the given event was a direct result of the specified cause, considering typical human reasoning about causality."
+    },
+    {
+      "name": "Meta-589",
+      "prompt": "Identify the most direct and immediate cause of the outcome, disregarding any potential or indirect contributions from other factors."
+    },
+    {
+      "name": "Meta-590",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and immediate factor that led to the occurrence, ruling out other potential contributing factors."
+    },
+    {
+      "name": "Meta-591",
+      "prompt": "Determine whether a specified event is the direct or indirect cause of another event."
+    },
+    {
+      "name": "Meta-592",
+      "prompt": "Did the identified event or factor directly lead to the outcome, or was it a contributing factor in a chain of events leading to the outcome?"
+    },
+    {
+      "name": "Meta-593",
+      "prompt": "Identify the most direct and immediate cause of the outcome, excluding any indirect, remote, or intervening factors."
+    },
+    {
+      "name": "Meta-594",
+      "prompt": "Determine the event or factor that most directly led to the outcome, rather than any remote or indirect relationship."
+    },
+    {
+      "name": "Meta-595",
+      "prompt": "Identify the immediate and direct cause of the outcome or event described."
+    },
+    {
+      "name": "Meta-596",
+      "prompt": "Identify the event or condition that directly and immediately precedes the outcome or consequence being evaluated."
+    },
+    {
+      "name": "Meta-597",
+      "prompt": "Identify the cause that directly led to the outcome, disregarding any indirect or contributing factors."
+    },
+    {
+      "name": "Meta-598",
+      "prompt": "Identify the factor that is the most direct and immediate cause of the outcome in question."
+    },
+    {
+      "name": "Meta-599",
+      "prompt": "Identify the cause of the outcome by considering the presence of alternative explanations and the absence of other plausible causes."
+    },
+    {
+      "name": "Meta-600",
+      "prompt": "Determine whether the given event or circumstance is the most direct and immediate cause of the outcome."
+    },
+    {
+      "name": "Meta-601",
+      "prompt": "Determine the factor that directly led to the outcome, discarding any indirect or contributing causes."
+    },
+    {
+      "name": "Meta-602",
+      "prompt": "Identify the event or action that directly led to the outcome or consequence in the scenario."
+    },
+    {
+      "name": "Meta-603",
+      "prompt": "Determine whether the event or situation described is the direct and immediate cause of the outcome or result, and select the option that best represents this causal relationship."
+    },
+    {
+      "name": "Meta-604",
+      "prompt": "Determine whether a given event or circumstance is the direct or primary cause of a particular outcome, excluding any other contributing factors."
+    },
+    {
+      "name": "Meta-605",
+      "prompt": "Determine the event or action that most directly and plausibly led to the outcome in question, and answer accordingly."
+    },
+    {
+      "name": "Meta-606",
+      "prompt": "Identify the immediate cause that directly led to the outcome in question."
+    },
+    {
+      "name": "Meta-607",
+      "prompt": "Identify the most direct and immediate cause of the outcome or event, and determine whether it is more plausible that this cause rather than any other cause or circumstance led to the outcome or event."
+    },
+    {
+      "name": "Meta-608",
+      "prompt": "Determine the most direct and immediate cause of the outcome or event described, and choose the option that corresponds to that cause."
+    },
+    {
+      "name": "Meta-609",
+      "prompt": "Determine the direct and immediate cause of the outcome, excluding any remote or indirect factors."
+    },
+    {
+      "name": "Meta-610",
+      "prompt": "Is the described event most likely to have occurred because of the specified cause or another factor?"
+    },
+    {
+      "name": "Meta-611",
+      "prompt": "Identify the immediate and direct cause of the outcome."
+    },
+    {
+      "name": "Meta-612",
+      "prompt": "Did the specified event or factor directly lead to the outcome, without being influenced or mediated by any other events or factors?"
+    },
+    {
+      "name": "Meta-613",
+      "prompt": "Determine whether the described event is a direct result of the given factor, or if there are other plausible explanations or intervening causes."
+    },
+    {
+      "name": "Meta-614",
+      "prompt": "Determine whether the described event or condition was directly or indirectly caused by the given factor or agent."
+    },
+    {
+      "name": "Meta-615",
+      "prompt": "Determine whether the event mentioned in the scenario is the most direct and immediate cause of the outcome, and ignore potential indirect or intervening factors."
+    },
+    {
+      "name": "Meta-616",
+      "prompt": "Determine the cause of the event by identifying the necessary and sufficient condition that led to its occurrence."
+    },
+    {
+      "name": "Meta-617",
+      "prompt": "Identify the most direct and immediate cause of the outcome, excluding any indirect or distant factors."
+    },
+    {
+      "name": "Meta-618",
+      "prompt": "Determine whether the presented event or circumstance is the most direct and immediate cause of the outcome or effect described."
+    },
+    {
+      "name": "Meta-619",
+      "prompt": "Identify the most direct and immediate cause of the observed effect."
+    },
+    {
+      "name": "Meta-620",
+      "prompt": "Determine whether the described event or situation is the most direct and immediate cause of the outcome, ignoring any indirect or distant contributing factors."
+    },
+    {
+      "name": "Meta-621",
+      "prompt": "Identify the cause of the outcome by determining whether the stated event or circumstance is the most direct and sufficient explanation for the consequence."
+    },
+    {
+      "name": "Meta-622",
+      "prompt": "Identify the event or action that is the most direct and immediate cause of the outcome in question."
+    },
+    {
+      "name": "Meta-623",
+      "prompt": "Determine the primary cause that directly led to the outcome."
+    },
+    {
+      "name": "Meta-624",
+      "prompt": "Determine whether the described event or circumstance was a necessary condition for the outcome, rather than just being associated with it."
+    },
+    {
+      "name": "Meta-625",
+      "prompt": "Determine whether the provided event is the most direct and immediate cause of the outcome, or if another factor plays a more significant role."
+    },
+    {
+      "name": "Meta-626",
+      "prompt": "Identify the event or action that directly led to the outcome, without considering indirect or potential causes."
+    },
+    {
+      "name": "Meta-627",
+      "prompt": "Determine whether the given event or condition caused the outcome, considering the presence of intervening factors, alternative explanations, and the absence of a direct causal link."
+    },
+    {
+      "name": "Meta-628",
+      "prompt": "Identify the most direct and immediate cause of the outcome described, rather than considering distant or indirect factors."
+    },
+    {
+      "name": "Meta-629",
+      "prompt": "Identify the event or factor that is most closely associated with the outcome or consequence in question, and indicate whether it is the cause or not."
+    },
+    {
+      "name": "Meta-630",
+      "prompt": "Identify the factor that is most directly and proximally responsible for the outcome."
+    },
+    {
+      "name": "Meta-631",
+      "prompt": "Determine whether the described event or situation is the primary or direct cause of the outcome or effect, and select the option that reflects this causal judgment."
+    },
+    {
+      "name": "Meta-632",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and relevant factor that led to the observed event, ignoring background or indirect factors."
+    },
+    {
+      "name": "Meta-633",
+      "prompt": "Determine whether the given event was the direct and primary cause of the outcome, rather than a contributing or indirect factor."
+    },
+    {
+      "name": "Meta-634",
+      "prompt": "Determine whether the described event or action is a sufficient and necessary condition for the outcome, or if other factors were more likely to have caused the outcome."
+    },
+    {
+      "name": "Meta-635",
+      "prompt": "Identify the event or action that directly led to the outcome or effect, disregarding any potential underlying causes or contributing factors."
+    },
+    {
+      "name": "Meta-636",
+      "prompt": "Identify the immediate and direct cause of the outcome described in the scenario."
+    },
+    {
+      "name": "Meta-637",
+      "prompt": "Identify the immediate cause that directly leads to the outcome, rather than a remote or indirect factor."
+    },
+    {
+      "name": "Meta-638",
+      "prompt": "Identify the event or condition that directly led to the outcome or consequence being evaluated."
+    },
+    {
+      "name": "Meta-639",
+      "prompt": "Determine whether the given event or condition is the most direct and immediate cause of the outcome, or if another factor is more likely responsible."
+    },
+    {
+      "name": "Meta-640",
+      "prompt": "Determine whether the given event or condition was the most immediate and direct cause of the outcome."
+    },
+    {
+      "name": "Meta-641",
+      "prompt": "Determine whether the stated event is the most direct and immediate cause of the outcome, or if another factor was more likely to have caused the outcome."
+    },
+    {
+      "name": "Meta-642",
+      "prompt": "Identify the immediate cause of the outcome or event."
+    },
+    {
+      "name": "Meta-643",
+      "prompt": "Determine the direct cause of the outcome, disregarding any indirect or contributing factors."
+    },
+    {
+      "name": "Meta-644",
+      "prompt": "Determine whether the given event or condition is the direct or primary cause of the outcome."
+    },
+    {
+      "name": "Meta-645",
+      "prompt": "Identify the cause of the outcome by determining whether the presented event or circumstance was a necessary and sufficient condition for the outcome to occur."
+    },
+    {
+      "name": "Meta-646",
+      "prompt": "Determine whether the event described in the passage is most directly responsible for the outcome, rather than merely being associated with it."
+    },
+    {
+      "name": "Meta-647",
+      "prompt": "Determine whether the described event or circumstance directly led to the outcome or was a necessary condition for its occurrence."
+    },
+    {
+      "name": "Meta-648",
+      "prompt": "Determine the most direct and immediate cause of the outcome, ignoring any indirect, remote, or coincidental factors."
+    },
+    {
+      "name": "Meta-649",
+      "prompt": "Identify the most direct and immediate cause of the outcome, excluding any indirect or intervening factors."
+    },
+    {
+      "name": "Meta-650",
+      "prompt": "Determine the factor that most directly and plausibly contributed to the outcome, and consider alternative explanations or potential confounding variables."
+    },
+    {
+      "name": "Meta-651",
+      "prompt": "Determine whether the provided event is the most direct and plausible cause of the outcome."
+    },
+    {
+      "name": "Meta-652",
+      "prompt": "Determine whether a given event or circumstance is the primary or direct cause of an outcome, or if another factor is more likely to have played a significant role."
+    },
+    {
+      "name": "Meta-653",
+      "prompt": "Determine whether the described event or situation caused the outcome, considering any relevant intervening factors or alternative explanations."
+    },
+    {
+      "name": "Meta-654",
+      "prompt": "Determine whether the event mentioned in the question is the most direct and immediate cause of the outcome described."
+    },
+    {
+      "name": "Meta-655",
+      "prompt": "Determine whether the given event or circumstance is the most direct and immediate cause of the outcome or effect."
+    },
+    {
+      "name": "Meta-656",
+      "prompt": "Identify the specific event or action that directly led to the outcome or effect."
+    },
+    {
+      "name": "Meta-657",
+      "prompt": "Determine the cause of the outcome by identifying the most immediate and direct factor leading to the event, excluding any underlying or contributing factors."
+    },
+    {
+      "name": "Meta-658",
+      "prompt": "Determine whether the given event or condition is the most direct, immediate, and plausible cause of the outcome or effect, considering any background information and extraneous circumstances."
+    },
+    {
+      "name": "Meta-659",
+      "prompt": "Is the event that occurred the direct and immediate result of the given cause, or are other factors at play?"
+    },
+    {
+      "name": "Meta-660",
+      "prompt": "Identify the most direct and immediate cause of the outcome, while considering the presence of other factors, and select the option that best reflects your judgment."
+    },
+    {
+      "name": "Meta-661",
+      "prompt": "Determine whether the given event or circumstance is the most direct and immediate cause of the outcome, while considering all other relevant factors."
+    },
+    {
+      "name": "Meta-662",
+      "prompt": "Determine the primary cause or most direct contributor to the outcome, excluding any indirect or background factors."
+    },
+    {
+      "name": "Meta-663",
+      "prompt": "Identify the direct and most immediate cause of the outcome."
+    },
+    {
+      "name": "Meta-664",
+      "prompt": "Determine whether the described event or situation is more likely to have been caused by the given factor or circumstances."
+    },
+    {
+      "name": "Meta-665",
+      "prompt": "Is the event or situation described most directly and immediately responsible for the outcome or result?"
+    },
+    {
+      "name": "Meta-666",
+      "prompt": "Identify the event or action that is most directly responsible for the outcome, excluding any factors that are unrelated or indirect."
+    },
+    {
+      "name": "Meta-667",
+      "prompt": "Consider the conditions that directly led to the outcome in question."
+    },
+    {
+      "name": "Meta-668",
+      "prompt": "Identify the most direct and immediate cause of the outcome, disregarding any potential intermediate or underlying factors."
+    },
+    {
+      "name": "Meta-669",
+      "prompt": "Determine whether the described event is a direct or indirect result of the given cause."
+    },
+    {
+      "name": "Meta-670",
+      "prompt": "Determine whether the event described in the scenario was caused by the given factor."
+    },
+    {
+      "name": "Meta-671",
+      "prompt": "Determine whether the given situation is more likely to be caused by the listed factor or by some other factor."
+    },
+    {
+      "name": "Meta-672",
+      "prompt": "Determine whether the event described in the scenario is more likely to have been caused by the given factor or some other factor, if any."
+    },
+    {
+      "name": "Meta-673",
+      "prompt": "Identify the event or action that most directly contributes to the outcome, excluding any indirect or background factors."
+    },
+    {
+      "name": "Meta-674",
+      "prompt": "Determine whether the given event or situation is the most direct and immediate cause of the outcome, taking into account any intervening factors or potential confounding variables."
+    },
+    {
+      "name": "Meta-675",
+      "prompt": "Identify the specific event or action that directly led to the outcome or consequence in question."
+    },
+    {
+      "name": "Meta-676",
+      "prompt": "Identify the immediate and direct cause of the outcome or event."
+    },
+    {
+      "name": "Meta-677",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and immediate factor that led to the consequence."
+    },
+    {
+      "name": "Meta-678",
+      "prompt": "Identify the event or action that is most likely to have directly led to the outcome or consequence."
+    },
+    {
+      "name": "Meta-679",
+      "prompt": "Determine whether a given event or circumstance is the most likely cause of a subsequent event or outcome, considering all relevant information and potential alternative explanations."
+    },
+    {
+      "name": "Meta-680",
+      "prompt": "Did the presence of a direct, unbroken chain of events leading from a particular cause to an effect play a crucial role in the outcome?"
+    },
+    {
+      "name": "Meta-681",
+      "prompt": "Decide whether the event or situation described is the most likely direct cause of the outcome, excluding any intervening events or factors that may have contributed to the outcome."
+    },
+    {
+      "name": "Meta-682",
+      "prompt": "Identify the immediate and direct cause of the outcome or event described, without considering potential intermediate or indirect factors."
+    },
+    {
+      "name": "Meta-683",
+      "prompt": "Identify the event or circumstance that is most directly responsible for the outcome, and choose the option that best corresponds to your judgment of that cause."
+    },
+    {
+      "name": "Meta-684",
+      "prompt": "Identify the immediate cause that led to the outcome or event, disregarding any potential intermediate causes or background information."
+    },
+    {
+      "name": "Meta-685",
+      "prompt": "Identify the event or circumstance that most directly contributed to the outcome or outcome sequence."
+    },
+    {
+      "name": "Meta-686",
+      "prompt": "Determine whether the given event or circumstance is the most direct and likely cause of the outcome in question, or if another event or circumstance played a more significant role in its occurrence."
+    },
+    {
+      "name": "Meta-687",
+      "prompt": "Determine whether the presented event is the direct or immediate cause of the outcome, or if another factor played a more significant role in the outcome occurring."
+    },
+    {
+      "name": "Meta-688",
+      "prompt": "Determine whether the given event was caused by the specified factor, considering the typical person's understanding of causation and the presence of any intervening or confounding factors."
+    },
+    {
+      "name": "Meta-689",
+      "prompt": "Determine whether the described event is directly caused by the given factor, and not by another factor or a combination of factors."
+    },
+    {
+      "name": "Meta-690",
+      "prompt": "Identify the most immediate and direct cause of the outcome, ignoring any indirect or distant factors, and select the option that corresponds to that cause."
+    },
+    {
+      "name": "Meta-691",
+      "prompt": "Identify the cause of the event or outcome by determining whether the described circumstances and actions are sufficient to produce the outcome."
+    },
+    {
+      "name": "Meta-692",
+      "prompt": "Identify the event or action most directly responsible for the outcome or consequence described."
+    },
+    {
+      "name": "Meta-693",
+      "prompt": "Determine the most direct and immediate cause of the outcome, disregarding any indirect, remote, or coincidental factors."
+    },
+    {
+      "name": "Meta-694",
+      "prompt": "Identify the direct and immediate cause of the outcome, excluding any underlying or predisposing factors."
+    },
+    {
+      "name": "Meta-695",
+      "prompt": "Determine whether a given event or situation is the direct cause of a subsequent outcome."
+    },
+    {
+      "name": "Meta-696",
+      "prompt": "Determine whether the described event or situation is the most direct, immediate, or obvious cause of the outcome or effect mentioned."
+    },
+    {
+      "name": "Meta-697",
+      "prompt": "Determine the cause of the observed outcome by identifying the most direct and relevant factor that led to the event, without attributing causality to distant or indirect factors."
+    },
+    {
+      "name": "Meta-698",
+      "prompt": "Determine whether the described event was caused by the given condition or factor, considering typical human causal judgment and distinguishing between direct and indirect causes, intervening factors, and background conditions."
+    },
+    {
+      "name": "Meta-699",
+      "prompt": "Identify the most direct and immediate cause of the outcome described."
+    },
+    {
+      "name": "Meta-700",
+      "prompt": "Determine whether the described event is more likely to have occurred due to the given circumstances or not."
+    }
+  ]
+}

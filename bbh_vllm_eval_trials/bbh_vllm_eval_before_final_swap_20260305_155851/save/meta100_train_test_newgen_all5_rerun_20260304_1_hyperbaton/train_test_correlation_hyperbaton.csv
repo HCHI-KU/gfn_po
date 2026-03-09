@@ -1,0 +1,101 @@
+method_name,train_accuracy,test_accuracy,train_correct,train_total,test_correct,test_total,prompt
+Meta-01,0.72,0.74,36,50,74,100,Identify the sentence with the adjective order that follows the typical English word order for describing an object.
+Meta-02,0.74,0.71,37,50,71,100,Modify the sentence to put the adjective closest to the noun in the correct order of modification.
+Meta-03,0.74,0.7,37,50,70,100,Identify the sentence with adjectives in the order of most general to most specific.
+Meta-04,0.72,0.7,36,50,70,100,Arrange the adjectives in the sentence in the order that a speaker would naturally use them in everyday conversation.
+Meta-05,0.78,0.72,39,50,72,100,Modify the sentence to ensure the adjective preceding a noun is closest to the noun in meaning.
+Meta-06,0.64,0.81,32,50,81,100,"Determine the correct order of adjectives by applying the standard English rule: nouns, then adjectives in the order of their degree (farthest from the noun, closest to the noun)."
+Meta-07,0.76,0.7,38,50,70,100,Modify the adjective sequence to prioritize the order of proximity in describing the noun.
+Meta-08,0.78,0.79,39,50,79,100,Arrange the adjectives in each sentence in a logical and grammatically correct order.
+Meta-09,0.76,0.71,38,50,71,100,Identify the sentence with the adjective order that follows the typical English pattern of modifier-modified.
+Meta-10,0.78,0.76,39,50,76,100,Modify the sentence by rearranging the adjectives to maintain a logical and natural order.
+Meta-11,0.72,0.69,36,50,69,100,Arrange the adjectives in the sentence in the order of their original positions in the noun phrase to ensure grammatical correctness and proper word order.
+Meta-12,0.76,0.78,38,50,78,100,"Arrange the adjectives in the sentence to follow the typical English word order of ""big - grey - [nationality] - [material] - [action]""."
+Meta-13,0.72,0.72,36,50,72,100,"Determine the correct order of adjectives in a sentence by placing them in the order of specificity, then intensity, and finally, general category."
+Meta-14,0.72,0.68,36,50,68,100,"Modify the sentence to follow the standard adjective order in English, typically noun-modifier-modifier-noun."
+Meta-15,0.76,0.77,38,50,77,100,"Identify the sentence with adjectives in their typical English order, usually modifying nouns in the order of specificity, size, shape, color, origin, and material."
+Meta-16,0.74,0.73,37,50,73,100,"Determine the sentence with the adjective order that follows the typical English pattern of modifying nouns, from most specific to most general."
+Meta-17,0.72,0.68,36,50,68,100,"Identify the sentence with the adjectives in the standard order of size, nationality, color, material, and action."
+Meta-18,0.7,0.74,35,50,74,100,Arrange the adjectives in the correct order of typical English word order.
+Meta-19,0.74,0.68,37,50,68,100,"Arrange the adjectives in the sentence to follow the order: largest, most distant, and then closest to the noun."
+Meta-20,0.74,0.82,37,50,82,100,"Arrange the adjectives in each sentence according to the typical order of modifying nouns in English, which is usually from general to specific."
+Meta-21,0.54,0.69,27,50,69,100,"Identify the sentence with the adjective order following the typical English word order: noun, modifier (adjective), specifier (adjective), descriptor (adjective)."
+Meta-22,0.76,0.78,38,50,78,100,"Identify the sentence with adjectives in the standard English order (usually subject-adjective, verb-adjective, or article-adjective) from the given options."
+Meta-23,0.78,0.78,39,50,78,100,"Arrange the adjectives in each sentence in the order of their scope or modification, from most general to most specific."
+Meta-24,0.72,0.71,36,50,71,100,Modify the adjective to the noun it modifies in the order in which they are mentioned in the sentence.
+Meta-25,0.7,0.77,35,50,77,100,"Identify the sentence with the adjective order that follows the typical English language pattern of modifying nouns in a specific order (e.g., size, shape, color, material, origin)."
+Meta-26,0.74,0.69,37,50,69,100,Arrange the adjectives in the sentence in the order of their semantic relationship to the noun they modify.
+Meta-27,0.8,0.78,40,50,78,100,Identify the sentence with the adjective order that follows the natural language ordering of adjectives in English.
+Meta-28,0.74,0.76,37,50,76,100,"Determine the correct adjective order by placing adjectives in their natural order of importance and specificity, with more general adjectives (e.g. big) preceding more specific adjectives (e.g. midsize), and adjectives describing material or nationality preceding adjectives describing appearance or action."
+Meta-29,0.8,0.67,40,50,67,100,"Identify the sentence with the adjective order that follows the typical English word order of ""article-adjective-noun""."
+Meta-30,0.72,0.76,36,50,76,100,Determine the correct adjective order for the given sentence options by following the standard English adjective placement rules.
+Meta-31,0.76,0.69,38,50,69,100,"Identify the sentence with the correct adjective order, where adjectives typically precede the noun they modify, and in English, the order is generally ""opportune, size, color, material, origin, nationality, and other modifying characteristics""."
+Meta-32,0.82,0.75,41,50,75,100,"Identify the sentence with the adjectives in the correct order, typically in the sequence of opinion, size, shape, age, color, nationality, and material."
+Meta-33,0.68,0.77,34,50,77,100,Arrange the adjectives in the sentence according to the typical English word order for adjectives in noun phrases.
+Meta-34,0.78,0.81,39,50,81,100,Arrange the adjectives in each option in the order that a native English speaker would typically use.
+Meta-35,0.74,0.71,37,50,71,100,"Determine the correct adjective order by identifying the modifier and the modified noun, and placing the adjective closest to the modified noun."
+Meta-36,0.8,0.76,40,50,76,100,"Identify the sentence with adjectives in the correct order of quantity, size, color, origin, material, and activity."
+Meta-37,0.76,0.71,38,50,71,100,"Modify the sentence to follow the typical English adjective order: largest to smallest, most specific to most general."
+Meta-38,0.78,0.73,39,50,73,100,Identify the option with the adjectives in the order of specificity.
+Meta-39,0.78,0.69,39,50,69,100,"Place the adjectives in the sentence in the order of their modification, with the most specific or descriptive adjectives closest to the noun."
+Meta-40,0.78,0.74,39,50,74,100,Identify the sentence with the adjective order that follows the typical English word order of modifying nouns in a logical and readable sequence.
+Meta-41,0.74,0.72,37,50,72,100,Determine the most natural word order by applying the English adjective-noun order rule: adjectives in the order of opinion-size-age-color-origin-material-type.
+Meta-42,0.7,0.76,35,50,76,100,"Arrange the adjectives in the sentence to follow the typical English order: opinion, size, shape, age, color, origin, material, and action."
+Meta-43,0.78,0.73,39,50,73,100,Order the adjectives in each sentence according to their relative importance and natural flow.
+Meta-44,0.74,0.65,37,50,65,100,Identify the sentence with the adjectives in the correct order of importance and relevance.
+Meta-45,0.84,0.77,42,50,77,100,Identify the sentence with the adjective order that most closely follows the typical English adjective-noun word order.
+Meta-46,0.68,0.74,34,50,74,100,"Arrange the adjectives in the sentence to follow the typical English word order of ""biggest, biggest, brightest,..."" where the order reflects the order of modifying the noun."
+Meta-47,0.72,0.65,36,50,65,100,Identify the sentence with the adjective order that follows the typical English word order: [article] [adjective] [noun] [adjective] [noun].
+Meta-48,0.72,0.71,36,50,71,100,"Arrange the adjectives in each sentence according to their inherent order of degree, with the most specific or distinctive descriptor coming first and the most general or common descriptor coming last."
+Meta-49,0.74,0.76,37,50,76,100,Identify the sentence with the adjectives in their typical order from most general to most specific.
+Meta-50,0.78,0.73,39,50,73,100,"Identify the sentence with the adjectives in the correct order, typically following the sequence of opinion, size, shape, color, origin, material."
+Meta-51,0.76,0.73,38,50,73,100,"Arrange the adjectives in the sentence to follow a consistent order of modification, typically from general to specific."
+Meta-52,0.76,0.72,38,50,72,100,Identify the sentence with adjectives in their typical English order: noun-qualifier1-qualifier2...
+Meta-53,0.72,0.78,36,50,78,100,Determine the correct adjective order by identifying the typical default order for English adjectives and adjusting as necessary to ensure the sentence is clear and unambiguous.
+Meta-54,0.78,0.72,39,50,72,100,Identify the sentence with the adjectives in the correct order of increasing specificity.
+Meta-55,0.78,0.81,39,50,81,100,"Determine the correct adjective order by applying the rule that adjectives modifying a noun are typically listed in order of specificity, with more general adjectives coming before more specific ones."
+Meta-56,0.8,0.71,40,50,71,100,Identify the sentence with the adjective modifiers in the most natural and typical order for the English language.
+Meta-57,0.74,0.77,37,50,77,100,Order the adjectives in each sentence to follow the typical English adjective order.
+Meta-58,0.78,0.71,39,50,71,100,"Identify the sentence with adjectives in the correct order, typically following the pattern ""determiner-adjective-noun""."
+Meta-59,0.76,0.7,38,50,70,100,Determine the correct adjective order by identifying the language's typical adjective modification pattern and applying it to the given options.
+Meta-60,0.74,0.67,37,50,67,100,"Modify the sentence by moving adjectives closer to the noun they modify, while maintaining the original sentence's meaning."
+Meta-61,0.78,0.67,39,50,67,100,"Determine the correct adjective order by rearranging the options to follow the typical English pattern of modifying nouns in the order of size, color, material, and then national origin."
+Meta-62,0.8,0.72,40,50,72,100,Arrange the adjectives in each option in the order of general specificity to specific detail.
+Meta-63,0.76,0.82,38,50,82,100,"Identify the sentence with the most logical adjective order, assuming English sentence structure and word order conventions."
+Meta-64,0.66,0.76,33,50,76,100,"Determine the correct order of adjectives in each sentence by placing them in the order of their significance, specificity, and proximity to the noun they modify."
+Meta-65,0.72,0.7,36,50,70,100,Arrange the adjectives in each sentence in the most logical and grammatically correct order.
+Meta-66,0.74,0.68,37,50,68,100,Determine the correct adjective order by placing the most specific adjectives closest to the noun they modify.
+Meta-67,0.7,0.79,35,50,79,100,Determine the sentence with the adjectives in the standard English order of largest to smallest scope.
+Meta-68,0.56,0.58,28,50,58,100,"Modify the sentence to adhere to the typical adjective order in English, from most general to most specific."
+Meta-69,0.72,0.78,36,50,78,100,"Arrange the adjectives in each sentence in the typical English order of opinion, size, shape, age, color, nationality, occupation, and material."
+Meta-70,0.76,0.69,38,50,69,100,Identify the sentence with the adjectives in the standard order: noun-adjective-adjective-adjective...
+Meta-71,0.76,0.75,38,50,75,100,"Order the adjectives in the sentence to follow the typical English word order: noun, adjective 1, adjective 2, adjective 3, ..."
+Meta-72,0.72,0.77,36,50,77,100,"Identify the sentence with the adjective order following the typical English word order of ""adjective-noun"" or ""adjective-adjective-noun""."
+Meta-73,0.78,0.74,39,50,74,100,"Determine the correct adjective order in the given sentence options by prioritizing the order of the adjectives in English, with adjectives that describe size, color, and nationality typically appearing in that order."
+Meta-74,0.78,0.72,39,50,72,100,"Order the adjectives in the sentence to follow the typical word order in English, with the most specific descriptor first and the most general last."
+Meta-75,0.78,0.73,39,50,73,100,Determine the correct adjective order by identifying the most specific or descriptive adjective and placing it closest to the noun it modifies.
+Meta-76,0.72,0.68,36,50,68,100,Determine the correct adjective order in the sentence by arranging the adjectives in the order of their semantic scope from broadest to most specific.
+Meta-77,0.76,0.74,38,50,74,100,"Identify the sentence with the adjective order that follows the typical English word order of modifying nouns with descriptors in the order: type, size, color, origin, material."
+Meta-78,0.74,0.79,37,50,79,100,"Order the adjectives in the sentence according to the typical word order in English, with attributive adjectives in the order: opinion, size, shape, color, material, origin, purpose."
+Meta-79,0.76,0.7,38,50,70,100,"Determine the most logical order of adjectives in the sentence, typically following the pattern: size, shape, color, origin, material, etc."
+Meta-80,0.78,0.71,39,50,71,100,"Identify the sentence with the most natural word order, where adjectives are placed in a logical sequence to modify the noun."
+Meta-81,0.76,0.76,38,50,76,100,"Determine the sentence with the adjectives in the correct order, typically following the pattern: opinion-size-color-origin-material-purpose."
+Meta-82,0.7,0.76,35,50,76,100,"Arrange the adjectives in each option in the order of their semantic scope or generality, from most general to most specific."
+Meta-83,0.66,0.71,33,50,71,100,"Arrange the adjectives in each option in the order of their grammatical function, typically: opinion > physical > national > size > material > color > activity."
+Meta-84,0.72,0.75,36,50,75,100,Determine the correct adjective order by following the typical English word order: article-adjective-noun.
+Meta-85,0.72,0.67,36,50,67,100,Modify the sentence to maintain the order: Adjective-Noun-Adverb-Adjective.
+Meta-86,0.76,0.71,38,50,71,100,"Identify the sentence with adjectives in the correct order, typically following the pattern ""noun-adjective-adjective..."" in English."
+Meta-87,0.76,0.76,38,50,76,100,"Arrange the adjectives in the sentence according to the typical English word order of adjective types: descriptive, size, origin, material, and manner."
+Meta-88,0.7,0.65,35,50,65,100,Determine the sentence with the adjectives in the order of most general to most specific.
+Meta-89,0.74,0.77,37,50,77,100,"Determine the correct adjective order by arranging adjectives in a consistent sequence, typically in the order of opinion, size, shape, color, origin, and material."
+Meta-90,0.78,0.73,39,50,73,100,Identify the sentence with the adjective order following the typical English pattern of largest to smallest or most general to most specific.
+Meta-91,0.78,0.71,39,50,71,100,"Arrange the adjectives in each sentence to follow the typical English word order of adjective-noun, modifying the noun most closely in meaning with the most specific information first."
+Meta-92,0.64,0.71,32,50,71,100,"Determine the correct order of adjectives in each sentence by placing the largest, most general descriptors first, followed by the smallest, most specific descriptors."
+Meta-93,0.74,0.71,37,50,71,100,"Arrange the adjectives in the sentence to follow the typical order of quantity, color, origin, and other attributes."
+Meta-94,0.74,0.79,37,50,79,100,"Determine the sentence with the adjective order that follows the typical English word order, where adjectives modifying the same noun appear in a consistent order."
+Meta-95,0.82,0.73,41,50,73,100,"Identify the sentence with the adjectives in the most logical and natural order, typically in the order of: opinion > size > shape > color > origin > material > purpose > activity."
+Meta-96,0.76,0.79,38,50,79,100,"Determine the correct adjective order by following the typical English word order: noun, adjective (in the order of general to specific)."
+Meta-97,0.8,0.73,40,50,73,100,"Determine the sentence with the adjective order that follows the typical English word order of modifying nouns with adjectives in a specific sequence, typically ""opinion-size-age-shape-color-origin-material-purpose""."
+Meta-98,0.76,0.7,38,50,70,100,"Identify the sentence with the adjectives in the order: descriptive noun modifier, size/quantity modifier, nationality modifier, material modifier."
+Meta-99,0.78,0.74,39,50,74,100,"Determine the correct adjective order by prioritizing adjectives modifying size, nationality, and color in that order."
+Meta-100,0.62,0.6,31,50,60,100,"Determine the correct adjective order in each sentence by prioritizing modifiers in the order they appear in the sentence, but swap positions if the noun is modified by more than two adjectives."

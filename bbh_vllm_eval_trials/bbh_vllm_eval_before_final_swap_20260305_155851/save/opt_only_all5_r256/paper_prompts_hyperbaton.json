@@ -1,0 +1,19 @@
+{
+  "paper_acc": 0.84,
+  "Opt": {
+    "prompt": "Use the reasoning and examples you would step. Finally give the actual correct answer.",
+    "accuracy": 0.74,
+    "inference_time": 10.391550302505493,
+    "correct": 74,
+    "total": 100,
+    "parse_failures": 1,
+    "invalid_predictions": 0,
+    "parsed_rate": 0.99,
+    "valid_parsed_rate": 0.99,
+    "used_extractor": true,
+    "prompt_backend": "manual_llama3",
+    "test_acc": 0.74,
+    "test_parsed": 0.99,
+    "answer_max_tokens": 4
+  }
+}

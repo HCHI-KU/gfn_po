@@ -1,0 +1,36 @@
+{
+  "source": "/home/work/jihun/bbh_vllm_eval/save/run_meta100_all5_train50_test100_parallel/meta100_train_test_all_tasks.json",
+  "generated_at": "2026-02-27T15:45:45",
+  "tasks": {
+    "tracking_shuffled_objects_five_objects": {
+      "task_dir": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/tracking_shuffled_objects_five_objects",
+      "summary_json": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/tracking_shuffled_objects_five_objects/correlation_summary.json",
+      "plot_path": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/tracking_shuffled_objects_five_objects/train_test_correlation.png",
+      "points_csv": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/tracking_shuffled_objects_five_objects/train_test_points.csv"
+    },
+    "object_counting": {
+      "task_dir": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/object_counting",
+      "summary_json": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/object_counting/correlation_summary.json",
+      "plot_path": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/object_counting/train_test_correlation.png",
+      "points_csv": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/object_counting/train_test_points.csv"
+    },
+    "causal_judgement": {
+      "task_dir": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/causal_judgement",
+      "summary_json": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/causal_judgement/correlation_summary.json",
+      "plot_path": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/causal_judgement/train_test_correlation.png",
+      "points_csv": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/causal_judgement/train_test_points.csv"
+    },
+    "movie_recommendation": {
+      "task_dir": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/movie_recommendation",
+      "summary_json": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/movie_recommendation/correlation_summary.json",
+      "plot_path": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/movie_recommendation/train_test_correlation.png",
+      "points_csv": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/movie_recommendation/train_test_points.csv"
+    },
+    "hyperbaton": {
+      "task_dir": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/hyperbaton",
+      "summary_json": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/hyperbaton/correlation_summary.json",
+      "plot_path": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/hyperbaton/train_test_correlation.png",
+      "points_csv": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/hyperbaton/train_test_points.csv"
+    }
+  }
+}

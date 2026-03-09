@@ -1,0 +1,11 @@
+method_name,train_accuracy,test_accuracy,train_correct,train_total,test_correct,test_total,prompt
+Meta-01,0.42,0.39,21,50,39,100,"Keep track of the partners each dancer has and the partner changes that occur, then determine who Alice is dancing with at the end of the dance."
+Meta-02,0.44,0.36,22,50,36,100,Determine the final partner of a specific dancer by tracing the sequence of partner switches throughout the song.
+Meta-03,0.46,0.34,23,50,34,100,Track the sequence of partner switches to determine the final partner of each dancer.
+Meta-04,0.44,0.4,22,50,40,100,Follow the sequence of partner switches to determine the final dance partner of each dancer.
+Meta-05,0.4,0.35,20,50,35,100,"Determine the final dance partner of a given dancer by tracking the sequence of partner switches, starting from the initial partner."
+Meta-06,0.44,0.44,22,50,44,100,Keep track of the sequence of partner changes to determine the final partner of each dancer.
+Meta-07,0.48,0.53,24,50,53,100,Keep track of the partners each dancer has after each pair of dancers switches partners.
+Meta-08,0.52,0.41,26,50,41,100,Follow the sequence of partner swaps to determine the final partner of each dancer.
+Meta-09,0.48,0.41,24,50,41,100,Determine the final partner of a given dancer by tracking the sequence of partner swaps throughout the song.
+Meta-10,0.64,0.47,32,50,47,100,Follow the sequence of partner swaps to determine the final partner of the person who was initially dancing with a given person.

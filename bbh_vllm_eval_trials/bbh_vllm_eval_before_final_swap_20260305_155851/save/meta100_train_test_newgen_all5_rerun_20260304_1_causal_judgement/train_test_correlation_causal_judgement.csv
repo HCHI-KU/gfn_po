@@ -1,0 +1,101 @@
+method_name,train_accuracy,test_accuracy,train_correct,train_total,test_correct,test_total,prompt
+Meta-01,0.5,0.49,25,50,49,100,Identify the most direct and immediate cause of the outcome or event.
+Meta-02,0.52,0.5,26,50,50,100,"Determine the cause of the outcome by identifying the specific event or factor that directly led to the outcome, while considering all other factors as background or contributing conditions."
+Meta-03,0.54,0.51,27,50,51,100,"Determine whether the described event was caused by the condition or action mentioned, or if another factor was responsible for the outcome."
+Meta-04,0.52,0.5,26,50,50,100,"Identify the event that most directly and plausibly contributed to the outcome, without considering intervening factors or remote causes."
+Meta-05,0.52,0.49,26,50,49,100,"Determine whether the presented event or situation directly and specifically caused the outcome, considering any alternative factors or influences."
+Meta-06,0.52,0.49,26,50,49,100,"Determine whether the described event is more likely to have occurred without the presence or influence of the proposed cause, considering the presence of other plausible explanations."
+Meta-07,0.5,0.49,25,50,49,100,Identify the most direct and immediate cause of the outcome in question.
+Meta-08,0.5,0.52,25,50,52,100,"Determine whether the presented event is a direct and necessary result of the described cause, without considering other potential causes or intervening factors."
+Meta-09,0.56,0.53,28,50,53,100,"Identify the immediate cause of the outcome, not the remote or underlying cause, and choose the option that accurately reflects this causal relationship."
+Meta-10,0.5,0.49,25,50,49,100,Identify the event or factor that most directly led to the outcome in question.
+Meta-11,0.52,0.49,26,50,49,100,Determine whether the event or condition mentioned in the text is the most direct and immediate cause of the outcome.
+Meta-12,0.52,0.49,26,50,49,100,"Determine the most likely cause of the outcome by identifying the event that directly led to the outcome, and that is not simply a consequence of the outcome."
+Meta-13,0.52,0.5,26,50,50,100,"Determine the most direct, immediate, and proximal cause of the outcome, excluding any background or general conditions."
+Meta-14,0.52,0.5,26,50,50,100,Determine whether the described event is more likely caused by the described factor or some other factor(s).
+Meta-15,0.5,0.49,25,50,49,100,"Identify the event or condition that most directly precedes the outcome or effect, and assess whether it is the most plausible cause of that outcome or effect."
+Meta-16,0.54,0.54,27,50,54,100,"Determine the cause of the outcome by identifying the most direct and plausible relationship between the event or action and the outcome, disregarding any indirect or intervening factors."
+Meta-17,0.5,0.5,25,50,50,100,"Determine the most immediate and direct cause of the outcome, dismissing potential intermediate or indirect causes."
+Meta-18,0.5,0.49,25,50,49,100,Identify the most direct and immediate cause of the outcome or event described.
+Meta-19,0.52,0.49,26,50,49,100,"Identify the immediate, direct cause of the outcome, excluding any underlying or contributory factors."
+Meta-20,0.5,0.49,25,50,49,100,"Consider the direct, immediate, and most plausible cause of the outcome."
+Meta-21,0.5,0.49,25,50,49,100,Identify the most direct and plausible causal factor contributing to the outcome or event described.
+Meta-22,0.54,0.51,27,50,51,100,"Identify the event or action that most directly precedes the outcome, and attribute causality to that event or action."
+Meta-23,0.5,0.5,25,50,50,100,"Determine the event that most likely triggered the outcome, excluding background conditions or incidental factors."
+Meta-24,0.52,0.55,26,50,55,100,"Determine whether the presented event or situation caused the outcome in question, considering only direct and immediate effects, without attributing causality to underlying or contributing factors."
+Meta-25,0.48,0.49,24,50,49,100,"Identify the specific event or factor that directly led to the outcome, disregarding any indirect or contributing factors."
+Meta-26,0.52,0.5,26,50,50,100,"Identify the most direct and immediate cause of the outcome described, considering all given circumstances and excluding indirect or remote factors."
+Meta-27,0.52,0.5,26,50,50,100,Determine whether the event or circumstance described in the prompt is a necessary condition for the outcome or death to occur.
+Meta-28,0.52,0.5,26,50,50,100,"Determine the cause of the observed outcome by identifying the factor that most directly and plausibly led to the outcome, without considering remote or indirect relationships."
+Meta-29,0.5,0.49,25,50,49,100,"Identify the immediate, direct cause of the outcome described."
+Meta-30,0.54,0.53,27,50,53,100,"Determine whether the given event or situation is the primary contributor to the outcome or effect, considering all relevant information and ignoring coincidental or secondary factors."
+Meta-31,0.5,0.49,25,50,49,100,"Consider the effect that the supposed cause would have had if it had not occurred, and evaluate whether the outcome would have been the same or different."
+Meta-32,0.5,0.5,25,50,50,100,"Determine whether the given event is the most direct and immediate cause of the outcome, or if another factor was more directly responsible."
+Meta-33,0.54,0.5,27,50,50,100,"Determine whether a specific event or condition is the most direct and immediate cause of an outcome, by evaluating the presence and relevance of alternative causes and circumstances."
+Meta-34,0.5,0.49,25,50,49,100,"Identify the most direct and plausible cause of the outcome described, considering the events and circumstances presented."
+Meta-35,0.5,0.49,25,50,49,100,Identify the most direct and immediate cause of the outcome.
+Meta-36,0.52,0.51,26,50,51,100,"Determine whether the given event or circumstance is a necessary and sufficient condition for the outcome or consequence, considering all relevant information provided."
+Meta-37,0.5,0.49,25,50,49,100,Is the described event the most direct and immediate consequence of the given cause?
+Meta-38,0.56,0.56,28,50,56,100,"Decide whether the given event or condition caused the outcome, considering only the information provided in the scenario and ignoring other possible factors."
+Meta-39,0.54,0.51,27,50,51,100,"Identify the most direct and immediate cause of the outcome, regardless of any potential indirect or contributing factors."
+Meta-40,0.52,0.5,26,50,50,100,"Determine the cause of the outcome by identifying the event or action that is most closely linked to the outcome, and is most plausible as the reason for the outcome occurring."
+Meta-41,0.52,0.49,26,50,49,100,"Determine the cause of the observed outcome by identifying the factor that directly leads to the consequence, while considering any other factors as potential contributors."
+Meta-42,0.5,0.5,25,50,50,100,"Identify the direct cause of the outcome, disregarding any potential indirect or intervening factors."
+Meta-43,0.52,0.5,26,50,50,100,"Did the stated event or circumstance directly lead to the outcome, or was it a necessary but not sufficient cause?"
+Meta-44,0.52,0.5,26,50,50,100,"Identify the event that most directly and immediately led to the outcome in question, ignoring any indirect or distant causes."
+Meta-45,0.5,0.5,25,50,50,100,"Determine whether the stated event is the most direct and immediate cause of the outcome, or if another event had a more direct and immediate effect."
+Meta-46,0.48,0.5,24,50,50,100,"Determine the most direct and plausible cause of the outcome, while considering the specific context and information provided."
+Meta-47,0.52,0.49,26,50,49,100,"Determine the factor that directly and immediately led to the outcome, excluding any indirect or long-term effects."
+Meta-48,0.5,0.5,25,50,50,100,Identify the cause of the outcome by determining whether the outcome would have occurred in the absence of the suspected cause.
+Meta-49,0.5,0.5,25,50,50,100,"Identify the direct or immediate cause of the outcome or event described in the scenario, considering the relevant context and available information."
+Meta-50,0.52,0.5,26,50,50,100,"Determine whether the given event is a necessary condition for the outcome, considering all relevant factors and excluding other potential causes."
+Meta-51,0.5,0.49,25,50,49,100,Identify the cause of the outcome that resulted in the described event or condition.
+Meta-52,0.5,0.49,25,50,49,100,Identify the cause that directly led to the outcome or effect mentioned in the scenario.
+Meta-53,0.54,0.52,27,50,52,100,"Determine the cause of the outcome by identifying the specific event or factor that directly led to the result, rather than any indirect or correlated factors."
+Meta-54,0.5,0.49,25,50,49,100,Identify the immediate and direct cause of the outcome or event described.
+Meta-55,0.52,0.5,26,50,50,100,"Determine the cause of the outcome by identifying the direct and sufficient condition that led to the result, while considering alternative explanations and ruling out coincidental or indirect factors."
+Meta-56,0.52,0.5,26,50,50,100,"Determine the causal relationship between the specified event or circumstance and the outcome, considering the presence of intervening factors and alternative causes."
+Meta-57,0.5,0.5,25,50,50,100,"Determine whether a specific event or circumstance caused a particular outcome, considering the presence or absence of other factors that may have contributed to the outcome."
+Meta-58,0.52,0.52,26,50,52,100,"Determine whether the event described in the scenario was caused by the action or situation mentioned, considering any relevant background information and circumstances."
+Meta-59,0.5,0.5,25,50,50,100,Determine whether the described event is a direct result of the given cause or if other factors were also involved.
+Meta-60,0.5,0.49,25,50,49,100,"Identify the event or action that directly led to the outcome or consequence, and determine whether it was a necessary and sufficient condition for the outcome to occur."
+Meta-61,0.56,0.51,28,50,51,100,Determine whether the event described in the scenario was caused by the condition or action mentioned in the question.
+Meta-62,0.5,0.49,25,50,49,100,Identify the specific event or action that most directly led to the outcome or consequence.
+Meta-63,0.5,0.51,25,50,51,100,"Determine whether the event described is a direct result of the given cause, or if there are other factors or intervening events that make the cause unlikely to have caused the outcome."
+Meta-64,0.5,0.51,25,50,51,100,"Determine the direct or primary cause of the outcome or event described, rather than any contributing factors or indirect causes."
+Meta-65,0.52,0.5,26,50,50,100,Determine the cause of the observed outcome by identifying the factor that makes it impossible for the outcome to occur without it.
+Meta-66,0.52,0.49,26,50,49,100,"Identify the most direct and immediate cause of the outcome, rather than considering remote or indirect factors."
+Meta-67,0.5,0.51,25,50,51,100,"Determine whether the presented event is the most direct and immediate cause of the outcome, or if there are other factors that contributed more significantly to the outcome."
+Meta-68,0.52,0.49,26,50,49,100,Determine the cause of the outcome by identifying the most direct and relevant factor that led to the result.
+Meta-69,0.52,0.49,26,50,49,100,Identify the cause of the outcome by considering the presence of alternative plausible explanations and the degree to which the given information supports a direct causal link between the proposed cause and the outcome.
+Meta-70,0.52,0.49,26,50,49,100,"Determine the factor most directly responsible for the outcome, while considering the presence of other possible causes."
+Meta-71,0.54,0.53,27,50,53,100,"Determine whether the event described in the scenario was caused by the given factor or factors, considering the typical person's understanding of causality."
+Meta-72,0.5,0.49,25,50,49,100,"Did the given event or condition cause the outcome, considering all relevant circumstances?"
+Meta-73,0.54,0.5,27,50,50,100,"Determine whether the event or circumstance mentioned in the scenario is the most direct and immediate cause of the outcome, or if another factor had a more significant influence."
+Meta-74,0.5,0.49,25,50,49,100,Identify the event that is most likely to have directly led to the outcome.
+Meta-75,0.52,0.49,26,50,49,100,Determine whether the event or condition described in the passage is the most direct and immediate cause of the outcome.
+Meta-76,0.52,0.49,26,50,49,100,Determine whether the described event or circumstance is the most direct and immediate cause of the outcome.
+Meta-77,0.52,0.51,26,50,51,100,Consider the presence and absence of other possible causes before determining whether a given event or situation caused a particular outcome.
+Meta-78,0.52,0.54,26,50,54,100,"Determine the cause of the outcome, considering the provided information, and select the option that best represents your causal judgement."
+Meta-79,0.5,0.5,25,50,50,100,Determine whether a given event is the direct cause of another event or is simply a contributing factor.
+Meta-80,0.52,0.5,26,50,50,100,"Determine whether the given event or condition was a necessary and sufficient cause of the outcome, or if there is another plausible explanation for the outcome."
+Meta-81,0.52,0.49,26,50,49,100,"Determine the cause of the outcome by identifying the most direct and relevant factor that led to the event, taking into account all the available information."
+Meta-82,0.48,0.52,24,50,52,100,"Identify the cause of the event as the condition, action, or circumstance that directly led to the outcome, and disregard any contributing or underlying factors."
+Meta-83,0.52,0.5,26,50,50,100,"Determine whether the described event was caused by the stated factor, considering the context and potential confounding variables."
+Meta-84,0.52,0.5,26,50,50,100,"Identify the event or action that is most directly responsible for the outcome, excluding any intervening or indirect factors."
+Meta-85,0.52,0.49,26,50,49,100,Determine the cause of the event described by identifying the most direct and immediate factor that led to the outcome.
+Meta-86,0.5,0.5,25,50,50,100,"Identify the event or factor most directly responsible for the outcome, ignoring any distant or indirect contributions."
+Meta-87,0.52,0.49,26,50,49,100,Determine whether the described event or action was the most direct and immediate cause of the outcome.
+Meta-88,0.54,0.49,27,50,49,100,Determine whether the provided information suggests that a given event or condition is the direct and primary cause of another event or outcome.
+Meta-89,0.52,0.49,26,50,49,100,Consider whether the event or condition being described would have occurred or developed in the absence of the supposed cause.
+Meta-90,0.52,0.5,26,50,50,100,"Determine the factor that most directly and proximally contributed to the outcome, excluding any indirect or distant causes."
+Meta-91,0.5,0.5,25,50,50,100,"Identify the most direct and immediate cause of the outcome, excluding any long-term or remote factors."
+Meta-92,0.5,0.5,25,50,50,100,"Identify the event that is most directly responsible for the outcome, ignoring any indirect or background factors."
+Meta-93,0.52,0.5,26,50,50,100,"Determine whether the described event is a direct or indirect result of the alleged cause, considering factors such as necessary and sufficient conditions, timing, and the absence of alternative explanations."
+Meta-94,0.5,0.49,25,50,49,100,Identify the most direct and plausible cause of the observed outcome.
+Meta-95,0.5,0.49,25,50,49,100,Determine whether the provided event is the most direct and immediate cause of the outcome.
+Meta-96,0.5,0.5,25,50,50,100,Determine the cause of the outcome by identifying the most direct and plausible link between the event or action and the resulting effect.
+Meta-97,0.52,0.49,26,50,49,100,Identify the direct and immediate cause of the outcome or event described in the passage.
+Meta-98,0.5,0.5,25,50,50,100,"Determine the cause of the outcome by identifying the factor that was most directly responsible for the event, excluding any coincidental or indirect factors."
+Meta-99,0.5,0.55,25,50,55,100,"Determine the most immediate, direct cause of the outcome, excluding any indirect or remote factors, and choose the option that reflects this causal relationship."
+Meta-100,0.52,0.51,26,50,51,100,"Determine the cause of the observed outcome by identifying the event or factor that directly led to the outcome, and disregard any indirect or contributory factors."

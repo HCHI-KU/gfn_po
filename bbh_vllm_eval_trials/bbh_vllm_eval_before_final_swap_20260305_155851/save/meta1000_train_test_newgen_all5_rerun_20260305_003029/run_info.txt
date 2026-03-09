@@ -1,0 +1,3 @@
+run_prefix=meta1000_train_test_newgen_all5_rerun_20260305_003029
+num_meta_prompts=1000
+run_dir=/home/work/jihun/bbh_vllm_eval_final/save/meta1000_train_test_newgen_all5_rerun_20260305_003029

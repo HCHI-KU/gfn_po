@@ -1,0 +1,101 @@
+method_name,train_accuracy,test_accuracy,train_correct,train_total,test_correct,test_total,prompt
+Meta-01,0.4,0.36,20,50,36,100,Keep track of the sequence of partner switches and determine the final partner of the person who was initially dancing with Jamie.
+Meta-02,0.38,0.3,19,50,30,100,Determine the ultimate partner of each dancer by tracking the sequence of partner switches throughout the dance.
+Meta-03,0.52,0.45,26,50,45,100,Track the sequence of partner switches and determine the final partner of the specified dancer at the end of the dance.
+Meta-04,0.56,0.43,28,50,43,100,Follow the sequence of partner switches to determine the final partner of each dancer.
+Meta-05,0.44,0.47,22,50,47,100,Determine the final dance partner of the specified dancer by tracing the sequence of partner switches throughout the song.
+Meta-06,0.3,0.25,15,50,25,100,"Keep track of the partners each dancer has switched with, and determine the final partner of the dancer who initially had the fewest switches."
+Meta-07,0.18,0.2,9,50,20,100,Keep track of the partners each dancer has had and determine which dancer is currently with the last person they danced with.
+Meta-08,0.4,0.41,20,50,41,100,Determine the partner of a dancer at the end of the dance by tracking the sequence of partner switches and identifying the final partner of the specified dancer.
+Meta-09,0.54,0.37,27,50,37,100,Follow the sequence of partner switches to determine the final partner for each dancer.
+Meta-10,0.42,0.39,21,50,39,100,Determine the final dance partner of a given dancer by tracking the sequence of partner switches throughout the song.
+Meta-11,0.42,0.33,21,50,33,100,"Determine the final dance partner of a given dancer by tracing the sequence of partner switches throughout the song, considering all switches made by all dancers."
+Meta-12,0.34,0.31,17,50,31,100,"Keep track of the partner changes throughout the song, and then identify the original partner of the dancer who is now dancing with a specific person at the end of the song."
+Meta-13,0.52,0.42,26,50,42,100,Follow the sequence of partner swaps to determine the final partner of each dancer.
+Meta-14,0.46,0.34,23,50,34,100,"Determine the final partner of a given dancer by tracing the sequence of partner swaps, starting from their initial partner."
+Meta-15,0.44,0.3,22,50,30,100,Keep track of the sequence of partner swaps and use it to infer the final partner of each dancer.
+Meta-16,0.38,0.37,19,50,37,100,"After analyzing the input/output examples, I infer that the task is to determine the final partner of a dancer, given the initial partners and the sequence of partner switches. Here is the concise instruction that helps solve this task:"
+Meta-17,0.42,0.45,21,50,45,100,Keep track of the sequence of partner switches to determine the final partner of each dancer.
+Meta-18,0.46,0.38,23,50,38,100,Follow the sequence of partner switches to determine the final dance partner of each dancer.
+Meta-19,0.36,0.34,18,50,34,100,"After analyzing the input/output examples, I've inferred the task behavior and crafted a concise instruction to help solve the task:"
+Meta-20,0.42,0.44,21,50,44,100,Determine the final dance partner of the specified dancer (Alice) based on the sequence of partner swaps throughout the song.
+Meta-21,0.4,0.36,20,50,36,100,"At the end of the dance, Alice is dancing with the person she had a partner with before the first partner switch."
+Meta-22,0.5,0.39,25,50,39,100,"Determine the final dance partner of a given dancer by tracking the sequence of partner switches throughout the song, considering the initial partner and all subsequent trades."
+Meta-23,0.46,0.34,23,50,34,100,Track the sequence of partner switches to determine the final partner of each dancer.
+Meta-24,0.48,0.38,24,50,38,100,Follow the sequence of partner switches to determine the final partner of the individual whose initial partner is known.
+Meta-25,0.46,0.3,23,50,30,100,Determine the final partner of each dancer by tracking the sequence of partner switches and identifying the final state of each pair.
+Meta-26,0.44,0.35,22,50,35,100,"Determine the final partner of each dancer after a series of partner switches, given the initial partners and the sequence of partner switches."
+Meta-27,0.38,0.41,19,50,41,100,Keep track of the sequence of partner switches and determine the final partner of each dancer based on the sequence of events.
+Meta-28,0.52,0.39,26,50,39,100,"Track the sequence of partner changes and determine the final partner of each dancer, considering the initial partner and the number of partner switches made."
+Meta-29,0.48,0.43,24,50,43,100,Determine the final partner of a given dancer by tracking the sequence of partner swaps during the dance.
+Meta-30,0.28,0.26,14,50,26,100,Determine the partner of the person who was dancing with the fewest unique partners at the end of the song.
+Meta-31,0.4,0.39,20,50,39,100,Identify the final partner of the person who started the song with the specified partner.
+Meta-32,0.46,0.3,23,50,30,100,"At the end of the dance, identify the original partner of the dancer who is now dancing with the person mentioned in the question."
+Meta-33,0.46,0.35,23,50,35,100,Track the sequence of partner switches to determine the final dance partner of each dancer.
+Meta-34,0.56,0.39,28,50,39,100,Follow the sequence of partner changes to determine the final dancing partner of each person.
+Meta-35,0.32,0.32,16,50,32,100,"At the end of the dance, who is each dancer currently dancing with, starting from the initial partners and considering all the partner switches that occurred throughout the song?"
+Meta-36,0.48,0.32,24,50,32,100,"After each partner switch, identify the last person Alice was dancing with."
+Meta-37,0.44,0.39,22,50,39,100,"Determine the final dance partner of the person mentioned at the start of the problem, after all the partner switches have occurred."
+Meta-38,0.44,0.36,22,50,36,100,Follow the sequence of partner swaps to determine the final dance partner of each individual.
+Meta-39,0.52,0.38,26,50,38,100,Follow the sequence of partner switches to determine the final dancing partner for each dancer.
+Meta-40,0.3,0.29,15,50,29,100,"Track the sequence of partner switches for each dancer, and identify the final partner of Alice."
+Meta-41,0.42,0.38,21,50,38,100,Keep track of the partners each dancer is switching with to determine the final partner of each dancer.
+Meta-42,0.46,0.39,23,50,39,100,Track the sequence of partner changes and deduce the final partner of each dancer.
+Meta-43,0.42,0.42,21,50,42,100,Determine the final dance partner of a specified dancer by tracking the series of partner switches throughout the song.
+Meta-44,0.56,0.37,28,50,37,100,Follow the sequence of partner switches to determine the final dance partner of the individual in question.
+Meta-45,0.46,0.37,23,50,37,100,Track the sequence of partner changes and infer the final partner of each dancer based on the given dance moves.
+Meta-46,0.58,0.55,29,50,55,100,"After each partner switch, keep track of the new partners for Alice, Bob, Claire, Dave, and Eve."
+Meta-47,0.42,0.36,21,50,36,100,Determine the final partner of a specific dancer by tracking the sequence of partner switches throughout the song.
+Meta-48,0.32,0.33,16,50,33,100,Keep track of the partners each dancer has and the order in which they switch partners to determine the final partner of each dancer.
+Meta-49,0.4,0.42,20,50,42,100,Determine the final partner of a given dancer by tracking the sequence of partner changes throughout the song.
+Meta-50,0.38,0.28,19,50,28,100,"Keep track of the partners each dancer has at each switch, and determine the final partner of the dancer who initially had a partner named Jamie."
+Meta-51,0.44,0.38,22,50,38,100,Follow the sequence of partner switches to determine the final partner of each dancer at the end of the song.
+Meta-52,0.46,0.36,23,50,36,100,Identify the final partner of the dancer who started with a partner named Jamie.
+Meta-53,0.44,0.28,22,50,28,100,Track the sequence of partner switches and identify the final partner of the person who started with a given initial partner.
+Meta-54,0.56,0.42,28,50,42,100,Follow the sequence of partner changes to determine the final partner of each dancer.
+Meta-55,0.3,0.36,15,50,36,100,Determine the final partner of each dancer by tracking the sequence of partner switches throughout the song.
+Meta-56,0.4,0.4,20,50,40,100,Determine the final dance partner of a given dancer by tracing the sequence of partner switches throughout the song.
+Meta-57,0.4,0.38,20,50,38,100,Track the sequence of partner switches for each dancer and identify the final partner of the person who was initially dancing with Jamie.
+Meta-58,0.46,0.47,23,50,47,100,Keep track of the partner changes and determine the final partner of the person whose initial partner is specified in the problem description.
+Meta-59,0.42,0.41,21,50,41,100,Track the sequence of partner switches and determine the final partner of each dancer based on the order of partner changes.
+Meta-60,0.54,0.45,27,50,45,100,Follow the sequence of partner switches to determine the final dance partner of the specified individual.
+Meta-61,0.34,0.34,17,50,34,100,"After analyzing the input/output examples, I came up with the following instruction:"
+Meta-62,0.44,0.4,22,50,40,100,Determine the final dance partner of the specified dancer by tracking the sequence of partner switches throughout the song.
+Meta-63,0.48,0.39,24,50,39,100,Identify the final partner of the person whose initial partner is mentioned in the problem description.
+Meta-64,0.4,0.29,20,50,29,100,"At the end of the dance, Alice is dancing with the partner she had before the last switch."
+Meta-65,0.42,0.28,21,50,28,100,Identify the final dance partner of Alice at the end of the song by tracking the sequence of partner switches.
+Meta-66,0.44,0.39,22,50,39,100,Identify the final partner of the dancer who started the song with each specific partner.
+Meta-67,0.48,0.41,24,50,41,100,"Track the partners of each dancer throughout the dance, identifying each switch, and determine who the current partner is for each dancer at the end of the dance."
+Meta-68,0.32,0.4,16,50,40,100,Determine the final partner of each dancer by applying the given partner switches in the correct order.
+Meta-69,0.42,0.41,21,50,41,100,Determine the final dance partner of a given dancer by tracing the series of partner switches throughout the song.
+Meta-70,0.46,0.43,23,50,43,100,"After analyzing the input/output examples, I infer that the task requires tracing the sequence of partner changes among the dancers and identifying the final partner of a specific dancer. Here is the concise instruction that helps solve this task:"
+Meta-71,0.48,0.34,24,50,34,100,Follow the sequence of partner trades to determine the final partner of each dancer.
+Meta-72,0.4,0.38,20,50,38,100,Determine the sequence of partner changes to identify the final dance partner of each specified dancer.
+Meta-73,0.48,0.42,24,50,42,100,Determine the final dance partner of the specified dancer by tracking the series of partner switches throughout the song.
+Meta-74,0.36,0.34,18,50,34,100,Determine the final partner of each dancer by tracing the sequence of partner changes throughout the song.
+Meta-75,0.52,0.43,26,50,43,100,Track the sequence of partner swaps and identify the final partner of the dancer who was initially dancing with Jamie.
+Meta-76,0.6,0.52,30,50,52,100,"Keep track of the partners each dancer has at each step of the dance, and then determine the final partner of the dancer who was initially dancing with a specific partner."
+Meta-77,0.16,0.16,8,50,16,100,Keep track of the partner changes and infer the final partner of each dancer by working backwards from the given dance scenarios.
+Meta-78,0.32,0.35,16,50,35,100,Determine the final partner of each dancer by tracing the sequence of partner switches.
+Meta-79,0.46,0.39,23,50,39,100,Track the sequence of partner swaps to determine the final partner of each dancer.
+Meta-80,0.38,0.28,19,50,28,100,Determine the final partner of each dancer by tracking the sequence of partner switches.
+Meta-81,0.44,0.4,22,50,40,100,Track the sequence of partner changes to determine the final partner of each dancer.
+Meta-82,0.36,0.3,18,50,30,100,"At the end of the dance, who is each dancer dancing with, and what are the steps taken to get to this point?"
+Meta-83,0.3,0.22,15,50,22,100,"Keep track of the number of times each dancer has switched partners, and then choose the option that is the partner of the dancer who has switched partners the fewest number of times."
+Meta-84,0.4,0.44,20,50,44,100,Keep track of the sequence of partner changes to determine the final partner of each dancer.
+Meta-85,0.54,0.4,27,50,40,100,Determine the partner of the specified dancer at the end of the dance by tracing the sequence of partner switches and identifying the original partner.
+Meta-86,0.5,0.39,25,50,39,100,Keep track of the sequence of partner switches and determine the final partner of each dancer based on the given initial partners and switch sequence.
+Meta-87,0.26,0.32,13,50,32,100,"Identify the final dance partner of each dancer, considering the sequence of partner switches throughout the song."
+Meta-88,0.38,0.4,19,50,40,100,Track the sequence of partner switches and identify the final partner of the person who was initially dancing with Jamie/Ophelia.
+Meta-89,0.28,0.24,14,50,24,100,"At the end of the dance, identify Alice's partner based on the sequence of partner switches."
+Meta-90,0.52,0.34,26,50,34,100,Keep track of the partner changes and determine the final dance partner of the last dancer to change partners.
+Meta-91,0.52,0.46,26,50,46,100,Follow the sequence of partner switches to determine the final dance partner of a given dancer.
+Meta-92,0.44,0.38,22,50,38,100,Determine the final dance partner of the given dancer by tracking the sequence of partner changes throughout the song.
+Meta-93,0.32,0.29,16,50,29,100,Determine the final partner of each dancer by tracing the sequence of partner switches and identifying the last dance partner for each.
+Meta-94,0.44,0.25,22,50,25,100,Keep track of the partners each dancer has had during the song and identify the last partner Alice had.
+Meta-95,0.54,0.52,27,50,52,100,"Keep track of the sequence of partner changes, starting from the initial partners, and use it to determine the final partner of the given dancer."
+Meta-96,0.28,0.35,14,50,35,100,Keep track of the partners each dancer has had throughout the song and determine the last partner Alice had.
+Meta-97,0.36,0.36,18,50,36,100,Keep track of the partners each dancer has after each trade and identify the final partner of Alice.
+Meta-98,0.52,0.4,26,50,40,100,Keep track of the sequence of partner swaps and determine the final partner of the dancer who started with a specific initial partner.
+Meta-99,0.36,0.4,18,50,40,100,"At the end of the dance, identify the partner of the person who is last mentioned in the sequence of partner changes."
+Meta-100,0.5,0.36,25,50,36,100,Keep track of the sequence of partner switches and determine the final partner of the dancer who was originally dancing with Jamie.

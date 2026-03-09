@@ -1,0 +1,26 @@
+{
+  "paper_acc": 0.7,
+  "Opt": {
+    "prompt": "Use this process as an explanation stepwise for each step until you get to as given above Alice has got originaly the following as follows.",
+    "accuracy": 0.4,
+    "test_acc": 0.4,
+    "inference_time": 11.754320859909058,
+    "correct": 40,
+    "total": 100,
+    "parse_failures": 11,
+    "invalid_predictions": 0,
+    "parsed_rate": 0.89,
+    "valid_parsed_rate": 0.89,
+    "test_parsed": 0.89,
+    "used_extractor": true,
+    "prompt_backend": "manual_llama3",
+    "answer_max_tokens": 4,
+    "evaluation_protocol": "opro_eval_adapter",
+    "stage1_prompt_style": "opro_qbegin",
+    "extract_final_answer_by_prompting_again": true,
+    "opro_second_round_extraction": true,
+    "opro_second_round_max_tokens": 8,
+    "opro_second_round_max_tokens_effective": 3,
+    "use_conservative_prompting_again_tokens": true
+  }
+}

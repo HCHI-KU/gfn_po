@@ -1,0 +1,19 @@
+{
+  "paper_acc": 0.9,
+  "Opt": {
+    "prompt": "Use only addition. Add think step by step. Finally give the actual correct answer.",
+    "accuracy": 0.89,
+    "inference_time": 11.957649946212769,
+    "correct": 89,
+    "total": 100,
+    "parse_failures": 0,
+    "invalid_predictions": 0,
+    "parsed_rate": 1.0,
+    "valid_parsed_rate": 1.0,
+    "used_extractor": true,
+    "prompt_backend": "manual_llama3",
+    "test_acc": 0.89,
+    "test_parsed": 1.0,
+    "answer_max_tokens": 1
+  }
+}

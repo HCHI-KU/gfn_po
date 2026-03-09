@@ -1,0 +1,26 @@
+{
+  "paper_acc": 0.57,
+  "Opt": {
+    "prompt": "Use causal diagram. The correct option ask about whether there the variable C of about whether a specific cause is sufficient. The answer a causal relationship between C to D if the probability P that C occurs given E changes.",
+    "accuracy": 0.36,
+    "test_acc": 0.36,
+    "inference_time": 12.71671986579895,
+    "correct": 36,
+    "total": 100,
+    "parse_failures": 35,
+    "invalid_predictions": 0,
+    "parsed_rate": 0.65,
+    "valid_parsed_rate": 0.65,
+    "test_parsed": 0.65,
+    "used_extractor": true,
+    "prompt_backend": "manual_llama3",
+    "answer_max_tokens": 4,
+    "evaluation_protocol": "opro_eval_adapter",
+    "stage1_prompt_style": "opro_qbegin",
+    "extract_final_answer_by_prompting_again": true,
+    "opro_second_round_extraction": true,
+    "opro_second_round_max_tokens": 8,
+    "opro_second_round_max_tokens_effective": 8,
+    "use_conservative_prompting_again_tokens": false
+  }
+}

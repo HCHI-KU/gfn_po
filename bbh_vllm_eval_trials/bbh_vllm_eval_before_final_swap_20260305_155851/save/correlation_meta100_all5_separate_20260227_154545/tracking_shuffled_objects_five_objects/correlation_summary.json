@@ -1,0 +1,12 @@
+{
+  "task_name": "tracking_shuffled_objects_five_objects",
+  "n_prompts": 100,
+  "pearson_r": 0.5156199839314229,
+  "spearman_rho": 0.5113072667056091,
+  "train_mean": 0.19180000000000003,
+  "test_mean": 0.17240000000000003,
+  "train_std": 0.062359923027534285,
+  "test_std": 0.05286057131738174,
+  "plot_path": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/tracking_shuffled_objects_five_objects/train_test_correlation.png",
+  "points_csv": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/tracking_shuffled_objects_five_objects/train_test_points.csv"
+}

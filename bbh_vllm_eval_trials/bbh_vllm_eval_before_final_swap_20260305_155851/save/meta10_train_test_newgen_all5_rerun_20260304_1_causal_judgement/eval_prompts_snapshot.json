@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-03-04 19:34:26",
+  "args": {
+    "model_path": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "conversation_template": "llama-3",
+    "dtype": "float16",
+    "tensor_parallel_size": 1,
+    "gpu_memory_utilization": 0.9,
+    "task_name": "causal_judgement",
+    "data_root": "../bbh_vllm_eval/data/GreaTer_data/BBH",
+    "n_train_data": 50,
+    "n_test_data": 100,
+    "save_dir": "save",
+    "exp_name": "meta10_train_test_newgen_all5_rerun_20260304_1_causal_judgement",
+    "generate_meta_prompts": true,
+    "include_paper_opt_prompt": false,
+    "meta_prompt_file": "",
+    "num_meta_prompts": 10,
+    "meta_prompt_temperature": 0.8,
+    "meta_prompt_top_p": 0.95,
+    "meta_prompt_max_tokens": 96,
+    "meta_prompt_num_examples": 3,
+    "meta_prompt_generation_batch_size": 128,
+    "meta_prompt_generation_max_rounds": 6,
+    "evaluate_train_split": true,
+    "temperature": 0.0,
+    "max_reasoning_tokens": 1024,
+    "answer_max_tokens": 1
+  },
+  "terminology": {
+    "extractor": "Second LLM call that extracts a short final answer.",
+    "test_acc": "Fraction of correct answers on test split.",
+    "test_parsed": "Proxy parse-success rate on test split (1 - parse_failures / total)."
+  },
+  "evaluation_note": "Standalone vLLM evaluator for internal fair comparison. Describe as GreaTer-compatible baseline re-evaluation, not exact reproduction.",
+  "tasks": {
+    "causal_judgement": {
+      "Meta-01": "Identify the immediate and direct cause of the outcome.",
+      "Meta-02": "Determine whether the described event was caused by the given condition, circumstance, or action, considering typical human understanding of causality.",
+      "Meta-03": "Determine whether the described event or action was the primary factor leading to the outcome, rather than a coincidence or secondary effect.",
+      "Meta-04": "Identify the immediate cause of the outcome, ignoring any indirect or contributing factors.",
+      "Meta-05": "Determine the cause of the outcome by identifying the most direct and plausible link between the described events and the outcome.",
+      "Meta-06": "Determine whether the stated event is the most immediate and direct cause of the outcome, or if another event is a more likely cause.",
+      "Meta-07": "Identify the specific cause that directly led to the outcome in question, regardless of any indirect or potential links to other factors.",
+      "Meta-08": "Determine the most direct and immediate cause of the outcome, rather than tracing indirect or distant links.",
+      "Meta-09": "Identify the immediate cause of the outcome or event described in the scenario, disregarding any potential long-term or indirect effects.",
+      "Meta-10": "Identify the event or action that directly and immediately led to the outcome, rather than a distant or indirect cause."
+    }
+  }
+}

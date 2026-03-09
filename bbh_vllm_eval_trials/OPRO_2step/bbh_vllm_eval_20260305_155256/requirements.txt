@@ -1,0 +1,5 @@
+# Tested versions (this workspace)
+vllm==0.11.1
+transformers==4.57.1
+pandas==3.0.1
+fschat==0.2.36

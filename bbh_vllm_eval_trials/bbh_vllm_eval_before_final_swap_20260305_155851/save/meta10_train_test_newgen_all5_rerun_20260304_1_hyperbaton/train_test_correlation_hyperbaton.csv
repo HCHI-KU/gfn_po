@@ -1,0 +1,11 @@
+method_name,train_accuracy,test_accuracy,train_correct,train_total,test_correct,test_total,prompt
+Meta-01,0.68,0.77,34,50,77,100,Identify the sentence with the adjective order that follows the typical English language pattern of modifying nouns in a specific order.
+Meta-02,0.76,0.7,38,50,70,100,"Modify the sentence to adhere to the typical adjective order in English, prioritizing descriptive words in the following sequence: opinion, size, shape, color, nationality, material, and finally action or state."
+Meta-03,0.78,0.69,39,50,69,100,Identify the sentence with the most logical and intuitive adjective order.
+Meta-04,0.82,0.77,41,50,77,100,Arrange the adjectives in each sentence in the order of English language precedence.
+Meta-05,0.66,0.81,33,50,81,100,Modify the adjective to its corresponding noun to determine the correct adjective order in a sentence.
+Meta-06,0.76,0.72,38,50,72,100,Determine the correct adjective order by placing the most specific descriptors closest to the noun they modify.
+Meta-07,0.74,0.72,37,50,72,100,Modify the sentence by rearranging the adjectives to follow the typical English word order: adjective-noun.
+Meta-08,0.66,0.68,33,50,68,100,"Arrange the adjectives in each sentence to follow the typical English adjective order of size, color, material, origin, and other descriptors."
+Meta-09,0.78,0.8,39,50,80,100,"Identify the sentence with the correct adjective order, following the standard English word order of attributive adjectives, from most general to most specific."
+Meta-10,0.68,0.69,34,50,69,100,"Modify the sentence to follow the typical order of adjectives in English, typically from most general to most specific."

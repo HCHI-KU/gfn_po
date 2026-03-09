@@ -1,0 +1,1014 @@
+{
+  "task_name": "object_counting",
+  "stats": {
+    "num_points": 100,
+    "pearson": 0.8849963111549819,
+    "spearman": 0.846089088194518,
+    "train_mean": 0.529,
+    "test_mean": 0.4745,
+    "train_std": 0.1386903024728117,
+    "test_std": 0.12605058508392572
+  },
+  "records": [
+    {
+      "method_name": "Meta-01",
+      "train_accuracy": 0.64,
+      "test_accuracy": 0.55,
+      "train_correct": 32,
+      "train_total": 50,
+      "test_correct": 55,
+      "test_total": 100,
+      "prompt": "Identify the category mentioned in the input statement and count the number of objects within that category."
+    },
+    {
+      "method_name": "Meta-02",
+      "train_accuracy": 0.52,
+      "test_accuracy": 0.41,
+      "train_correct": 26,
+      "train_total": 50,
+      "test_correct": 41,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the sentence."
+    },
+    {
+      "method_name": "Meta-03",
+      "train_accuracy": 0.56,
+      "test_accuracy": 0.42,
+      "train_correct": 28,
+      "train_total": 50,
+      "test_correct": 42,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the sentence that start with the given category (e.g. musical instruments, fruits)."
+    },
+    {
+      "method_name": "Meta-04",
+      "train_accuracy": 0.92,
+      "test_accuracy": 0.8,
+      "train_correct": 46,
+      "train_total": 50,
+      "test_correct": 80,
+      "test_total": 100,
+      "prompt": "Count the number of objects of the specified type mentioned in the input statement."
+    },
+    {
+      "method_name": "Meta-05",
+      "train_accuracy": 0.56,
+      "test_accuracy": 0.56,
+      "train_correct": 28,
+      "train_total": 50,
+      "test_correct": 56,
+      "test_total": 100,
+      "prompt": "Count the number of objects or items mentioned in the given list."
+    },
+    {
+      "method_name": "Meta-06",
+      "train_accuracy": 0.5,
+      "test_accuracy": 0.42,
+      "train_correct": 25,
+      "train_total": 50,
+      "test_correct": 42,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the given sentence."
+    },
+    {
+      "method_name": "Meta-07",
+      "train_accuracy": 0.56,
+      "test_accuracy": 0.49,
+      "train_correct": 28,
+      "train_total": 50,
+      "test_correct": 49,
+      "test_total": 100,
+      "prompt": "Count the number of items mentioned in the list, excluding any mentioned categories or types."
+    },
+    {
+      "method_name": "Meta-08",
+      "train_accuracy": 0.7,
+      "test_accuracy": 0.57,
+      "train_correct": 35,
+      "train_total": 50,
+      "test_correct": 57,
+      "test_total": 100,
+      "prompt": "Identify the types of objects mentioned and count the number of each unique type."
+    },
+    {
+      "method_name": "Meta-09",
+      "train_accuracy": 0.52,
+      "test_accuracy": 0.51,
+      "train_correct": 26,
+      "train_total": 50,
+      "test_correct": 51,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the sentence that are of the same category as the one specified in the question."
+    },
+    {
+      "method_name": "Meta-10",
+      "train_accuracy": 0.7,
+      "test_accuracy": 0.66,
+      "train_correct": 35,
+      "train_total": 50,
+      "test_correct": 66,
+      "test_total": 100,
+      "prompt": "Count the objects of a specific category mentioned in the given sentence."
+    },
+    {
+      "method_name": "Meta-11",
+      "train_accuracy": 0.48,
+      "test_accuracy": 0.41,
+      "train_correct": 24,
+      "train_total": 50,
+      "test_correct": 41,
+      "test_total": 100,
+      "prompt": "Count the number of specified objects (e.g., musical instruments, fruits, objects) mentioned in the given sentence."
+    },
+    {
+      "method_name": "Meta-12",
+      "train_accuracy": 0.7,
+      "test_accuracy": 0.56,
+      "train_correct": 35,
+      "train_total": 50,
+      "test_correct": 56,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned that belong to the category specified in the sentence."
+    },
+    {
+      "method_name": "Meta-13",
+      "train_accuracy": 0.46,
+      "test_accuracy": 0.5,
+      "train_correct": 23,
+      "train_total": 50,
+      "test_correct": 50,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned that are of the same category as the example provided."
+    },
+    {
+      "method_name": "Meta-14",
+      "train_accuracy": 0.74,
+      "test_accuracy": 0.69,
+      "train_correct": 37,
+      "train_total": 50,
+      "test_correct": 69,
+      "test_total": 100,
+      "prompt": "Count the number of items of the same type or category mentioned in the given list of objects."
+    },
+    {
+      "method_name": "Meta-15",
+      "train_accuracy": 0.4,
+      "test_accuracy": 0.29,
+      "train_correct": 20,
+      "train_total": 50,
+      "test_correct": 29,
+      "test_total": 100,
+      "prompt": "Count the number of distinct objects mentioned in the input sentence."
+    },
+    {
+      "method_name": "Meta-16",
+      "train_accuracy": 0.52,
+      "test_accuracy": 0.44,
+      "train_correct": 26,
+      "train_total": 50,
+      "test_correct": 44,
+      "test_total": 100,
+      "prompt": "Count the number of objects or items mentioned in the input statement."
+    },
+    {
+      "method_name": "Meta-17",
+      "train_accuracy": 0.62,
+      "test_accuracy": 0.59,
+      "train_correct": 31,
+      "train_total": 50,
+      "test_correct": 59,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the input sentence that match the category specified in the question."
+    },
+    {
+      "method_name": "Meta-18",
+      "train_accuracy": 0.76,
+      "test_accuracy": 0.67,
+      "train_correct": 38,
+      "train_total": 50,
+      "test_correct": 67,
+      "test_total": 100,
+      "prompt": "Count the number of objects in the list that match the category mentioned in the question."
+    },
+    {
+      "method_name": "Meta-19",
+      "train_accuracy": 0.6,
+      "test_accuracy": 0.46,
+      "train_correct": 30,
+      "train_total": 50,
+      "test_correct": 46,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the input statement, excluding any objects that are not the specified type (e.g. musical instruments, fruits)."
+    },
+    {
+      "method_name": "Meta-20",
+      "train_accuracy": 0.36,
+      "test_accuracy": 0.4,
+      "train_correct": 18,
+      "train_total": 50,
+      "test_correct": 40,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the sentence that are not containers or rooms."
+    },
+    {
+      "method_name": "Meta-21",
+      "train_accuracy": 0.5,
+      "test_accuracy": 0.44,
+      "train_correct": 25,
+      "train_total": 50,
+      "test_correct": 44,
+      "test_total": 100,
+      "prompt": "Count the number of objects that are mentioned in the sentence."
+    },
+    {
+      "method_name": "Meta-22",
+      "train_accuracy": 0.42,
+      "test_accuracy": 0.53,
+      "train_correct": 21,
+      "train_total": 50,
+      "test_correct": 53,
+      "test_total": 100,
+      "prompt": "Count the objects mentioned in the sentence that are of a specified type (e.g. musical instruments, fruits)."
+    },
+    {
+      "method_name": "Meta-23",
+      "train_accuracy": 0.5,
+      "test_accuracy": 0.56,
+      "train_correct": 25,
+      "train_total": 50,
+      "test_correct": 56,
+      "test_total": 100,
+      "prompt": "Identify the type of object(s) mentioned in the input sentence and count the number of occurrences of that object type."
+    },
+    {
+      "method_name": "Meta-24",
+      "train_accuracy": 0.66,
+      "test_accuracy": 0.47,
+      "train_correct": 33,
+      "train_total": 50,
+      "test_correct": 47,
+      "test_total": 100,
+      "prompt": "Count the number of objects in the given list that fit the category specified in the question."
+    },
+    {
+      "method_name": "Meta-25",
+      "train_accuracy": 0.3,
+      "test_accuracy": 0.3,
+      "train_correct": 15,
+      "train_total": 50,
+      "test_correct": 30,
+      "test_total": 100,
+      "prompt": "Count the number of objects that are mentioned in the sentence as musical instruments, fruits, or objects."
+    },
+    {
+      "method_name": "Meta-26",
+      "train_accuracy": 0.48,
+      "test_accuracy": 0.44,
+      "train_correct": 24,
+      "train_total": 50,
+      "test_correct": 44,
+      "test_total": 100,
+      "prompt": "Count the number of objects that are specifically mentioned in the input text."
+    },
+    {
+      "method_name": "Meta-27",
+      "train_accuracy": 0.66,
+      "test_accuracy": 0.69,
+      "train_correct": 33,
+      "train_total": 50,
+      "test_correct": 69,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned that are of the same type."
+    },
+    {
+      "method_name": "Meta-28",
+      "train_accuracy": 0.6,
+      "test_accuracy": 0.49,
+      "train_correct": 30,
+      "train_total": 50,
+      "test_correct": 49,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the given list, categorizing them by type (e.g., musical instruments, fruits) and counting each type separately."
+    },
+    {
+      "method_name": "Meta-29",
+      "train_accuracy": 0.56,
+      "test_accuracy": 0.54,
+      "train_correct": 28,
+      "train_total": 50,
+      "test_correct": 54,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the given list."
+    },
+    {
+      "method_name": "Meta-30",
+      "train_accuracy": 0.56,
+      "test_accuracy": 0.48,
+      "train_correct": 28,
+      "train_total": 50,
+      "test_correct": 48,
+      "test_total": 100,
+      "prompt": "Count the number of objects that are mentioned in the given description."
+    },
+    {
+      "method_name": "Meta-31",
+      "train_accuracy": 0.58,
+      "test_accuracy": 0.5,
+      "train_correct": 29,
+      "train_total": 50,
+      "test_correct": 50,
+      "test_total": 100,
+      "prompt": "Identify the category of objects mentioned in the sentence and count the number of objects within that category."
+    },
+    {
+      "method_name": "Meta-32",
+      "train_accuracy": 0.44,
+      "test_accuracy": 0.39,
+      "train_correct": 22,
+      "train_total": 50,
+      "test_correct": 39,
+      "test_total": 100,
+      "prompt": "Count the number of items in the list that are referred to as a single unit, such as instruments, fruits, or objects."
+    },
+    {
+      "method_name": "Meta-33",
+      "train_accuracy": 0.5,
+      "test_accuracy": 0.46,
+      "train_correct": 25,
+      "train_total": 50,
+      "test_correct": 46,
+      "test_total": 100,
+      "prompt": "Count the number of specified objects mentioned in the given sentence."
+    },
+    {
+      "method_name": "Meta-34",
+      "train_accuracy": 0.32,
+      "test_accuracy": 0.17,
+      "train_correct": 16,
+      "train_total": 50,
+      "test_correct": 17,
+      "test_total": 100,
+      "prompt": "Count the number of objects that are not in the categories of food or furniture."
+    },
+    {
+      "method_name": "Meta-35",
+      "train_accuracy": 0.28,
+      "test_accuracy": 0.28,
+      "train_correct": 14,
+      "train_total": 50,
+      "test_correct": 28,
+      "test_total": 100,
+      "prompt": "Count the number of nouns in the given sentence or phrase."
+    },
+    {
+      "method_name": "Meta-36",
+      "train_accuracy": 0.54,
+      "test_accuracy": 0.39,
+      "train_correct": 27,
+      "train_total": 50,
+      "test_correct": 39,
+      "test_total": 100,
+      "prompt": "Count the number of objects or instruments mentioned in the sentence, excluding any additional words."
+    },
+    {
+      "method_name": "Meta-37",
+      "train_accuracy": 0.12,
+      "test_accuracy": 0.18,
+      "train_correct": 6,
+      "train_total": 50,
+      "test_correct": 18,
+      "test_total": 100,
+      "prompt": "Identify the number of objects that are not part of a set or group."
+    },
+    {
+      "method_name": "Meta-38",
+      "train_accuracy": 0.4,
+      "test_accuracy": 0.38,
+      "train_correct": 20,
+      "train_total": 50,
+      "test_correct": 38,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the sentence, excluding any categories or types (e.g., musical instruments, fruits)."
+    },
+    {
+      "method_name": "Meta-39",
+      "train_accuracy": 0.56,
+      "test_accuracy": 0.48,
+      "train_correct": 28,
+      "train_total": 50,
+      "test_correct": 48,
+      "test_total": 100,
+      "prompt": "Count the number of objects or items mentioned in the sentence."
+    },
+    {
+      "method_name": "Meta-40",
+      "train_accuracy": 0.5,
+      "test_accuracy": 0.48,
+      "train_correct": 25,
+      "train_total": 50,
+      "test_correct": 48,
+      "test_total": 100,
+      "prompt": "Count the number of objects in the list that are mentioned as being of the same category (e.g. musical instruments, fruits)."
+    },
+    {
+      "method_name": "Meta-41",
+      "train_accuracy": 0.54,
+      "test_accuracy": 0.48,
+      "train_correct": 27,
+      "train_total": 50,
+      "test_correct": 48,
+      "test_total": 100,
+      "prompt": "Count the number of objects or items mentioned in the given text."
+    },
+    {
+      "method_name": "Meta-42",
+      "train_accuracy": 0.82,
+      "test_accuracy": 0.8,
+      "train_correct": 41,
+      "train_total": 50,
+      "test_correct": 80,
+      "test_total": 100,
+      "prompt": "Count the number of each type of object mentioned in the input sentence."
+    },
+    {
+      "method_name": "Meta-43",
+      "train_accuracy": 0.54,
+      "test_accuracy": 0.52,
+      "train_correct": 27,
+      "train_total": 50,
+      "test_correct": 52,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the sentence that are of the same category as the one mentioned in the question."
+    },
+    {
+      "method_name": "Meta-44",
+      "train_accuracy": 0.5,
+      "test_accuracy": 0.43,
+      "train_correct": 25,
+      "train_total": 50,
+      "test_correct": 43,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the input sentence that belong to the specified category (e.g., musical instruments, fruits)."
+    },
+    {
+      "method_name": "Meta-45",
+      "train_accuracy": 0.54,
+      "test_accuracy": 0.54,
+      "train_correct": 27,
+      "train_total": 50,
+      "test_correct": 54,
+      "test_total": 100,
+      "prompt": "Identify the number of objects that belong to the specified category mentioned in the sentence."
+    },
+    {
+      "method_name": "Meta-46",
+      "train_accuracy": 0.42,
+      "test_accuracy": 0.4,
+      "train_correct": 21,
+      "train_total": 50,
+      "test_correct": 40,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the sentence that are not pronouns."
+    },
+    {
+      "method_name": "Meta-47",
+      "train_accuracy": 0.64,
+      "test_accuracy": 0.48,
+      "train_correct": 32,
+      "train_total": 50,
+      "test_correct": 48,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the input sentence that belong to the category specified in the question."
+    },
+    {
+      "method_name": "Meta-48",
+      "train_accuracy": 0.3,
+      "test_accuracy": 0.21,
+      "train_correct": 15,
+      "train_total": 50,
+      "test_correct": 21,
+      "test_total": 100,
+      "prompt": "Identify and count the number of objects that are not a kitchen appliance, a piece of furniture, or a type of fruit."
+    },
+    {
+      "method_name": "Meta-49",
+      "train_accuracy": 0.6,
+      "test_accuracy": 0.58,
+      "train_correct": 30,
+      "train_total": 50,
+      "test_correct": 58,
+      "test_total": 100,
+      "prompt": "Identify the types of objects mentioned in the sentence and count the number of items belonging to each type."
+    },
+    {
+      "method_name": "Meta-50",
+      "train_accuracy": 0.42,
+      "test_accuracy": 0.37,
+      "train_correct": 21,
+      "train_total": 50,
+      "test_correct": 37,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the sentence that describe the objects."
+    },
+    {
+      "method_name": "Meta-51",
+      "train_accuracy": 0.72,
+      "test_accuracy": 0.64,
+      "train_correct": 36,
+      "train_total": 50,
+      "test_correct": 64,
+      "test_total": 100,
+      "prompt": "Identify the type of object being counted (e.g. musical instruments, fruits, objects) and count the number of items belonging to that type."
+    },
+    {
+      "method_name": "Meta-52",
+      "train_accuracy": 0.58,
+      "test_accuracy": 0.42,
+      "train_correct": 29,
+      "train_total": 50,
+      "test_correct": 42,
+      "test_total": 100,
+      "prompt": "Count the number of objects or instruments mentioned in the given list that belong to the specified category."
+    },
+    {
+      "method_name": "Meta-53",
+      "train_accuracy": 0.54,
+      "test_accuracy": 0.45,
+      "train_correct": 27,
+      "train_total": 50,
+      "test_correct": 45,
+      "test_total": 100,
+      "prompt": "Count the number of objects or instruments mentioned in the sentence."
+    },
+    {
+      "method_name": "Meta-54",
+      "train_accuracy": 0.54,
+      "test_accuracy": 0.51,
+      "train_correct": 27,
+      "train_total": 50,
+      "test_correct": 51,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the input that are of the same category as the one specified in the question."
+    },
+    {
+      "method_name": "Meta-55",
+      "train_accuracy": 0.42,
+      "test_accuracy": 0.4,
+      "train_correct": 21,
+      "train_total": 50,
+      "test_correct": 40,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the given list, excluding any objects that are not of the same category as the one specified in the question."
+    },
+    {
+      "method_name": "Meta-56",
+      "train_accuracy": 0.28,
+      "test_accuracy": 0.37,
+      "train_correct": 14,
+      "train_total": 50,
+      "test_correct": 37,
+      "test_total": 100,
+      "prompt": "Identify the number of objects that are not mentioned as \"how many\" something else."
+    },
+    {
+      "method_name": "Meta-57",
+      "train_accuracy": 0.48,
+      "test_accuracy": 0.48,
+      "train_correct": 24,
+      "train_total": 50,
+      "test_correct": 48,
+      "test_total": 100,
+      "prompt": "Identify the number of objects mentioned that belong to the category specified in the question."
+    },
+    {
+      "method_name": "Meta-58",
+      "train_accuracy": 0.58,
+      "test_accuracy": 0.45,
+      "train_correct": 29,
+      "train_total": 50,
+      "test_correct": 45,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the given list that fit the category specified in the question."
+    },
+    {
+      "method_name": "Meta-59",
+      "train_accuracy": 0.14,
+      "test_accuracy": 0.12,
+      "train_correct": 7,
+      "train_total": 50,
+      "test_correct": 12,
+      "test_total": 100,
+      "prompt": "Count the number of objects that are not related to the category asked for in the question."
+    },
+    {
+      "method_name": "Meta-60",
+      "train_accuracy": 0.6,
+      "test_accuracy": 0.44,
+      "train_correct": 30,
+      "train_total": 50,
+      "test_correct": 44,
+      "test_total": 100,
+      "prompt": "Count the number of objects in the given list that belong to the specified category (e.g. musical instruments, fruits, etc.)."
+    },
+    {
+      "method_name": "Meta-61",
+      "train_accuracy": 0.62,
+      "test_accuracy": 0.53,
+      "train_correct": 31,
+      "train_total": 50,
+      "test_correct": 53,
+      "test_total": 100,
+      "prompt": "Count the number of items in the list that belong to the category specified in the question."
+    },
+    {
+      "method_name": "Meta-62",
+      "train_accuracy": 0.58,
+      "test_accuracy": 0.68,
+      "train_correct": 29,
+      "train_total": 50,
+      "test_correct": 68,
+      "test_total": 100,
+      "prompt": "Identify the categories mentioned in the input and count the corresponding objects."
+    },
+    {
+      "method_name": "Meta-63",
+      "train_accuracy": 0.66,
+      "test_accuracy": 0.64,
+      "train_correct": 33,
+      "train_total": 50,
+      "test_correct": 64,
+      "test_total": 100,
+      "prompt": "Identify and count the number of objects in the given list of items."
+    },
+    {
+      "method_name": "Meta-64",
+      "train_accuracy": 0.4,
+      "test_accuracy": 0.42,
+      "train_correct": 20,
+      "train_total": 50,
+      "test_correct": 42,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the sentence that are not rooms or containers."
+    },
+    {
+      "method_name": "Meta-65",
+      "train_accuracy": 0.42,
+      "test_accuracy": 0.4,
+      "train_correct": 21,
+      "train_total": 50,
+      "test_correct": 40,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the input sentence."
+    },
+    {
+      "method_name": "Meta-66",
+      "train_accuracy": 0.62,
+      "test_accuracy": 0.5,
+      "train_correct": 31,
+      "train_total": 50,
+      "test_correct": 50,
+      "test_total": 100,
+      "prompt": "Identify and count the number of objects in the given list that belong to the specified category."
+    },
+    {
+      "method_name": "Meta-67",
+      "train_accuracy": 0.72,
+      "test_accuracy": 0.6,
+      "train_correct": 36,
+      "train_total": 50,
+      "test_correct": 60,
+      "test_total": 100,
+      "prompt": "Count the number of objects that are mentioned as being of a specific type, and exclude objects that do not fit into a specific category."
+    },
+    {
+      "method_name": "Meta-68",
+      "train_accuracy": 0.4,
+      "test_accuracy": 0.31,
+      "train_correct": 20,
+      "train_total": 50,
+      "test_correct": 31,
+      "test_total": 100,
+      "prompt": "Count the objects mentioned in the sentence that ask how many there are."
+    },
+    {
+      "method_name": "Meta-69",
+      "train_accuracy": 0.7,
+      "test_accuracy": 0.61,
+      "train_correct": 35,
+      "train_total": 50,
+      "test_correct": 61,
+      "test_total": 100,
+      "prompt": "Count the number of objects in the list of items provided."
+    },
+    {
+      "method_name": "Meta-70",
+      "train_accuracy": 0.68,
+      "test_accuracy": 0.6,
+      "train_correct": 34,
+      "train_total": 50,
+      "test_correct": 60,
+      "test_total": 100,
+      "prompt": "Count the number of objects in the given list that match the category specified in the question."
+    },
+    {
+      "method_name": "Meta-71",
+      "train_accuracy": 0.5,
+      "test_accuracy": 0.34,
+      "train_correct": 25,
+      "train_total": 50,
+      "test_correct": 34,
+      "test_total": 100,
+      "prompt": "Count the objects mentioned in the sentence and identify the category of objects being counted."
+    },
+    {
+      "method_name": "Meta-72",
+      "train_accuracy": 0.6,
+      "test_accuracy": 0.56,
+      "train_correct": 30,
+      "train_total": 50,
+      "test_correct": 56,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the input sentence that belong to the specified category."
+    },
+    {
+      "method_name": "Meta-73",
+      "train_accuracy": 0.84,
+      "test_accuracy": 0.7,
+      "train_correct": 42,
+      "train_total": 50,
+      "test_correct": 70,
+      "test_total": 100,
+      "prompt": "Count the number of objects that are of a specific category mentioned in the input."
+    },
+    {
+      "method_name": "Meta-74",
+      "train_accuracy": 0.38,
+      "test_accuracy": 0.41,
+      "train_correct": 19,
+      "train_total": 50,
+      "test_correct": 41,
+      "test_total": 100,
+      "prompt": "Count the number of objects that are mentioned in the input sentence, excluding any words that do not refer to objects."
+    },
+    {
+      "method_name": "Meta-75",
+      "train_accuracy": 0.62,
+      "test_accuracy": 0.59,
+      "train_correct": 31,
+      "train_total": 50,
+      "test_correct": 59,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the sentence that are of the specified type (e.g. musical instruments, fruits)."
+    },
+    {
+      "method_name": "Meta-76",
+      "train_accuracy": 0.52,
+      "test_accuracy": 0.48,
+      "train_correct": 26,
+      "train_total": 50,
+      "test_correct": 48,
+      "test_total": 100,
+      "prompt": "Count the number of specific objects mentioned in the given list that fit the category specified in the question."
+    },
+    {
+      "method_name": "Meta-77",
+      "train_accuracy": 0.62,
+      "test_accuracy": 0.54,
+      "train_correct": 31,
+      "train_total": 50,
+      "test_correct": 54,
+      "test_total": 100,
+      "prompt": "Count the number of items mentioned in the input sentence that belong to the specified category."
+    },
+    {
+      "method_name": "Meta-78",
+      "train_accuracy": 0.38,
+      "test_accuracy": 0.45,
+      "train_correct": 19,
+      "train_total": 50,
+      "test_correct": 45,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the sentence that are of a specific category (e.g. musical instruments, fruits, etc.)."
+    },
+    {
+      "method_name": "Meta-79",
+      "train_accuracy": 0.38,
+      "test_accuracy": 0.32,
+      "train_correct": 19,
+      "train_total": 50,
+      "test_correct": 32,
+      "test_total": 100,
+      "prompt": "Count the number of objects that are explicitly mentioned as being of a specific type, excluding objects mentioned as part of a set or collection."
+    },
+    {
+      "method_name": "Meta-80",
+      "train_accuracy": 0.62,
+      "test_accuracy": 0.63,
+      "train_correct": 31,
+      "train_total": 50,
+      "test_correct": 63,
+      "test_total": 100,
+      "prompt": "Identify the type of objects mentioned in the sentence and count the number of objects of that type."
+    },
+    {
+      "method_name": "Meta-81",
+      "train_accuracy": 0.64,
+      "test_accuracy": 0.59,
+      "train_correct": 32,
+      "train_total": 50,
+      "test_correct": 59,
+      "test_total": 100,
+      "prompt": "Count the number of objects in the given list that match the specified category."
+    },
+    {
+      "method_name": "Meta-82",
+      "train_accuracy": 0.66,
+      "test_accuracy": 0.46,
+      "train_correct": 33,
+      "train_total": 50,
+      "test_correct": 46,
+      "test_total": 100,
+      "prompt": "Count the number of items in the list provided, excluding any items that are not the requested type of object."
+    },
+    {
+      "method_name": "Meta-83",
+      "train_accuracy": 0.5,
+      "test_accuracy": 0.45,
+      "train_correct": 25,
+      "train_total": 50,
+      "test_correct": 45,
+      "test_total": 100,
+      "prompt": "Count the number of objects in the given list that are specifically mentioned as a certain type, such as musical instruments or fruits."
+    },
+    {
+      "method_name": "Meta-84",
+      "train_accuracy": 0.5,
+      "test_accuracy": 0.41,
+      "train_correct": 25,
+      "train_total": 50,
+      "test_correct": 41,
+      "test_total": 100,
+      "prompt": "Count the number of objects in the list that are mentioned as being a specific type (e.g. musical instruments, fruits, etc.)."
+    },
+    {
+      "method_name": "Meta-85",
+      "train_accuracy": 0.44,
+      "test_accuracy": 0.38,
+      "train_correct": 22,
+      "train_total": 50,
+      "test_correct": 38,
+      "test_total": 100,
+      "prompt": "Count the number of objects or items mentioned in the sentence, excluding any phrases that describe the objects."
+    },
+    {
+      "method_name": "Meta-86",
+      "train_accuracy": 0.3,
+      "test_accuracy": 0.26,
+      "train_correct": 15,
+      "train_total": 50,
+      "test_correct": 26,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the sentence that start with the word \"a\" or are not preceded by a number."
+    },
+    {
+      "method_name": "Meta-87",
+      "train_accuracy": 0.52,
+      "test_accuracy": 0.45,
+      "train_correct": 26,
+      "train_total": 50,
+      "test_correct": 45,
+      "test_total": 100,
+      "prompt": "Count the number of items mentioned in the input sentence that fit the category specified in the question."
+    },
+    {
+      "method_name": "Meta-88",
+      "train_accuracy": 0.54,
+      "test_accuracy": 0.43,
+      "train_correct": 27,
+      "train_total": 50,
+      "test_correct": 43,
+      "test_total": 100,
+      "prompt": "Count the number of specific items mentioned in the sentence, excluding general categories like \"objects\" or \"fruits\"."
+    },
+    {
+      "method_name": "Meta-89",
+      "train_accuracy": 0.68,
+      "test_accuracy": 0.66,
+      "train_correct": 34,
+      "train_total": 50,
+      "test_correct": 66,
+      "test_total": 100,
+      "prompt": "Identify the type of object mentioned in the input and count the number of objects of that type."
+    },
+    {
+      "method_name": "Meta-90",
+      "train_accuracy": 0.28,
+      "test_accuracy": 0.27,
+      "train_correct": 14,
+      "train_total": 50,
+      "test_correct": 27,
+      "test_total": 100,
+      "prompt": "Count the number of nouns in the given sentence that are not pronouns, except for those referring to quantities."
+    },
+    {
+      "method_name": "Meta-91",
+      "train_accuracy": 0.42,
+      "test_accuracy": 0.34,
+      "train_correct": 21,
+      "train_total": 50,
+      "test_correct": 34,
+      "test_total": 100,
+      "prompt": "Count the objects mentioned in the sentence that are not part of a set or group."
+    },
+    {
+      "method_name": "Meta-92",
+      "train_accuracy": 0.38,
+      "test_accuracy": 0.34,
+      "train_correct": 19,
+      "train_total": 50,
+      "test_correct": 34,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the sentence that starts with \"I have\" and identify the category of objects specified in the question."
+    },
+    {
+      "method_name": "Meta-93",
+      "train_accuracy": 0.46,
+      "test_accuracy": 0.42,
+      "train_correct": 23,
+      "train_total": 50,
+      "test_correct": 42,
+      "test_total": 100,
+      "prompt": "Count the number of objects or items mentioned in the input sentence."
+    },
+    {
+      "method_name": "Meta-94",
+      "train_accuracy": 0.5,
+      "test_accuracy": 0.61,
+      "train_correct": 25,
+      "train_total": 50,
+      "test_correct": 61,
+      "test_total": 100,
+      "prompt": "Count the number of items in the list provided, grouping similar items together (e.g., musical instruments, fruits)."
+    },
+    {
+      "method_name": "Meta-95",
+      "train_accuracy": 0.44,
+      "test_accuracy": 0.42,
+      "train_correct": 22,
+      "train_total": 50,
+      "test_correct": 42,
+      "test_total": 100,
+      "prompt": "Count the number of objects or musical instruments mentioned in the input text."
+    },
+    {
+      "method_name": "Meta-96",
+      "train_accuracy": 0.58,
+      "test_accuracy": 0.47,
+      "train_correct": 29,
+      "train_total": 50,
+      "test_correct": 47,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the sentence that are not counted as part of a set or group."
+    },
+    {
+      "method_name": "Meta-97",
+      "train_accuracy": 0.74,
+      "test_accuracy": 0.61,
+      "train_correct": 37,
+      "train_total": 50,
+      "test_correct": 61,
+      "test_total": 100,
+      "prompt": "Identify the number of objects in the category mentioned in the input statement."
+    },
+    {
+      "method_name": "Meta-98",
+      "train_accuracy": 0.5,
+      "test_accuracy": 0.49,
+      "train_correct": 25,
+      "train_total": 50,
+      "test_correct": 49,
+      "test_total": 100,
+      "prompt": "Count the number of objects mentioned in the input sentence that fit the category specified in the question."
+    },
+    {
+      "method_name": "Meta-99",
+      "train_accuracy": 0.52,
+      "test_accuracy": 0.43,
+      "train_correct": 26,
+      "train_total": 50,
+      "test_correct": 43,
+      "test_total": 100,
+      "prompt": "Count the number of items in the list of objects mentioned in the sentence, excluding any items that are not objects."
+    },
+    {
+      "method_name": "Meta-100",
+      "train_accuracy": 0.54,
+      "test_accuracy": 0.51,
+      "train_correct": 27,
+      "train_total": 50,
+      "test_correct": 51,
+      "test_total": 100,
+      "prompt": "Count the number of objects in the list of items provided, excluding any items that are not objects."
+    }
+  ]
+}

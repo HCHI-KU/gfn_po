@@ -1,0 +1,12 @@
+{
+  "task_name": "object_counting",
+  "n_prompts": 100,
+  "pearson_r": 0.9169689155848678,
+  "spearman_rho": 0.8781445665476274,
+  "train_mean": 0.5566,
+  "test_mean": 0.4817,
+  "train_std": 0.12787665932452255,
+  "test_std": 0.11439453658282811,
+  "plot_path": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/object_counting/train_test_correlation.png",
+  "points_csv": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/object_counting/train_test_points.csv"
+}

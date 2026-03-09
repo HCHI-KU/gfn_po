@@ -1,0 +1,101 @@
+name,prompt,train_accuracy,test_accuracy
+Meta-01,Identify the movie that is most likely to share a common genre or theme with the given movies.,0.16,0.06
+Meta-02,"Identify the movie that has the most in common with the given set of movies based on genre, tone, or themes.",0.1,0.08
+Meta-03,Find the movie option that is most likely to be a surprise hit or a critically acclaimed film in a similar genre or style to the listed movies.,0.14,0.14
+Meta-04,Find the movie that is most likely to be a popular or critically acclaimed film in a similar genre or style to the given movies.,0.08,0.05
+Meta-05,Identify the movie that shares a common theme or genre with the given list of movies.,0.1,0.14
+Meta-06,Choose the movie option that shares similar themes or genres with the listed movies.,0.1,0.08
+Meta-07,Find a movie from the options that is similar in genre or tone to the given movies.,0.04,0.02
+Meta-08,Find the movie option that is most closely associated with the theme or genre of the given movie titles.,0.2,0.11
+Meta-09,"Identify the movie that is most likely to be recommended based on the given options, considering the common themes, genres, or styles among the provided movies.",0.1,0.05
+Meta-10,Identify the movie that is most closely associated with the majority of the given film recommendations.,0.04,0.01
+Meta-11,"Find the movie that is most closely associated with the genre, style, or tone of the given movies.",0.08,0.03
+Meta-12,Identify the movie that is most likely to be enjoyed by someone who likes the movies listed in the input.,0.02,0.01
+Meta-13,"Identify the most popular or critically acclaimed movie among the given options that shares similar themes, genres, or directors with the listed movies.",0.1,0.04
+Meta-14,"Identify the movie that shares common themes, genres, or elements with the given movies.",0.06,0.05
+Meta-15,"Identify the movie that best matches the given list of movies in terms of genre, tone, or themes.",0.06,0.08
+Meta-16,"Find a movie that shares a similar genre, tone, or style with the given movies.",0.0,0.01
+Meta-17,Identify the movie that is most likely to be recommended based on a set of given movies.,0.04,0.0
+Meta-18,Find a movie among the options that shares a common theme or genre with the given movies.,0.08,0.03
+Meta-19,"Select the movie that is most closely associated with an action-packed, iconic film franchise.",0.12,0.1
+Meta-20,Find the movie that is most similar in genre or theme to the given movies.,0.08,0.07
+Meta-21,Find the movie that shares common themes or elements with the given set of movies.,0.1,0.1
+Meta-22,"Identify the movie that best matches the themes, styles, or genres of the given movie recommendations.",0.04,0.02
+Meta-23,Identify the movie that is most closely related in style or genre to the listed movies.,0.04,0.07
+Meta-24,"Identify the movie that is most closely related to the given movie suggestions in terms of genre, tone, and style.",0.04,0.03
+Meta-25,"Find the movie that is most closely related to the given movies in terms of genre, tone, or style.",0.08,0.06
+Meta-26,Find a movie from the options that is most likely to appeal to fans of the given movies.,0.02,0.03
+Meta-27,Identify the movie that best matches the theme and genre of the listed movies.,0.12,0.13
+Meta-28,"Find the movie that is most likely to be a common favorite among fans of the input movies, based on their genres and themes.",0.06,0.06
+Meta-29,Identify the movie that is most likely to be recommended based on the common genre or themes of the input movies.,0.06,0.03
+Meta-30,Identify the most popular or critically acclaimed movie among the given options that is similar in genre or tone to the listed movies.,0.08,0.06
+Meta-31,Identify the movie that is most likely to be similar to the given list of movies.,0.02,0.03
+Meta-32,"Select the movie that is most likely to be recommended based on the combination of genres, directors, or themes common to the input movies.",0.04,0.02
+Meta-33,"Identify the movie with the genre, tone, and style most similar to the provided movies.",0.08,0.03
+Meta-34,"Find the movie that is most likely to be recommended based on the similarities in genres, themes, and styles of the given movies.",0.02,0.0
+Meta-35,Identify the movie that shares a common genre or theme with the given set of movies.,0.12,0.09
+Meta-36,Identify the most popular or well-known movie among the options that shares similar themes or genres with the given movies.,0.06,0.09
+Meta-37,Find the movie from the options that is most closely associated with a genre or style shared by the input movies.,0.12,0.11
+Meta-38,"Find the movie that is most likely to be recommended by the genre, style, and tone of the given movies.",0.0,0.03
+Meta-39,Find the movie that is most likely to be enjoyed by someone who likes the given movies.,0.06,0.02
+Meta-40,Find a movie that shares a common genre or theme with the given movies.,0.04,0.01
+Meta-41,Find the movie that is most closely associated with the genre or theme of the given movies.,0.08,0.04
+Meta-42,Identify the movie from the options that is most likely to appeal to fans of the listed movies.,0.04,0.0
+Meta-43,"Find a movie from the options that is often categorized or reviewed alongside the given movies in terms of genre, theme, or critical acclaim.",0.06,0.04
+Meta-44,Identify the genre or theme common to the given movies and select the option that best matches.,0.04,0.07
+Meta-45,Identify the common theme or genre among the listed movies and select the option that best fits this characteristic.,0.16,0.1
+Meta-46,Identify the movie that has the most common genre or theme among the given options.,0.1,0.15
+Meta-47,"Identify the most popular or critically acclaimed movie from a given set of options that shares similarities with a reference movie in terms of genre, style, or theme.",0.14,0.1
+Meta-48,Identify the movie that is most likely to appeal to fans of the given movies.,0.0,0.02
+Meta-49,Identify the movie with the most common genre among the given options that best matches the theme of the listed movies.,0.16,0.15
+Meta-50,"Find a movie from the options that is likely to appeal to fans of the mentioned movies based on their genres, directors, or themes.",0.04,0.01
+Meta-51,Find the movie that is most likely to appeal to fans of the listed movies.,0.04,0.0
+Meta-52,Find the movie that is most likely to be recommended based on the provided set of movies.,0.06,0.0
+Meta-53,Identify the movie with the most common genre or theme among the input movies.,0.14,0.1
+Meta-54,Identify the genre or theme common to the listed movies and choose the option that best matches this characteristic.,0.1,0.15
+Meta-55,"Identify the movie that is most likely to be chosen based on the combination of themes, genres, and styles represented in the given movie titles.",0.06,0.03
+Meta-56,"Identify the movie that is most likely to be similar in theme, genre, or style to the given movies.",0.04,0.08
+Meta-57,Find a movie from the options that is likely to appeal to fans of the movies listed.,0.0,0.0
+Meta-58,Find the movie that is most likely to be of a similar genre or style to the given movies.,0.06,0.02
+Meta-59,"Identify the movie that is most likely to be recommended based on the given options, considering the common themes, genres, or styles of the input movies.",0.06,0.03
+Meta-60,Identify the movie that shares the most common genre(s) with the given set of movies.,0.14,0.22
+Meta-61,Find a movie from the options that shares a common genre or theme with the given movies.,0.1,0.08
+Meta-62,"Find the movie from the given options that is most similar to the provided movie list based on its genre, theme, or style.",0.04,0.05
+Meta-63,"Find the movie that is most closely associated with the themes, genres, or styles represented by the input movies.",0.06,0.05
+Meta-64,Find the movie that is most likely to be recommended based on the given movie preferences.,0.08,0.03
+Meta-65,Find a movie that is most closely related in theme or genre to the given movies.,0.02,0.05
+Meta-66,Find the movie that is most commonly associated with the given list of movies.,0.08,0.05
+Meta-67,Find the movie from the options that is most closely related in genre or theme to the given movie(s).,0.12,0.07
+Meta-68,"Identify the movie that is most similar to the given list of films based on their genres, themes, or styles.",0.1,0.07
+Meta-69,Find the movie that is most closely associated with a common theme or genre among the given movies.,0.12,0.07
+Meta-70,Identify the movie that is most closely associated with the genre or theme of the given movie recommendations.,0.04,0.09
+Meta-71,Find the movie that is most likely to be recommended based on the common themes or genres present among the given movies.,0.04,0.03
+Meta-72,Identify the movie with the most common genre or theme among the input movies and select it from the options.,0.26,0.11
+Meta-73,Identify the movie with the most common genre or theme among the given options that best matches the genres or themes of the input movies.,0.2,0.1
+Meta-74,Select the movie that is most likely to be of the same genre or style as the given movies.,0.04,0.08
+Meta-75,Find a movie from the options that shares a genre or theme with the given movies.,0.08,0.08
+Meta-76,Identify the movie that best matches the tone and genre of the listed films.,0.1,0.1
+Meta-77,Choose the movie that is most likely to appeal to fans of the listed movies.,0.02,0.01
+Meta-78,Select the movie from the options that is most likely to be in the same genre or have a similar tone as the listed movies.,0.1,0.04
+Meta-79,Find the movie that is most similar in genre or tone to the given set of movies.,0.06,0.02
+Meta-80,Choose the movie that is most commonly associated with a theme or genre shared among the listed movies.,0.18,0.18
+Meta-81,Select the movie that has received similar awards or nominations as the given movies.,0.08,0.07
+Meta-82,Find the movie that is most likely to appeal to someone who enjoys the given movies.,0.08,0.02
+Meta-83,Find the movie that is most likely to be recommended based on the provided list of movies.,0.06,0.01
+Meta-84,Identify the movie that is most likely to be recommended based on the given list of movies.,0.04,0.01
+Meta-85,Identify the movie with the most common genre among the input movies.,0.16,0.14
+Meta-86,"Find the movie option that is most closely associated with the theme, genre, or style of the given movies.",0.08,0.07
+Meta-87,"Identify the movie that is most closely related to the given list of movies in terms of genre, style, or tone.",0.08,0.04
+Meta-88,Identify the movie that is most commonly associated with the given set of movies.,0.1,0.08
+Meta-89,Find the movie from the options that is most likely to appeal to the same audience as the listed movies.,0.06,0.05
+Meta-90,Choose the movie that is most likely to be recommended based on the given list of movies.,0.02,0.02
+Meta-91,"Identify the movie that is most likely to share common themes, genres, or cinematic styles with the given set of movies.",0.04,0.09
+Meta-92,Identify the movie that is most commonly associated with the listed movies.,0.1,0.01
+Meta-93,"Identify the movie that is most likely to be recommended based on the given options, considering the genres, themes, and styles of the input movies.",0.06,0.06
+Meta-94,"Find a movie from the options that is most closely associated with a common theme, genre, or style shared by the listed movies.",0.08,0.06
+Meta-95,Identify the movie that shares similar themes or genres with the given list of movies.,0.12,0.12
+Meta-96,Find the movie that is most likely to appeal to fans of the given movies.,0.02,0.02
+Meta-97,Choose the movie from the options that is most similar in genre or style to the listed movies.,0.0,0.06
+Meta-98,"Identify the most popular or critically acclaimed movie among the options that shares similar themes, genres, or directors with the given movie(s).",0.06,0.1
+Meta-99,Find the movie that is most likely to be selected as a recommendation based on the given list of movie titles.,0.04,0.05
+Meta-100,Find the movie that is most likely to appeal to the same audience as the listed films.,0.02,0.04

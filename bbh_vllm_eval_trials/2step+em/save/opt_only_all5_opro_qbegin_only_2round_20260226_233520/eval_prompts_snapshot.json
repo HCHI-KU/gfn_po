@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-02-26 23:36:05",
+  "args": {
+    "model_path": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "conversation_template": "llama-3",
+    "dtype": "bfloat16",
+    "tensor_parallel_size": 1,
+    "gpu_memory_utilization": 0.9,
+    "task_name": "",
+    "data_root": "../bbh_vllm_eval/data/GreaTer_data/BBH",
+    "n_train_data": 50,
+    "n_test_data": 100,
+    "save_dir": "save",
+    "exp_name": "opt_only_all5_opro_qbegin_only_2round_20260226_233520",
+    "include_paper_opt_prompt": true,
+    "meta_prompt_file": "",
+    "num_meta_prompts": 0,
+    "evaluate_train_split": false,
+    "temperature": 0.0,
+    "max_reasoning_tokens": 256,
+    "answer_max_tokens": 4,
+    "stage1_prompt_style": "opro_qbegin",
+    "extract_final_answer_by_prompting_again": true,
+    "prompting_again_max_tokens": 8,
+    "use_conservative_prompting_again_tokens": false
+  },
+  "evaluation_protocol": "opro_eval_adapter",
+  "evaluation_note": "OPRO-style metrics normalization and optional prompting-again extraction implemented for local vLLM. Adapter-based reproduction, not exact OPRO runtime.",
+  "tasks": {
+    "tracking_shuffled_objects_five_objects": {
+      "Opt": "Use this process as an explanation stepwise for each step until you get to as given above Alice has got originaly the following as follows."
+    },
+    "object_counting": {
+      "Opt": "Use only addition. Add think step by step. Finally give the actual correct answer."
+    },
+    "causal_judgement": {
+      "Opt": "Use causal diagram. The correct option ask about whether there the variable C of about whether a specific cause is sufficient. The answer a causal relationship between C to D if the probability P that C occurs given E changes."
+    },
+    "movie_recommendation": {
+      "Opt": "Use movie ratings data available here above movies for reference. ThisHOFF has an interesting analysis based solely options to options based movies ratings expect from the other movies you are asked ones mentioned here you."
+    },
+    "hyperbaton": {
+      "Opt": "Use the reasoning and examples you would step. Finally give the actual correct answer."
+    }
+  }
+}

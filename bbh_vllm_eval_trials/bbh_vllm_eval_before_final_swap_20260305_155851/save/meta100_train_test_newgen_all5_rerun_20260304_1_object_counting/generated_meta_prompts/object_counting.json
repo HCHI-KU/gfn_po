@@ -1,0 +1,419 @@
+{
+  "task_name": "object_counting",
+  "generated_at": "2026-03-04 19:54:34",
+  "generation_config": {
+    "model_path": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "conversation_template": "llama-3",
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "max_tokens": 96,
+    "num_examples": 3,
+    "requested_num_prompts": 100,
+    "actual_num_prompts": 100,
+    "generation_batch_size_cap": 128,
+    "generation_max_rounds": 6
+  },
+  "meta_prompt_request": "You are creating a single instruction prompt for a reasoning task named 'object_counting'.\nInfer the task behavior from the input/output examples below.\nWrite exactly one concise instruction that helps solve this task.\nOutput only the instruction text. Do not output numbering, quotes, or explanations.\n\nExamples:\nInput: I have a flute, a piano, a trombone, four stoves, a violin, an accordion, a clarinet, a drum, two lamps, and a trumpet. How many musical instruments do I have?.\nOutput: 8\n\nInput: I have an apple, three bananas, a strawberry, a peach, three oranges, a plum, a raspberry, two grapes, a nectarine, and a blackberry. How many fruits do I have?.\nOutput: 15\n\nInput: I have a fridge, a chair, and a microwave. How many objects do I have?.\nOutput: 3\n\nInstruction:",
+  "prompts": [
+    {
+      "name": "Meta-01",
+      "prompt": "Identify the category mentioned in the input statement and count the number of objects within that category."
+    },
+    {
+      "name": "Meta-02",
+      "prompt": "Count the number of objects mentioned in the sentence."
+    },
+    {
+      "name": "Meta-03",
+      "prompt": "Count the number of objects mentioned in the sentence that start with the given category (e.g. musical instruments, fruits)."
+    },
+    {
+      "name": "Meta-04",
+      "prompt": "Count the number of objects of the specified type mentioned in the input statement."
+    },
+    {
+      "name": "Meta-05",
+      "prompt": "Count the number of objects or items mentioned in the given list."
+    },
+    {
+      "name": "Meta-06",
+      "prompt": "Count the number of objects mentioned in the given sentence."
+    },
+    {
+      "name": "Meta-07",
+      "prompt": "Count the number of items mentioned in the list, excluding any mentioned categories or types."
+    },
+    {
+      "name": "Meta-08",
+      "prompt": "Identify the types of objects mentioned and count the number of each unique type."
+    },
+    {
+      "name": "Meta-09",
+      "prompt": "Count the number of objects mentioned in the sentence that are of the same category as the one specified in the question."
+    },
+    {
+      "name": "Meta-10",
+      "prompt": "Count the objects of a specific category mentioned in the given sentence."
+    },
+    {
+      "name": "Meta-11",
+      "prompt": "Count the number of specified objects (e.g., musical instruments, fruits, objects) mentioned in the given sentence."
+    },
+    {
+      "name": "Meta-12",
+      "prompt": "Count the number of objects mentioned that belong to the category specified in the sentence."
+    },
+    {
+      "name": "Meta-13",
+      "prompt": "Count the number of objects mentioned that are of the same category as the example provided."
+    },
+    {
+      "name": "Meta-14",
+      "prompt": "Count the number of items of the same type or category mentioned in the given list of objects."
+    },
+    {
+      "name": "Meta-15",
+      "prompt": "Count the number of distinct objects mentioned in the input sentence."
+    },
+    {
+      "name": "Meta-16",
+      "prompt": "Count the number of objects or items mentioned in the input statement."
+    },
+    {
+      "name": "Meta-17",
+      "prompt": "Count the number of objects mentioned in the input sentence that match the category specified in the question."
+    },
+    {
+      "name": "Meta-18",
+      "prompt": "Count the number of objects in the list that match the category mentioned in the question."
+    },
+    {
+      "name": "Meta-19",
+      "prompt": "Count the number of objects mentioned in the input statement, excluding any objects that are not the specified type (e.g. musical instruments, fruits)."
+    },
+    {
+      "name": "Meta-20",
+      "prompt": "Count the number of objects mentioned in the sentence that are not containers or rooms."
+    },
+    {
+      "name": "Meta-21",
+      "prompt": "Count the number of objects that are mentioned in the sentence."
+    },
+    {
+      "name": "Meta-22",
+      "prompt": "Count the objects mentioned in the sentence that are of a specified type (e.g. musical instruments, fruits)."
+    },
+    {
+      "name": "Meta-23",
+      "prompt": "Identify the type of object(s) mentioned in the input sentence and count the number of occurrences of that object type."
+    },
+    {
+      "name": "Meta-24",
+      "prompt": "Count the number of objects in the given list that fit the category specified in the question."
+    },
+    {
+      "name": "Meta-25",
+      "prompt": "Count the number of objects that are mentioned in the sentence as musical instruments, fruits, or objects."
+    },
+    {
+      "name": "Meta-26",
+      "prompt": "Count the number of objects that are specifically mentioned in the input text."
+    },
+    {
+      "name": "Meta-27",
+      "prompt": "Count the number of objects mentioned that are of the same type."
+    },
+    {
+      "name": "Meta-28",
+      "prompt": "Count the number of objects mentioned in the given list, categorizing them by type (e.g., musical instruments, fruits) and counting each type separately."
+    },
+    {
+      "name": "Meta-29",
+      "prompt": "Count the number of objects mentioned in the given list."
+    },
+    {
+      "name": "Meta-30",
+      "prompt": "Count the number of objects that are mentioned in the given description."
+    },
+    {
+      "name": "Meta-31",
+      "prompt": "Identify the category of objects mentioned in the sentence and count the number of objects within that category."
+    },
+    {
+      "name": "Meta-32",
+      "prompt": "Count the number of items in the list that are referred to as a single unit, such as instruments, fruits, or objects."
+    },
+    {
+      "name": "Meta-33",
+      "prompt": "Count the number of specified objects mentioned in the given sentence."
+    },
+    {
+      "name": "Meta-34",
+      "prompt": "Count the number of objects that are not in the categories of food or furniture."
+    },
+    {
+      "name": "Meta-35",
+      "prompt": "Count the number of nouns in the given sentence or phrase."
+    },
+    {
+      "name": "Meta-36",
+      "prompt": "Count the number of objects or instruments mentioned in the sentence, excluding any additional words."
+    },
+    {
+      "name": "Meta-37",
+      "prompt": "Identify the number of objects that are not part of a set or group."
+    },
+    {
+      "name": "Meta-38",
+      "prompt": "Count the number of objects mentioned in the sentence, excluding any categories or types (e.g., musical instruments, fruits)."
+    },
+    {
+      "name": "Meta-39",
+      "prompt": "Count the number of objects or items mentioned in the sentence."
+    },
+    {
+      "name": "Meta-40",
+      "prompt": "Count the number of objects in the list that are mentioned as being of the same category (e.g. musical instruments, fruits)."
+    },
+    {
+      "name": "Meta-41",
+      "prompt": "Count the number of objects or items mentioned in the given text."
+    },
+    {
+      "name": "Meta-42",
+      "prompt": "Count the number of each type of object mentioned in the input sentence."
+    },
+    {
+      "name": "Meta-43",
+      "prompt": "Count the number of objects mentioned in the sentence that are of the same category as the one mentioned in the question."
+    },
+    {
+      "name": "Meta-44",
+      "prompt": "Count the number of objects mentioned in the input sentence that belong to the specified category (e.g., musical instruments, fruits)."
+    },
+    {
+      "name": "Meta-45",
+      "prompt": "Identify the number of objects that belong to the specified category mentioned in the sentence."
+    },
+    {
+      "name": "Meta-46",
+      "prompt": "Count the number of objects mentioned in the sentence that are not pronouns."
+    },
+    {
+      "name": "Meta-47",
+      "prompt": "Count the number of objects mentioned in the input sentence that belong to the category specified in the question."
+    },
+    {
+      "name": "Meta-48",
+      "prompt": "Identify and count the number of objects that are not a kitchen appliance, a piece of furniture, or a type of fruit."
+    },
+    {
+      "name": "Meta-49",
+      "prompt": "Identify the types of objects mentioned in the sentence and count the number of items belonging to each type."
+    },
+    {
+      "name": "Meta-50",
+      "prompt": "Count the number of objects mentioned in the sentence that describe the objects."
+    },
+    {
+      "name": "Meta-51",
+      "prompt": "Identify the type of object being counted (e.g. musical instruments, fruits, objects) and count the number of items belonging to that type."
+    },
+    {
+      "name": "Meta-52",
+      "prompt": "Count the number of objects or instruments mentioned in the given list that belong to the specified category."
+    },
+    {
+      "name": "Meta-53",
+      "prompt": "Count the number of objects or instruments mentioned in the sentence."
+    },
+    {
+      "name": "Meta-54",
+      "prompt": "Count the number of objects mentioned in the input that are of the same category as the one specified in the question."
+    },
+    {
+      "name": "Meta-55",
+      "prompt": "Count the number of objects mentioned in the given list, excluding any objects that are not of the same category as the one specified in the question."
+    },
+    {
+      "name": "Meta-56",
+      "prompt": "Identify the number of objects that are not mentioned as \"how many\" something else."
+    },
+    {
+      "name": "Meta-57",
+      "prompt": "Identify the number of objects mentioned that belong to the category specified in the question."
+    },
+    {
+      "name": "Meta-58",
+      "prompt": "Count the number of objects mentioned in the given list that fit the category specified in the question."
+    },
+    {
+      "name": "Meta-59",
+      "prompt": "Count the number of objects that are not related to the category asked for in the question."
+    },
+    {
+      "name": "Meta-60",
+      "prompt": "Count the number of objects in the given list that belong to the specified category (e.g. musical instruments, fruits, etc.)."
+    },
+    {
+      "name": "Meta-61",
+      "prompt": "Count the number of items in the list that belong to the category specified in the question."
+    },
+    {
+      "name": "Meta-62",
+      "prompt": "Identify the categories mentioned in the input and count the corresponding objects."
+    },
+    {
+      "name": "Meta-63",
+      "prompt": "Identify and count the number of objects in the given list of items."
+    },
+    {
+      "name": "Meta-64",
+      "prompt": "Count the number of objects mentioned in the sentence that are not rooms or containers."
+    },
+    {
+      "name": "Meta-65",
+      "prompt": "Count the number of objects mentioned in the input sentence."
+    },
+    {
+      "name": "Meta-66",
+      "prompt": "Identify and count the number of objects in the given list that belong to the specified category."
+    },
+    {
+      "name": "Meta-67",
+      "prompt": "Count the number of objects that are mentioned as being of a specific type, and exclude objects that do not fit into a specific category."
+    },
+    {
+      "name": "Meta-68",
+      "prompt": "Count the objects mentioned in the sentence that ask how many there are."
+    },
+    {
+      "name": "Meta-69",
+      "prompt": "Count the number of objects in the list of items provided."
+    },
+    {
+      "name": "Meta-70",
+      "prompt": "Count the number of objects in the given list that match the category specified in the question."
+    },
+    {
+      "name": "Meta-71",
+      "prompt": "Count the objects mentioned in the sentence and identify the category of objects being counted."
+    },
+    {
+      "name": "Meta-72",
+      "prompt": "Count the number of objects mentioned in the input sentence that belong to the specified category."
+    },
+    {
+      "name": "Meta-73",
+      "prompt": "Count the number of objects that are of a specific category mentioned in the input."
+    },
+    {
+      "name": "Meta-74",
+      "prompt": "Count the number of objects that are mentioned in the input sentence, excluding any words that do not refer to objects."
+    },
+    {
+      "name": "Meta-75",
+      "prompt": "Count the number of objects mentioned in the sentence that are of the specified type (e.g. musical instruments, fruits)."
+    },
+    {
+      "name": "Meta-76",
+      "prompt": "Count the number of specific objects mentioned in the given list that fit the category specified in the question."
+    },
+    {
+      "name": "Meta-77",
+      "prompt": "Count the number of items mentioned in the input sentence that belong to the specified category."
+    },
+    {
+      "name": "Meta-78",
+      "prompt": "Count the number of objects mentioned in the sentence that are of a specific category (e.g. musical instruments, fruits, etc.)."
+    },
+    {
+      "name": "Meta-79",
+      "prompt": "Count the number of objects that are explicitly mentioned as being of a specific type, excluding objects mentioned as part of a set or collection."
+    },
+    {
+      "name": "Meta-80",
+      "prompt": "Identify the type of objects mentioned in the sentence and count the number of objects of that type."
+    },
+    {
+      "name": "Meta-81",
+      "prompt": "Count the number of objects in the given list that match the specified category."
+    },
+    {
+      "name": "Meta-82",
+      "prompt": "Count the number of items in the list provided, excluding any items that are not the requested type of object."
+    },
+    {
+      "name": "Meta-83",
+      "prompt": "Count the number of objects in the given list that are specifically mentioned as a certain type, such as musical instruments or fruits."
+    },
+    {
+      "name": "Meta-84",
+      "prompt": "Count the number of objects in the list that are mentioned as being a specific type (e.g. musical instruments, fruits, etc.)."
+    },
+    {
+      "name": "Meta-85",
+      "prompt": "Count the number of objects or items mentioned in the sentence, excluding any phrases that describe the objects."
+    },
+    {
+      "name": "Meta-86",
+      "prompt": "Count the number of objects mentioned in the sentence that start with the word \"a\" or are not preceded by a number."
+    },
+    {
+      "name": "Meta-87",
+      "prompt": "Count the number of items mentioned in the input sentence that fit the category specified in the question."
+    },
+    {
+      "name": "Meta-88",
+      "prompt": "Count the number of specific items mentioned in the sentence, excluding general categories like \"objects\" or \"fruits\"."
+    },
+    {
+      "name": "Meta-89",
+      "prompt": "Identify the type of object mentioned in the input and count the number of objects of that type."
+    },
+    {
+      "name": "Meta-90",
+      "prompt": "Count the number of nouns in the given sentence that are not pronouns, except for those referring to quantities."
+    },
+    {
+      "name": "Meta-91",
+      "prompt": "Count the objects mentioned in the sentence that are not part of a set or group."
+    },
+    {
+      "name": "Meta-92",
+      "prompt": "Count the number of objects mentioned in the sentence that starts with \"I have\" and identify the category of objects specified in the question."
+    },
+    {
+      "name": "Meta-93",
+      "prompt": "Count the number of objects or items mentioned in the input sentence."
+    },
+    {
+      "name": "Meta-94",
+      "prompt": "Count the number of items in the list provided, grouping similar items together (e.g., musical instruments, fruits)."
+    },
+    {
+      "name": "Meta-95",
+      "prompt": "Count the number of objects or musical instruments mentioned in the input text."
+    },
+    {
+      "name": "Meta-96",
+      "prompt": "Count the number of objects mentioned in the sentence that are not counted as part of a set or group."
+    },
+    {
+      "name": "Meta-97",
+      "prompt": "Identify the number of objects in the category mentioned in the input statement."
+    },
+    {
+      "name": "Meta-98",
+      "prompt": "Count the number of objects mentioned in the input sentence that fit the category specified in the question."
+    },
+    {
+      "name": "Meta-99",
+      "prompt": "Count the number of items in the list of objects mentioned in the sentence, excluding any items that are not objects."
+    },
+    {
+      "name": "Meta-100",
+      "prompt": "Count the number of objects in the list of items provided, excluding any items that are not objects."
+    }
+  ]
+}

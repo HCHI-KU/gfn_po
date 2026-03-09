@@ -1,0 +1,114 @@
+{
+  "task_name": "hyperbaton",
+  "stats": {
+    "num_points": 10,
+    "pearson": 0.0639259909732852,
+    "spearman": 0.13622356307397512,
+    "train_mean": 0.732,
+    "test_mean": 0.735,
+    "train_std": 0.05455272678794341,
+    "test_std": 0.04588027898781787
+  },
+  "records": [
+    {
+      "method_name": "Meta-01",
+      "train_accuracy": 0.68,
+      "test_accuracy": 0.77,
+      "train_correct": 34,
+      "train_total": 50,
+      "test_correct": 77,
+      "test_total": 100,
+      "prompt": "Identify the sentence with the adjective order that follows the typical English language pattern of modifying nouns in a specific order."
+    },
+    {
+      "method_name": "Meta-02",
+      "train_accuracy": 0.76,
+      "test_accuracy": 0.7,
+      "train_correct": 38,
+      "train_total": 50,
+      "test_correct": 70,
+      "test_total": 100,
+      "prompt": "Modify the sentence to adhere to the typical adjective order in English, prioritizing descriptive words in the following sequence: opinion, size, shape, color, nationality, material, and finally action or state."
+    },
+    {
+      "method_name": "Meta-03",
+      "train_accuracy": 0.78,
+      "test_accuracy": 0.69,
+      "train_correct": 39,
+      "train_total": 50,
+      "test_correct": 69,
+      "test_total": 100,
+      "prompt": "Identify the sentence with the most logical and intuitive adjective order."
+    },
+    {
+      "method_name": "Meta-04",
+      "train_accuracy": 0.82,
+      "test_accuracy": 0.77,
+      "train_correct": 41,
+      "train_total": 50,
+      "test_correct": 77,
+      "test_total": 100,
+      "prompt": "Arrange the adjectives in each sentence in the order of English language precedence."
+    },
+    {
+      "method_name": "Meta-05",
+      "train_accuracy": 0.66,
+      "test_accuracy": 0.81,
+      "train_correct": 33,
+      "train_total": 50,
+      "test_correct": 81,
+      "test_total": 100,
+      "prompt": "Modify the adjective to its corresponding noun to determine the correct adjective order in a sentence."
+    },
+    {
+      "method_name": "Meta-06",
+      "train_accuracy": 0.76,
+      "test_accuracy": 0.72,
+      "train_correct": 38,
+      "train_total": 50,
+      "test_correct": 72,
+      "test_total": 100,
+      "prompt": "Determine the correct adjective order by placing the most specific descriptors closest to the noun they modify."
+    },
+    {
+      "method_name": "Meta-07",
+      "train_accuracy": 0.74,
+      "test_accuracy": 0.72,
+      "train_correct": 37,
+      "train_total": 50,
+      "test_correct": 72,
+      "test_total": 100,
+      "prompt": "Modify the sentence by rearranging the adjectives to follow the typical English word order: adjective-noun."
+    },
+    {
+      "method_name": "Meta-08",
+      "train_accuracy": 0.66,
+      "test_accuracy": 0.68,
+      "train_correct": 33,
+      "train_total": 50,
+      "test_correct": 68,
+      "test_total": 100,
+      "prompt": "Arrange the adjectives in each sentence to follow the typical English adjective order of size, color, material, origin, and other descriptors."
+    },
+    {
+      "method_name": "Meta-09",
+      "train_accuracy": 0.78,
+      "test_accuracy": 0.8,
+      "train_correct": 39,
+      "train_total": 50,
+      "test_correct": 80,
+      "test_total": 100,
+      "prompt": "Identify the sentence with the correct adjective order, following the standard English word order of attributive adjectives, from most general to most specific."
+    },
+    {
+      "method_name": "Meta-10",
+      "train_accuracy": 0.68,
+      "test_accuracy": 0.69,
+      "train_correct": 34,
+      "train_total": 50,
+      "test_correct": 69,
+      "test_total": 100,
+      "prompt": "Modify the sentence to follow the typical order of adjectives in English, typically from most general to most specific."
+    }
+  ]
+}

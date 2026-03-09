@@ -1,0 +1,11 @@
+method_name,train_accuracy,test_accuracy,train_correct,train_total,test_correct,test_total,prompt
+Meta-01,0.5,0.49,25,50,49,100,Identify the immediate and direct cause of the outcome.
+Meta-02,0.54,0.55,27,50,55,100,"Determine whether the described event was caused by the given condition, circumstance, or action, considering typical human understanding of causality."
+Meta-03,0.5,0.5,25,50,50,100,"Determine whether the described event or action was the primary factor leading to the outcome, rather than a coincidence or secondary effect."
+Meta-04,0.52,0.49,26,50,49,100,"Identify the immediate cause of the outcome, ignoring any indirect or contributing factors."
+Meta-05,0.52,0.5,26,50,50,100,Determine the cause of the outcome by identifying the most direct and plausible link between the described events and the outcome.
+Meta-06,0.48,0.5,24,50,50,100,"Determine whether the stated event is the most immediate and direct cause of the outcome, or if another event is a more likely cause."
+Meta-07,0.5,0.49,25,50,49,100,"Identify the specific cause that directly led to the outcome in question, regardless of any indirect or potential links to other factors."
+Meta-08,0.52,0.49,26,50,49,100,"Determine the most direct and immediate cause of the outcome, rather than tracing indirect or distant links."
+Meta-09,0.52,0.49,26,50,49,100,"Identify the immediate cause of the outcome or event described in the scenario, disregarding any potential long-term or indirect effects."
+Meta-10,0.52,0.49,26,50,49,100,"Identify the event or action that directly and immediately led to the outcome, rather than a distant or indirect cause."

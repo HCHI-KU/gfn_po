@@ -1,0 +1,12 @@
+{
+  "task_name": "hyperbaton",
+  "n_prompts": 100,
+  "pearson_r": 0.8971389130857385,
+  "spearman_rho": 0.8924001280867442,
+  "train_mean": 0.5178,
+  "test_mean": 0.504,
+  "train_std": 0.139739614998754,
+  "test_std": 0.14002856851371437,
+  "plot_path": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/hyperbaton/train_test_correlation.png",
+  "points_csv": "/home/work/jihun/bbh_vllm_eval_final/save/correlation_meta100_all5_separate_20260227_154545/hyperbaton/train_test_points.csv"
+}

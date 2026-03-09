@@ -1,0 +1,25 @@
+{
+  "paper_acc": 0.7,
+  "Opt": {
+    "prompt": "Use this process as an explanation stepwise for each step until you get to as given above Alice has got originaly the following as follows.",
+    "accuracy": 0.15,
+    "test_acc": 0.15,
+    "inference_time": 12.559493064880371,
+    "correct": 15,
+    "total": 100,
+    "parse_failures": 16,
+    "invalid_predictions": 0,
+    "parsed_rate": 0.84,
+    "valid_parsed_rate": 0.84,
+    "test_parsed": 0.84,
+    "used_extractor": true,
+    "prompt_backend": "manual_llama3",
+    "answer_max_tokens": 4,
+    "evaluation_protocol": "opro_eval_adapter",
+    "extract_final_answer_by_prompting_again": true,
+    "second_round_prompt_style": "task_extractor",
+    "opro_second_round_extraction": true,
+    "opro_second_round_max_tokens": 8,
+    "second_round_extractor_text": "Therefore, the final answer is (output exactly one letter: A, B, C, D, or E; no explanation) "
+  }
+}

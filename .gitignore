@@ -5,7 +5,10 @@ __pycache__/
 *.egg-info/
 .env
 .venv/
+.venv*/
 venv/
+*.git_embedded_backup/
+**/.git_embedded_backup/
 
 # Conda
 *.conda

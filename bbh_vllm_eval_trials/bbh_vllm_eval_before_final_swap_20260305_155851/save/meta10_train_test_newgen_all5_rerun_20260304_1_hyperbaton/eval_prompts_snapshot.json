@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-03-04 19:37:33",
+  "args": {
+    "model_path": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "conversation_template": "llama-3",
+    "dtype": "float16",
+    "tensor_parallel_size": 1,
+    "gpu_memory_utilization": 0.9,
+    "task_name": "hyperbaton",
+    "data_root": "../bbh_vllm_eval/data/GreaTer_data/BBH",
+    "n_train_data": 50,
+    "n_test_data": 100,
+    "save_dir": "save",
+    "exp_name": "meta10_train_test_newgen_all5_rerun_20260304_1_hyperbaton",
+    "generate_meta_prompts": true,
+    "include_paper_opt_prompt": false,
+    "meta_prompt_file": "",
+    "num_meta_prompts": 10,
+    "meta_prompt_temperature": 0.8,
+    "meta_prompt_top_p": 0.95,
+    "meta_prompt_max_tokens": 96,
+    "meta_prompt_num_examples": 3,
+    "meta_prompt_generation_batch_size": 128,
+    "meta_prompt_generation_max_rounds": 6,
+    "evaluate_train_split": true,
+    "temperature": 0.0,
+    "max_reasoning_tokens": 1024,
+    "answer_max_tokens": 1
+  },
+  "terminology": {
+    "extractor": "Second LLM call that extracts a short final answer.",
+    "test_acc": "Fraction of correct answers on test split.",
+    "test_parsed": "Proxy parse-success rate on test split (1 - parse_failures / total)."
+  },
+  "evaluation_note": "Standalone vLLM evaluator for internal fair comparison. Describe as GreaTer-compatible baseline re-evaluation, not exact reproduction.",
+  "tasks": {
+    "hyperbaton": {
+      "Meta-01": "Identify the sentence with the adjective order that follows the typical English language pattern of modifying nouns in a specific order.",
+      "Meta-02": "Modify the sentence to adhere to the typical adjective order in English, prioritizing descriptive words in the following sequence: opinion, size, shape, color, nationality, material, and finally action or state.",
+      "Meta-03": "Identify the sentence with the most logical and intuitive adjective order.",
+      "Meta-04": "Arrange the adjectives in each sentence in the order of English language precedence.",
+      "Meta-05": "Modify the adjective to its corresponding noun to determine the correct adjective order in a sentence.",
+      "Meta-06": "Determine the correct adjective order by placing the most specific descriptors closest to the noun they modify.",
+      "Meta-07": "Modify the sentence by rearranging the adjectives to follow the typical English word order: adjective-noun.",
+      "Meta-08": "Arrange the adjectives in each sentence to follow the typical English adjective order of size, color, material, origin, and other descriptors.",
+      "Meta-09": "Identify the sentence with the correct adjective order, following the standard English word order of attributive adjectives, from most general to most specific.",
+      "Meta-10": "Modify the sentence to follow the typical order of adjectives in English, typically from most general to most specific."
+    }
+  }
+}

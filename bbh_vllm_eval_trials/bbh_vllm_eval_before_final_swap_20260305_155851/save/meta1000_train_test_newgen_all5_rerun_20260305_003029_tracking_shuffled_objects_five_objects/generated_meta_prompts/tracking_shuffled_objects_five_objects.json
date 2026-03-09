@@ -1,0 +1,2043 @@
+{
+  "task_name": "tracking_shuffled_objects_five_objects",
+  "generated_at": "2026-03-05 00:31:27",
+  "generation_config": {
+    "model_path": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "conversation_template": "llama-3",
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "max_tokens": 96,
+    "num_examples": 3,
+    "requested_num_prompts": 1000,
+    "actual_num_prompts": 506,
+    "generation_batch_size_cap": 128,
+    "generation_max_rounds": 6
+  },
+  "meta_prompt_request": "You are creating a single instruction prompt for a reasoning task named 'tracking_shuffled_objects_five_objects'.\nInfer the task behavior from the input/output examples below.\nWrite exactly one concise instruction that helps solve this task.\nOutput only the instruction text. Do not output numbering, quotes, or explanations.\n\nExamples:\nInput: Alice, Bob, Claire, Dave, and Eve are dancers at a square dance. At the start of a song, they each have a partner: Alice is dancing with Patrick, Bob is dancing with Sam, Claire is dancing with Jamie, Dave is dancing with Lola, and Eve is dancing with Melissa.\nThroughout the song, the dancers often trade partners. First, Dave and Eve switch partners. Then, Dave and Alice switch partners. Then, Eve and Alice switch partners. Then, Claire and Bob switch partners. Finally, Dave and Alice switch partners. At the end of the dance, Alice is dancing with\nOptions:\n(A) Patrick\n(B) Sam\n(C) Jamie\n(D) Lola\n(E) Melissa.\nOutput: A\n\nInput: Alice, Bob, Claire, Dave, and Eve are dancers at a square dance. At the start of a song, they each have a partner: Alice is dancing with Ophelia, Bob is dancing with Jamie, Claire is dancing with Melissa, Dave is dancing with Rodrigo, and Eve is dancing with Patrick.\nThroughout the song, the dancers often trade partners. First, Claire and Bob switch partners. Then, Claire and Eve switch partners. Then, Claire and Bob switch partners. Then, Eve and Dave switch partners. Finally, Claire and Alice switch partners. At the end of the dance, Alice is dancing with\nOptions:\n(A) Ophelia\n(B) Jamie\n(C) Melissa\n(D) Rodrigo\n(E) Patrick.\nOutput: C\n\nInput: Alice, Bob, Claire, Dave, and Eve are dancers at a square dance. At the start of a song, they each have a partner: Alice is dancing with Jamie, Bob is dancing with Lola, Claire is dancing with Izzi, Dave is dancing with Rodrigo, and Eve is dancing with Ophelia.\nThroughout the song, the dancers often trade partners. First, Bob and Eve switch partners. Then, Alice and Bob switch partners. Then, Dave and Alice switch partners. Then, Dave and Claire switch partners. Finally, Bob and Claire switch partners. At the end of the dance, Claire is dancing with\nOptions:\n(A) Jamie\n(B) Lola\n(C) Izzi\n(D) Rodrigo\n(E) Ophelia.\nOutput: A\n\nInstruction:",
+  "prompts": [
+    {
+      "name": "Meta-01",
+      "prompt": "Keep track of the dance partners and identify the last partner of each dancer."
+    },
+    {
+      "name": "Meta-02",
+      "prompt": "Determine the final dance partner of a specified dancer by tracking the sequence of partner swaps throughout the song."
+    },
+    {
+      "name": "Meta-03",
+      "prompt": "Track the sequence of partner switches for each dancer and determine the final partner of the dancer mentioned in the problem statement."
+    },
+    {
+      "name": "Meta-04",
+      "prompt": "Follow the sequence of partner switches to determine the final dance partner of the specified dancer."
+    },
+    {
+      "name": "Meta-05",
+      "prompt": "Determine the final partner of the dancer who initially danced with the first-named partner, by tracing the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-06",
+      "prompt": "Keep track of the sequence of partner switches and use this information to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-07",
+      "prompt": "Keep track of the number of times each dancer trades partners, and select the partner that has been danced with the fewest number of times at the end of the dance."
+    },
+    {
+      "name": "Meta-08",
+      "prompt": "Follow the sequence of partner switches to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-09",
+      "prompt": "Determine the final dance partner of the specified dancer (Alice, Bob, Claire, Dave, or Eve) by tracing the sequence of partner swaps throughout the song."
+    },
+    {
+      "name": "Meta-10",
+      "prompt": "Follow the sequence of partner switches to determine the final partner of the dancer whose initial partner is mentioned."
+    },
+    {
+      "name": "Meta-11",
+      "prompt": "Determine the final partner of a specified dancer by tracing the sequence of partner swaps throughout the dance."
+    },
+    {
+      "name": "Meta-12",
+      "prompt": "Determine the final partner of each dancer by tracking the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-13",
+      "prompt": "Keep track of the partners each dancer is switching with and the order in which they switch, then determine the final partner of the specified dancer based on the given information."
+    },
+    {
+      "name": "Meta-14",
+      "prompt": "Follow the sequence of partner switches to determine the final dance partner for each dancer."
+    },
+    {
+      "name": "Meta-15",
+      "prompt": "Determine the final partner of each dancer by tracking the sequence of partner swaps."
+    },
+    {
+      "name": "Meta-16",
+      "prompt": "Keep track of the partners each dancer has at each step of the partner-switching process, and identify the final partner of the dancer whose initial partner is given."
+    },
+    {
+      "name": "Meta-17",
+      "prompt": "After each partner swap, identify the final partner of the dancer who initially had the most switches."
+    },
+    {
+      "name": "Meta-18",
+      "prompt": "Keep track of the partners each dancer has at each step, and then infer the final partner of each dancer based on the sequence of partner switches."
+    },
+    {
+      "name": "Meta-19",
+      "prompt": "Follow the sequence of partner switches to determine the final dancing partner of each dancer."
+    },
+    {
+      "name": "Meta-20",
+      "prompt": "After analyzing the input/output examples, I infer that the task requires tracking the movements of the dancers and their partners throughout the song, and identifying the final partner of a specific dancer."
+    },
+    {
+      "name": "Meta-21",
+      "prompt": "Determine the final partner of the given dancer (Alice, Bob, Claire, Dave, or Eve) after a sequence of partner switches during a square dance."
+    },
+    {
+      "name": "Meta-22",
+      "prompt": "At the end of the dance, who is each dancer dancing with, starting from their original partner and applying all the partner-switching events that occurred throughout the song?"
+    },
+    {
+      "name": "Meta-23",
+      "prompt": "Determine the final partner of Alice by tracking the sequence of partner switches."
+    },
+    {
+      "name": "Meta-24",
+      "prompt": "Track the sequence of partner switches and identify the final partner of the person who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-25",
+      "prompt": "Determine the final partner of the person whose initial partner is given in the problem, by tracing the series of partner swaps."
+    },
+    {
+      "name": "Meta-26",
+      "prompt": "Determine the sequence of partner switches and use it to infer the final partner of each dancer."
+    },
+    {
+      "name": "Meta-27",
+      "prompt": "Keep track of the sequence of partner swaps between each dancer to determine the final partner of each dancer at the end of the dance."
+    },
+    {
+      "name": "Meta-28",
+      "prompt": "Track the partners of each dancer and deduce the final partner of Alice."
+    },
+    {
+      "name": "Meta-29",
+      "prompt": "Track the sequence of partner switches to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-30",
+      "prompt": "Determine the final partner of each dancer by tracking the sequence of partner switches and identifying the remaining option that is not accounted for in the sequence of switches."
+    },
+    {
+      "name": "Meta-31",
+      "prompt": "Determine the sequence of partner switches and apply the switches in reverse order to find the original partner of each dancer."
+    },
+    {
+      "name": "Meta-32",
+      "prompt": "Identify the final dance partner of the specified dancer (Alice) based on the sequence of partner swaps throughout the song."
+    },
+    {
+      "name": "Meta-33",
+      "prompt": "At the end of the dance, identify the partner Alice is dancing with by tracing the sequence of partner switches."
+    },
+    {
+      "name": "Meta-34",
+      "prompt": "Track the sequence of partner switches and determine the final partner of the dancer who was initially partnered with Jamie."
+    },
+    {
+      "name": "Meta-35",
+      "prompt": "Follow the sequence of partner switches to determine the final dance partner of each dancer."
+    },
+    {
+      "name": "Meta-36",
+      "prompt": "At the end of the dance, track the number of times each dancer's partner has changed, and select the option that is the original partner of the dancer with the lowest count."
+    },
+    {
+      "name": "Meta-37",
+      "prompt": "After analyzing the input/output examples, I've inferred the task behavior. Here is the concise instruction that helps solve the task:"
+    },
+    {
+      "name": "Meta-38",
+      "prompt": "Determine the partner of each dancer at the end of the song by tracking the sequence of partner switches and recalling the initial partners."
+    },
+    {
+      "name": "Meta-39",
+      "prompt": "Follow the sequence of partner switches to determine the final dancing partner of a given dancer."
+    },
+    {
+      "name": "Meta-40",
+      "prompt": "Track the sequence of partner switches and determine the final partner of each dancer by following the chain of previous switches."
+    },
+    {
+      "name": "Meta-41",
+      "prompt": "Keep track of the sequence of partner switches and use the final switch to determine the current partner of each dancer."
+    },
+    {
+      "name": "Meta-42",
+      "prompt": "Determine the final partner of a given dancer by tracking the sequence of partner switches throughout the song, considering each switch in the correct order."
+    },
+    {
+      "name": "Meta-43",
+      "prompt": "Follow the sequence of partner swaps to determine the final dancing partner of each dancer."
+    },
+    {
+      "name": "Meta-44",
+      "prompt": "Keep track of the sequence of partner swaps and determine the final partner of the dancer who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-45",
+      "prompt": "Track the sequence of partner changes and determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-46",
+      "prompt": "Follow the sequence of partner changes to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-47",
+      "prompt": "Determine the final dance partner of the specified individual (Alice, Bob, Claire, Dave, or Eve) by analyzing the sequence of partner trades during the song."
+    },
+    {
+      "name": "Meta-48",
+      "prompt": "Determine the final partner of a given dancer by tracing the sequence of partner switches and identifying the dancer's final partner."
+    },
+    {
+      "name": "Meta-49",
+      "prompt": "Identify the final partner of Alice, Claire, and Eve after the sequence of partner switches."
+    },
+    {
+      "name": "Meta-50",
+      "prompt": "Determine the final partner of a given dancer by tracking the sequence of partner switches."
+    },
+    {
+      "name": "Meta-51",
+      "prompt": "Follow the sequence of partner trades to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-52",
+      "prompt": "Track the sequence of partner swaps to determine the final dancing partner of each person."
+    },
+    {
+      "name": "Meta-53",
+      "prompt": "Keep track of the sequence of partner changes and deduce the final partner of the specified dancer at the end of the dance."
+    },
+    {
+      "name": "Meta-54",
+      "prompt": "Follow the sequence of partner switches to determine the final dance partner for the specified individual."
+    },
+    {
+      "name": "Meta-55",
+      "prompt": "After each partner switch, who is the new partner of the person who was previously the partner of the person who made the switch?"
+    },
+    {
+      "name": "Meta-56",
+      "prompt": "Determine the partner each dancer was with at the start of the song and track the partners they switch with to find the final partner of the dancer indicated in the problem."
+    },
+    {
+      "name": "Meta-57",
+      "prompt": "After each partner switch, the new partner of the original partner of Alice is the correct answer."
+    },
+    {
+      "name": "Meta-58",
+      "prompt": "Follow the sequence of partner swaps to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-59",
+      "prompt": "Determine the final partner of a given dancer by tracking the sequence of partner swaps and identifying the ultimate dance partner after all swaps have been made."
+    },
+    {
+      "name": "Meta-60",
+      "prompt": "Determine the final dance partner of each dancer by tracking the sequence of partner swaps throughout the song."
+    },
+    {
+      "name": "Meta-61",
+      "prompt": "Follow the sequence of partner changes to determine the final partner of the specified dancer."
+    },
+    {
+      "name": "Meta-62",
+      "prompt": "Determine the final partner of the specified dancer by tracing the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-63",
+      "prompt": "Track the sequence of partner switches to determine the final dance partner of each dancer."
+    },
+    {
+      "name": "Meta-64",
+      "prompt": "Follow the sequence of partner switches to determine the final dance partner of the given dancer."
+    },
+    {
+      "name": "Meta-65",
+      "prompt": "Track the sequence of partner switches made by each dancer, and then use the final switch involving a given dancer to determine their new partner."
+    },
+    {
+      "name": "Meta-66",
+      "prompt": "Track the partners each dancer has had throughout the song and identify the final partner of the dancer who initially had the most partners."
+    },
+    {
+      "name": "Meta-67",
+      "prompt": "Determine the final dance partner of the specified dancer by tracing the series of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-68",
+      "prompt": "After tracking the shuffling of partners, identify the final dance partner of the person who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-69",
+      "prompt": "Follow the sequence of partner switches to determine the final dance partner of a given dancer."
+    },
+    {
+      "name": "Meta-70",
+      "prompt": "Determine the final dance partner of the specified dancer by tracking the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-71",
+      "prompt": "Track the sequence of partner changes and identify the final partner of the person who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-72",
+      "prompt": "Track the sequence of partner switches and determine the final partner of each dancer based on the sequence of events."
+    },
+    {
+      "name": "Meta-73",
+      "prompt": "Determine the final partner of Alice by tracking the series of partner switches between the given starting partners and options."
+    },
+    {
+      "name": "Meta-74",
+      "prompt": "Determine the final dance partner of the specified individual by tracing the sequence of partner changes."
+    },
+    {
+      "name": "Meta-75",
+      "prompt": "Keep track of the partners each dancer has after each switch, and identify the final partner of Alice."
+    },
+    {
+      "name": "Meta-76",
+      "prompt": "Determine the partner that each dancer is with at the start of the song, and then track the sequence of partner switches to find the final partner of a specified dancer."
+    },
+    {
+      "name": "Meta-77",
+      "prompt": "Determine the final partner of a specified dancer by tracking the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-78",
+      "prompt": "Determine the final dance partner of each dancer, considering the sequence of partner switches described, from the initial partner arrangement."
+    },
+    {
+      "name": "Meta-79",
+      "prompt": "Identify the final partner of the dancer whose initial partner is mentioned in the problem statement."
+    },
+    {
+      "name": "Meta-80",
+      "prompt": "Determine the final partner of the dancer who was initially paired with Jamie."
+    },
+    {
+      "name": "Meta-81",
+      "prompt": "Determine the final partner of the person whose initial partner is mentioned in the problem statement."
+    },
+    {
+      "name": "Meta-82",
+      "prompt": "Keep track of the partner changes and identify the final partner of the person who started the song with a specific partner."
+    },
+    {
+      "name": "Meta-83",
+      "prompt": "After analyzing the input/output examples, I came up with the following instruction:"
+    },
+    {
+      "name": "Meta-84",
+      "prompt": "Determine the final dance partner of a given dancer by analyzing the sequence of partner switches."
+    },
+    {
+      "name": "Meta-85",
+      "prompt": "Determine the final partner of a given dancer by tracing the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-86",
+      "prompt": "Follow the sequence of partner switches to determine the final partner for each dancer."
+    },
+    {
+      "name": "Meta-87",
+      "prompt": "Follow the sequence of partner switches to determine the final partner of the given dancer."
+    },
+    {
+      "name": "Meta-88",
+      "prompt": "Identify the partner with whom each dancer started the song and then track the sequence of partner swaps to determine the final dance partner of each dancer."
+    },
+    {
+      "name": "Meta-89",
+      "prompt": "Keep track of the partners each dancer has had throughout the song and determine the final partner of a specified dancer."
+    },
+    {
+      "name": "Meta-90",
+      "prompt": "Determine the final dance partner of the specified dancer after a series of partner swaps, given the initial dance partners and sequence of swaps."
+    },
+    {
+      "name": "Meta-91",
+      "prompt": "Follow the sequence of partner switches to determine the final partner of each dancer at the end of the song."
+    },
+    {
+      "name": "Meta-92",
+      "prompt": "Track the sequence of partner switches to determine the final dancing partner of each dancer."
+    },
+    {
+      "name": "Meta-93",
+      "prompt": "Determine the final dance partner of the specified dancer at the end of the song, considering the sequence of partner switches."
+    },
+    {
+      "name": "Meta-94",
+      "prompt": "Track the series of partner swaps to determine the final partner for each dancer."
+    },
+    {
+      "name": "Meta-95",
+      "prompt": "After each dance, the dancer who was previously dancing with the person they are now with, will now be dancing with the person they were previously with."
+    },
+    {
+      "name": "Meta-96",
+      "prompt": "Determine the final partner of the person who was dancing with each of the five original partners at the start of the song."
+    },
+    {
+      "name": "Meta-97",
+      "prompt": "Track the sequence of partner switches and identify the final partner of the dancer who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-98",
+      "prompt": "Track the sequence of partner switches for each dancer, noting the initial partner and the final result, to determine the final partner of the target dancer."
+    },
+    {
+      "name": "Meta-99",
+      "prompt": "Keep track of the sequence of partner switches and identify the final partner of the dancer who started with the fewest number of partners switched."
+    },
+    {
+      "name": "Meta-100",
+      "prompt": "Follow the sequence of partner swaps to determine the final dance partner for each dancer."
+    },
+    {
+      "name": "Meta-101",
+      "prompt": "Determine the final partner of the person who was initially dancing with each given person, taking into account the sequence of partner switches."
+    },
+    {
+      "name": "Meta-102",
+      "prompt": "Determine the partner each dancer is dancing with at the end of the song by tracing the sequence of partner switches and identifying the final partner of each dancer."
+    },
+    {
+      "name": "Meta-103",
+      "prompt": "At the end of the song, keep track of the final partner of each dancer, considering all the partner switches that occurred during the song, and then identify the partner of a given dancer."
+    },
+    {
+      "name": "Meta-104",
+      "prompt": "Identify the final partner of the dancer who was initially partnered with Jamie, Lola, or Ophelia."
+    },
+    {
+      "name": "Meta-105",
+      "prompt": "Keep track of the sequence of partner swaps between the dancers and deduce who each dancer is with at the end of the song."
+    },
+    {
+      "name": "Meta-106",
+      "prompt": "Keep track of the partners each dancer has had, and determine the original partner of the dancer who has had the most partners."
+    },
+    {
+      "name": "Meta-107",
+      "prompt": "Track the partners of each dancer and identify the final partner of the dancer who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-108",
+      "prompt": "Determine the final dance partner of the specified individual (e.g. Alice) after a series of partner switches."
+    },
+    {
+      "name": "Meta-109",
+      "prompt": "At the end of the song, which partner is each dancer currently dancing with, given the sequence of partner switches throughout the song?"
+    },
+    {
+      "name": "Meta-110",
+      "prompt": "Track the sequence of partner switches and determine the final partner of each dancer by analyzing the order of trades."
+    },
+    {
+      "name": "Meta-111",
+      "prompt": "Determine the sequence of partner switches and then identify the final partner of the given individual."
+    },
+    {
+      "name": "Meta-112",
+      "prompt": "Keep track of the partner changes, and identify the final partner of the person who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-113",
+      "prompt": "Determine the final dance partner of the specified individual by tracing the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-114",
+      "prompt": "Keep track of the sequence of partner changes and apply them to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-115",
+      "prompt": "At the end of the dance, who is the current partner of the dancer who was initially dancing with?"
+    },
+    {
+      "name": "Meta-116",
+      "prompt": "Determine the final dance partner of the specified dancer (Alice, Bob, Claire, Dave, or Eve) by tracing the sequence of partner changes throughout the song."
+    },
+    {
+      "name": "Meta-117",
+      "prompt": "Determine the final partner of a dancer by tracking the sequence of partner switches between the given dancers."
+    },
+    {
+      "name": "Meta-118",
+      "prompt": "Keep track of the sequence of partner switches and infer the final partner of each dancer."
+    },
+    {
+      "name": "Meta-119",
+      "prompt": "Determine the final dance partner of a specific dancer by tracking the sequence of partner switches among the dancers."
+    },
+    {
+      "name": "Meta-120",
+      "prompt": "Determine the final partner of each dancer by tracking the sequence of partner switches and recalling the initial partner of each dancer."
+    },
+    {
+      "name": "Meta-121",
+      "prompt": "Keep track of the sequence of partner switches to determine the final dance partner of each individual."
+    },
+    {
+      "name": "Meta-122",
+      "prompt": "Determine the final partner of a given dancer by tracking the sequence of partner swaps throughout the dance."
+    },
+    {
+      "name": "Meta-123",
+      "prompt": "Follow the sequence of partner switches to determine the final dance partner for the specified dancer."
+    },
+    {
+      "name": "Meta-124",
+      "prompt": "Keep track of the partner changes throughout the song to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-125",
+      "prompt": "At the end of the dance, identify the dancer who is dancing with the person they had a partner with at the start of the song."
+    },
+    {
+      "name": "Meta-126",
+      "prompt": "Follow the sequence of partner switches to determine the final dance partner of each named dancer."
+    },
+    {
+      "name": "Meta-127",
+      "prompt": "Determine the sequence of partner switches to find the final partner of each dancer at the end of the song."
+    },
+    {
+      "name": "Meta-128",
+      "prompt": "Keep track of the sequence of partner swaps and deduce the final partner of each dancer."
+    },
+    {
+      "name": "Meta-129",
+      "prompt": "Determine the final partner of each dancer by tracing the sequence of partner switches throughout the song, considering the initial partners and each subsequent switch."
+    },
+    {
+      "name": "Meta-130",
+      "prompt": "Keep track of the partners each dancer has had and determine the final partner of the dancer named in the input, based on the sequence of partner switches described."
+    },
+    {
+      "name": "Meta-131",
+      "prompt": "Identify the final partner of the dancer who was initially partnered with Jamie."
+    },
+    {
+      "name": "Meta-132",
+      "prompt": "Track the sequence of partner changes and determine the final partner of the person who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-133",
+      "prompt": "Determine the final dance partner of the specified dancer (e.g. Alice) by tracking the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-134",
+      "prompt": "Keep track of the partner changes to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-135",
+      "prompt": "Determine the final partner of a specific dancer by tracking the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-136",
+      "prompt": "Determine the partner of each dancer at the end of the dance by tracing the sequence of partner switches, keeping track of which dancer is dancing with whom after each switch."
+    },
+    {
+      "name": "Meta-137",
+      "prompt": "Determine the final partner of each dancer after a series of partner swaps in a square dance."
+    },
+    {
+      "name": "Meta-138",
+      "prompt": "Keep track of the sequence of partner switches between the given starting partners and determine the final partner of a specified dancer based on the sequence of trades."
+    },
+    {
+      "name": "Meta-139",
+      "prompt": "Determine the final partner of the specified dancer (Alice, Bob, Claire, Dave, or Eve) by tracking the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-140",
+      "prompt": "Determine the final partner of the specified dancer by tracking the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-141",
+      "prompt": "At the end of the dance, which partner is each dancer now dancing with, based on the given sequence of partner switches?"
+    },
+    {
+      "name": "Meta-142",
+      "prompt": "Identify the final dance partner of a specific dancer, given the sequence of partner switches among the dancers."
+    },
+    {
+      "name": "Meta-143",
+      "prompt": "Keep track of the partner changes and determine the final partner of each dancer by reversing the sequence of switches."
+    },
+    {
+      "name": "Meta-144",
+      "prompt": "At the end of the song, which person is each of the original dancers now dancing with?"
+    },
+    {
+      "name": "Meta-145",
+      "prompt": "Track the partners each dancer has had throughout the dance, and then identify the last person each dancer has had as a partner."
+    },
+    {
+      "name": "Meta-146",
+      "prompt": "Determine the final partner of each dancer by tracing the sequence of partner swaps and identifying the dancer's final partner."
+    },
+    {
+      "name": "Meta-147",
+      "prompt": "At the end of the dance, identify the original partner of the dancer with whom the final dance partner was dancing."
+    },
+    {
+      "name": "Meta-148",
+      "prompt": "Keep track of the partners each dancer has and the order in which they switch partners, and use this information to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-149",
+      "prompt": "Determine the partner Alice is dancing with at the end of the song by tracking the sequence of partner switches and identifying the final partner."
+    },
+    {
+      "name": "Meta-150",
+      "prompt": "Follow the sequence of partner switches to determine the final partner of the specified dancer."
+    },
+    {
+      "name": "Meta-151",
+      "prompt": "Follow the sequence of partner switches to determine the final partner of the person who was dancing with each original partner."
+    },
+    {
+      "name": "Meta-152",
+      "prompt": "Track the partners of each dancer at each switch and determine the final partner of Alice."
+    },
+    {
+      "name": "Meta-153",
+      "prompt": "Keep track of the partners each dancer has had during the song and use this information to infer the current partner of each dancer at the end of the dance."
+    },
+    {
+      "name": "Meta-154",
+      "prompt": "Keep track of the partners each dancer has had during the song and determine the final partner of the dancer who was originally dancing with Jamie."
+    },
+    {
+      "name": "Meta-155",
+      "prompt": "Track the partners each dancer had at the start of the song and then apply the sequence of partner switches to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-156",
+      "prompt": "Keep track of the sequence of partner switches and determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-157",
+      "prompt": "Determine the partner each dancer is with at the end of the song by tracing the sequence of partner switches, considering each switch in the correct order."
+    },
+    {
+      "name": "Meta-158",
+      "prompt": "Determine the final partner of Alice by tracing the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-159",
+      "prompt": "Determine the partner of each dancer at the end of the song by tracking the sequence of partner switches."
+    },
+    {
+      "name": "Meta-160",
+      "prompt": "Keep track of the partner switches between the dancers and determine the final partner of the dancer who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-161",
+      "prompt": "Identify the final partner of a dancer by tracing the sequence of partner swaps, starting from the original partner."
+    },
+    {
+      "name": "Meta-162",
+      "prompt": "After observing the input-output patterns, I've inferred the task behavior. Here's the concise instruction:"
+    },
+    {
+      "name": "Meta-163",
+      "prompt": "Track the sequence of partner switches and determine the final partner of each dancer based on the given information."
+    },
+    {
+      "name": "Meta-164",
+      "prompt": "Keep track of the partner changes and determine who each dancer is dancing with at the end of the song."
+    },
+    {
+      "name": "Meta-165",
+      "prompt": "Follow the sequence of partner switches to determine the final partner of the specified dancer at the end of the dance."
+    },
+    {
+      "name": "Meta-166",
+      "prompt": "Identify the final dance partner of the dancer who was initially dancing with Ophelia at the start of the song."
+    },
+    {
+      "name": "Meta-167",
+      "prompt": "Keep track of the partner changes made by each dancer and determine the final partner of the specified dancer."
+    },
+    {
+      "name": "Meta-168",
+      "prompt": "Keep track of the partner swaps and determine the final partner of the dancer who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-169",
+      "prompt": "At the end of the dance, identify Alice's current partner by tracking the sequence of partner changes."
+    },
+    {
+      "name": "Meta-170",
+      "prompt": "Determine the final dance partner of the specified dancer, given the initial partners and a series of partner swaps."
+    },
+    {
+      "name": "Meta-171",
+      "prompt": "Track the sequence of partner switches and determine the final dance partner of each dancer."
+    },
+    {
+      "name": "Meta-172",
+      "prompt": "Determine the final partner of the specified dancer by tracking the sequence of partner switches."
+    },
+    {
+      "name": "Meta-173",
+      "prompt": "Keep track of the partners each dancer has had throughout the song, then choose the correct partner for the final position based on the sequence of partner switches."
+    },
+    {
+      "name": "Meta-174",
+      "prompt": "Follow the sequence of partner changes to determine the final dance partner for each dancer."
+    },
+    {
+      "name": "Meta-175",
+      "prompt": "Track the sequence of partner changes and identify the final partner of Alice."
+    },
+    {
+      "name": "Meta-176",
+      "prompt": "Track the sequence of partner switches and determine the final partner of the dancer who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-177",
+      "prompt": "Determine the final dance partner of a given dancer by tracing the sequence of partner switches throughout the song, considering each switch in the order it occurred."
+    },
+    {
+      "name": "Meta-178",
+      "prompt": "Determine the final dance partner of the specified dancer (Alice) by tracing the sequence of partner switches."
+    },
+    {
+      "name": "Meta-179",
+      "prompt": "Determine the final partner of a given dancer by tracking the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-180",
+      "prompt": "Determine the partner each dancer had at the start of the song, and then track the partner changes to find the final partner for each dancer."
+    },
+    {
+      "name": "Meta-181",
+      "prompt": "Determine the final dance partner of the specified person after a series of partner switches, given the initial partners and the sequence of switches."
+    },
+    {
+      "name": "Meta-182",
+      "prompt": "Determine the final dance partner of the specified person by tracing the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-183",
+      "prompt": "After analyzing the input/output examples, I came up with a concise instruction that helps solve the task:"
+    },
+    {
+      "name": "Meta-184",
+      "prompt": "At the end of the dance, who is each dancer dancing with, and what is the history of partner switches throughout the song?"
+    },
+    {
+      "name": "Meta-185",
+      "prompt": "Keep track of the sequence of partner switches and determine the final partner of the dancer who is initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-186",
+      "prompt": "At the end of the dance, track the final partner of each dancer by following the sequence of partner swaps, and select the correct final partner for Alice."
+    },
+    {
+      "name": "Meta-187",
+      "prompt": "Determine the final partner of the person who was initially dancing with the option listed at the start of the song."
+    },
+    {
+      "name": "Meta-188",
+      "prompt": "Track the sequence of partner swaps to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-189",
+      "prompt": "Determine the final dance partner of the given dancer by tracking the sequence of partner changes and identifying the final partner change that affects their partner."
+    },
+    {
+      "name": "Meta-190",
+      "prompt": "At the end of the song, who is dancing with the person each dancer started with?"
+    },
+    {
+      "name": "Meta-191",
+      "prompt": "Follow the sequence of partner switches to determine the final dancing partner of each person."
+    },
+    {
+      "name": "Meta-192",
+      "prompt": "Determine the final dance partner of a given dancer by tracking the sequence of partner changes and identifying the ultimate recipient of each dancer's switches."
+    },
+    {
+      "name": "Meta-193",
+      "prompt": "Keep track of the sequence of partner switches and determine the final dance partner of each dancer."
+    },
+    {
+      "name": "Meta-194",
+      "prompt": "Determine the final dance partner of each dancer based on the sequence of partner switches described in the scenario."
+    },
+    {
+      "name": "Meta-195",
+      "prompt": "Track the sequence of partner switches and determine the final partner of Alice."
+    },
+    {
+      "name": "Meta-196",
+      "prompt": "Identify the final partner of each dancer at the end of the dance by tracing the sequence of partner swaps throughout the song."
+    },
+    {
+      "name": "Meta-197",
+      "prompt": "Determine the final dance partner of a specified dancer by tracing the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-198",
+      "prompt": "At the end of the dance, determine the partner of the dancer who started with a unique partner."
+    },
+    {
+      "name": "Meta-199",
+      "prompt": "Determine the final partner of the person whose initial partner is given, taking into account the sequence of partner swaps."
+    },
+    {
+      "name": "Meta-200",
+      "prompt": "At the end of the dance, Alice is dancing with the partner she had at the start of the song, then switched with, then switched again with, then switched again with, and finally switched once more with."
+    },
+    {
+      "name": "Meta-201",
+      "prompt": "Determine the final partner of each dancer by tracing the sequence of partner switches, considering the initial partner of each dancer and the order in which they switch partners."
+    },
+    {
+      "name": "Meta-202",
+      "prompt": "Determine the final partner of each dancer by tracking the sequence of partner switches and identifying the ultimate partner of the dancer at the end of the song."
+    },
+    {
+      "name": "Meta-203",
+      "prompt": "Keep track of the sequence of partner switches and determine the final dance partner of the specified dancer."
+    },
+    {
+      "name": "Meta-204",
+      "prompt": "Determine the final dance partner of each given individual by tracing the sequence of partner switches throughout the song, considering all possible trades and positions."
+    },
+    {
+      "name": "Meta-205",
+      "prompt": "Determine the final partner of each dancer by tracing the sequence of partner switches and identifying the end state of each dancer's partnership."
+    },
+    {
+      "name": "Meta-206",
+      "prompt": "Keep track of the sequence of partner switches and determine the final partner of the dancer who was initially partnered with Jamie."
+    },
+    {
+      "name": "Meta-207",
+      "prompt": "Track the sequence of partner changes and determine the final partner of each dancer based on the given initial partners and the series of partner switches."
+    },
+    {
+      "name": "Meta-208",
+      "prompt": "Keep track of the sequence of partner switches and identify the final partner of the dancer who was initially with Jamie."
+    },
+    {
+      "name": "Meta-209",
+      "prompt": "Determine the final dance partner of the specified individual (Alice, Bob, Claire, Dave, or Eve) by analyzing the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-210",
+      "prompt": "Identify the final partner of each dancer, tracing the sequence of partner swaps."
+    },
+    {
+      "name": "Meta-211",
+      "prompt": "Keep track of the partners each dancer is with at each switch, then use the sequence of switches to determine who each dancer is with at the end."
+    },
+    {
+      "name": "Meta-212",
+      "prompt": "Track the sequence of partner switches to determine the final partner of each dancer at the end of the dance."
+    },
+    {
+      "name": "Meta-213",
+      "prompt": "Determine the final partner of each dancer by tracing the sequence of partner swaps throughout the song."
+    },
+    {
+      "name": "Meta-214",
+      "prompt": "Keep track of the partners each dancer has at each step and use this information to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-215",
+      "prompt": "Track the sequence of partner switches to determine the final partner of the individual at the end of the dance."
+    },
+    {
+      "name": "Meta-216",
+      "prompt": "Determine the final partner of each dancer by following the sequence of partner switches."
+    },
+    {
+      "name": "Meta-217",
+      "prompt": "Track the sequence of partner changes and identify the final partner of the dancer who started with Alice."
+    },
+    {
+      "name": "Meta-218",
+      "prompt": "Determine the final partner of each dancer by tracking the sequence of partner switches and identifying the resulting partner of each dancer at the end of the song."
+    },
+    {
+      "name": "Meta-219",
+      "prompt": "Track the sequence of partner changes and determine the final partner of the person who started with a specific initial partner."
+    },
+    {
+      "name": "Meta-220",
+      "prompt": "Track the sequence of partner changes to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-221",
+      "prompt": "Track the sequence of partner switches for each dancer and determine the final partner of Alice."
+    },
+    {
+      "name": "Meta-222",
+      "prompt": "Determine the partner of each dancer at the start of the song, then track the partner changes and infer the final partner of the dancer mentioned in the problem statement."
+    },
+    {
+      "name": "Meta-223",
+      "prompt": "Determine the final dance partner of a specified dancer by tracking the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-224",
+      "prompt": "Keep track of the partners each dancer has had throughout the song and deduce who the current partner is for each dancer at the end of the song."
+    },
+    {
+      "name": "Meta-225",
+      "prompt": "Keep track of the partner changes made by each dancer and infer the final partner of each dancer based on the sequence of partner switches."
+    },
+    {
+      "name": "Meta-226",
+      "prompt": "Keep track of the sequence of partner changes and determine the final partner of a specific dancer by analyzing the sequence of swaps."
+    },
+    {
+      "name": "Meta-227",
+      "prompt": "At the end of the dance, Alice is dancing with the person she was originally paired with."
+    },
+    {
+      "name": "Meta-228",
+      "prompt": "Keep track of the partner changes and determine the final partner of each dancer based on the sequence of partner switches."
+    },
+    {
+      "name": "Meta-229",
+      "prompt": "Identify the final partner of the person who started the song with each object, given the sequence of partner switches."
+    },
+    {
+      "name": "Meta-230",
+      "prompt": "Keep track of the sequence of partner swaps and determine the final partner of the person who started with a given partner."
+    },
+    {
+      "name": "Meta-231",
+      "prompt": "Determine the final partner of a specified dancer by tracking the sequence of partner switches between the given dancers."
+    },
+    {
+      "name": "Meta-232",
+      "prompt": "Track the sequence of partner switches and identify the final partner of the dancer who started with a different partner than the options."
+    },
+    {
+      "name": "Meta-233",
+      "prompt": "Determine the final partner of each dancer by tracking the series of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-234",
+      "prompt": "Determine the final dance partner of a specified dancer by tracing the sequence of partner switches and identifying the final partner of the given dancer."
+    },
+    {
+      "name": "Meta-235",
+      "prompt": "Keep track of the partners' changes and determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-236",
+      "prompt": "Track the sequence of partner swaps between the dancers and determine the final partner of the specified dancer at the end of the song."
+    },
+    {
+      "name": "Meta-237",
+      "prompt": "Track the sequence of partner switches and determine the final partner of each dancer based on the order and participants of the partner changes."
+    },
+    {
+      "name": "Meta-238",
+      "prompt": "At the end of the song, identify the partner of each dancer, tracing the sequence of partner switches."
+    },
+    {
+      "name": "Meta-239",
+      "prompt": "At the end of the dance, Alice is dancing with the partner she had at the start of the song."
+    },
+    {
+      "name": "Meta-240",
+      "prompt": "Determine the partner Alice is dancing with at the end of the song by tracking the series of partner switches."
+    },
+    {
+      "name": "Meta-241",
+      "prompt": "Determine the final dance partner of the specified individual by tracking the sequence of partner switches."
+    },
+    {
+      "name": "Meta-242",
+      "prompt": "Follow the sequence of partner switches to determine the final dancing partner of the specified dancer."
+    },
+    {
+      "name": "Meta-243",
+      "prompt": "Keep track of the partner changes and determine the final partner of the dancer who was initially partnered with Jamie."
+    },
+    {
+      "name": "Meta-244",
+      "prompt": "Determine the final partner of each dancer by tracking the sequence of partner switches and identifying the ultimate result of each exchange."
+    },
+    {
+      "name": "Meta-245",
+      "prompt": "Track the sequence of partner swaps and identify the final partner of the dancer who started with each given partner."
+    },
+    {
+      "name": "Meta-246",
+      "prompt": "At the end of the song, who is dancing with Alice?"
+    },
+    {
+      "name": "Meta-247",
+      "prompt": "Determine the sequence of partner switches to find the final dancing partner of the specified individual."
+    },
+    {
+      "name": "Meta-248",
+      "prompt": "After each partner switch, keep track of the person who has been dancing with each dancer."
+    },
+    {
+      "name": "Meta-249",
+      "prompt": "Determine the final dance partner of the specified dancer by tracking the sequence of partner swaps."
+    },
+    {
+      "name": "Meta-250",
+      "prompt": "At the end of the song, Alice is dancing with the original partner of"
+    },
+    {
+      "name": "Meta-251",
+      "prompt": "Track the sequence of partner switches and identify the final partner of the dancer who started with the last given partner."
+    },
+    {
+      "name": "Meta-252",
+      "prompt": "Determine the final partner of a specified dancer by tracing the sequence of partner switches throughout the song, taking into account the initial partner and each subsequent switch."
+    },
+    {
+      "name": "Meta-253",
+      "prompt": "Keep track of the sequence of partner switches and use the resulting information to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-254",
+      "prompt": "At the end of the dance, who is the current partner of the person who was initially dancing with?"
+    },
+    {
+      "name": "Meta-255",
+      "prompt": "Track the sequence of partner switches and determine the final partner of each dancer based on the given initial partners and sequence of partner trades."
+    },
+    {
+      "name": "Meta-256",
+      "prompt": "Identify the final partner of the dancer who was initially dancing with Jamie at the start of the song."
+    },
+    {
+      "name": "Meta-257",
+      "prompt": "Keep track of the partner changes and identify the final partner of each dancer, noting which dancers have switched partners with whom."
+    },
+    {
+      "name": "Meta-258",
+      "prompt": "Determine the final partner of each dancer by tracking the sequence of partner changes and identifying the last known partner of each dancer."
+    },
+    {
+      "name": "Meta-259",
+      "prompt": "Identify the final partner of the person who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-260",
+      "prompt": "Keep track of the partners of each dancer at each partner-switching event and determine the final partner of a specified dancer based on the sequence of partner changes."
+    },
+    {
+      "name": "Meta-261",
+      "prompt": "Determine the final dance partner of the specified dancer by tracing the sequence of partner switches throughout the song, considering the initial partners and subsequent trades."
+    },
+    {
+      "name": "Meta-262",
+      "prompt": "Track the sequence of partner changes to determine the final partner of each dancer at the end of the song."
+    },
+    {
+      "name": "Meta-263",
+      "prompt": "Track the series of partner switches to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-264",
+      "prompt": "Track the sequence of partner switches and determine the final partner of the person who had the initial partner Ophelia."
+    },
+    {
+      "name": "Meta-265",
+      "prompt": "Keep track of the partners each dancer has and the sequence of partner switches to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-266",
+      "prompt": "Track the sequence of partner switches to determine the final dance partner for each dancer."
+    },
+    {
+      "name": "Meta-267",
+      "prompt": "Determine the final partner of the given dancer by tracking the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-268",
+      "prompt": "Determine the final partner of the dancer who had the first given partner at the start of the song."
+    },
+    {
+      "name": "Meta-269",
+      "prompt": "After each partner switch, identify the dancers who have switched partners and the dancers who have not. Use this information to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-270",
+      "prompt": "Follow the sequence of partner trades to determine the final dance partner of a specific dancer."
+    },
+    {
+      "name": "Meta-271",
+      "prompt": "Determine the final partner of each dancer by tracing the sequence of partner changes, keeping track of each dancer's previous and new partners."
+    },
+    {
+      "name": "Meta-272",
+      "prompt": "Follow the sequence of partner switches to determine the final partner of each dancer at the end of the dance."
+    },
+    {
+      "name": "Meta-273",
+      "prompt": "Determine the final dance partner of a given dancer by tracing the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-274",
+      "prompt": "Follow the sequence of partner swaps to determine the final partner of the person who was initially partnered with a specific person."
+    },
+    {
+      "name": "Meta-275",
+      "prompt": "At the end of the song, who is each dancer now dancing with, given the initial partnerships and the sequence of partner switches?"
+    },
+    {
+      "name": "Meta-276",
+      "prompt": "After analyzing the input/output examples, I infer that the task requires tracking the changes in dance partners and determining the final partner of a specific dancer. Here is the concise instruction that helps solve this task:"
+    },
+    {
+      "name": "Meta-277",
+      "prompt": "At the end of the dance, determine the partner of each dancer by tracing the sequence of partner switches, starting from their initial partner."
+    },
+    {
+      "name": "Meta-278",
+      "prompt": "After each partner swap, the dancers retain their most recent partner."
+    },
+    {
+      "name": "Meta-279",
+      "prompt": "Keep track of the sequence of partner switches to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-280",
+      "prompt": "Keep track of the sequence of partner switches and identify the final partner of the person who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-281",
+      "prompt": "At the end of the dance, Alice is dancing with the original partner of"
+    },
+    {
+      "name": "Meta-282",
+      "prompt": "After analyzing the input/output examples, I've inferred the task behavior and created a concise instruction to help solve this task. Here is the instruction:"
+    },
+    {
+      "name": "Meta-283",
+      "prompt": "Keep track of the sequence of partner swaps and determine the final partner of each dancer based on the given information."
+    },
+    {
+      "name": "Meta-284",
+      "prompt": "Determine the final partner of Alice, given the initial partners and sequence of partner switches."
+    },
+    {
+      "name": "Meta-285",
+      "prompt": "Track the sequence of partner changes made by each dancer and determine the final partner of the dancer who was originally dancing with the target individual."
+    },
+    {
+      "name": "Meta-286",
+      "prompt": "Identify the final partner of Alice."
+    },
+    {
+      "name": "Meta-287",
+      "prompt": "Follow the sequence of partner switches to determine the final dance partner of each person."
+    },
+    {
+      "name": "Meta-288",
+      "prompt": "Track the partners of each dancer, in the order they switch, to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-289",
+      "prompt": "Determine the final partner of a specified dancer by tracing the sequence of partner swaps throughout the song."
+    },
+    {
+      "name": "Meta-290",
+      "prompt": "Track the sequence of partner switches to determine the final dancing partner of each given individual."
+    },
+    {
+      "name": "Meta-291",
+      "prompt": "Keep track of the partners each dancer has had during the song and determine who the last partner is for the given dancer at the end of the dance."
+    },
+    {
+      "name": "Meta-292",
+      "prompt": "Determine the partner each dancer was initially dancing with and then track the sequence of partner changes, using this information to determine the final partner for each dancer."
+    },
+    {
+      "name": "Meta-293",
+      "prompt": "At the end of the dance, which dancer is Alice currently dancing with?"
+    },
+    {
+      "name": "Meta-294",
+      "prompt": "Determine the final partner of each dancer by tracking the sequence of partner switches."
+    },
+    {
+      "name": "Meta-295",
+      "prompt": "Determine the final partner of a given dancer by tracking the sequence of partner changes and identifying the dancer's partner at the end of the dance."
+    },
+    {
+      "name": "Meta-296",
+      "prompt": "After analyzing the input and output examples, I can infer that the task is to determine the final partner of a specific dancer after a series of partner swaps."
+    },
+    {
+      "name": "Meta-297",
+      "prompt": "Keep track of the partners each dancer has at each stage of the dance, and determine the final partner of each dancer based on the sequence of partner switches."
+    },
+    {
+      "name": "Meta-298",
+      "prompt": "Determine the final dance partner of a given dancer by tracing the sequence of partner swaps, starting from the initial partner."
+    },
+    {
+      "name": "Meta-299",
+      "prompt": "Track the sequence of partner switches and identify the final partner of each dancer based on the given information."
+    },
+    {
+      "name": "Meta-300",
+      "prompt": "Follow the sequence of partner swaps to determine the final partner of the individual at the end of the dance."
+    },
+    {
+      "name": "Meta-301",
+      "prompt": "Keep track of the sequence of partner swaps between the dancers and deduce the final partner of each dancer at the end of the song."
+    },
+    {
+      "name": "Meta-302",
+      "prompt": "Keep track of the dance partners and their switches to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-303",
+      "prompt": "Keep track of the sequence of partner switches and use it to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-304",
+      "prompt": "Determine the final dance partner of a given dancer by analyzing the sequence of partner trades and identifying the last dance partner switched with."
+    },
+    {
+      "name": "Meta-305",
+      "prompt": "After analyzing the input/output examples, I've inferred the task behavior. Here is the concise instruction to help solve the task:"
+    },
+    {
+      "name": "Meta-306",
+      "prompt": "At the end of the dance, track the final partner of each dancer, considering the sequence of partner switches."
+    },
+    {
+      "name": "Meta-307",
+      "prompt": "After analyzing the input/output examples, I inferred the task behavior as follows: The task is to determine the final partner of a specific dancer (Alice) based on the sequence of partner swaps during a song."
+    },
+    {
+      "name": "Meta-308",
+      "prompt": "Determine the final dance partner of the specified individual by tracing the sequence of partner swaps throughout the song."
+    },
+    {
+      "name": "Meta-309",
+      "prompt": "Follow the sequence of partner trades to determine the final partner for each dancer."
+    },
+    {
+      "name": "Meta-310",
+      "prompt": "Determine the final dance partner of the mentioned person by tracing the sequence of partner switches."
+    },
+    {
+      "name": "Meta-311",
+      "prompt": "Determine the final dance partner of the specified dancer, given the initial dance partners and a sequence of partner switches."
+    },
+    {
+      "name": "Meta-312",
+      "prompt": "Determine the final dance partner of the specified dancer by tracing the sequence of partner switches."
+    },
+    {
+      "name": "Meta-313",
+      "prompt": "Follow the sequence of partner switches to determine the final partner of the dancer who was initially dancing with a given partner."
+    },
+    {
+      "name": "Meta-314",
+      "prompt": "At the end of the dance, Alice is dancing with the partner she had in the first place."
+    },
+    {
+      "name": "Meta-315",
+      "prompt": "Keep track of the partner changes and identify the final partner of Alice."
+    },
+    {
+      "name": "Meta-316",
+      "prompt": "Keep track of the number of times each dancer switches partners, and then find the dancer who Alice is dancing with at the end of the song."
+    },
+    {
+      "name": "Meta-317",
+      "prompt": "Keep track of the sequence of partner switches and determine the final partner of the dancer who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-318",
+      "prompt": "Keep track of the partners each dancer has had throughout the song, and then identify the partner Alice is with at the end of the dance."
+    },
+    {
+      "name": "Meta-319",
+      "prompt": "At the end of the song, which dancer is Alice dancing with?"
+    },
+    {
+      "name": "Meta-320",
+      "prompt": "Track the sequence of partner changes and determine the final partner of the dancer who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-321",
+      "prompt": "At the end of the dance, Alice is dancing with the person she started the song with, then switched with, then switched again with, then switched again with, and finally switched again with."
+    },
+    {
+      "name": "Meta-322",
+      "prompt": "Determine the final partner of a specified dancer by tracking the sequence of partner switches during the song."
+    },
+    {
+      "name": "Meta-323",
+      "prompt": "Follow the sequence of partner swaps to determine the final dancing partner of the given dancer."
+    },
+    {
+      "name": "Meta-324",
+      "prompt": "At the end of the song, identify the current partner of each dancer by tracing the sequence of partner switches."
+    },
+    {
+      "name": "Meta-325",
+      "prompt": "Identify the final partner of each dancer, using the given initial partners and a sequence of partner switches, to determine the correct outcome."
+    },
+    {
+      "name": "Meta-326",
+      "prompt": "Keep track of the partners each dancer has switched with during the song, and then identify the final partner of the dancer who had the initial partner with Ophelia."
+    },
+    {
+      "name": "Meta-327",
+      "prompt": "Keep track of the partners' switches to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-328",
+      "prompt": "Determine the sequence of partner switches made by each dancer and then track the final partner of each dancer."
+    },
+    {
+      "name": "Meta-329",
+      "prompt": "Determine the sequence of partner switches made by each dancer and use that information to identify the final partner of the dancer mentioned in the problem statement."
+    },
+    {
+      "name": "Meta-330",
+      "prompt": "After analyzing the input/output examples, I've inferred the task behavior and created a concise instruction to help solve the task:"
+    },
+    {
+      "name": "Meta-331",
+      "prompt": "Keep track of the partner changes throughout the dance and determine the final partner of the specified dancer."
+    },
+    {
+      "name": "Meta-332",
+      "prompt": "After analyzing the input/output examples, I infer that the task requires tracking the shuffling of partners among the dancers and determining the final partner of a specific dancer."
+    },
+    {
+      "name": "Meta-333",
+      "prompt": "Keep track of the partner changes made by each dancer and determine the final partner of the dancer who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-334",
+      "prompt": "Determine the final dance partner of the specified dancer (Alice, Claire, or Eve) after a series of partner switches, given the initial partner assignments and the sequence of partner trades."
+    },
+    {
+      "name": "Meta-335",
+      "prompt": "At the end of the dance, determine the original partner of the person currently dancing with Claire."
+    },
+    {
+      "name": "Meta-336",
+      "prompt": "Determine the final partner of each dancer by iteratively applying the partner switch instructions, keeping track of the dancers' previous and new partners."
+    },
+    {
+      "name": "Meta-337",
+      "prompt": "Track the sequence of partner switches and identify the final partner of the dancer who started with the given partner."
+    },
+    {
+      "name": "Meta-338",
+      "prompt": "Track the sequence of partner switches and infer the final partner of each dancer."
+    },
+    {
+      "name": "Meta-339",
+      "prompt": "Determine the final dance partner of the given dancer at the end of the song by tracing the series of partner switches."
+    },
+    {
+      "name": "Meta-340",
+      "prompt": "Track the sequence of partner changes and identify the final partner of each dancer based on the given sequence of partner switches."
+    },
+    {
+      "name": "Meta-341",
+      "prompt": "Determine the sequence of partner switches and identify the final partner of the person who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-342",
+      "prompt": "Keep track of the sequence of partner swaps and determine the final partner of the dancer who started with a specific initial partner."
+    },
+    {
+      "name": "Meta-343",
+      "prompt": "Determine the final partner of a dancer by tracking the sequence of partner switches and identifying the last partner they swapped with."
+    },
+    {
+      "name": "Meta-344",
+      "prompt": "Determine the sequence of partner trades and use that information to deduce the final partner of the specified dancer."
+    },
+    {
+      "name": "Meta-345",
+      "prompt": "Determine the final partner of Alice by tracking the sequence of partner switches and identifying the dancer who is left with their original partner."
+    },
+    {
+      "name": "Meta-346",
+      "prompt": "Identify the final partner of the person who had the most partners throughout the dance."
+    },
+    {
+      "name": "Meta-347",
+      "prompt": "Determine the final partner of a dancer by tracking the sequence of partner switches, considering each switch in the order it occurred."
+    },
+    {
+      "name": "Meta-348",
+      "prompt": "Keep track of the partner changes and identify the final partner of the dancer who was initially partnered with Jamie."
+    },
+    {
+      "name": "Meta-349",
+      "prompt": "After each partner swap, keep track of the dancers' new partners and deduce the final partner for each dancer."
+    },
+    {
+      "name": "Meta-350",
+      "prompt": "Determine the final partner of each dancer after a series of partner trades."
+    },
+    {
+      "name": "Meta-351",
+      "prompt": "Determine the final partner of each dancer by tracking the series of partner swaps throughout the song."
+    },
+    {
+      "name": "Meta-352",
+      "prompt": "Determine the final dance partner of a given dancer by tracing the sequence of partner swaps and identifying the last person each dancer switched with."
+    },
+    {
+      "name": "Meta-353",
+      "prompt": "Track the sequence of partner switches and determine the final partner of each dancer based on the cumulative effects of all the switches."
+    },
+    {
+      "name": "Meta-354",
+      "prompt": "After analyzing the input/output examples, I've inferred that the task requires tracking the movements of specific objects (dancers) and determining their final positions. Here is the instruction that helps solve this task:"
+    },
+    {
+      "name": "Meta-355",
+      "prompt": "Determine the final dance partner of the person who was dancing with the original partner of the person mentioned in the problem description at the start of the song."
+    },
+    {
+      "name": "Meta-356",
+      "prompt": "Track the sequence of partner swaps and determine the final partner of each dancer based on the last swap involving each dancer."
+    },
+    {
+      "name": "Meta-357",
+      "prompt": "Keep track of the partner swaps and determine the final dance partner of the dancer who was originally partnered with a specific person."
+    },
+    {
+      "name": "Meta-358",
+      "prompt": "At the end of the song, who is Alice dancing with?"
+    },
+    {
+      "name": "Meta-359",
+      "prompt": "After each switch, identify the dancers who are no longer partnered with each other, and focus on the remaining unswitched dancer who was originally with the now-separated partner."
+    },
+    {
+      "name": "Meta-360",
+      "prompt": "Determine the final dance partner of the given individual by tracking the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-361",
+      "prompt": "Keep track of the sequence of partner swaps to determine the final partner of a given dancer."
+    },
+    {
+      "name": "Meta-362",
+      "prompt": "Track the sequence of partner switches and determine the final partner of the dancer who started with a given partner."
+    },
+    {
+      "name": "Meta-363",
+      "prompt": "Keep track of the partners each dancer has after each partner switch, and determine the final partner of the dancer who was initially dancing with a specific person at the start of the song."
+    },
+    {
+      "name": "Meta-364",
+      "prompt": "After analyzing the input/output examples, I inferred the task behavior to be:"
+    },
+    {
+      "name": "Meta-365",
+      "prompt": "Determine the final dance partner of the specified individual by tracking the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-366",
+      "prompt": "Determine the final dance partner of a given dancer by tracking the sequence of partner switches."
+    },
+    {
+      "name": "Meta-367",
+      "prompt": "Determine the final dance partner of the specified dancer by tracing the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-368",
+      "prompt": "At the end of the dance, identify the partner with whom each dancer started the song, then track the sequence of partner switches to determine the current partner of the given dancer."
+    },
+    {
+      "name": "Meta-369",
+      "prompt": "Determine the final partner of a given dancer by tracking the sequence of partner swaps and the initial partner of that dancer."
+    },
+    {
+      "name": "Meta-370",
+      "prompt": "Keep track of the partners each dancer has at each step and work backwards to find the initial partner of the dancer who ends up with the last mentioned partner."
+    },
+    {
+      "name": "Meta-371",
+      "prompt": "Keep track of the sequence of partner switches and determine the final partner of Alice."
+    },
+    {
+      "name": "Meta-372",
+      "prompt": "Keep track of the partners each dancer has had throughout the song and use this information to determine who their final partner is."
+    },
+    {
+      "name": "Meta-373",
+      "prompt": "Identify the final partner of the dancer who was initially paired with Jamie."
+    },
+    {
+      "name": "Meta-374",
+      "prompt": "Determine the final partner of Alice by tracking the sequence of partner swaps."
+    },
+    {
+      "name": "Meta-375",
+      "prompt": "At the end of the dance, the original partner of the last dancer to switch partners is now dancing with whom?"
+    },
+    {
+      "name": "Meta-376",
+      "prompt": "Identify the final partner of the dancer whose initial partner is specified in the problem statement."
+    },
+    {
+      "name": "Meta-377",
+      "prompt": "At the end of the dance, track the ultimate partner of each dancer and choose the partner with whom Alice is dancing."
+    },
+    {
+      "name": "Meta-378",
+      "prompt": "Identify the final partner of Alice at the end of the dance by tracing the sequence of partner swaps, starting from the initial partner listed."
+    },
+    {
+      "name": "Meta-379",
+      "prompt": "Determine the partner of the last mentioned dancer in the description of the dance, considering all the partner switches that occurred during the song."
+    },
+    {
+      "name": "Meta-380",
+      "prompt": "Determine the sequence of partner changes and track the movements of each dancer to determine their final partner."
+    },
+    {
+      "name": "Meta-381",
+      "prompt": "At the end of the song, follow the sequence of partner switches to find the final partner of the given dancer."
+    },
+    {
+      "name": "Meta-382",
+      "prompt": "Keep track of the sequence of partner swaps and determine the final partner of the dancer who started with the given partner."
+    },
+    {
+      "name": "Meta-383",
+      "prompt": "Track the sequence of partner switches and determine the final partner of the dancer who was initially paired with Jamie."
+    },
+    {
+      "name": "Meta-384",
+      "prompt": "Keep track of the dance partner of each dancer after each partner switch and use this information to determine who Alice is dancing with at the end of the dance."
+    },
+    {
+      "name": "Meta-385",
+      "prompt": "Identify the final partner of each dancer after a series of partner swaps, tracing the changes in each dancer's partner throughout the song."
+    },
+    {
+      "name": "Meta-386",
+      "prompt": "Determine the partner Alice is dancing with at the end of the song by tracing the sequence of partner switches, starting from the initial partner."
+    },
+    {
+      "name": "Meta-387",
+      "prompt": "At the end of the dance, who is each of the five dancers, Alice, Bob, Claire, Dave, and Eve, dancing with?"
+    },
+    {
+      "name": "Meta-388",
+      "prompt": "At the end of the song, track each dancer's path by following the sequence of partners they danced with, starting from their initial partner, and determine the final partner each dancer is dancing with."
+    },
+    {
+      "name": "Meta-389",
+      "prompt": "Follow the sequence of partner switches to determine the final partner of the dancer in question."
+    },
+    {
+      "name": "Meta-390",
+      "prompt": "After analyzing the input/output examples, I infer that the task requires tracing the sequence of partner changes and determining the final partner of a specific dancer. Here is the concise instruction that helps solve this task:"
+    },
+    {
+      "name": "Meta-391",
+      "prompt": "At the end of the song, each dancer is with their final partner, which can be determined by following the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-392",
+      "prompt": "Track the sequence of partner switches for each dancer to determine their final partner."
+    },
+    {
+      "name": "Meta-393",
+      "prompt": "Determine the final dance partner of a specific dancer by tracing the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-394",
+      "prompt": "Determine the sequence of partner trades and apply them to the initial pairing to find the final partner of each dancer."
+    },
+    {
+      "name": "Meta-395",
+      "prompt": "Determine the sequence of partner changes and use it to predict the final partner of each dancer."
+    },
+    {
+      "name": "Meta-396",
+      "prompt": "Determine the sequence of partner switches that occurred during the song and use that information to determine who Alice was dancing with at the end of the dance."
+    },
+    {
+      "name": "Meta-397",
+      "prompt": "At the end of the dance, identify the partner with whom each dancer was dancing at the start of the song."
+    },
+    {
+      "name": "Meta-398",
+      "prompt": "Follow the sequence of partner switches to determine the final partner of the person who was initially dancing with a specific person."
+    },
+    {
+      "name": "Meta-399",
+      "prompt": "At the end of the dance, identify the partner that each dancer is dancing with by tracing the sequence of partner switches."
+    },
+    {
+      "name": "Meta-400",
+      "prompt": "Determine the final dance partner of a given dancer by tracking the sequence of partner switches and identifying the final partner of each dancer."
+    },
+    {
+      "name": "Meta-401",
+      "prompt": "Follow the sequence of partner swaps to determine the final dance partner of the individual specified."
+    },
+    {
+      "name": "Meta-402",
+      "prompt": "After analyzing the input/output examples, I infer that the task is to track the partners of each dancer at the end of the song, given the initial partners and the sequence of partner switches. Here is the concise instruction:"
+    },
+    {
+      "name": "Meta-403",
+      "prompt": "Keep track of the sequence of partner changes to determine the final partner of a given dancer."
+    },
+    {
+      "name": "Meta-404",
+      "prompt": "Keep track of the partner changes made by each dancer throughout the song and determine the final partner of the specified dancer."
+    },
+    {
+      "name": "Meta-405",
+      "prompt": "At the end of the dance, Alice is dancing with the person she had a partner with after Dave and Alice switched partners."
+    },
+    {
+      "name": "Meta-406",
+      "prompt": "Track the sequence of partner changes and identify the ultimate partner of the dancer who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-407",
+      "prompt": "Determine the final dance partner of a specified dancer after a series of partner switches."
+    },
+    {
+      "name": "Meta-408",
+      "prompt": "Determine the final dance partner of a specified dancer by tracing the sequence of partner swaps throughout the song."
+    },
+    {
+      "name": "Meta-409",
+      "prompt": "Determine the partner of each dancer at the end of the song by tracing the sequence of partner swaps."
+    },
+    {
+      "name": "Meta-410",
+      "prompt": "At the end of the song, track the number of times each dancer has switched partners and determine the original partner of the dancer who has switched partners the fewest times."
+    },
+    {
+      "name": "Meta-411",
+      "prompt": "Keep track of the partner changes and determine the final partner of a dancer by tracing their sequence of partners from the initial partner to the final partner."
+    },
+    {
+      "name": "Meta-412",
+      "prompt": "At the end of the song, determine the final dance partner of each dancer, considering the sequence of partner switches, and choose the correct final partner from the given options."
+    },
+    {
+      "name": "Meta-413",
+      "prompt": "Follow the sequence of partner swaps to determine the final dancing partner of the specified dancer."
+    },
+    {
+      "name": "Meta-414",
+      "prompt": "Identify the final partner of Alice and work backwards to determine the sequence of partner switches."
+    },
+    {
+      "name": "Meta-415",
+      "prompt": "Determine the final dance partner of the specified dancer (Alice, in this case) by tracing the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-416",
+      "prompt": "Determine the final partner of the person who was initially dancing with a given person, by tracking the sequence of partner switches."
+    },
+    {
+      "name": "Meta-417",
+      "prompt": "Keep track of the partner changes made by each dancer, and determine the final partner of the dancer who is listed as \"Alice\" at the end of the sequence."
+    },
+    {
+      "name": "Meta-418",
+      "prompt": "Track the sequence of partner changes and determine the final partner of the dancer who was initially dancing with the chosen partner."
+    },
+    {
+      "name": "Meta-419",
+      "prompt": "Follow the sequence of partner swaps to determine the final partner for each dancer."
+    },
+    {
+      "name": "Meta-420",
+      "prompt": "Determine the sequence of partner switches and apply it to the initial dance pairings to find the final partner of each dancer."
+    },
+    {
+      "name": "Meta-421",
+      "prompt": "Determine the final dance partner of the person who was initially dancing with a specific person, considering the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-422",
+      "prompt": "At the end of the dance, track the final partner of each dancer, given the sequence of partner switches."
+    },
+    {
+      "name": "Meta-423",
+      "prompt": "Determine the final partner of a specified dancer by tracing the series of partner swaps throughout the song."
+    },
+    {
+      "name": "Meta-424",
+      "prompt": "Keep track of the partners each dancer has had, and determine who the final partner is for each dancer."
+    },
+    {
+      "name": "Meta-425",
+      "prompt": "Track the sequence of partner switches between each dancer and their original partner to determine who each dancer is dancing with at the end of the song."
+    },
+    {
+      "name": "Meta-426",
+      "prompt": "Keep track of the sequence of partner switches and determine the final partner of the dancer whose initial partner is known."
+    },
+    {
+      "name": "Meta-427",
+      "prompt": "Determine the sequence of partner changes for each dancer and use that sequence to find the original partner of each dancer and then the final partner of Alice."
+    },
+    {
+      "name": "Meta-428",
+      "prompt": "Keep track of the partners each dancer has at the start of the song, then update this information each time partners are switched, and finally identify the partner each dancer has at the end of the song."
+    },
+    {
+      "name": "Meta-429",
+      "prompt": "Determine the final partner of the dancer who started with each given partner."
+    },
+    {
+      "name": "Meta-430",
+      "prompt": "Determine the final dance partner of the specified dancer by tracking the sequence of partner switches."
+    },
+    {
+      "name": "Meta-431",
+      "prompt": "Determine the final dance partner of the specified individual by tracing the sequence of partner swaps."
+    },
+    {
+      "name": "Meta-432",
+      "prompt": "After each trade, keep track of the final partner of each dancer, starting from the initial partner, and determine the final partner of Alice."
+    },
+    {
+      "name": "Meta-433",
+      "prompt": "Follow the sequence of partner switches to determine the final dance partner of each individual."
+    },
+    {
+      "name": "Meta-434",
+      "prompt": "Determine the sequence of partner switches and apply them to the initial partners to find the final partner of each dancer."
+    },
+    {
+      "name": "Meta-435",
+      "prompt": "Track the sequence of partner swaps to determine the final partner of each dancer at the end of the song."
+    },
+    {
+      "name": "Meta-436",
+      "prompt": "Follow the sequence of partner trades to determine the final dance partner of each dancer."
+    },
+    {
+      "name": "Meta-437",
+      "prompt": "After analyzing the input/output examples, I infer that the task requires tracking the dance partners of a specific dancer (Alice) throughout the song and identifying the final partner at the end of the dance. Based on this, I provide the following instruction:"
+    },
+    {
+      "name": "Meta-438",
+      "prompt": "Track the sequence of partner changes and determine the final partner of each dancer, given the initial partners and a series of switches."
+    },
+    {
+      "name": "Meta-439",
+      "prompt": "Determine the ultimate partner of a given dancer after multiple partner swaps by tracking the sequence of swaps and identifying the final partner."
+    },
+    {
+      "name": "Meta-440",
+      "prompt": "Determine the final dance partner of the given dancer by tracking the sequence of partner swaps."
+    },
+    {
+      "name": "Meta-441",
+      "prompt": "Follow the sequence of partner trades to determine the final partner of the specified dancer."
+    },
+    {
+      "name": "Meta-442",
+      "prompt": "Track the sequence of partner switches between each dancer to determine their final partner."
+    },
+    {
+      "name": "Meta-443",
+      "prompt": "Track the partners each dancer has had during the song and identify the final partner of the dancer who had the most unique set of partners."
+    },
+    {
+      "name": "Meta-444",
+      "prompt": "At the end of the dance, track the partner of a specific dancer by following the sequence of partner switches."
+    },
+    {
+      "name": "Meta-445",
+      "prompt": "Keep track of the sequence of partner switches to determine the final dance partner of a specified dancer."
+    },
+    {
+      "name": "Meta-446",
+      "prompt": "Determine the final partner of each dancer by tracking the sequence of partner switches and identifying the last partner each dancer had."
+    },
+    {
+      "name": "Meta-447",
+      "prompt": "At the end of the dance, figure out who Alice's partner is by tracing the sequence of partner changes."
+    },
+    {
+      "name": "Meta-448",
+      "prompt": "Follow the sequence of partner switches to determine the final partner of the dancer who had a specific initial partner."
+    },
+    {
+      "name": "Meta-449",
+      "prompt": "Keep track of the sequence of partner switches and identify the final partner of Alice."
+    },
+    {
+      "name": "Meta-450",
+      "prompt": "Identify the final partner of each dancer, starting with the initial partner and following the sequence of partner switches."
+    },
+    {
+      "name": "Meta-451",
+      "prompt": "Determine the final partner of the given dancer by tracing the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-452",
+      "prompt": "Determine the final dance partner of the specified person by tracing the sequence of partner swaps throughout the song."
+    },
+    {
+      "name": "Meta-453",
+      "prompt": "Track the sequence of partner switches to determine the final dancing partner of each individual."
+    },
+    {
+      "name": "Meta-454",
+      "prompt": "Keep track of the partner changes and determine the final partner of the person who was originally dancing with Jamie."
+    },
+    {
+      "name": "Meta-455",
+      "prompt": "Track the sequence of partner switches and infer the final partner of each dancer based on the initial and final dance configurations."
+    },
+    {
+      "name": "Meta-456",
+      "prompt": "Track the sequence of partner changes to determine the final dance partner for each individual."
+    },
+    {
+      "name": "Meta-457",
+      "prompt": "After analyzing the input/output examples, I came up with the following concise instruction:"
+    },
+    {
+      "name": "Meta-458",
+      "prompt": "Identify the final partner of the dancer who was initially dancing with Jamie."
+    },
+    {
+      "name": "Meta-459",
+      "prompt": "Keep track of the partners each dancer has had throughout the song and determine the final partner of Alice."
+    },
+    {
+      "name": "Meta-460",
+      "prompt": "Track the sequence of partner changes to determine the final dance partner of each person."
+    },
+    {
+      "name": "Meta-461",
+      "prompt": "At the end of the song, who is each dancer dancing with?"
+    },
+    {
+      "name": "Meta-462",
+      "prompt": "After analyzing the input/output examples, I inferred the task behavior as follows:"
+    },
+    {
+      "name": "Meta-463",
+      "prompt": "Identify the final dance partner of the person who was initially dancing with Jamie/Ophelia/Izzi."
+    },
+    {
+      "name": "Meta-464",
+      "prompt": "After analyzing the input/output examples, I came up with a concise instruction that helps solve this task:"
+    },
+    {
+      "name": "Meta-465",
+      "prompt": "Determine the final partner of each dancer by tracing the sequence of partner switches, starting from the initial partners."
+    },
+    {
+      "name": "Meta-466",
+      "prompt": "Follow the sequence of partner switches to determine the final dancing partner for each dancer."
+    },
+    {
+      "name": "Meta-467",
+      "prompt": "Keep track of the partners each dancer has had throughout the dance, and then identify the last partner Alice had."
+    },
+    {
+      "name": "Meta-468",
+      "prompt": "At the end of the song, each dancer has a new partner. By tracking the sequence of partner switches, determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-469",
+      "prompt": "Keep track of the partner switches to determine the final partner of a specific dancer."
+    },
+    {
+      "name": "Meta-470",
+      "prompt": "Determine the final partner of a given dancer by tracing the sequence of partner swaps."
+    },
+    {
+      "name": "Meta-471",
+      "prompt": "Determine the final partner of each dancer by tracing the sequence of partner swaps throughout the song, starting from the initial partners."
+    },
+    {
+      "name": "Meta-472",
+      "prompt": "Keep track of the partners each dancer has had and identify the last person each dancer has danced with."
+    },
+    {
+      "name": "Meta-473",
+      "prompt": "Keep track of the sequence of partner switches and use the final switch to determine the original partner of the dancer who is now dancing with a specific person."
+    },
+    {
+      "name": "Meta-474",
+      "prompt": "Determine the final partner of Alice by tracing the sequence of partner changes and identifying the object that remains constant throughout the dance."
+    },
+    {
+      "name": "Meta-475",
+      "prompt": "Keep track of the sequence of partner changes to determine the final dance partner of each dancer."
+    },
+    {
+      "name": "Meta-476",
+      "prompt": "Determine the final dance partner of a specific dancer by tracking the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-477",
+      "prompt": "Keep track of the partners each dancer has and the order in which they switch, and use this information to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-478",
+      "prompt": "Track the sequence of partner switches for each dancer and determine the final partner of the given dancer at the end of the dance."
+    },
+    {
+      "name": "Meta-479",
+      "prompt": "Keep track of the sequence of partner switches and identify the final partner of the dancer who was initially partnered with Jamie."
+    },
+    {
+      "name": "Meta-480",
+      "prompt": "Track the sequence of partner changes, noting which dancers switch partners with each other, and use this information to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-481",
+      "prompt": "Determine the final partner of Alice by tracking the sequence of partner changes throughout the song."
+    },
+    {
+      "name": "Meta-482",
+      "prompt": "Keep track of the partner changes and deduce the final partner of each dancer."
+    },
+    {
+      "name": "Meta-483",
+      "prompt": "Determine the final partner of Alice after a sequence of partner trades among the dancers."
+    },
+    {
+      "name": "Meta-484",
+      "prompt": "Track the sequence of partner switches and determine the final partner of Alice at the end of the dance."
+    },
+    {
+      "name": "Meta-485",
+      "prompt": "Keep track of the partners each dancer has at every step and use this information to determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-486",
+      "prompt": "After analyzing the input/output examples, I've written a concise instruction to help solve the task:"
+    },
+    {
+      "name": "Meta-487",
+      "prompt": "Determine the ultimate partner of a given dancer by tracking the series of partner swaps between each dancer."
+    },
+    {
+      "name": "Meta-488",
+      "prompt": "Determine the final dance partner of the person whose starting partner is mentioned in the input text by tracing the sequence of partner switches."
+    },
+    {
+      "name": "Meta-489",
+      "prompt": "After the final partner switch, identify the person who was dancing with the person who is now dancing with Claire."
+    },
+    {
+      "name": "Meta-490",
+      "prompt": "At the end of the song, figure out the final dance partner of the dancer who was initially dancing with Ophelia (or equivalent)."
+    },
+    {
+      "name": "Meta-491",
+      "prompt": "Determine the final partner of each dancer by analyzing the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-492",
+      "prompt": "Follow the sequence of partner swaps to determine the final dance partner of each named dancer."
+    },
+    {
+      "name": "Meta-493",
+      "prompt": "At the end of the dance, identify the partner Alice is dancing with by tracking the sequence of partner switches."
+    },
+    {
+      "name": "Meta-494",
+      "prompt": "Determine the sequence of partner switches and apply them to each dancer's original partner to find the final partner for each dancer."
+    },
+    {
+      "name": "Meta-495",
+      "prompt": "Keep track of the partners each dancer has at each step of the partner switching, and then identify the partner each dancer has at the end of the dance."
+    },
+    {
+      "name": "Meta-496",
+      "prompt": "Track the sequence of partner switches and determine the final partner of each dancer based on their initial partner and the sequence of trades."
+    },
+    {
+      "name": "Meta-497",
+      "prompt": "Determine the final partner of a specific dancer after multiple partner swaps by tracing the sequence of partner changes."
+    },
+    {
+      "name": "Meta-498",
+      "prompt": "After analyzing the input/output examples, I infer that the task is to track the movement of objects (dancers) and identify the final state of a specific object (dancer). The objects are shuffled by trading partners, and the goal is to determine the final partner of a specified dancer."
+    },
+    {
+      "name": "Meta-499",
+      "prompt": "Track the sequence of partner switches and determine the final partner of each dancer."
+    },
+    {
+      "name": "Meta-500",
+      "prompt": "After tracking the sequence of partner switches, determine the final partner of the person who was initially dancing with."
+    },
+    {
+      "name": "Meta-501",
+      "prompt": "Determine the ultimate dance partner of a given dancer by tracing the sequence of partner switches throughout the song."
+    },
+    {
+      "name": "Meta-502",
+      "prompt": "Determine the final partner of the dancer who started with each given partner, taking into account all the partner swaps throughout the song."
+    },
+    {
+      "name": "Meta-503",
+      "prompt": "Determine the final partner of Alice by tracking the sequence of partner switches and identifying the ultimate partner left for Alice."
+    },
+    {
+      "name": "Meta-504",
+      "prompt": "Determine the partner Alice is dancing with at the end of the song by tracing the sequence of partner swaps."
+    },
+    {
+      "name": "Meta-505",
+      "prompt": "Keep track of the partners each dancer switches with, and deduce the final partner of each dancer based on the sequence of switches."
+    },
+    {
+      "name": "Meta-506",
+      "prompt": "Track the sequence of partner switches to determine the final dancing partner for each dancer."
+    }
+  ]
+}

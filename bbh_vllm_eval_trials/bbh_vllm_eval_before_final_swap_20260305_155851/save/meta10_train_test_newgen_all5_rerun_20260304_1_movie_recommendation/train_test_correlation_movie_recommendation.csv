@@ -1,0 +1,11 @@
+method_name,train_accuracy,test_accuracy,train_correct,train_total,test_correct,test_total,prompt
+Meta-01,0.5,0.46,25,50,46,100,Identify the genre or theme common to the input movie list and select the option that best represents that genre or theme.
+Meta-02,0.58,0.53,29,50,53,100,Identify the most popular or critically acclaimed movie among the options that is similar in genre or tone to the given movies.
+Meta-03,0.5,0.44,25,50,44,100,Find a movie from the options that is most likely to appeal to fans of the input movies.
+Meta-04,0.64,0.5,32,50,50,100,Find the movie from the options that is most closely associated with the characteristics of the input movies.
+Meta-05,0.52,0.5,26,50,50,100,Identify the movie that is most likely to share a common genre or theme with the provided movie list.
+Meta-06,0.52,0.43,26,50,43,100,Choose the movie that is most likely to be appreciated by fans of the given movies.
+Meta-07,0.56,0.48,28,50,48,100,Find a movie from the options that is most similar in genre or tone to the given list of movies.
+Meta-08,0.46,0.46,23,50,46,100,"Find the movie from the given options that is most likely to be similar in theme, genre, or tone to the listed movie(s)."
+Meta-09,0.58,0.48,29,50,48,100,"Identify the movie that is most closely associated with the given set of movies, based on their genres or styles."
+Meta-10,0.58,0.45,29,50,45,100,Identify the movie with the most common genre or theme among the given options.

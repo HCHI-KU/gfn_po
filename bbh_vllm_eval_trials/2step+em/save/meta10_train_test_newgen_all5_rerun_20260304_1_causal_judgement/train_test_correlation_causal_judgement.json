@@ -1,0 +1,114 @@
+{
+  "task_name": "causal_judgement",
+  "stats": {
+    "num_points": 10,
+    "pearson": 0.46932610229057364,
+    "spearman": 0.06752237049095156,
+    "train_mean": 0.5119999999999999,
+    "test_mean": 0.499,
+    "train_std": 0.016000000000000014,
+    "test_std": 0.01757839583124696
+  },
+  "records": [
+    {
+      "method_name": "Meta-01",
+      "train_accuracy": 0.5,
+      "test_accuracy": 0.49,
+      "train_correct": 25,
+      "train_total": 50,
+      "test_correct": 49,
+      "test_total": 100,
+      "prompt": "Identify the immediate and direct cause of the outcome."
+    },
+    {
+      "method_name": "Meta-02",
+      "train_accuracy": 0.54,
+      "test_accuracy": 0.55,
+      "train_correct": 27,
+      "train_total": 50,
+      "test_correct": 55,
+      "test_total": 100,
+      "prompt": "Determine whether the described event was caused by the given condition, circumstance, or action, considering typical human understanding of causality."
+    },
+    {
+      "method_name": "Meta-03",
+      "train_accuracy": 0.5,
+      "test_accuracy": 0.5,
+      "train_correct": 25,
+      "train_total": 50,
+      "test_correct": 50,
+      "test_total": 100,
+      "prompt": "Determine whether the described event or action was the primary factor leading to the outcome, rather than a coincidence or secondary effect."
+    },
+    {
+      "method_name": "Meta-04",
+      "train_accuracy": 0.52,
+      "test_accuracy": 0.49,
+      "train_correct": 26,
+      "train_total": 50,
+      "test_correct": 49,
+      "test_total": 100,
+      "prompt": "Identify the immediate cause of the outcome, ignoring any indirect or contributing factors."
+    },
+    {
+      "method_name": "Meta-05",
+      "train_accuracy": 0.52,
+      "test_accuracy": 0.5,
+      "train_correct": 26,
+      "train_total": 50,
+      "test_correct": 50,
+      "test_total": 100,
+      "prompt": "Determine the cause of the outcome by identifying the most direct and plausible link between the described events and the outcome."
+    },
+    {
+      "method_name": "Meta-06",
+      "train_accuracy": 0.48,
+      "test_accuracy": 0.5,
+      "train_correct": 24,
+      "train_total": 50,
+      "test_correct": 50,
+      "test_total": 100,
+      "prompt": "Determine whether the stated event is the most immediate and direct cause of the outcome, or if another event is a more likely cause."
+    },
+    {
+      "method_name": "Meta-07",
+      "train_accuracy": 0.5,
+      "test_accuracy": 0.49,
+      "train_correct": 25,
+      "train_total": 50,
+      "test_correct": 49,
+      "test_total": 100,
+      "prompt": "Identify the specific cause that directly led to the outcome in question, regardless of any indirect or potential links to other factors."
+    },
+    {
+      "method_name": "Meta-08",
+      "train_accuracy": 0.52,
+      "test_accuracy": 0.49,
+      "train_correct": 26,
+      "train_total": 50,
+      "test_correct": 49,
+      "test_total": 100,
+      "prompt": "Determine the most direct and immediate cause of the outcome, rather than tracing indirect or distant links."
+    },
+    {
+      "method_name": "Meta-09",
+      "train_accuracy": 0.52,
+      "test_accuracy": 0.49,
+      "train_correct": 26,
+      "train_total": 50,
+      "test_correct": 49,
+      "test_total": 100,
+      "prompt": "Identify the immediate cause of the outcome or event described in the scenario, disregarding any potential long-term or indirect effects."
+    },
+    {
+      "method_name": "Meta-10",
+      "train_accuracy": 0.52,
+      "test_accuracy": 0.49,
+      "train_correct": 26,
+      "train_total": 50,
+      "test_correct": 49,
+      "test_total": 100,
+      "prompt": "Identify the event or action that directly and immediately led to the outcome, rather than a distant or indirect cause."
+    }
+  ]
+}

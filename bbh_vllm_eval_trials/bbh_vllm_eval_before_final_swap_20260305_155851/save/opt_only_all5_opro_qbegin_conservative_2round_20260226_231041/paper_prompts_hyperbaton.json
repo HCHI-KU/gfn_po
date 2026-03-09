@@ -1,0 +1,26 @@
+{
+  "paper_acc": 0.84,
+  "Opt": {
+    "prompt": "Use the reasoning and examples you would step. Finally give the actual correct answer.",
+    "accuracy": 0.6,
+    "test_acc": 0.6,
+    "inference_time": 10.046219110488892,
+    "correct": 60,
+    "total": 100,
+    "parse_failures": 19,
+    "invalid_predictions": 0,
+    "parsed_rate": 0.81,
+    "valid_parsed_rate": 0.81,
+    "test_parsed": 0.81,
+    "used_extractor": true,
+    "prompt_backend": "manual_llama3",
+    "answer_max_tokens": 4,
+    "evaluation_protocol": "opro_eval_adapter",
+    "stage1_prompt_style": "opro_qbegin",
+    "extract_final_answer_by_prompting_again": true,
+    "opro_second_round_extraction": true,
+    "opro_second_round_max_tokens": 8,
+    "opro_second_round_max_tokens_effective": 3,
+    "use_conservative_prompting_again_tokens": true
+  }
+}

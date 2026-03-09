@@ -1,0 +1,101 @@
+name,prompt,train_accuracy,test_accuracy
+Meta-01,Identify the number of objects mentioned that fit the category specified in the input question.,0.64,0.5
+Meta-02,Count the number of objects in the list of items mentioned.,0.7,0.61
+Meta-03,Count the number of objects mentioned in the given sentence.,0.5,0.41
+Meta-04,Count the number of objects in the list that match the category mentioned in the question.,0.78,0.63
+Meta-05,"Count the number of objects in the list of items mentioned, excluding any items that are not objects (such as locations or quantities).",0.58,0.51
+Meta-06,"Count the number of objects mentioned in the sentence that are of a specific type (e.g. musical instruments, fruits).",0.42,0.46
+Meta-07,Count the number of objects in the list provided that belong to the category specified in the question.,0.66,0.53
+Meta-08,Count the number of items in the list that are not household appliances or lighting fixtures.,0.38,0.34
+Meta-09,Identify the count of the specific type of object mentioned in the input statement.,0.74,0.68
+Meta-10,"Count the number of objects mentioned that are of a specific category (e.g. musical instruments, fruits, etc.).",0.48,0.41
+Meta-11,Count the number of objects mentioned in the given list.,0.56,0.54
+Meta-12,"Count the number of objects mentioned in the sentence that starts with ""I have"" and identify the category of objects specified by the question.",0.4,0.33
+Meta-13,"Count the number of objects that are being referred to as a single category (e.g. musical instruments, fruits, objects) in the given sentence.",0.44,0.41
+Meta-14,Count the number of objects or items mentioned in the sentence.,0.6,0.48
+Meta-15,"Count the number of objects mentioned in the sentence, excluding any mentioned in the phrase ""how many [object type] do I have"".",0.48,0.43
+Meta-16,Count the number of objects in the given list that fit the category specified in the question.,0.62,0.49
+Meta-17,Count the number of objects or items mentioned in the given list or description.,0.6,0.53
+Meta-18,Count the number of objects in the list that belongs to the category specified in the question.,0.62,0.51
+Meta-19,Count the number of items that belong to the same category as the first item mentioned in the input sentence.,0.2,0.19
+Meta-20,Count the number of items mentioned in the given list that belong to the specified category.,0.58,0.47
+Meta-21,Count the number of each distinct category mentioned in the input and report the total count.,0.82,0.79
+Meta-22,Count the number of objects mentioned in the input sentence that belong to the specified category.,0.6,0.54
+Meta-23,"Count the number of objects mentioned in the sentence that are not ""and"".",0.42,0.36
+Meta-24,Count the number of objects mentioned in the given text that fit the category described in the question.,0.56,0.51
+Meta-25,Count the number of items mentioned that belong to the category specified in the question.,0.64,0.56
+Meta-26,Count the number of objects mentioned in the input text that belong to the specified category.,0.58,0.51
+Meta-27,Identify the object categories mentioned in the input and count the number of objects within each category.,0.64,0.65
+Meta-28,"Count the objects mentioned in the sentence, excluding any non-object words.",0.42,0.39
+Meta-29,Count the number of objects mentioned in the sentence that are not containers or furniture.,0.38,0.34
+Meta-30,Count the number of objects mentioned in the sentence.,0.5,0.41
+Meta-31,"Count the number of objects mentioned that belong to the specified category (musical instruments, fruits, etc.).",0.64,0.48
+Meta-32,"Count the number of objects of the specified category (musical instruments, fruits, etc.) mentioned in the sentence.",0.64,0.58
+Meta-33,Identify the number of items in the given list that belong to the specified category.,0.68,0.58
+Meta-34,Count the number of items in the list that match the category or type specified in the question.,0.78,0.71
+Meta-35,Count the number of objects mentioned in the sentence that are not containers or pieces of furniture.,0.34,0.36
+Meta-36,Count the number of objects in the list that are mentioned in the sentence.,0.48,0.41
+Meta-37,Count the number of objects that are not containers.,0.46,0.43
+Meta-38,Count the number of objects in the given list that match the category specified in the question.,0.68,0.63
+Meta-39,Count the number of objects that are not already classified as a specific category in the given sentence.,0.06,0.06
+Meta-40,"Count the number of objects of the specified category (e.g. musical instruments, fruits) in the given list.",0.68,0.58
+Meta-41,Identify the types of objects mentioned in the input and count the number of each type.,0.6,0.57
+Meta-42,"Count the number of items mentioned in the sentence that can be categorized as a single unit, excluding quantities mentioned.",0.36,0.28
+Meta-43,Count the number of items mentioned in the list of objects.,0.62,0.52
+Meta-44,"Count the number of objects or items mentioned in the sentence that belong to the specified category (e.g., musical instruments, fruits, etc.).",0.56,0.44
+Meta-45,"Count the number of objects mentioned in the sentence that starts with ""I have"".",0.46,0.45
+Meta-46,Count the number of objects in the given list that belong to the specified category.,0.62,0.54
+Meta-47,"Identify and count the objects of a specific category (e.g., musical instruments, fruits, etc.) mentioned in the given text.",0.46,0.42
+Meta-48,"Count the number of objects that are mentioned in the sentence as a whole, disregarding any categories or labels used to describe them.",0.38,0.37
+Meta-49,"Count the number of objects that are mentioned in the given list, excluding any items that do not fit the category specified in the question.",0.42,0.46
+Meta-50,Identify the number of items that belong to the category mentioned in the question.,0.6,0.57
+Meta-51,"Count the number of objects mentioned in the sentence that are being categorized by a type (e.g. musical instruments, fruits, etc.).",0.46,0.35
+Meta-52,"Identify the total number of objects mentioned in the input sentence, excluding any non-descriptive words, and count only the objects that belong to the specified category.",0.54,0.44
+Meta-53,Count the number of items that are the same type or category in the given list.,0.74,0.56
+Meta-54,Identify the number of objects that belong to the specified category in the given list.,0.66,0.54
+Meta-55,Count the number of items in the list of objects mentioned.,0.64,0.56
+Meta-56,Count the objects mentioned in the sentence that start with a noun.,0.46,0.3
+Meta-57,Count the number of objects in the given list that belong to the category specified in the question.,0.62,0.54
+Meta-58,Count the number of objects mentioned in the sentence that are of the same category as the one mentioned in the question.,0.52,0.5
+Meta-59,Identify and count the number of objects mentioned in the given sentence that belong to the specified category.,0.58,0.47
+Meta-60,Identify and count the specific type of objects mentioned in the input sentence.,0.6,0.6
+Meta-61,Count the number of objects mentioned in the input sentence that belong to the category specified in the question.,0.62,0.49
+Meta-62,Count the number of objects in the list of items mentioned in the sentence.,0.66,0.52
+Meta-63,Count the number of objects mentioned in the given description that belong to the category specified in the question.,0.6,0.53
+Meta-64,Count the number of objects mentioned in the list.,0.58,0.54
+Meta-65,"Count the number of objects in the given list that belong to a specific category (e.g. musical instruments, fruits, objects).",0.58,0.44
+Meta-66,"Identify the count of objects that are mentioned in the sentence as being of the same category, as specified in the question.",0.46,0.48
+Meta-67,Identify the number of objects that belong to the category specified in the input sentence.,0.56,0.49
+Meta-68,Count the number of objects mentioned that belong to the category specified in the question.,0.62,0.59
+Meta-69,Count the number of objects mentioned in the input sentence that fit the category specified in the question.,0.56,0.47
+Meta-70,Count the number of each distinct type of object mentioned in the input sentence.,0.74,0.72
+Meta-71,"Identify the count of the specified object type (e.g. musical instruments, fruits, objects) in the given list.",0.54,0.49
+Meta-72,Count the number of objects mentioned in the input sentence that are of the same category as the object mentioned in the question.,0.56,0.44
+Meta-73,"Count the number of objects that are mentioned in the list, excluding any objects that are not requested to be counted.",0.56,0.47
+Meta-74,Count the objects that are mentioned in the sentence and categorize them into groups based on their characteristics.,0.46,0.34
+Meta-75,"Count the number of items mentioned that match the given category (musical instruments, fruits, etc.).",0.58,0.43
+Meta-76,"Count the number of objects mentioned in the sentence that starts with ""I have"" and are followed by a specific quantity or no quantity at all.",0.34,0.33
+Meta-77,Count the number of objects in the list that belong to the category specified in the question.,0.64,0.52
+Meta-78,Count the number of objects mentioned in the sentence that are of the same category as the one specified in the question.,0.58,0.48
+Meta-79,"Count the objects that are mentioned in the input sentence and identify the type of object(s) being counted, then output the corresponding number.",0.44,0.43
+Meta-80,"Count the number of items of the specified category (musical instruments, fruits, objects) mentioned in the sentence.",0.62,0.49
+Meta-81,Count the number of items mentioned in the input sentence that belong to the category specified in the question.,0.62,0.49
+Meta-82,"Count the number of objects of the specified type (musical instruments, fruits, etc.) mentioned in the input sentence.",0.7,0.63
+Meta-83,Count the objects of the specified type mentioned in the input sentence.,0.88,0.75
+Meta-84,"Count the number of objects that are not part of the categories ""fruits"" or ""chair"".",0.42,0.3
+Meta-85,Identify the categories mentioned in the input sentence and count the number of items that belong to each category.,0.66,0.56
+Meta-86,"Count the number of objects that are mentioned in the list as musical instruments, furniture, or food.",0.3,0.26
+Meta-87,Count the objects mentioned in the sentence.,0.52,0.42
+Meta-88,Count the number of objects or instruments mentioned in the sentence.,0.56,0.47
+Meta-89,Count the number of items mentioned in the list that belong to the category specified in the sentence.,0.66,0.46
+Meta-90,Count the number of objects or items mentioned in the given sentence.,0.5,0.49
+Meta-91,"Count the number of objects that are mentioned in the list, excluding any objects that do not fit the category specified in the question.",0.56,0.49
+Meta-92,Count the number of objects mentioned in the input statement that belong to the category specified in the question.,0.62,0.49
+Meta-93,Count the number of objects that are not part of a set of multiple items.,0.44,0.29
+Meta-94,"Count the number of objects in the given list that belong to the specified category (e.g., musical instruments, fruits, etc.).",0.62,0.44
+Meta-95,Identify the number of objects being counted in the given description.,0.68,0.58
+Meta-96,Count the number of objects or items mentioned in the given list.,0.54,0.54
+Meta-97,"Count the number of objects mentioned in the sentence that are of a specific category (e.g. musical instruments, fruits, objects).",0.46,0.45
+Meta-98,Count the number of objects of the category mentioned in the input sentence.,0.78,0.69
+Meta-99,"Count the number of objects mentioned in the sentence that are not categorized as ""objects"" (e.g. ""I have"", ""and"").",0.44,0.39
+Meta-100,Identify and count the specific objects or items mentioned in the given text.,0.52,0.47

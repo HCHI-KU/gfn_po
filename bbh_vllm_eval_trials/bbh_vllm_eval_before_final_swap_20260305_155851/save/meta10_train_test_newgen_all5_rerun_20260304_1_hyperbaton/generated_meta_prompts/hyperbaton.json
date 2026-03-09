@@ -1,0 +1,59 @@
+{
+  "task_name": "hyperbaton",
+  "generated_at": "2026-03-04 19:37:33",
+  "generation_config": {
+    "model_path": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "conversation_template": "llama-3",
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "max_tokens": 96,
+    "num_examples": 3,
+    "requested_num_prompts": 10,
+    "actual_num_prompts": 10,
+    "generation_batch_size_cap": 128,
+    "generation_max_rounds": 6
+  },
+  "meta_prompt_request": "You are creating a single instruction prompt for a reasoning task named 'hyperbaton'.\nInfer the task behavior from the input/output examples below.\nWrite exactly one concise instruction that helps solve this task.\nOutput only the instruction text. Do not output numbering, quotes, or explanations.\n\nExamples:\nInput: Which sentence has the correct adjective order:\nOptions:\n(A) midsize old grey Brazilian sweater\n(B) midsize grey Brazilian old sweater.\nOutput: A\n\nInput: Which sentence has the correct adjective order:\nOptions:\n(A) rubber gray walking Mexican midsize cat\n(B) midsize gray Mexican rubber walking cat.\nOutput: B\n\nInput: Which sentence has the correct adjective order:\nOptions:\n(A) mysterious big Indian iron smoking motorcycle\n(B) big smoking mysterious Indian iron motorcycle.\nOutput: A\n\nInstruction:",
+  "prompts": [
+    {
+      "name": "Meta-01",
+      "prompt": "Identify the sentence with the adjective order that follows the typical English language pattern of modifying nouns in a specific order."
+    },
+    {
+      "name": "Meta-02",
+      "prompt": "Modify the sentence to adhere to the typical adjective order in English, prioritizing descriptive words in the following sequence: opinion, size, shape, color, nationality, material, and finally action or state."
+    },
+    {
+      "name": "Meta-03",
+      "prompt": "Identify the sentence with the most logical and intuitive adjective order."
+    },
+    {
+      "name": "Meta-04",
+      "prompt": "Arrange the adjectives in each sentence in the order of English language precedence."
+    },
+    {
+      "name": "Meta-05",
+      "prompt": "Modify the adjective to its corresponding noun to determine the correct adjective order in a sentence."
+    },
+    {
+      "name": "Meta-06",
+      "prompt": "Determine the correct adjective order by placing the most specific descriptors closest to the noun they modify."
+    },
+    {
+      "name": "Meta-07",
+      "prompt": "Modify the sentence by rearranging the adjectives to follow the typical English word order: adjective-noun."
+    },
+    {
+      "name": "Meta-08",
+      "prompt": "Arrange the adjectives in each sentence to follow the typical English adjective order of size, color, material, origin, and other descriptors."
+    },
+    {
+      "name": "Meta-09",
+      "prompt": "Identify the sentence with the correct adjective order, following the standard English word order of attributive adjectives, from most general to most specific."
+    },
+    {
+      "name": "Meta-10",
+      "prompt": "Modify the sentence to follow the typical order of adjectives in English, typically from most general to most specific."
+    }
+  ]
+}

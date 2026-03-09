@@ -1,0 +1,59 @@
+{
+  "task_name": "causal_judgement",
+  "generated_at": "2026-02-27 16:25:25",
+  "generation_config": {
+    "model_path": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "conversation_template": "llama-3",
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "max_tokens": 96,
+    "num_examples": 3,
+    "requested_num_prompts": 10,
+    "actual_num_prompts": 10,
+    "generation_batch_size_cap": 128,
+    "generation_max_rounds": 6
+  },
+  "meta_prompt_request": "You are creating a single instruction prompt for a reasoning task named 'causal_judgement'.\nInfer the task behavior from the input/output examples below.\nWrite exactly one concise instruction that helps solve this task.\nOutput only the instruction text. Do not output numbering, quotes, or explanations.\n\nExamples:\nInput: How would a typical person answer each of the following questions about causation?\nA machine is set up in such a way that it will short circuit if both the black wire and the red wire touch the battery at the same time. The machine will not short circuit if just one of these wires touches the battery. The black wire is designated as the one that is supposed to touch the battery, while the red wire is supposed to remain in some other part of the machine. One day, the black wire and the red wire both end up touching the battery at the same time. There is a short circuit. Did the black wire cause the short circuit?\nOptions:\n- Yes\n- No.\nOutput: No\n\nInput: How would a typical person answer each of the following questions about causation?\nLong ago, when John was only 17 years old, he got a job working for a large manufacturing company. He started out working on an assembly line for minimum wage, but after a few years at the company, he was given a choice between two line manager positions. He could stay in the woodwork division, which is where he was currently working. Or he could move to the plastics division. John was unsure what to do because he liked working in the woodwork division, but he also thought it might be worth trying something different. He finally decided to switch to the plastics division and try something new. For the last 30 years, John has worked as a production line supervisor in the plastics division. After the first year there, the plastics division was moved to a different building with more space. Unfortunately, through the many years he worked there, John was exposed to asbestos, a highly carcinogenic substance. Most of the plastics division was quite safe, but the small part in which John worked was exposed to asbestos fibers. And now, although John has never smoked a cigarette in his life and otherwise lives a healthy lifestyle, he has a highly progressed and incurable case of lung cancer at the age of 50. John had seen three cancer specialists, all of whom confirmed the worst: that, except for pain, John's cancer was untreatable and he was absolutely certain to die from it very soon (the doctors estimated no more than 2 months). Yesterday, while John was in the hospital for a routine medical appointment, a new nurse accidentally administered the wrong medication to him. John was allergic to the drug and he immediately went into shock and experienced cardiac arrest (a heart attack). Doctors attempted to resuscitate him but he died minutes after the medication was administered. Did John's job cause his premature death?\nOptions:\n- Yes\n- No.\nOutput: No\n\nInput: How would a typical person answer each of the following questions about causation?\nLong ago, when John was only 17 years old, he got a job working for a large manufacturing company. He started out working on an assembly line for minimum wage, but after a few years at the company, he was given a choice between two line manager positions. He could stay in the woodwork division, which is where he was currently working. Or he could move to the plastics division. John was unsure what to do because he liked working in the woodwork division, but he also thought it might be worth trying something different. He finally decided to switch to the plastics division and try something new. For the last 30 years, John has worked as a production line supervisor in the plastics division. After the first year there, the plastics division was moved to a different building with more space. Unfortunately, through the many years he worked there, John was exposed to asbestos, a highly carcinogenic substance. Most of the plastics division was quite safe, but the small part in which John worked was exposed to asbestos fibers. And now, although John has never smoked a cigarette in his life and otherwise lives a healthy lifestyle, he has a highly progressed and incurable case of lung cancer at the age of 50. John had seen three cancer specialists, all of whom confirmed the worst: that, except for pain, John's cancer was untreatable and he was absolutely certain to die from it very soon (the doctors estimated no more than 2 months). Yesterday, while John was in the hospital for a routine medical appointment, a new nurse accidentally administered the wrong medication to him. John was allergic to the drug and he immediately went into shock and experienced cardiac arrest (a heart attack). Doctors attempted to resuscitate him but he died minutes after the medication was administered. Did misadministration of medication cause John's premature death?\nOptions:\n- Yes\n- No.\nOutput: Yes\n\nInstruction:",
+  "prompts": [
+    {
+      "name": "Meta-01",
+      "prompt": "Identify the immediate and direct cause of the outcome."
+    },
+    {
+      "name": "Meta-02",
+      "prompt": "Determine whether the described event was caused by the given condition, circumstance, or action, considering typical human understanding of causality."
+    },
+    {
+      "name": "Meta-03",
+      "prompt": "Determine whether the described event or action was the primary factor leading to the outcome, rather than a coincidence or secondary effect."
+    },
+    {
+      "name": "Meta-04",
+      "prompt": "Identify the immediate cause of the outcome, ignoring any indirect or contributing factors."
+    },
+    {
+      "name": "Meta-05",
+      "prompt": "Determine the cause of the outcome by identifying the most direct and plausible link between the described events and the outcome."
+    },
+    {
+      "name": "Meta-06",
+      "prompt": "Determine whether the stated event is the most immediate and direct cause of the outcome, or if another event is a more likely cause."
+    },
+    {
+      "name": "Meta-07",
+      "prompt": "Identify the specific cause that directly led to the outcome in question, regardless of any indirect or potential links to other factors."
+    },
+    {
+      "name": "Meta-08",
+      "prompt": "Determine the most direct and immediate cause of the outcome, rather than tracing indirect or distant links."
+    },
+    {
+      "name": "Meta-09",
+      "prompt": "Identify the immediate cause of the outcome or event described in the scenario, disregarding any potential long-term or indirect effects."
+    },
+    {
+      "name": "Meta-10",
+      "prompt": "Identify the event or action that directly and immediately led to the outcome, rather than a distant or indirect cause."
+    }
+  ]
+}

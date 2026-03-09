@@ -1,0 +1,117 @@
+{
+  "tracking_shuffled_objects_five_objects": {
+    "paper_acc": 0.7,
+    "Opt": {
+      "prompt": "Use this process as an explanation stepwise for each step until you get to as given above Alice has got originaly the following as follows.",
+      "accuracy": 0.16,
+      "test_acc": 0.16,
+      "inference_time": 12.612019777297974,
+      "correct": 16,
+      "total": 100,
+      "parse_failures": 18,
+      "invalid_predictions": 0,
+      "parsed_rate": 0.82,
+      "valid_parsed_rate": 0.82,
+      "test_parsed": 0.82,
+      "used_extractor": true,
+      "prompt_backend": "manual_llama3",
+      "answer_max_tokens": 4,
+      "evaluation_protocol": "opro_eval_adapter",
+      "extract_final_answer_by_prompting_again": true,
+      "opro_second_round_extraction": true,
+      "opro_second_round_max_tokens": 8
+    }
+  },
+  "object_counting": {
+    "paper_acc": 0.9,
+    "Opt": {
+      "prompt": "Use only addition. Add think step by step. Finally give the actual correct answer.",
+      "accuracy": 0.89,
+      "test_acc": 0.89,
+      "inference_time": 9.767161846160889,
+      "correct": 89,
+      "total": 100,
+      "parse_failures": 0,
+      "invalid_predictions": 0,
+      "parsed_rate": 1.0,
+      "valid_parsed_rate": 1.0,
+      "test_parsed": 1.0,
+      "used_extractor": true,
+      "prompt_backend": "manual_llama3",
+      "answer_max_tokens": 1,
+      "evaluation_protocol": "opro_eval_adapter",
+      "extract_final_answer_by_prompting_again": true,
+      "opro_second_round_extraction": true,
+      "opro_second_round_max_tokens": 8
+    }
+  },
+  "causal_judgement": {
+    "paper_acc": 0.57,
+    "Opt": {
+      "prompt": "Use causal diagram. The correct option ask about whether there the variable C of about whether a specific cause is sufficient. The answer a causal relationship between C to D if the probability P that C occurs given E changes.",
+      "accuracy": 0.24,
+      "test_acc": 0.24,
+      "inference_time": 13.546065092086792,
+      "correct": 24,
+      "total": 100,
+      "parse_failures": 51,
+      "invalid_predictions": 0,
+      "parsed_rate": 0.49,
+      "valid_parsed_rate": 0.49,
+      "test_parsed": 0.49,
+      "used_extractor": true,
+      "prompt_backend": "manual_llama3",
+      "answer_max_tokens": 4,
+      "evaluation_protocol": "opro_eval_adapter",
+      "extract_final_answer_by_prompting_again": true,
+      "opro_second_round_extraction": true,
+      "opro_second_round_max_tokens": 8
+    }
+  },
+  "movie_recommendation": {
+    "paper_acc": 0.57,
+    "Opt": {
+      "prompt": "Use movie ratings data available here above movies for reference. ThisHOFF has an interesting analysis based solely options to options based movies ratings expect from the other movies you are asked ones mentioned here you.",
+      "accuracy": 0.5,
+      "test_acc": 0.5,
+      "inference_time": 11.603029251098633,
+      "correct": 50,
+      "total": 100,
+      "parse_failures": 6,
+      "invalid_predictions": 0,
+      "parsed_rate": 0.94,
+      "valid_parsed_rate": 0.94,
+      "test_parsed": 0.94,
+      "used_extractor": true,
+      "prompt_backend": "manual_llama3",
+      "answer_max_tokens": 4,
+      "evaluation_protocol": "opro_eval_adapter",
+      "extract_final_answer_by_prompting_again": true,
+      "opro_second_round_extraction": true,
+      "opro_second_round_max_tokens": 8
+    }
+  },
+  "hyperbaton": {
+    "paper_acc": 0.84,
+    "Opt": {
+      "prompt": "Use the reasoning and examples you would step. Finally give the actual correct answer.",
+      "accuracy": 0.75,
+      "test_acc": 0.75,
+      "inference_time": 10.570917844772339,
+      "correct": 75,
+      "total": 100,
+      "parse_failures": 12,
+      "invalid_predictions": 0,
+      "parsed_rate": 0.88,
+      "valid_parsed_rate": 0.88,
+      "test_parsed": 0.88,
+      "used_extractor": true,
+      "prompt_backend": "manual_llama3",
+      "answer_max_tokens": 4,
+      "evaluation_protocol": "opro_eval_adapter",
+      "extract_final_answer_by_prompting_again": true,
+      "opro_second_round_extraction": true,
+      "opro_second_round_max_tokens": 8
+    }
+  }
+}

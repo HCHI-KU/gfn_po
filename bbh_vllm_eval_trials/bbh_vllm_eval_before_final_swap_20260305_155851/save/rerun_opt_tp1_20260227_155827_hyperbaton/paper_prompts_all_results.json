@@ -1,0 +1,21 @@
+{
+  "hyperbaton": {
+    "paper_acc": 0.84,
+    "Opt": {
+      "prompt": "Use the reasoning and examples you would step. Finally give the actual correct answer.",
+      "accuracy": 0.74,
+      "inference_time": 17.739004611968994,
+      "correct": 74,
+      "total": 100,
+      "parse_failures": 0,
+      "invalid_predictions": 0,
+      "parsed_rate": 1.0,
+      "valid_parsed_rate": 1.0,
+      "used_extractor": true,
+      "prompt_backend": "manual_llama3",
+      "test_acc": 0.74,
+      "test_parsed": 1.0,
+      "answer_max_tokens": 1
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "task_name": "movie_recommendation",
+  "stats": {
+    "num_points": 10,
+    "pearson": 0.5189208141773621,
+    "spearman": 0.5109257403949737,
+    "train_mean": 0.544,
+    "test_mean": 0.473,
+    "train_std": 0.05043808085167396,
+    "test_std": 0.029342801502242423
+  },
+  "records": [
+    {
+      "method_name": "Meta-01",
+      "train_accuracy": 0.5,
+      "test_accuracy": 0.46,
+      "train_correct": 25,
+      "train_total": 50,
+      "test_correct": 46,
+      "test_total": 100,
+      "prompt": "Identify the genre or theme common to the input movie list and select the option that best represents that genre or theme."
+    },
+    {
+      "method_name": "Meta-02",
+      "train_accuracy": 0.58,
+      "test_accuracy": 0.53,
+      "train_correct": 29,
+      "train_total": 50,
+      "test_correct": 53,
+      "test_total": 100,
+      "prompt": "Identify the most popular or critically acclaimed movie among the options that is similar in genre or tone to the given movies."
+    },
+    {
+      "method_name": "Meta-03",
+      "train_accuracy": 0.5,
+      "test_accuracy": 0.44,
+      "train_correct": 25,
+      "train_total": 50,
+      "test_correct": 44,
+      "test_total": 100,
+      "prompt": "Find a movie from the options that is most likely to appeal to fans of the input movies."
+    },
+    {
+      "method_name": "Meta-04",
+      "train_accuracy": 0.64,
+      "test_accuracy": 0.5,
+      "train_correct": 32,
+      "train_total": 50,
+      "test_correct": 50,
+      "test_total": 100,
+      "prompt": "Find the movie from the options that is most closely associated with the characteristics of the input movies."
+    },
+    {
+      "method_name": "Meta-05",
+      "train_accuracy": 0.52,
+      "test_accuracy": 0.5,
+      "train_correct": 26,
+      "train_total": 50,
+      "test_correct": 50,
+      "test_total": 100,
+      "prompt": "Identify the movie that is most likely to share a common genre or theme with the provided movie list."
+    },
+    {
+      "method_name": "Meta-06",
+      "train_accuracy": 0.52,
+      "test_accuracy": 0.43,
+      "train_correct": 26,
+      "train_total": 50,
+      "test_correct": 43,
+      "test_total": 100,
+      "prompt": "Choose the movie that is most likely to be appreciated by fans of the given movies."
+    },
+    {
+      "method_name": "Meta-07",
+      "train_accuracy": 0.56,
+      "test_accuracy": 0.48,
+      "train_correct": 28,
+      "train_total": 50,
+      "test_correct": 48,
+      "test_total": 100,
+      "prompt": "Find a movie from the options that is most similar in genre or tone to the given list of movies."
+    },
+    {
+      "method_name": "Meta-08",
+      "train_accuracy": 0.46,
+      "test_accuracy": 0.46,
+      "train_correct": 23,
+      "train_total": 50,
+      "test_correct": 46,
+      "test_total": 100,
+      "prompt": "Find the movie from the given options that is most likely to be similar in theme, genre, or tone to the listed movie(s)."
+    },
+    {
+      "method_name": "Meta-09",
+      "train_accuracy": 0.58,
+      "test_accuracy": 0.48,
+      "train_correct": 29,
+      "train_total": 50,
+      "test_correct": 48,
+      "test_total": 100,
+      "prompt": "Identify the movie that is most closely associated with the given set of movies, based on their genres or styles."
+    },
+    {
+      "method_name": "Meta-10",
+      "train_accuracy": 0.58,
+      "test_accuracy": 0.45,
+      "train_correct": 29,
+      "train_total": 50,
+      "test_correct": 45,
+      "test_total": 100,
+      "prompt": "Identify the movie with the most common genre or theme among the given options."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-02-26 14:46:51",
+  "args": {
+    "model_path": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "conversation_template": "llama-3",
+    "dtype": "bfloat16",
+    "tensor_parallel_size": 1,
+    "gpu_memory_utilization": 0.9,
+    "task_name": "object_counting",
+    "data_root": "../bbh_vllm_eval/data/GreaTer_data/BBH",
+    "n_train_data": 50,
+    "n_test_data": 100,
+    "save_dir": "save",
+    "exp_name": "opt_only_object_counting_r64",
+    "include_paper_opt_prompt": true,
+    "meta_prompt_file": "",
+    "num_meta_prompts": 0,
+    "evaluate_train_split": true,
+    "temperature": 0.0,
+    "max_reasoning_tokens": 64,
+    "answer_max_tokens": 1
+  },
+  "terminology": {
+    "extractor": "Second LLM call that extracts a short final answer.",
+    "parser": "Postprocessing logic that converts raw output to strict answer type.",
+    "test_acc": "Fraction of correct answers on test split.",
+    "test_parsed": "Proxy parse-success rate on test split (1 - parse_failures / total)."
+  },
+  "evaluation_note": "Standalone vLLM evaluator for internal fair comparison. Describe as GreaTer-compatible baseline re-evaluation, not exact reproduction.",
+  "tasks": {
+    "object_counting": {
+      "Opt": "Use only addition. Add think step by step. Finally give the actual correct answer."
+    }
+  }
+}

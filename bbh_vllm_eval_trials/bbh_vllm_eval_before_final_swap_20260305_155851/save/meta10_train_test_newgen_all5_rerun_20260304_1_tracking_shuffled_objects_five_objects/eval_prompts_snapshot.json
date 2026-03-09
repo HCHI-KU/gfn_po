@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-03-04 19:34:21",
+  "args": {
+    "model_path": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "conversation_template": "llama-3",
+    "dtype": "float16",
+    "tensor_parallel_size": 1,
+    "gpu_memory_utilization": 0.9,
+    "task_name": "tracking_shuffled_objects_five_objects",
+    "data_root": "../bbh_vllm_eval/data/GreaTer_data/BBH",
+    "n_train_data": 50,
+    "n_test_data": 100,
+    "save_dir": "save",
+    "exp_name": "meta10_train_test_newgen_all5_rerun_20260304_1_tracking_shuffled_objects_five_objects",
+    "generate_meta_prompts": true,
+    "include_paper_opt_prompt": false,
+    "meta_prompt_file": "",
+    "num_meta_prompts": 10,
+    "meta_prompt_temperature": 0.8,
+    "meta_prompt_top_p": 0.95,
+    "meta_prompt_max_tokens": 96,
+    "meta_prompt_num_examples": 3,
+    "meta_prompt_generation_batch_size": 128,
+    "meta_prompt_generation_max_rounds": 6,
+    "evaluate_train_split": true,
+    "temperature": 0.0,
+    "max_reasoning_tokens": 1024,
+    "answer_max_tokens": 1
+  },
+  "terminology": {
+    "extractor": "Second LLM call that extracts a short final answer.",
+    "test_acc": "Fraction of correct answers on test split.",
+    "test_parsed": "Proxy parse-success rate on test split (1 - parse_failures / total)."
+  },
+  "evaluation_note": "Standalone vLLM evaluator for internal fair comparison. Describe as GreaTer-compatible baseline re-evaluation, not exact reproduction.",
+  "tasks": {
+    "tracking_shuffled_objects_five_objects": {
+      "Meta-01": "Keep track of the partners each dancer has and the partner changes that occur, then determine who Alice is dancing with at the end of the dance.",
+      "Meta-02": "Determine the final partner of a specific dancer by tracing the sequence of partner switches throughout the song.",
+      "Meta-03": "Track the sequence of partner switches to determine the final partner of each dancer.",
+      "Meta-04": "Follow the sequence of partner switches to determine the final dance partner of each dancer.",
+      "Meta-05": "Determine the final dance partner of a given dancer by tracking the sequence of partner switches, starting from the initial partner.",
+      "Meta-06": "Keep track of the sequence of partner changes to determine the final partner of each dancer.",
+      "Meta-07": "Keep track of the partners each dancer has after each pair of dancers switches partners.",
+      "Meta-08": "Follow the sequence of partner swaps to determine the final partner of each dancer.",
+      "Meta-09": "Determine the final partner of a given dancer by tracking the sequence of partner swaps throughout the song.",
+      "Meta-10": "Follow the sequence of partner swaps to determine the final partner of the person who was initially dancing with a given person."
+    }
+  }
+}

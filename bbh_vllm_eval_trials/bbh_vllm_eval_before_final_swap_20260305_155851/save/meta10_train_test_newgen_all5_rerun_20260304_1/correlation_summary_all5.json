@@ -1,0 +1,80 @@
+{
+  "run_prefix": "meta10_train_test_newgen_all5_rerun_20260304_1",
+  "tasks": [
+    {
+      "task_name": "causal_judgement",
+      "stats": {
+        "num_points": 10,
+        "pearson": 0.46932610229057364,
+        "spearman": 0.06752237049095156,
+        "train_mean": 0.5119999999999999,
+        "test_mean": 0.499,
+        "train_std": 0.016000000000000014,
+        "test_std": 0.01757839583124696
+      },
+      "csv_path": "/home/work/jihun/bbh_vllm_eval_final/save/meta10_train_test_newgen_all5_rerun_20260304_1_causal_judgement/train_test_correlation_causal_judgement.csv",
+      "json_path": "/home/work/jihun/bbh_vllm_eval_final/save/meta10_train_test_newgen_all5_rerun_20260304_1_causal_judgement/train_test_correlation_causal_judgement.json",
+      "plot_path": "/home/work/jihun/bbh_vllm_eval_final/save/meta10_train_test_newgen_all5_rerun_20260304_1_causal_judgement/train_test_correlation_causal_judgement.png"
+    },
+    {
+      "task_name": "hyperbaton",
+      "stats": {
+        "num_points": 10,
+        "pearson": 0.0639259909732852,
+        "spearman": 0.13622356307397512,
+        "train_mean": 0.732,
+        "test_mean": 0.735,
+        "train_std": 0.05455272678794341,
+        "test_std": 0.04588027898781787
+      },
+      "csv_path": "/home/work/jihun/bbh_vllm_eval_final/save/meta10_train_test_newgen_all5_rerun_20260304_1_hyperbaton/train_test_correlation_hyperbaton.csv",
+      "json_path": "/home/work/jihun/bbh_vllm_eval_final/save/meta10_train_test_newgen_all5_rerun_20260304_1_hyperbaton/train_test_correlation_hyperbaton.json",
+      "plot_path": "/home/work/jihun/bbh_vllm_eval_final/save/meta10_train_test_newgen_all5_rerun_20260304_1_hyperbaton/train_test_correlation_hyperbaton.png"
+    },
+    {
+      "task_name": "movie_recommendation",
+      "stats": {
+        "num_points": 10,
+        "pearson": 0.5189208141773621,
+        "spearman": 0.5109257403949737,
+        "train_mean": 0.544,
+        "test_mean": 0.473,
+        "train_std": 0.05043808085167396,
+        "test_std": 0.029342801502242423
+      },
+      "csv_path": "/home/work/jihun/bbh_vllm_eval_final/save/meta10_train_test_newgen_all5_rerun_20260304_1_movie_recommendation/train_test_correlation_movie_recommendation.csv",
+      "json_path": "/home/work/jihun/bbh_vllm_eval_final/save/meta10_train_test_newgen_all5_rerun_20260304_1_movie_recommendation/train_test_correlation_movie_recommendation.json",
+      "plot_path": "/home/work/jihun/bbh_vllm_eval_final/save/meta10_train_test_newgen_all5_rerun_20260304_1_movie_recommendation/train_test_correlation_movie_recommendation.png"
+    },
+    {
+      "task_name": "object_counting",
+      "stats": {
+        "num_points": 10,
+        "pearson": 0.9679052581566746,
+        "spearman": 0.9390243902439026,
+        "train_mean": 0.5,
+        "test_mean": 0.417,
+        "train_std": 0.146696966567138,
+        "test_std": 0.1229674753745884
+      },
+      "csv_path": "/home/work/jihun/bbh_vllm_eval_final/save/meta10_train_test_newgen_all5_rerun_20260304_1_object_counting/train_test_correlation_object_counting.csv",
+      "json_path": "/home/work/jihun/bbh_vllm_eval_final/save/meta10_train_test_newgen_all5_rerun_20260304_1_object_counting/train_test_correlation_object_counting.json",
+      "plot_path": "/home/work/jihun/bbh_vllm_eval_final/save/meta10_train_test_newgen_all5_rerun_20260304_1_object_counting/train_test_correlation_object_counting.png"
+    },
+    {
+      "task_name": "tracking_shuffled_objects_five_objects",
+      "stats": {
+        "num_points": 10,
+        "pearson": 0.5108040725803091,
+        "spearman": 0.6142443429164636,
+        "train_mean": 0.472,
+        "test_mean": 0.41,
+        "train_std": 0.06462197768561405,
+        "test_std": 0.05513619500836089
+      },
+      "csv_path": "/home/work/jihun/bbh_vllm_eval_final/save/meta10_train_test_newgen_all5_rerun_20260304_1_tracking_shuffled_objects_five_objects/train_test_correlation_tracking_shuffled_objects_five_objects.csv",
+      "json_path": "/home/work/jihun/bbh_vllm_eval_final/save/meta10_train_test_newgen_all5_rerun_20260304_1_tracking_shuffled_objects_five_objects/train_test_correlation_tracking_shuffled_objects_five_objects.json",
+      "plot_path": "/home/work/jihun/bbh_vllm_eval_final/save/meta10_train_test_newgen_all5_rerun_20260304_1_tracking_shuffled_objects_five_objects/train_test_correlation_tracking_shuffled_objects_five_objects.png"
+    }
+  ]
+}

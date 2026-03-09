@@ -1,0 +1,19 @@
+{
+  "paper_acc": 0.57,
+  "Opt": {
+    "prompt": "Use movie ratings data available here above movies for reference. ThisHOFF has an interesting analysis based solely options to options based movies ratings expect from the other movies you are asked ones mentioned here you.",
+    "accuracy": 0.6,
+    "inference_time": 25.871909141540527,
+    "correct": 60,
+    "total": 100,
+    "parse_failures": 0,
+    "invalid_predictions": 0,
+    "parsed_rate": 1.0,
+    "valid_parsed_rate": 1.0,
+    "used_extractor": true,
+    "prompt_backend": "manual_llama3",
+    "test_acc": 0.6,
+    "test_parsed": 1.0,
+    "answer_max_tokens": 1
+  }
+}

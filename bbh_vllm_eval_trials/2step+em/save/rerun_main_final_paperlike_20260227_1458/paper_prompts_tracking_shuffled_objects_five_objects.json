@@ -1,0 +1,19 @@
+{
+  "paper_acc": 0.7,
+  "Opt": {
+    "prompt": "Use this process as an explanation stepwise for each step until you get to as given above Alice has got originaly the following as follows.",
+    "accuracy": 0.76,
+    "inference_time": 25.825575351715088,
+    "correct": 76,
+    "total": 100,
+    "parse_failures": 0,
+    "invalid_predictions": 0,
+    "parsed_rate": 1.0,
+    "valid_parsed_rate": 1.0,
+    "used_extractor": true,
+    "prompt_backend": "manual_llama3",
+    "test_acc": 0.76,
+    "test_parsed": 1.0,
+    "answer_max_tokens": 1
+  }
+}

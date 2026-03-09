@@ -1,0 +1,26 @@
+{
+  "paper_acc": 0.57,
+  "Opt": {
+    "prompt": "Use movie ratings data available here above movies for reference. ThisHOFF has an interesting analysis based solely options to options based movies ratings expect from the other movies you are asked ones mentioned here you.",
+    "accuracy": 0.49,
+    "test_acc": 0.49,
+    "inference_time": 10.862173318862915,
+    "correct": 49,
+    "total": 100,
+    "parse_failures": 7,
+    "invalid_predictions": 0,
+    "parsed_rate": 0.93,
+    "valid_parsed_rate": 0.93,
+    "test_parsed": 0.93,
+    "used_extractor": true,
+    "prompt_backend": "manual_llama3",
+    "answer_max_tokens": 4,
+    "evaluation_protocol": "opro_eval_adapter",
+    "stage1_prompt_style": "opro_qbegin",
+    "extract_final_answer_by_prompting_again": true,
+    "opro_second_round_extraction": true,
+    "opro_second_round_max_tokens": 8,
+    "opro_second_round_max_tokens_effective": 8,
+    "use_conservative_prompting_again_tokens": false
+  }
+}

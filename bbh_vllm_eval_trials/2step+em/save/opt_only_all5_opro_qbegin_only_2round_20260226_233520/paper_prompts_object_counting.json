@@ -1,0 +1,26 @@
+{
+  "paper_acc": 0.9,
+  "Opt": {
+    "prompt": "Use only addition. Add think step by step. Finally give the actual correct answer.",
+    "accuracy": 0.92,
+    "test_acc": 0.92,
+    "inference_time": 9.43201494216919,
+    "correct": 92,
+    "total": 100,
+    "parse_failures": 0,
+    "invalid_predictions": 0,
+    "parsed_rate": 1.0,
+    "valid_parsed_rate": 1.0,
+    "test_parsed": 1.0,
+    "used_extractor": true,
+    "prompt_backend": "manual_llama3",
+    "answer_max_tokens": 1,
+    "evaluation_protocol": "opro_eval_adapter",
+    "stage1_prompt_style": "opro_qbegin",
+    "extract_final_answer_by_prompting_again": true,
+    "opro_second_round_extraction": true,
+    "opro_second_round_max_tokens": 8,
+    "opro_second_round_max_tokens_effective": 8,
+    "use_conservative_prompting_again_tokens": false
+  }
+}
