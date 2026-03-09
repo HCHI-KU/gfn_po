@@ -1,3 +1,5 @@
+# gfn_po
+
 conda create -n rd_test python=3.10 -y
 conda activate rd_test
 
@@ -26,4 +28,3 @@ Induction Task
 Question Answering
 
 MMLU.sh
-
